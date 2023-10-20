@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Chen</title>
+    <title>dp_normal | Chen</title>
     <meta name="author" content="Chen" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -28,7 +28,9 @@
 
 
 
-<script src="/js/lib/home.js"></script>
+
+
+
 
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -138,31 +140,11 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-images="/images/background1.jpg,/images/background2.jpg,/images/background3.jpg,/images/background4.jpg"></div>
-    <div id="home-info" @click="homeClick">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            
-			
-			<span id="jinrishici-sentence">正在加载今日诗词....</span>
-			<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        </span>
+            <div class="article">
+    <div>
+        <h1>dp_normal</h1>
     </div>
-</div>
-<div id="home-posts-wrap" true ref="homePostsWrap">
-    <div id="home-posts">
-        
-
-<div class="post">
-    <a href="/2023/10/20/dp-normal/">
-        <h2 class="post-title">dp_normal</h2>
-    </a>
-    <div class="category-and-date">
-        
+    <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
@@ -172,10 +154,9 @@
         
         
     </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <p>今晚写了几题简单的动态规划。</p>
+    
+    <div class="content" v-pre>
+        <p>今晚写了几题简单的动态规划。</p>
 <p>##70. 爬楼梯<br>假设你正在爬楼梯。需要 n 阶你才能到达楼顶。<br>每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？</p>
 <p>###时间复杂度: O(N)<br>###空间复杂度: 用数组记录 O(n)， 用p1, p2循环 O(1)</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def climbStairs(self, n: int) -&gt; int:</span><br><span class="line">        #p[i] = p[i-1] + p[i-2]</span><br><span class="line">        if n==1:</span><br><span class="line">            return 1</span><br><span class="line">        if n==2:</span><br><span class="line">            return 2</span><br><span class="line">        # p = [0] * n</span><br><span class="line">        # p[0] = 1</span><br><span class="line">        # p[1] = 2</span><br><span class="line">        # for i in range(2, n):</span><br><span class="line">        #     p[i] = p[i-1] + p[i-2]</span><br><span class="line">        # return p[i]</span><br><span class="line">        p1 = 1</span><br><span class="line">        p2 = 2</span><br><span class="line">        for i in range(2, n):</span><br><span class="line">            p2, p1 = p2+p1, p2</span><br><span class="line">        return p2</span><br></pre></td></tr></table></figure>
@@ -189,157 +170,13 @@
 <p>示例 1：<br>输入: s &#x3D; “leetcode”, wordDict &#x3D; [“leet”, “code”]<br>输出: true<br>解释: 返回 true 因为 “leetcode” 可以由 “leet” 和 “code” 拼接成。</p>
 <p>###时间复杂度: O(N2)*字符串查找<br>###空间复杂度: 用数组记录 O(n)</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def wordBreak(self, s: str, wordDict: List[str]) -&gt; bool:</span><br><span class="line">        # dp[x] = &#123;dp[i] + isinword(s[i:x])&#125;</span><br><span class="line">        n = len(s)</span><br><span class="line">        # dp[i]表示s的前i位是否可以用wordDict中的单词表示</span><br><span class="line">        dp = [False] * (n+1)</span><br><span class="line">        # 初始化dp[0]=True，空字符可以被表示</span><br><span class="line">        dp[0] = True</span><br><span class="line">        for i in range(n):</span><br><span class="line">            for j in range(i+1, n+1):</span><br><span class="line">                if dp[i] and s[i:j] in wordDict:</span><br><span class="line">                    dp[j] = True</span><br><span class="line">        return dp[-1]</span><br></pre></td></tr></table></figure>
-            
-        </div>
     </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2023/10/20/dp-normal/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/10/20/An-ordinary-day/">
-        <h2 class="post-title">An ordinary day</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/10/20
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2023/10/20/An-ordinary-day/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/10/19/my-first-hexo-blog/">
-        <h2 class="post-title">my first hexo-blog</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/10/19
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2023/10/19/my-first-hexo-blog/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/10/19/hello-world/">
-        <h2 class="post-title">Hello World</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/10/19
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2023/10/19/hello-world/" class="go-post">阅读全文</a>
-</div>
-
-
-        <div class="page-current">
     
-    <span class="current">1</span>
     
     
     
     
-</div>
-
-    </div>
     
-    <div id="home-card">
-        <div id="card-style">
-    <div id="card-div">
-        <div class="avatar">
-            <img src="/images/avatar2.jpg" alt="avatar" />
-        </div>
-        <div class="name">Chen</div>
-        <div class="description">
-            <p>Description<br>ich liebe dich</p>
-
-        </div>
-        
-        
-        <div class="friend-links">
-            
-            <div class="friend-link">
-                <a target="_blank" rel="noopener" href="https://argvchs.github.io">Argvchs</a>
-            </div>
-            
-        </div>
-        
-    </div>
-</div>
-
-    </div>
     
 </div>
 
@@ -371,6 +208,12 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+
     
 </body>
 
