@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>实训周做了啥 | Chen</title>
+    <meta name="author" content="Chen" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="icon" href="/images/avatar2.jpg" />
+    <link rel="preconnect" href="https://cdn.staticfile.org" />
+<script src="https://cdn.staticfile.org/vue/3.3.4/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.loli.net" />
+<link rel="preconnect" href="https://gstatic.loli.net" crossorigin />
+<link rel="stylesheet" href="https://fonts.loli.net/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" />
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body>
+    <div id="layout">
+        <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <img src="/images/loading.gif" />
+                </div>
+            </div>
+        </transition>
+        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>CHEN</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
+        
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;CHEN</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div class="article">
+    <div>
+        <h1>实训周做了啥</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/12/24
+        </span>
+        
+        <span class="category">
+            <a href="/categories/%E9%A1%B9%E7%9B%AE/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                项目
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/Vue-js/" style="color: #00bcd4">Vue.js</a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="color: #ffa2c4">微信小程序</a>
+            </span>
+            
+        </span>
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><p>又到了实训周，之前实训周做了啥都忘记了……于是记录一下，表示我真的做了（</p>
+<p>老师的要求是，先用Vue.js做一个简单的Todo List，有点基础后，再做一个微信小程序。</p>
+<h2 id="看法"><a href="#看法" class="headerlink" title="看法"></a>看法</h2><p>我觉得前端界面，简单一点的话，就是组件的拼装，组件自身的样式，组件和同级组件的关系，组件和父级组件的关系。</p>
+<h1 id="做Todo-List"><a href="#做Todo-List" class="headerlink" title="做Todo List"></a>做Todo List</h1><h2 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h2><p>，用npm创建了项目框架。而bootstrap组件库也不错，有好多好看的组件供使用</p>
+<p><code>npm run dev</code></p>
+<h2 id="数据绑定传输等"><a href="#数据绑定传输等" class="headerlink" title="数据绑定传输等"></a>数据绑定传输等</h2><p><code>@</code>（v-on）和<code>：</code>（v-vbind），</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@ 用于处理事件，而 : 用于处理属性绑定。这两个符号都是Vue.js中的常见语法糖，使代码更简洁易读 </span><br><span class="line">@ 符号是 v-on 指令的缩写。它用于监听DOM事件并触发相应的Vue实例中的方法。</span><br><span class="line">: 符号是 v-bind 指令的缩写。它用于动态绑定属性或表达式</span><br><span class="line">查自chatgpt 2023/12/11</span><br></pre></td></tr></table></figure>
+
+<p>我大致理解成，@是绑定事件（函数），：是跟参数之类的有关，也就是属性</p>
+<p><code>v-model</code> 可以在组件上使用以实现双向绑定</p>
+<p><code>&#123;&#123; item.task &#125;&#125;</code> ，可以动态获取属性的值</p>
+<p><code>@click=&quot;changeCompleted(item.id)&quot;</code>，（）里的，可以传参，而在微信小程序里，可以用<code>data-xxx=“”</code>传递参数</p>
+<h2 id="emit的使用"><a href="#emit的使用" class="headerlink" title="$emit的使用"></a>$emit的使用</h2><p>起初是想在todoList.vue调用App.vue里的函数，我用的是方法是，在todoList.vue里导入App.vue，然后用<code>App.method.XXX()</code>，结果不行，后来老师说使用emit什么的，并帮我找到在官方文档哪，让我自己学一下。</p>
+<p>以下摘自 Vue.js-事件-事件参数</p>
+<p>有时候我们会需要在触发事件时附带一个特定的值。举例来说，我们想要 <code>&lt;BlogPost&gt;</code> 组件来管理文本会缩放得多大。在这个场景下，我们可以给 <code>$emit</code> 提供一个额外的参数：</p>
+<p>template</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;button @click=&quot;$emit(&#x27;increaseBy&#x27;, 1)&quot;&gt;</span><br><span class="line">  Increase by 1</span><br><span class="line">&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
+<p>然后我们在父组件中监听事件，我们可以先简单写一个内联的箭头函数作为监听器，此函数会接收到事件附带的参数：</p>
+<p>template</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;MyButton @increase-by=&quot;(n) =&gt; count += n&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+<p>或者，也可以用一个组件方法来作为事件处理函数：</p>
+<p>template</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;MyButton @increase-by=&quot;increaseCount&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+<p>该方法也会接收到事件所传递的参数：</p>
+<p>js</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function increaseCount(n) &#123;</span><br><span class="line">  count.value += n</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="axios的使用"><a href="#axios的使用" class="headerlink" title="axios的使用"></a>axios的使用</h2><p><code>npm install axios</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">remove</span>(<span class="params">itemid</span>) &#123;</span><br><span class="line">				<span class="comment">// 发送POST请求给后端添加新任务</span></span><br><span class="line">				axios.<span class="title function_">post</span>(<span class="string">&#x27;http://localhost:8080/todolist/removeTodolist&#x27;</span>, &#123;</span><br><span class="line">						<span class="comment">// 参数传递</span></span><br><span class="line">                    	<span class="attr">id</span>: itemid,</span><br><span class="line">					&#125;).<span class="title function_">then</span>(<span class="function"><span class="params">response</span> =&gt;</span> &#123;</span><br><span class="line">						<span class="comment">// 添加成功后，重新获取待办事项列表</span></span><br><span class="line">						<span class="variable language_">this</span>.$emit(<span class="string">&quot;fetchTodoList&quot;</span>);</span><br><span class="line">					&#125;)</span><br><span class="line">					.<span class="title function_">catch</span>(<span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">						<span class="comment">// 处理错误</span></span><br><span class="line">						<span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;Error adding task:&#x27;</span>, error);</span><br><span class="line">					&#125;);</span><br><span class="line">			&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="后端的搭建"><a href="#后端的搭建" class="headerlink" title="后端的搭建"></a>后端的搭建</h2><p>老师说如果有后端能加分，我想着这不能错过啊，于是几个月前学的java的Spring Boot + Mybatis plus + mysql就派上用场了</p>
+<p>根据之前跟着做的一个项目配置好Todo List后端后，写了点简单的增删查改，好些用法都忘记了，悲。</p>
+<h1 id="做微信小程序"><a href="#做微信小程序" class="headerlink" title="做微信小程序"></a>做微信小程序</h1><p>想着我自己也有个公众号，做一个我也能用的上的小程序接上去。</p>
+<p>挑来挑去，做了番茄时钟和一个简单的待办。</p>
+<p>也用了van weapp组件库，不过用不太来。</p>
+<h2 id="界面样式"><a href="#界面样式" class="headerlink" title="界面样式"></a>界面样式</h2><img src="../../public/images/2023/12/番茄时钟主界面.png" alt="番茄时钟主界面" style="zoom: 50%;" />
+
+<img src="../../public/images/2023/12/番茄时钟active.png" alt="番茄时钟active" style="zoom: 50%;" />
+
+<img src="../../public/images/2023/12/todolist.png" alt="todolist" style="zoom: 50%;" />
+
+<img src="../../public/images/2023/12/番茄时钟-今日记录界面.png" alt="番茄时钟-今日记录界面" style="zoom: 50%;" />
+
+<h2 id="今日诗词的API"><a href="#今日诗词的API" class="headerlink" title="今日诗词的API"></a>今日诗词的API</h2><p>搭在github上的hexo博客也接入了这个免费的API，需要在小程序后台添加该API的地址到可访问名单</p>
+<h2 id="界面的搭建"><a href="#界面的搭建" class="headerlink" title="界面的搭建"></a>界面的搭建</h2><p>直到做的差不多了，我才把大一时的前端课、近期学习的，在脑内乱成一锅粥的知识整理的差不多，也就是前端界面，简单一点的话，就是组件的拼装，组件自身的样式，组件和同级组件的关系，组件和父级组件的关系。</p>
+<h2 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h2><p>数据则有的放page的data里，有的放缓存里，通过<code>wx.setStorageSync(&#39;logs&#39;, logs);</code>和<code>wx.getStorageSync(&#39;logs&#39;, logs);</code></p>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+            <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2022 - 2023 Chen
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;Chen
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+        
+        <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+        </transition>
+        
+    </div>
+    <script src="/js/main.js"></script>
+    
+    
+
+
+
+
+    
+</body>
+
+<!--动态线条背景-->
+<script type="text/javascript"
+	color="122 103 238" opacity='0.7' zIndex="-2" count="150" 
+		src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
+
+</html>
