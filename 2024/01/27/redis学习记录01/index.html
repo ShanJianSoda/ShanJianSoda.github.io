@@ -161,12 +161,17 @@
             
             <span class="tag">
                 
-                <a href="/tags/redis/" style="color: #00bcd4">redis</a>
+                <a href="/tags/redis/" style="color: #03a9f4">redis</a>
             </span>
             
             <span class="tag">
                 
                 <a href="/tags/lunix/" style="color: #ff7d73">lunix</a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/git/" style="color: #ffa2c4">git</a>
             </span>
             
         </span>
@@ -189,6 +194,11 @@
 <p>这个命令重新加载防火墙规则，使最新的修改生效。当你添加、删除或修改防火墙规则时，都需要执行这个命令才能使更改生效。</p>
 <p>注意事项：</p>
 <p>以上命令需要以管理员权限（例如 root 用户或者使用 sudo）来执行。<br>1、在执行前，请确保已经安装了 firewalld，并且正在运行。<br>2、6379 是 Redis 默认的端口号，如果你在使用其他端口，则需要相应地修改上述命令中的端口号。</p>
+<h3 id="git问题"><a href="#git问题" class="headerlink" title="git问题"></a>git问题</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">F:\HexoBlog2&gt;ssh -T git@github.com</span><br><span class="line">ssh: connect to host github.com port 22: Connection timed out</span><br></pre></td></tr></table></figure>
+
+<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><p>此处是端口问题，可能是被占用了或者什么的</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">$ git clone git@github.com:xxxxx/xxxx.git my-awesome-proj</span><br><span class="line">Cloning into &#x27;my-awesome-proj&#x27;...</span><br><span class="line">ssh: connect to host github.com port 22: Connection timed out</span><br><span class="line">fatal: Could not read from remote repository.</span><br><span class="line"></span><br><span class="line">$ # This should also timeout</span><br><span class="line">$ ssh -T git@github.com</span><br><span class="line">ssh: connect to host github.com port 22: Connection timed out</span><br><span class="line"></span><br><span class="line">$ # but this might work</span><br><span class="line">$ # 换个端口尝试，成功</span><br><span class="line">$ ssh -T -p 443 git@ssh.github.com</span><br><span class="line">Hi xxxx! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br><span class="line"></span><br><span class="line">$ # Override SSH settings</span><br><span class="line">$ # 添加一个配置文件，会读取该文件，使用配置的端口</span><br><span class="line">$ vim ~/.ssh/config</span><br><span class="line">```</span><br><span class="line"># Add section below to it</span><br><span class="line">Host github.com</span><br><span class="line">  Hostname ssh.github.com</span><br><span class="line">  Port 443</span><br><span class="line">```</span><br><span class="line">$ ssh -T git@github.com</span><br><span class="line">Hi xxxxx! You&#x27;ve successfully authenticated, but GitHub does not</span><br><span class="line">provide shell access.</span><br><span class="line"></span><br><span class="line">$ git clone git@github.com:xxxxxx/xxxxx.git my-awesome-proj</span><br><span class="line">Cloning into &#x27;my-awesome-proj&#x27;...</span><br><span class="line">remote: Enumerating objects: 15, done.</span><br><span class="line">remote: Counting objects: 100% (15/15), done.</span><br><span class="line">remote: Compressing objects: 100% (14/14), done.</span><br><span class="line">remote: Total 15 (delta 0), reused 15 (delta 0), pack-reused 0</span><br><span class="line">Receiving objects: 100% (15/15), 22.90 KiB | 4.58 MiB/s, done.</span><br></pre></td></tr></table></figure>
+
 
     </div>
     
