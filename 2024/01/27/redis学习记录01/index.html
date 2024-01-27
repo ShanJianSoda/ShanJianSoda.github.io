@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>my first hexo-blog | Chen</title>
+    <title>redis学习记录01 | Chen</title>
     <meta name="author" content="Chen" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -142,21 +142,54 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>my first hexo-blog</h1>
+        <h1>redis学习记录01</h1>
     </div>
     <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2023/10/19
+            2024/1/27
         </span>
         
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/redis/" style="color: #00bcd4">redis</a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/lunix/" style="color: #ff7d73">lunix</a>
+            </span>
+            
+        </span>
         
     </div>
     
     <div class="content" v-pre>
-        
+        <p>大三上的寒假，玩了两周后，觉得该学一些东西了，于是在b站上找项目跟做，最后在鱼皮的推荐下，跟做了黑马的redis。</p>
+<h3 id="问题1：RESP连接不上虚拟机上的redis"><a href="#问题1：RESP连接不上虚拟机上的redis" class="headerlink" title="问题1：RESP连接不上虚拟机上的redis"></a>问题1：RESP连接不上虚拟机上的redis</h3><h4 id="搜索了CSDN，RESP项目下的issue，做了如下操作："><a href="#搜索了CSDN，RESP项目下的issue，做了如下操作：" class="headerlink" title="搜索了CSDN，RESP项目下的issue，做了如下操作："></a>搜索了CSDN，RESP项目下的issue，做了如下操作：</h4><p>我检查了配置文件，重新按照安装说明配置了一遍redis，都无法解决</p>
+<p>—&gt;不是redis的问题</p>
+<p>我又试了试我电脑能不能ping上虚拟机，查找了如何获取虚拟机的ip（<code>ip addr</code>），ping成功了</p>
+<p>—&gt;不是我电脑的问题</p>
+<p>虚拟机没学，于是我也束手无策了</p>
+<p>吃完饭后又尝试搜了一下，看了一下 <a href="%5B%E5%85%8D%E8%B4%B9Redis%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%95%8C%E9%9D%A2%EF%BC%88RESP%EF%BC%89%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80%E5%92%8C%E8%BF%9E%E6%8E%A5%E6%AD%A5%E9%AA%A4_resp%E4%B8%8B%E8%BD%BD-CSDN%E5%8D%9A%E5%AE%A2%5D(https://blog.csdn.net/drhnb/article/details/131717836)">免费Redis图形化界面（RESP）下载地址和连接步骤</a> ，发现里面有写到连接不上的问题，是linux的防火墙拦截了（不太懂ping的规则，能ping成功，但是防火墙会拦截）</p>
+<h4 id="连接不成功：尝试在linux中执行下面的两个命令："><a href="#连接不成功：尝试在linux中执行下面的两个命令：" class="headerlink" title="连接不成功：尝试在linux中执行下面的两个命令："></a>连接不成功：尝试在linux中执行下面的两个命令：</h4><p>以下命令是用于配置 Linux 防火墙（firewalld）以开放指定的端口 （6379&#x2F;tcp）。<br>1、</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=6379/tcp --permanent</span><br></pre></td></tr></table></figure>
+<p>这个命令添加一个规则到 “public” 区域（zone）的防火墙配置中，允许通过端口 6379 的 TCP 连接。–permanent 参数表示该规则将被永久保存，重新启动后仍然有效。</p>
+<p>2、</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+<p>这个命令重新加载防火墙规则，使最新的修改生效。当你添加、删除或修改防火墙规则时，都需要执行这个命令才能使更改生效。</p>
+<p>注意事项：</p>
+<p>以上命令需要以管理员权限（例如 root 用户或者使用 sudo）来执行。<br>1、在执行前，请确保已经安装了 firewalld，并且正在运行。<br>2、6379 是 Redis 默认的端口号，如果你在使用其他端口，则需要相应地修改上述命令中的端口号。</p>
+
     </div>
     
     
@@ -171,7 +204,7 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2023 Chen
+            2022 - 2024 Chen
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
