@@ -179,6 +179,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    font-size: large;
 }
 #home-head #home-info .loop:nth-child(1) {
     animation: loop1 10s linear infinite;
@@ -350,7 +351,7 @@
 }
 #loading img {
     border-radius: 0;
-    height: 50px;
+    height: 100px;
 }
 #loading-circle {
     align-items: center;
