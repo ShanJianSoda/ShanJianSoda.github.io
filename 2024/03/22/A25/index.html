@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>A25 | Chen</title>
+    <meta name="author" content="Chen" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="icon" href="/images/avatar1.jpg" />
+    <link rel="preconnect" href="https://cdn.staticfile.org" />
+<script src="https://cdn.staticfile.org/vue/3.3.4/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.loli.net" />
+<link rel="preconnect" href="https://gstatic.loli.net" crossorigin />
+<link rel="stylesheet" href="https://fonts.loli.net/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" />
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body>
+    <div id="layout">
+        <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <img src="/images/loading.gif" />
+                </div>
+            </div>
+        </transition>
+        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>CHEN</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
+        
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;CHEN</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div class="article">
+    <div>
+        <h1>A25</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/3/22
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/AI/" style="color: #00a596">AI</a>
+            </span>
+            
+        </span>
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <h2 id="问题说明"><a href="#问题说明" class="headerlink" title="问题说明"></a>问题说明</h2><p>基于给定目标城市，城市可由参赛选手自己选择。通过网络、书籍等方法整理收集目标城市的文旅数据，包括但不限于<strong>城市的历史、名人、景点、饮食特色、热门店铺等信息</strong>，构建语料库，并基于大模型微调的相关技术方法，实现基于大模型的语料库问答系统。其中对于大模型的选择可以选取一些开源模型，如GLM、modelscope开源的GPT-3中文版本、LLaMA、BLOOM等。 </p>
+<p><em>此次基于chatglm3-6b 进行微调，使用较低的配置实现较高的性能</em></p>
+<h2 id="期望"><a href="#期望" class="headerlink" title="期望"></a>期望</h2><p>基于目标城市的文旅数据，构建语料库并进行大模型的微调，实现基于大模型的语料库问答系统。通过问答系统实现用户输入以下问题，问题示例如下： </p>
+<p>请推荐XX城市的三个最热门的景点？ </p>
+<ol>
+<li>XX景点位于什么地方？</li>
+<li>介绍一下XX景点的历史？ </li>
+<li>XX附近有什么推荐的小吃店铺？</li>
+</ol>
+<p>该问答系统能够给出上述问题的回复。 </p>
+<h2 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h2><p>收集目标城市的相关文旅数据，进行语料库的构建（方法不限），并基于语料库进行大模型微调，实现基于该语料库的问答系统。</p>
+<ol>
+<li>详细方案内容完备，具有可行性和先进性； </li>
+<li>模型支持至少两轮问答；</li>
+<li>具备大模型的基础问答能力和基于语料库的问答能力。考核方法基于用户提供的语料范围，编制问题，对模型进行提问，对模型问答能力进行评估；</li>
+<li>具有交互界面，可通过浏览器进行访问，页面的访问延迟和问答的响应延迟不超过10s；</li>
+<li>语料库数据不低于3000条。</li>
+</ol>
+<h2 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h2><ul>
+<li><p><input disabled="" type="checkbox"> 
+语料库格式、内容</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+使用高德地图api或爬点什么网站的数据或使用其他方法构建语料库</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+微调 p-tuning | Lora | etc.</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+能回答附带图片（感觉是加分项）</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+前后端联调</p>
+</li>
+</ul>
+<h2 id="PEFT（一个参数高效微调大模型的工具）"><a href="#PEFT（一个参数高效微调大模型的工具）" class="headerlink" title="PEFT（一个参数高效微调大模型的工具）"></a>PEFT（一个参数高效微调大模型的工具）</h2><p>PEFT（Parameter-Efficient Fine-Tuning）是hugging face开源的一个参数高效微调大模型的工具，里面集成了4种微调大模型的方法，可以通过微调少量参数就达到接近微调全量参数的效果，使得在GPU资源不足的情况下也可以微调大模型。</p>
+<h2 id="微调"><a href="#微调" class="headerlink" title="微调"></a>微调</h2><p>重点是<strong>方法</strong>和<strong>高质量数据集</strong></p>
+<p>微调可以分为全微调和重用两个方法：</p>
+<ol>
+<li>全微调（Full Fine-tuning）：全微调是指对整个预训练模型进行微调，包括所有的模型参数。在这种方法中，预训练模型的所有层和参数都会被更新和优化，以适应目标任务的需求。这种微调方法通常适用于<strong>任务和预训练模型之间存在较大差异</strong>的情况，或者<strong>任务需要模型具有高度灵活性和自适应能力</strong>的情况。Full Fine-tuning需要较大的计算资源和时间，但可以获得更好的性能。</li>
+<li>部分微调（Repurposing）：部分微调是指在微调过程中只更新模型的顶层或少数几层，而保持预训练模型的底层参数不变。这种方法的目的是在保留预训练模型的通用知识的同时，通过微调顶层来适应特定任务。Repurposing通常适用于目标任务与预训练模型之间<strong>有一定相似性</strong>的情况，或者<strong>任务数据集较小</strong>的情况。由于只更新少数层，Repurposing相对于Full Fine-tuning需要较少的计算资源和时间，但在某些情况下性能可能会有所降低。</li>
+</ol>
+<h3 id="微调预训练模型的方法："><a href="#微调预训练模型的方法：" class="headerlink" title="微调预训练模型的方法："></a>微调预训练模型的方法：</h3><ol>
+<li>微调所有层：将预训练模型的所有层都参与微调，以适应新的任务。</li>
+<li>微调顶层：只微调预训练模型的顶层，以适应新的任务。</li>
+<li>冻结底层：将预训练模型的底层固定不变，只对顶层进行微调。</li>
+<li>逐层微调：从底层开始，逐层微调预训练模型，直到所有层都被微调。</li>
+<li>迁移学习：将预训练模型的知识迁移到新的任务中，以提高模型性能。这种方法通常使用微调顶层或冻结底层的方法。</li>
+</ol>
+<p><em>此次，微调所有层所需性能要求过大，不考虑；迁移学习，不符合比赛内容，不考虑</em></p>
+<h3 id="p-tuning和Lora的区别"><a href="#p-tuning和Lora的区别" class="headerlink" title="p-tuning和Lora的区别"></a>p-tuning和Lora的区别</h3><h4 id="p-tuning"><a href="#p-tuning" class="headerlink" title="p-tuning"></a>p-tuning</h4><p>p-tuning v2并不是一个新技术，而是之前用于少样本学习，少样本学习分为离散型模板和连续性模板，离散性模板主要是构建文字描述模板，而连续型模板则是插入连续型token构成的模板，之前文章中我也讲述了离散型和连续型两种prompt方法。</p>
+<p>p-tuning v2简单来说其实是soft prompt的一种改进，soft prompt是只作用在embedding层中，实际测试下来只作用在embedding层的话交互能力会变弱，而且冻结模型所有参数去学习插入token，改变量偏小使得效果有时候不太稳定，会差于微调。p-tuning v2则不只是针对embedding层，而是将连续型token插入每一层，增大改变量和交互性。</p>
+<p><img src="/format,png.png" alt="img"></p>
+<p>soft prompt比较依靠模型参数量，在参数量超过10B的模型上，效果追上了fine-tune，但是ptuning v2因为每层插入了token，增大模型训练的改变量，<strong>更加适用于小一点的模型</strong></p>
+<h4 id="Lora"><a href="#Lora" class="headerlink" title="Lora"></a>Lora</h4><p>Lora主要在模型中注入可训练模块，大模型在预训练完收敛之后模型包含许多进行矩阵乘法的稠密层，这些层通常是满秩的，在微调过程中其实改变量是比较小的，在矩阵乘法中表现为低秩的改变，注入可训练层的目的是想下游微调的低秩改变由可训练层来学习，冻结模型其他部分，大大减少模型训练参数。</p>
+<p><img src="/format,png-1711271564887-3.png" alt="img"></p>
+<p>推理计算的时候，因为没有改变预训练权重，所以换不同的下游任务时，lora模型保存的权重也是可以相应加载进来的，通过矩阵分解的方法参数量减少了很多，且推理时可以并行，对于推理性能并没有增加多少负担，算是比较好的低资源微调方法。</p>
+<h5 id="Low-rank-Adaptation低秩适配"><a href="#Low-rank-Adaptation低秩适配" class="headerlink" title="Low-rank Adaptation低秩适配:"></a><del>Low-rank Adaptation低秩适配:</del></h5><p><del>低秩适配方法致力于将模型权重的改变限制在一个<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E4%BD%8E%E7%A7%A9%E5%AD%90%E7%A9%BA%E9%97%B4&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3370656147%7D">低秩子空间</a>内。这通常涉及对模型的权重矩阵进行分解，只微调其中的一小部分参数。这样可以有效减少计算资源的消耗，同时仍然允许模型有足够的灵活性来学习新任务。<strong>LoRA</strong>和它的变种，如Q-LoRA、Delta-LoRA、LoRA-FA等，都属于这个类别。</del></p>
+<h4 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h4><p>两者对于低资源微调大模型的共同点<strong>都是冻结大模型参数</strong>，通过小模块来学习微调产生的低秩改变。但目前存在的一些问题就是这两种训练方式很容易参数<strong>灾难性遗忘</strong>，因为模型在微调的时候整个模型层参数未改变，而少参数的学习模块微调时却是改变量巨大，容易给模型在推理时产生较大偏置，使得以前的回答能力被可学习模块带偏，在微调的时候也必须注意可学习模块不能过于拟合微调数据，否则会丧失原本的预训练知识能力，产生灾难性遗忘。</p>
+<p><strong>最好能够在微调语料中也加入通用学习语料一起微调，避免产生对微调语料极大的偏向</strong>，在instruct gpt论文中也提到在强化学习ppo的时候模型也会很容易对于ppo数据拟合，降低模型通用自然语言任务能力，所以在ppo loss中加入了SFT梯度和预训练梯度来缓解这种遗忘问题。</p>
+<h4 id="Fine-tune-a-Mistral-7b-model-with-Direct-Preference-Optimization"><a href="#Fine-tune-a-Mistral-7b-model-with-Direct-Preference-Optimization" class="headerlink" title="Fine-tune a Mistral-7b model with Direct Preference Optimization"></a><a target="_blank" rel="noopener" href="https://towardsdatascience.com/fine-tune-a-mistral-7b-model-with-direct-preference-optimization-708042745aac">Fine-tune a Mistral-7b model with Direct Preference Optimization</a></h4><p><em>hugging face上前三提供的一种微调方法，前提：已经经过监督式微调的模型 + 高质量偏好数据集，不知道能不能学习一下</em></p>
+<h3 id="微调方法选择"><a href="#微调方法选择" class="headerlink" title="微调方法选择"></a>微调方法选择</h3><ol>
+<li><strong>LoRA（Low-Rank Adaptation）</strong>：LoRA 是一种高效的参数微调技术，旨在解决过拟合问题。它通过增加一个参数来调整模型中的知识级别，使其更好地适应特定任务。虽然不需要大量带标签的数据，<strong>但可能需要更多的计算资源</strong></li>
+<li><strong>P-tuning v2</strong>：P-tuning v2 是一种改进的微调方法，它通过使用预训练模型的一部分来进行微调，而不是使用整个预训练模型。这种方法可以减少计算需求，同时提高模型性能。然而，<strong>P-tuning v2 可能需要更精细的参数调整</strong></li>
+</ol>
+<p>如果你有大量标注数据，<strong>SFT</strong>（Standard Fine-Tuning） 可能是更好的选择。对于半监督学习场景，<strong>LoRA</strong> 可能更适合。而对于防止过拟合和轻量级微调场景，<strong>Freeze</strong> 可能更合适。请根据你的需求选择最适合的方法，以优化你的模型性能。（来自copilot）</p>
+<p><em>是的，没错，暂时看不出来选哪个好，咱了解的还是太少了</em></p>
+<h3 id="大模型微调步骤"><a href="#大模型微调步骤" class="headerlink" title="大模型微调步骤"></a>大模型微调步骤</h3><p>大模型微调如上文所述有很多方法，并且对于每种方法都会有不同的微调流程、方式、准备工作和周期。然而大部分的大模型微调，都有以下几个主要步骤，并需要做相关的准备：</p>
+<ol>
+<li><strong>准备数据集</strong>：收集和准备与目标任务相关的训练数据集。确保数据集质量和标注准确性，并进行必要的数据清洗和预处理。</li>
+<li><strong>选择预训练模型&#x2F;基础模型</strong>：根据目标任务的性质和数据集的特点，选择适合的预训练模型。</li>
+<li><strong>设定微调策略</strong>：根据任务需求和可用资源，选择适当的微调策略。考虑是进行全微调还是部分微调，以及微调的层级和范围。</li>
+<li><strong>设置超参数</strong>：确定微调过程中的超参数，如学习率、批量大小、训练轮数等。这些超参数的选择对微调的性能和收敛速度有重要影响。</li>
+<li><strong>初始化模型参数</strong>：根据预训练模型的权重，初始化微调模型的参数。对于全微调，所有模型参数都会被随机初始化；对于部分微调，只有顶层或少数层的参数会被随机初始化。</li>
+<li><strong>进行微调训练</strong>：使用准备好的数据集和微调策略，对模型进行训练。在训练过程中，根据设定的超参数和优化算法，逐渐调整模型参数以最小化<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3370656147%7D">损失函数</a>。</li>
+<li><strong>模型评估和调优</strong>：在训练过程中，使用验证集对模型进行定期评估，并根据评估结果调整超参数或微调策略。这有助于提高模型的性能和泛化能力。</li>
+<li><strong>测试模型性能</strong>：在微调完成后，使用测试集对最终的微调模型进行评估，以获得最终的性能指标。这有助于评估模型在实际应用中的表现。</li>
+<li><strong>模型部署和应用</strong>：将微调完成的模型部署到实际应用中，并进行进一步的优化和调整，以满足实际需求。</li>
+</ol>
+<h2 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h2><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/638803488/answer/3370656147">初学者如何对大模型进行微调？ - 爱吃牛油果的璐璐的回答 - 知乎</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_37574187/article/details/131241892">p-tuing和Lora的区别_ptuning和lora对比-CSDN博客</a></p>
+<p><a target="_blank" rel="noopener" href="https://towardsdatascience.com/fine-tune-a-mistral-7b-model-with-direct-preference-optimization-708042745aac">Fine-tune a Mistral-7b model with Direct Preference Optimization | by Maxime Labonne | Towards Data Science</a></p>
+
+    </div>
+    
+    
+    
+    
+    <div id="comment">
+        <div id="giscus-container" class="giscus"></div>
+    </div>
+    
+    
+    
+    
+</div>
+
+            <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2022 - 2024 Chen
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;Chen
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+        
+        <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+        </transition>
+        
+    </div>
+    <script src="/js/main.js"></script>
+    
+    
+<script
+    src="https://giscus.app/client.js"
+    data-repo="ShanJianSoda/ShanJianSoda.github.io"
+    data-repo-id="R_kgDOKcrCKA"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOKcrCKM4Cczlt"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="preferred_color_scheme"
+    data-lang="zh-CN"
+    crossorigin
+    async
+></script>
+
+
+
+
+
+    
+</body>
+
+<!--动态线条背景-->
+<script type="text/javascript"
+	color="122 103 238" opacity='0.7' zIndex="-2" count="150" 
+		src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
+
+</html>
