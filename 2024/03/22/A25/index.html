@@ -160,7 +160,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/AI/" style="color: #00a596">AI</a>
+                <a href="/tags/AI/" style="color: #ff7d73">AI</a>
             </span>
             
         </span>
@@ -187,14 +187,34 @@
 <li>语料库数据不低于3000条。</li>
 </ol>
 <h2 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h2><ul>
-<li><p><input disabled="" type="checkbox"> 
+<li><p><input checked="" disabled="" type="checkbox"> 
 语料库格式、内容</p>
+<p><del>（instruction + output + history + input + ？）</del></p>
+</li>
+<li><p><input checked="" disabled="" type="checkbox"> 
+使用高德地图API或爬点什么网站的数据或使用其他方法构建语料库（在建了在建了…）</p>
+</li>
+<li><p><input checked="" disabled="" type="checkbox"> 
+使用了高德地图的API，能否使模型能调用agent（工具），再根据返回的json进行回答</p>
+</li>
+<li><p><input checked="" disabled="" type="checkbox"> 
+对于<strong>城市的历史、名人、景点、饮食特色、热门店铺等信息</strong>，考虑到语聊集的格式，</p>
+<p><del>某某某的周边热门店铺有哪些，不太方便输入，可以考虑语聊集+工具调用的方法，</del></p>
+<p>好像也挺方便，比如instruction灵隐寺周边的奶茶店 output 古茗、一点点等……</p>
+<p>（支持多轮，如果能再问“灵隐寺最近的古茗”，此处调用API回答是否能加分）</p>
+</li>
+<li><p><input checked="" disabled="" type="checkbox"> 
+<del>希望能把composition-demo里的chat和tool结合起来，并不以streamlit形式输出，</del></p>
+<p> ”Tool: 工具模式，模型除了对话外，还可以通过工具进行其他操作“</p>
+<p>似乎不需要结合？</p>
 </li>
 <li><p><input disabled="" type="checkbox"> 
-使用高德地图api或爬点什么网站的数据或使用其他方法构建语料库</p>
+微调 p-tuning | Lora | DPO |etc. </p>
+<p><em>24&#x2F;03&#x2F;30</em> Lora微调好了，且无报错的导出了模型，但是问答效果不好，开始着手微调的优化</p>
+<p>​	秩(r)、缩放系数(alpha)：一般alpha是r的两倍</p>
 </li>
 <li><p><input disabled="" type="checkbox"> 
-微调 p-tuning | Lora | etc.</p>
+模型评估调优、测试</p>
 </li>
 <li><p><input disabled="" type="checkbox"> 
 能回答附带图片（感觉是加分项）</p>
