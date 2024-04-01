@@ -160,7 +160,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/AI/" style="color: #ff7d73">AI</a>
+                <a href="/tags/AI/" style="color: #ffa2c4">AI</a>
             </span>
             
         </span>
@@ -190,9 +190,11 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 语料库格式、内容</p>
 <p><del>（instruction + output + history + input + ？）</del></p>
+<p>查看SHA1码：certutil -hashfile zhilv_zh.json SHA1</p>
 </li>
 <li><p><input checked="" disabled="" type="checkbox"> 
-使用高德地图API或爬点什么网站的数据或使用其他方法构建语料库（在建了在建了…）</p>
+使用高德地图API或爬点什么网站的数据或使用其他方法构建语料库</p>
+<p> （在建了在建了…）</p>
 </li>
 <li><p><input checked="" disabled="" type="checkbox"> 
 使用了高德地图的API，能否使模型能调用agent（工具），再根据返回的json进行回答</p>
@@ -210,21 +212,28 @@
 </li>
 <li><p><input disabled="" type="checkbox"> 
 微调 p-tuning | Lora | DPO |etc. </p>
-<p><em>24&#x2F;03&#x2F;30</em> Lora微调好了，且无报错的导出了模型，但是问答效果不好，开始着手微调的优化</p>
-<p>​	秩(r)、缩放系数(alpha)：一般alpha是r的两倍</p>
+<p><em>24&#x2F;03&#x2F;30</em> Lora微调好了，且无报错的导出了模型，但是问答效果不好</p>
+<p>​	 04&#x2F;01 开始着手微调的优化：秩(r)、缩放系数(alpha)：一般alpha是r的两倍</p>
+<p>​				是否需要制作偏好数据集（太麻烦了，优先级低）</p>
+<p>​				“微调是为了修正一些向量的参数”，但假如通过微调修改了chatglm的自我认知，？</p>
 </li>
 <li><p><input disabled="" type="checkbox"> 
 模型评估调优、测试</p>
 </li>
 <li><p><input disabled="" type="checkbox"> 
 能回答附带图片（感觉是加分项）</p>
+<p> conversation里有image属性，似乎可以使用&#x2F; 拓展</p>
 </li>
 <li><p><input disabled="" type="checkbox"> 
 前后端联调</p>
+<p>24&#x2F;03&#x2F;30尝试看源码，把chatglm提供的综合demo去除streamlit</p>
+<p>​	 03&#x2F;31 fastAPI ?  似乎就chat而言，每次需要传输的，就是conversation.py里的</p>
+<p>​	 04&#x2F;01 查看了FastAPI、uvicorn、Flask、ASGI&#x2F;WSGI，还是保留streamlit（比如使用它的session）+ fastAPI吧，好复杂（shi山代码是如何形成的）</p>
 </li>
 </ul>
 <h2 id="PEFT（一个参数高效微调大模型的工具）"><a href="#PEFT（一个参数高效微调大模型的工具）" class="headerlink" title="PEFT（一个参数高效微调大模型的工具）"></a>PEFT（一个参数高效微调大模型的工具）</h2><p>PEFT（Parameter-Efficient Fine-Tuning）是hugging face开源的一个参数高效微调大模型的工具，里面集成了4种微调大模型的方法，可以通过微调少量参数就达到接近微调全量参数的效果，使得在GPU资源不足的情况下也可以微调大模型。</p>
-<h2 id="微调"><a href="#微调" class="headerlink" title="微调"></a>微调</h2><p>重点是<strong>方法</strong>和<strong>高质量数据集</strong></p>
+<h2 id="微调"><a href="#微调" class="headerlink" title="微调"></a>微调</h2><p><strong>微调这个训练不是为了准确的搜索数据库（Embeddings才是）</strong>，微调是为了修正一些向量的参数：比方说我想写一个短视频口播文案，同样是论证观点，口播并不会像写论文等书面文案一样用严格的格式让你理解逻辑结构，所以<strong>一般口播中就不会用首先其次再次这样的说法。那么我需要通过训练把这些词的权重降低。</strong></p>
+<p>重点是<strong>方法</strong>和<strong>高质量数据集</strong></p>
 <p>微调可以分为全微调和重用两个方法：</p>
 <ol>
 <li>全微调（Full Fine-tuning）：全微调是指对整个预训练模型进行微调，包括所有的模型参数。在这种方法中，预训练模型的所有层和参数都会被更新和优化，以适应目标任务的需求。这种微调方法通常适用于<strong>任务和预训练模型之间存在较大差异</strong>的情况，或者<strong>任务需要模型具有高度灵活性和自适应能力</strong>的情况。Full Fine-tuning需要较大的计算资源和时间，但可以获得更好的性能。</li>
@@ -237,13 +246,13 @@
 <li>逐层微调：从底层开始，逐层微调预训练模型，直到所有层都被微调。</li>
 <li>迁移学习：将预训练模型的知识迁移到新的任务中，以提高模型性能。这种方法通常使用微调顶层或冻结底层的方法。</li>
 </ol>
-<p><em>此次，微调所有层所需性能要求过大，不考虑；迁移学习，不符合比赛内容，不考虑</em></p>
+<p><del><em>此次，微调所有层所需性能要求过大，不考虑；迁移学习，不符合比赛内容，不考虑</em></del></p>
 <h3 id="p-tuning和Lora的区别"><a href="#p-tuning和Lora的区别" class="headerlink" title="p-tuning和Lora的区别"></a>p-tuning和Lora的区别</h3><h4 id="p-tuning"><a href="#p-tuning" class="headerlink" title="p-tuning"></a>p-tuning</h4><p>p-tuning v2并不是一个新技术，而是之前用于少样本学习，少样本学习分为离散型模板和连续性模板，离散性模板主要是构建文字描述模板，而连续型模板则是插入连续型token构成的模板，之前文章中我也讲述了离散型和连续型两种prompt方法。</p>
 <p>p-tuning v2简单来说其实是soft prompt的一种改进，soft prompt是只作用在embedding层中，实际测试下来只作用在embedding层的话交互能力会变弱，而且冻结模型所有参数去学习插入token，改变量偏小使得效果有时候不太稳定，会差于微调。p-tuning v2则不只是针对embedding层，而是将连续型token插入每一层，增大改变量和交互性。</p>
-<p><img src="/format,png.png" alt="img"></p>
+<p><img src="/2024/03/22/A25/image-20240330185124412.png" alt="image-20240330185124412"></p>
 <p>soft prompt比较依靠模型参数量，在参数量超过10B的模型上，效果追上了fine-tune，但是ptuning v2因为每层插入了token，增大模型训练的改变量，<strong>更加适用于小一点的模型</strong></p>
 <h4 id="Lora"><a href="#Lora" class="headerlink" title="Lora"></a>Lora</h4><p>Lora主要在模型中注入可训练模块，大模型在预训练完收敛之后模型包含许多进行矩阵乘法的稠密层，这些层通常是满秩的，在微调过程中其实改变量是比较小的，在矩阵乘法中表现为低秩的改变，注入可训练层的目的是想下游微调的低秩改变由可训练层来学习，冻结模型其他部分，大大减少模型训练参数。</p>
-<p><img src="/format,png-1711271564887-3.png" alt="img"></p>
+<p><img src="/2024/03/22/A25/image-20240330185200220.png" alt="image-20240330185200220"></p>
 <p>推理计算的时候，因为没有改变预训练权重，所以换不同的下游任务时，lora模型保存的权重也是可以相应加载进来的，通过矩阵分解的方法参数量减少了很多，且推理时可以并行，对于推理性能并没有增加多少负担，算是比较好的低资源微调方法。</p>
 <h5 id="Low-rank-Adaptation低秩适配"><a href="#Low-rank-Adaptation低秩适配" class="headerlink" title="Low-rank Adaptation低秩适配:"></a><del>Low-rank Adaptation低秩适配:</del></h5><p><del>低秩适配方法致力于将模型权重的改变限制在一个<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E4%BD%8E%E7%A7%A9%E5%AD%90%E7%A9%BA%E9%97%B4&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3370656147%7D">低秩子空间</a>内。这通常涉及对模型的权重矩阵进行分解，只微调其中的一小部分参数。这样可以有效减少计算资源的消耗，同时仍然允许模型有足够的灵活性来学习新任务。<strong>LoRA</strong>和它的变种，如Q-LoRA、Delta-LoRA、LoRA-FA等，都属于这个类别。</del></p>
 <h4 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h4><p>两者对于低资源微调大模型的共同点<strong>都是冻结大模型参数</strong>，通过小模块来学习微调产生的低秩改变。但目前存在的一些问题就是这两种训练方式很容易参数<strong>灾难性遗忘</strong>，因为模型在微调的时候整个模型层参数未改变，而少参数的学习模块微调时却是改变量巨大，容易给模型在推理时产生较大偏置，使得以前的回答能力被可学习模块带偏，在微调的时候也必须注意可学习模块不能过于拟合微调数据，否则会丧失原本的预训练知识能力，产生灾难性遗忘。</p>
