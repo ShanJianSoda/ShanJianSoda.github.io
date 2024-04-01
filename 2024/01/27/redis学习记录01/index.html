@@ -34,6 +34,8 @@
 
 <link rel="stylesheet" href="/css/main.css" />
 
+    <script src="/js/lib/toc.js"></script>
+
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
     <div id="layout">
@@ -160,24 +162,27 @@
             
             <span class="tag">
                 
-                <a href="/tags/redis/" style="color: #00a596">redis</a>
+                <a href="/tags/redis/" style="color: #03a9f4">redis</a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/lunix/" style="color: #ffa2c4">lunix</a>
+                <a href="/tags/lunix/" style="color: #00bcd4">lunix</a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/git/" style="color: #00bcd4">git</a>
+                <a href="/tags/git/" style="color: #03a9f4">git</a>
             </span>
             
         </span>
         
     </div>
     
-    <div class="content" v-pre>
+	
+    // <div class="content" v-pre>
+    <toc-component></toc-component>
+    <div class="content" v-pre id="main-content">
         <p>大三上的寒假，玩了两周后，觉得该学一些东西了，于是在b站上找项目跟做，最后在鱼皮的推荐下，跟做了黑马的redis。</p>
 <h3 id="问题1：RESP连接不上虚拟机上的redis"><a href="#问题1：RESP连接不上虚拟机上的redis" class="headerlink" title="问题1：RESP连接不上虚拟机上的redis"></a>问题1：RESP连接不上虚拟机上的redis</h3><h4 id="搜索了CSDN，RESP项目下的issue，做了如下操作："><a href="#搜索了CSDN，RESP项目下的issue，做了如下操作：" class="headerlink" title="搜索了CSDN，RESP项目下的issue，做了如下操作："></a>搜索了CSDN，RESP项目下的issue，做了如下操作：</h4><p>我检查了配置文件，重新按照安装说明配置了一遍redis，都无法解决</p>
 <p>—&gt;不是redis的问题</p>

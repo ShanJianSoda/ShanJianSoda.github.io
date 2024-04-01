@@ -34,6 +34,8 @@
 
 <link rel="stylesheet" href="/css/main.css" />
 
+    <script src="/js/lib/toc.js"></script>
+
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
     <div id="layout">
@@ -169,14 +171,17 @@
             
             <span class="tag">
                 
-                <a href="/tags/vue3/" style="color: #ffa2c4">vue3</a>
+                <a href="/tags/vue3/" style="color: #03a9f4">vue3</a>
             </span>
             
         </span>
         
     </div>
     
-    <div class="content" v-pre>
+	
+    // <div class="content" v-pre>
+    <toc-component></toc-component>
+    <div class="content" v-pre id="main-content">
         <p>这两周是实践周，跟着老师做点东西</p>
 <p>相对简单的是，用vue框架做一个简单的待办清单</p>
 <h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><p>结合bootstrap框架做了如下待办清单</p>

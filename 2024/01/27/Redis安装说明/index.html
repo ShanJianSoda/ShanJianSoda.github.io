@@ -34,6 +34,8 @@
 
 <link rel="stylesheet" href="/css/main.css" />
 
+    <script src="/js/lib/toc.js"></script>
+
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
     <div id="layout">
@@ -160,24 +162,27 @@
             
             <span class="tag">
                 
-                <a href="/tags/redis/" style="color: #ffa2c4">redis</a>
+                <a href="/tags/redis/" style="color: #00a596">redis</a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/lunix/" style="color: #ff7d73">lunix</a>
+                <a href="/tags/lunix/" style="color: #ffa2c4">lunix</a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/git/" style="color: #03a9f4">git</a>
+                <a href="/tags/git/" style="color: #00a596">git</a>
             </span>
             
         </span>
         
     </div>
     
-    <div class="content" v-pre>
+	
+    // <div class="content" v-pre>
+    <toc-component></toc-component>
+    <div class="content" v-pre id="main-content">
         <h1 id="Redis安装说明"><a href="#Redis安装说明" class="headerlink" title="Redis安装说明"></a>Redis安装说明</h1><p>大多数企业都是基于Linux服务器来部署项目，而且Redis官方也没有提供Windows版本的安装包。因此课程中我们会基于Linux系统来安装Redis.</p>
 <p>此处选择的Linux版本为CentOS 7.</p>
 <p>Redis的官方网站地址：<a target="_blank" rel="noopener" href="https://redis.io/">https://redis.io/</a></p>

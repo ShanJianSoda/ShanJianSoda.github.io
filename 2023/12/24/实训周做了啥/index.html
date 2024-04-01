@@ -34,6 +34,8 @@
 
 <link rel="stylesheet" href="/css/main.css" />
 
+    <script src="/js/lib/toc.js"></script>
+
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
     <div id="layout">
@@ -169,7 +171,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/Vue-js/" style="color: #00bcd4">Vue.js</a>
+                <a href="/tags/Vue-js/" style="color: #ffa2c4">Vue.js</a>
             </span>
             
             <span class="tag">
@@ -181,7 +183,10 @@
         
     </div>
     
-    <div class="content" v-pre>
+	
+    // <div class="content" v-pre>
+    <toc-component></toc-component>
+    <div class="content" v-pre id="main-content">
         <h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><p>又到了实训周，之前实训周做了啥都忘记了……于是记录一下，表示我真的做了（</p>
 <p>老师的要求是，先用Vue.js做一个简单的Todo List，有点基础后，再做一个微信小程序。</p>
 <h2 id="看法"><a href="#看法" class="headerlink" title="看法"></a>看法</h2><p>我觉得前端界面，简单一点的话，就是组件的拼装，组件自身的样式，组件和同级组件的关系，组件和父级组件的关系。</p>

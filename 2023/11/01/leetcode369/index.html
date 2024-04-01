@@ -34,6 +34,8 @@
 
 <link rel="stylesheet" href="/css/main.css" />
 
+    <script src="/js/lib/toc.js"></script>
+
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
     <div id="layout">
@@ -174,19 +176,22 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E5%88%86%E7%B1%BB%E8%AE%A8%E8%AE%BA/" style="color: #ffa2c4">分类讨论</a>
+                <a href="/tags/%E5%88%86%E7%B1%BB%E8%AE%A8%E8%AE%BA/" style="color: #03a9f4">分类讨论</a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/dp/" style="color: #00bcd4">dp</a>
+                <a href="/tags/dp/" style="color: #ffa2c4">dp</a>
             </span>
             
         </span>
         
     </div>
     
-    <div class="content" v-pre>
+	
+    // <div class="content" v-pre>
+    <toc-component></toc-component>
+    <div class="content" v-pre id="main-content">
         <p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/find-the-k-or-of-an-array/">2917. 找出数组中的 K-or 值</a></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">findKOr</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>], k: <span class="built_in">int</span></span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">        <span class="comment"># 位运算</span></span><br><span class="line">        ans = <span class="number">0</span></span><br><span class="line">        <span class="comment"># num &lt; 2^31, i是第i位</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">31</span>):</span><br><span class="line">            cnt = <span class="number">0</span>;</span><br><span class="line">            <span class="comment"># 所有数的二进制的第i位是否为1</span></span><br><span class="line">            <span class="keyword">for</span> num <span class="keyword">in</span> nums:</span><br><span class="line">                <span class="keyword">if</span> num &gt;&gt; i &amp; <span class="number">1</span>:</span><br><span class="line">                    cnt += <span class="number">1</span></span><br><span class="line">            <span class="comment"># 满足条件,加</span></span><br><span class="line">            <span class="keyword">if</span> cnt &gt;= k:</span><br><span class="line">                ans |= <span class="number">1</span> &lt;&lt; i</span><br><span class="line">        <span class="keyword">return</span> ans</span><br></pre></td></tr></table></figure>
 

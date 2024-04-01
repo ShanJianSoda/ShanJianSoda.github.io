@@ -34,6 +34,8 @@
 
 <link rel="stylesheet" href="/css/main.css" />
 
+    <script src="/js/lib/toc.js"></script>
+
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
     <div id="layout">
@@ -167,7 +169,10 @@
         
     </div>
     
-    <div class="content" v-pre>
+	
+    // <div class="content" v-pre>
+    <toc-component></toc-component>
+    <div class="content" v-pre id="main-content">
         <h2 id="问题说明"><a href="#问题说明" class="headerlink" title="问题说明"></a>问题说明</h2><p>基于给定目标城市，城市可由参赛选手自己选择。通过网络、书籍等方法整理收集目标城市的文旅数据，包括但不限于<strong>城市的历史、名人、景点、饮食特色、热门店铺等信息</strong>，构建语料库，并基于大模型微调的相关技术方法，实现基于大模型的语料库问答系统。其中对于大模型的选择可以选取一些开源模型，如GLM、modelscope开源的GPT-3中文版本、LLaMA、BLOOM等。 </p>
 <p><em>此次基于chatglm3-6b 进行微调，使用较低的配置实现较高的性能</em></p>
 <h2 id="期望"><a href="#期望" class="headerlink" title="期望"></a>期望</h2><p>基于目标城市的文旅数据，构建语料库并进行大模型的微调，实现基于大模型的语料库问答系统。通过问答系统实现用户输入以下问题，问题示例如下： </p>
