@@ -162,7 +162,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/AI/" style="color: #03a9f4">AI</a>
+                <a href="/tags/AI/" style="color: #ffa2c4">AI</a>
             </span>
             
         </span>
@@ -223,9 +223,15 @@
 <p>​				“微调是为了修正一些向量的参数”，但假如通过微调修改了chatglm的自我认知，？</p>
 <p>​	04&#x2F;02 偏好数据集，制作中！</p>
 <p>​				制作好了，第一次DPO微调</p>
-<img src="/image-20240402153832714.png" alt="image-20240402153832714" style="zoom: 67%;" />
+<img src="image-20240402153832714.png" alt="image-20240402153832714" style="zoom: 67%;" />
 
 <p>​				微调出来效果貌似也一般，如果想准确回答的话，不应该用过向量数据库吗（后知后觉），毕竟chatGPT也无法做到数据向的精准回答（增大某些词的参数吗…）</p>
+<p>​		04&#x2F;03 微调出了什么**…（DPO epochs12，r16，alpha16，0.2）数据集不够大，轮数太多，导致了灾难性遗忘，只会阿巴阿巴了</p>
+<p>​					调小轮数试试（DPO epochs3，r8，alpha16，0.15）</p>
+<p>​		04&#x2F;06 看看open AI文档 <a target="_blank" rel="noopener" href="https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_embeddings.ipynb">Question answering using embeddings-based search</a></p>
+<p>​					<strong>Note: To answer questions based on text documents, we recommend the procedure in</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_embeddings.ipynb">Question Answering using Embeddings</a><strong>.</strong> </p>
+<p>​					推荐使用Embedding，不涉及微调，难搞</p>
+<p><img src="/2024/03/22/A25/image-20240406135627455.png" alt="image-20240406135627455"></p>
 </li>
 <li><p><input disabled="" type="checkbox"> 
 模型评估调优、测试</p>
@@ -234,7 +240,7 @@
 能回答附带图片（感觉是加分项）</p>
 <p> conversation里有image属性，似乎可以使用&#x2F; 拓展</p>
 </li>
-<li><p><input disabled="" type="checkbox"> 
+<li><p><input checked="" disabled="" type="checkbox"> 
 前后端联调</p>
 <p>24&#x2F;03&#x2F;30尝试看源码，把chatglm提供的综合demo去除streamlit</p>
 <p>​	 03&#x2F;31 fastAPI ?  似乎就chat而言，每次需要传输的，就是conversation.py里的</p>
@@ -242,6 +248,13 @@
 <p>​	04&#x2F;02 尝试用FastAPI给前端提供数据了</p>
 <p>​				<del>目前看需要俩，一个是前端加载时提供一个client；一个是conversation对话</del></p>
 <p>​				从好几个方向写，但总感觉很卡手。无法同时部署streamlit和uvicorn（FastAPI），俩服务器就不互通，数据使用起来很难受。Flask和streamlit一样，是写在后端的前端界面。如果用Vue+node.js，中间多出来的request、response，以及前端该如何做，很陌生</p>
+<p>​	04&#x2F;03 有点混乱，简单的来看，就是前端，携带一推数据，用get向后端发起请求</p>
+<p>​				后端收到请求后，此处对应的功能就是原代码中的 if prompt_text</p>
+<p>​				需要解决的</p>
+<p>​					<del>BaseModel类</del>（删掉就能跑了，好神奇）</p>
+<p>​					history这些参数该如何存储（json）</p>
+<p>​	04&#x2F;04 改来改去，改好了一个，</p>
+<p><img src="/2024/03/22/A25/image-20240404105119348.png" alt="image-20240404105119348"></p>
 </li>
 </ul>
 <hr>
@@ -276,9 +289,9 @@
 
 <p><strong>学习率的重要性</strong></p>
 <p>目前深度学习使用的都是非常简单的一阶收敛算法，梯度下降法，不管有多少自适应的优化算法，本质上都是对梯度下降法的各种变形，所以初始学习率对深层网络的收敛起着决定性的作用，下面就是梯度下降法的公式</p>
-<p><img src="/image-20240402154527727.png" alt="image-20240402154527727"></p>
+<p><img src="/2024/03/22/A25/image-20240402154527727.png" alt="image-20240402154527727"></p>
 <p>这里 α 就是学习率，如果学习率太小，会导致网络loss下降非常慢，如果学习率太大，那么参数更新的幅度就非常大，就会导致网络收敛到局部最优点，或者loss直接开始增加，如下图所示。</p>
-<p><img src="/v2-6f1772cefad4befccd3e6cfd83b1fbfd_720w.webp" alt="img"></p>
+<p><img src="/2024/03/22/A25/v2-6f1772cefad4befccd3e6cfd83b1fbfd_720w.webp" alt="img"></p>
 <h3 id="微调方法选择"><a href="#微调方法选择" class="headerlink" title="微调方法选择"></a>微调方法选择</h3><ol>
 <li><strong>LoRA（Low-Rank Adaptation）</strong>：LoRA 是一种高效的参数微调技术，旨在解决过拟合问题。它通过增加一个参数来调整模型中的知识级别，使其更好地适应特定任务。虽然不需要大量带标签的数据，<strong>但可能需要更多的计算资源</strong></li>
 <li><strong>P-tuning v2</strong>：P-tuning v2 是一种改进的微调方法，它通过使用预训练模型的一部分来进行微调，而不是使用整个预训练模型。这种方法可以减少计算需求，同时提高模型性能。然而，<strong>P-tuning v2 可能需要更精细的参数调整</strong></li>
