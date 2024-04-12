@@ -162,7 +162,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/AI/" style="color: #ffa2c4">AI</a>
+                <a href="/tags/AI/" style="color: #03a9f4">AI</a>
             </span>
             
         </span>
@@ -175,6 +175,7 @@
     <div class="content" v-pre id="main-content">
         <h2 id="问题说明"><a href="#问题说明" class="headerlink" title="问题说明"></a>问题说明</h2><p>基于给定目标城市，城市可由参赛选手自己选择。通过网络、书籍等方法整理收集目标城市的文旅数据，包括但不限于<strong>城市的历史、名人、景点、饮食特色、热门店铺等信息</strong>，构建语料库，并基于大模型微调的相关技术方法，实现基于大模型的语料库问答系统。其中对于大模型的选择可以选取一些开源模型，如GLM、modelscope开源的GPT-3中文版本、LLaMA、BLOOM等。 </p>
 <p><em>此次基于chatglm3-6b 进行微调，使用较低的配置实现较高的性能</em></p>
+<p><em>24&#x2F;04&#x2F;09突然觉得在做无意义的事，找一段文本或者根本不找，让一个模型（copilot、kimi…）跑出些问答数据集，再塞给另一个模型微调……</em></p>
 <h2 id="期望"><a href="#期望" class="headerlink" title="期望"></a>期望</h2><p>基于目标城市的文旅数据，构建语料库并进行大模型的微调，实现基于大模型的语料库问答系统。通过问答系统实现用户输入以下问题，问题示例如下： </p>
 <p>请推荐XX城市的三个最热门的景点？ </p>
 <ol>
@@ -226,16 +227,23 @@
 <img src="image-20240402153832714.png" alt="image-20240402153832714" style="zoom: 67%;" />
 
 <p>​				微调出来效果貌似也一般，如果想准确回答的话，不应该用过向量数据库吗（后知后觉），毕竟chatGPT也无法做到数据向的精准回答（增大某些词的参数吗…）</p>
-<p>​		04&#x2F;03 微调出了什么**…（DPO epochs12，r16，alpha16，0.2）数据集不够大，轮数太多，导致了灾难性遗忘，只会阿巴阿巴了</p>
+<p>​		04&#x2F;03 微调出了什么**…数据集不够大，轮数太多，导致了灾难性遗忘，只会阿巴阿巴了</p>
 <p>​					调小轮数试试（DPO epochs3，r8，alpha16，0.15）</p>
 <p>​		04&#x2F;06 看看open AI文档 <a target="_blank" rel="noopener" href="https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_embeddings.ipynb">Question answering using embeddings-based search</a></p>
 <p>​					<strong>Note: To answer questions based on text documents, we recommend the procedure in</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_embeddings.ipynb">Question Answering using Embeddings</a><strong>.</strong> </p>
 <p>​					推荐使用Embedding，不涉及微调，难搞</p>
 <p><img src="/2024/03/22/A25/image-20240406135627455.png" alt="image-20240406135627455"></p>
+<p>​		04&#x2F;08 扩充一下数据集，再试着调一下</p>
+<p>​					模型评估（loss、准确度）</p>
 </li>
 <li><p><input disabled="" type="checkbox"> 
 模型评估调优、测试</p>
 </li>
+</ul>
+<p>​		<strong>知名景点</strong></p>
+<p>​		<strong>小众景点</strong></p>
+<p>​		<strong>不存在的景点不乱答</strong></p>
+<ul>
 <li><p><input disabled="" type="checkbox"> 
 能回答附带图片（感觉是加分项）</p>
 <p> conversation里有image属性，似乎可以使用&#x2F; 拓展</p>
@@ -310,9 +318,58 @@
 <li><strong>测试模型性能</strong>：在微调完成后，使用测试集对最终的微调模型进行评估，以获得最终的性能指标。这有助于评估模型在实际应用中的表现。</li>
 <li><strong>模型部署和应用</strong>：将微调完成的模型部署到实际应用中，并进行进一步的优化和调整，以满足实际需求。</li>
 </ol>
+<h2 id="调参"><a href="#调参" class="headerlink" title="调参"></a>调参</h2><h3 id="学习率"><a href="#学习率" class="headerlink" title="学习率"></a>学习率</h3><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="left">学习率过大</th>
+<th align="center">学习率过小</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">学习速度</td>
+<td align="left">快</td>
+<td align="center">慢</td>
+</tr>
+<tr>
+<td align="center">使用时间点</td>
+<td align="left">训练开始</td>
+<td align="center">一定轮数</td>
+</tr>
+<tr>
+<td align="center">副作用</td>
+<td align="left">易损失值爆炸；易震荡</td>
+<td align="center">易过拟合；收敛速度慢</td>
+</tr>
+</tbody></table>
+<p><img src="/2024/03/22/A25/v2-c1c72c00c93f778ad91cefb6c8a8665d_720w.webp" alt="img"></p>
+<ol>
+<li>曲线 初始时 上扬 【红线】：<br>Solution：初始 学习率过大 导致 振荡，应减小学习率，并 从头 开始训练 。</li>
+<li>曲线 初始时 强势下降 没多久 归于水平 【紫线】：<br>Solution：后期 学习率过大 导致 无法拟合，应减小学习率，并 重新训练 后几轮 。</li>
+<li>曲线 全程缓慢 【黄线】：<br>Solution：初始 学习率过小 导致 收敛慢，应增大学习率，并 从头 开始训练 。</li>
+</ol>
+<p>参考链接：<a href="https://link.zhihu.com/?target=https://blog.csdn.net/qq_33485434/article/details/80452941">深度学习：学习率learning rate 的设定规律</a></p>
+<h3 id="Batch-size"><a href="#Batch-size" class="headerlink" title="Batch size"></a><strong>Batch size</strong></h3><p>一般来说，在合理的范围之内，<strong>越大的 batch size</strong> 使下降方向越准确，震荡越小；batch size 如果过大，则可能会出现局部最优的情况（这也是其中的一个缺点吧）。<strong>小的 bath size</strong> 引入的随机性更大，难以达到收敛，极少数情况下可能会效果变好。</p>
+<p>会影响训练的稳定性，Batch size过小会使Loss曲线振荡的比较大，大小一般按照2的次幂规律选择，这是为了硬件计算效率考虑的。</p>
+<p><img src="/2024/03/22/A25/image-20240412092213348.png" alt="image-20240412092213348"></p>
+<p>batch size 太小了（如果学习率问题不大的话）</p>
+<h3 id="loss"><a href="#loss" class="headerlink" title="loss"></a>loss</h3><p>train loss 不断下降，test loss不断下降，说明网络仍在学习;</p>
+<p>train loss 不断下降，test loss趋于不变，说明网络过拟合;</p>
+<p>train loss 趋于不变，test loss不断下降，说明数据集100%有问题;</p>
+<p>train loss 趋于不变，test loss趋于不变，说明学习遇到瓶颈，需要减小学习率或批量数目;</p>
+<p>train loss 不断上升，test loss不断上升，说明网络结构设计不当，训练超参数设置不当，数据集经过清洗等问题。</p>
+<h3 id="top-p采样-温度"><a href="#top-p采样-温度" class="headerlink" title="top-p采样 &#x2F; 温度"></a>top-p采样 &#x2F; 温度</h3><p><strong>temperature  官网解释</strong></p>
+<p>What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. We generally recommend altering this or top_p but not both.</p>
+<p>翻译：“采样温度”是在0到2之间选择的参数。较高的值（如0.8）会使输出更具随机性，而较低的值（如0.2）则会使输出更集中，更确定性。通常，我们建议修改“采样温度”或“top_p”其中之一，而不是同时修改两者。</p>
+<p><strong>top-p采样 官网解释</strong></p>
+<p>An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with top_p probability mass. So 0.1 means only the tokens comprising the top 10% probability mass are considered.</p>
+<p>翻译：”nucleus sampling”（核采样或者叫做 top-p 采样）是一个替代温度采样的方法，其中模型考虑了具有 top_p 概率质量的 token 的结果。因此，0.1 表示只考虑包含在最高 10% 概率质量中的 token。</p>
+<p><strong>总结</strong></p>
+<p>“temperature” 影响了结果的随机性，而 “top_p” 则影响了结果的确定性。但他们是从不同的角度影响输出的：temperature 更偏向于控制输出的“随机性”，而 top-p 则是在给定的可能结果中设定一个“阈值”。</p>
 <h2 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h2><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/638803488/answer/3370656147">初学者如何对大模型进行微调？ - 爱吃牛油果的璐璐的回答 - 知乎</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_37574187/article/details/131241892">p-tuing和Lora的区别_ptuning和lora对比-CSDN博客</a></p>
 <p><a target="_blank" rel="noopener" href="https://towardsdatascience.com/fine-tune-a-mistral-7b-model-with-direct-preference-optimization-708042745aac">Fine-tune a Mistral-7b model with Direct Preference Optimization | by Maxime Labonne | Towards Data Science</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/420053831">loss问题汇总（不收敛、震荡、nan） - 知乎 (zhihu.com)</a></p>
 
     </div>
     
