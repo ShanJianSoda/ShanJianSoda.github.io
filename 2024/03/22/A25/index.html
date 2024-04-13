@@ -162,7 +162,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/AI/" style="color: #00a596">AI</a>
+                <a href="/tags/AI/" style="color: #03a9f4">AI</a>
             </span>
             
         </span>
@@ -263,6 +263,17 @@
 <p>​					history这些参数该如何存储（json）</p>
 <p>​	04&#x2F;04 改来改去，改好了一个，</p>
 <p><img src="/2024/03/22/A25/image-20240404105119348.png" alt="image-20240404105119348"></p>
+</li>
+</ul>
+<p><img src="/2024/03/22/A25/image-20240414013121762.png" alt="image-20240414013121762"></p>
+<p><img src="/2024/03/22/A25/image-20240414013128871.png" alt="image-20240414013128871"></p>
+<p><img src="/2024/03/22/A25/image-20240414013136042.png" alt="image-20240414013136042"></p>
+<h3 id="24-04-14"><a href="#24-04-14" class="headerlink" title="24&#x2F;04&#x2F;14"></a>24&#x2F;04&#x2F;14</h3><ul>
+<li><p><input disabled="" type="checkbox"> 
+数据集优化，使之更符合自然语言 —&gt; 微调 —&gt; 生成回答数据集 —&gt; 计算相似度</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+未微调过的模型 生成回答数据集 计算相似度 作为对比（前提是数据集质量高）</p>
 </li>
 </ul>
 <hr>
@@ -366,6 +377,11 @@
 <p>翻译：”nucleus sampling”（核采样或者叫做 top-p 采样）是一个替代温度采样的方法，其中模型考虑了具有 top_p 概率质量的 token 的结果。因此，0.1 表示只考虑包含在最高 10% 概率质量中的 token。</p>
 <p><strong>总结</strong></p>
 <p>“temperature” 影响了结果的随机性，而 “top_p” 则影响了结果的确定性。但他们是从不同的角度影响输出的：temperature 更偏向于控制输出的“随机性”，而 top-p 则是在给定的可能结果中设定一个“阈值”。</p>
+<h2 id="文本相似度"><a href="#文本相似度" class="headerlink" title="文本相似度"></a>文本相似度</h2><p>jieba分词 + 余弦相似度 + numpy处理 + matplotlib.pyplot画图</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"># 计算平均值</span><br><span class="line">   average = sum(data) / len(data)</span><br><span class="line">   # 输出结果</span><br><span class="line">   print(&quot;平均值为:&quot;, average)</span><br><span class="line"></span><br><span class="line">   # 生成示例数据，假设这是余弦相似度的一些值</span><br><span class="line">   cosine_similarities = data  # 生成1000个随机余弦相似度值，范围在0到1之间</span><br><span class="line"></span><br><span class="line">   # 统计相似度值的频率分布</span><br><span class="line">   bins = np.linspace(0, 1, 50)  # 将x轴分为50个区间</span><br><span class="line">   hist, bins = np.histogram(cosine_similarities, bins=bins)</span><br><span class="line"></span><br><span class="line">   # 绘制频率分布图</span><br><span class="line">   plt.bar(bins[:-1], hist, width=(bins[1] - bins[0]), align=&#x27;edge&#x27;)</span><br><span class="line">   plt.xlabel(&quot;余弦相似度&quot;)</span><br><span class="line">   plt.ylabel(&quot;数量&quot;)</span><br><span class="line">   plt.title(&quot;余弦相似度的频率分布图&quot;)</span><br><span class="line">   plt.show()</span><br></pre></td></tr></table></figure>
+
+
+
 <h2 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h2><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/638803488/answer/3370656147">初学者如何对大模型进行微调？ - 爱吃牛油果的璐璐的回答 - 知乎</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_37574187/article/details/131241892">p-tuing和Lora的区别_ptuning和lora对比-CSDN博客</a></p>
 <p><a target="_blank" rel="noopener" href="https://towardsdatascience.com/fine-tune-a-mistral-7b-model-with-direct-preference-optimization-708042745aac">Fine-tune a Mistral-7b model with Direct Preference Optimization | by Maxime Labonne | Towards Data Science</a></p>
