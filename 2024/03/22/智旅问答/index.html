@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>A25 | Chen</title>
+    <title>智旅问答 | Chen</title>
     <meta name="author" content="Chen" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -143,7 +143,7 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>A25</h1>
+        <h1>智旅问答</h1>
     </div>
     <div class="info">
         <span class="date">
@@ -162,7 +162,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/AI/" style="color: #03a9f4">AI</a>
+                <a href="/tags/AI/" style="color: #00a596">AI</a>
             </span>
             
         </span>
@@ -232,7 +232,7 @@
 <p>​		04&#x2F;06 看看open AI文档 <a target="_blank" rel="noopener" href="https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_embeddings.ipynb">Question answering using embeddings-based search</a></p>
 <p>​					<strong>Note: To answer questions based on text documents, we recommend the procedure in</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_embeddings.ipynb">Question Answering using Embeddings</a><strong>.</strong> </p>
 <p>​					推荐使用Embedding，不涉及微调，难搞</p>
-<p><img src="/2024/03/22/A25/image-20240406135627455.png" alt="image-20240406135627455"></p>
+<p><img src="/2024/03/22/%E6%99%BA%E6%97%85%E9%97%AE%E7%AD%94/image-20240406135627455.png" alt="image-20240406135627455"></p>
 <p>​		04&#x2F;08 扩充一下数据集，再试着调一下</p>
 <p>​					模型评估（loss、准确度）</p>
 </li>
@@ -242,7 +242,7 @@
 </ul>
 <p>​		<strong>知名景点</strong></p>
 <p>​		<strong>小众景点</strong></p>
-<p>​		<strong>不存在的景点不乱答</strong></p>
+<p>​		<strong>不存在的景点不乱答（幻觉现象少）</strong></p>
 <ul>
 <li><p><input disabled="" type="checkbox"> 
 能回答附带图片（感觉是加分项）</p>
@@ -262,18 +262,25 @@
 <p>​					<del>BaseModel类</del>（删掉就能跑了，好神奇）</p>
 <p>​					history这些参数该如何存储（json）</p>
 <p>​	04&#x2F;04 改来改去，改好了一个，</p>
-<p><img src="/2024/03/22/A25/image-20240404105119348.png" alt="image-20240404105119348"></p>
+<p><img src="/2024/03/22/%E6%99%BA%E6%97%85%E9%97%AE%E7%AD%94/image-20240404105119348.png" alt="image-20240404105119348"></p>
 </li>
 </ul>
-<p><img src="/2024/03/22/A25/image-20240414013121762.png" alt="image-20240414013121762"></p>
-<p><img src="/2024/03/22/A25/image-20240414013128871.png" alt="image-20240414013128871"></p>
-<p><img src="/2024/03/22/A25/image-20240414013136042.png" alt="image-20240414013136042"></p>
-<h3 id="24-04-14"><a href="#24-04-14" class="headerlink" title="24&#x2F;04&#x2F;14"></a>24&#x2F;04&#x2F;14</h3><ul>
+<p><img src="/2024/03/22/%E6%99%BA%E6%97%85%E9%97%AE%E7%AD%94/image-20240414013121762.png" alt="image-20240414013121762"></p>
+<p><img src="/2024/03/22/%E6%99%BA%E6%97%85%E9%97%AE%E7%AD%94/image-20240414013128871.png" alt="image-20240414013128871"></p>
+<p><img src="/2024/03/22/%E6%99%BA%E6%97%85%E9%97%AE%E7%AD%94/image-20240414013136042.png" alt="image-20240414013136042"></p>
+<h3 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h3><ul>
 <li><p><input disabled="" type="checkbox"> 
-数据集优化，使之更符合自然语言 —&gt; 微调 —&gt; 生成回答数据集 —&gt; 计算相似度</p>
+<strong>数据集优化</strong>，使之更符合自然语言&amp;多样化 —&gt; 微调 —&gt; 生成回答数据集 —&gt; 计算相似度</p>
 </li>
 <li><p><input disabled="" type="checkbox"> 
-未微调过的模型 生成回答数据集 计算相似度 作为对比（前提是数据集质量高）</p>
+未微调过的模型 生成回答数据集 计算相似度 作为对比（前提是有<strong>高质量数据集</strong>）</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+<strong>加一个功能</strong>：当用户查看我们网站的内容时，为了便于浏览，用户可以通过模型输入要搜索的内容，快速找到网站中的内容</p>
+<p>初步解决方法：问答的函数内，放一个函数，<em>实现:</em> 先判断内容是否与网站内容有关，有则返回一个字符串”您是否在查找这个{网站链接}”，无则返回空。并拼接到此次回答中。此处的判断，”与…有关联”。用字典 {“西湖”: “URL”，…}，对输入进行处理，输入包含的词的频率最高的是否在字典里</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+<strong>加一个功能</strong>：希望在问答中能回答制定精品路线，明确关键词（如”两天”、”指定几个景点”）</p>
 </li>
 </ul>
 <hr>
@@ -292,13 +299,12 @@
 <li>逐层微调：从底层开始，逐层微调预训练模型，直到所有层都被微调。</li>
 <li>迁移学习：将预训练模型的知识迁移到新的任务中，以提高模型性能。这种方法通常使用微调顶层或冻结底层的方法。</li>
 </ol>
-<p><del><em>此次，微调所有层所需性能要求过大，不考虑；迁移学习，不符合比赛内容，不考虑</em></del></p>
 <h3 id="p-tuning和Lora的区别"><a href="#p-tuning和Lora的区别" class="headerlink" title="p-tuning和Lora的区别"></a>p-tuning和Lora的区别</h3><h4 id="p-tuning"><a href="#p-tuning" class="headerlink" title="p-tuning"></a>p-tuning</h4><p>p-tuning v2并不是一个新技术，而是之前用于少样本学习，少样本学习分为离散型模板和连续性模板，离散性模板主要是构建文字描述模板，而连续型模板则是插入连续型token构成的模板，之前文章中我也讲述了离散型和连续型两种prompt方法。</p>
 <p>p-tuning v2简单来说其实是soft prompt的一种改进，soft prompt是只作用在embedding层中，实际测试下来只作用在embedding层的话交互能力会变弱，而且冻结模型所有参数去学习插入token，改变量偏小使得效果有时候不太稳定，会差于微调。p-tuning v2则不只是针对embedding层，而是将连续型token插入每一层，增大改变量和交互性。</p>
-<p><img src="/2024/03/22/A25/image-20240330185124412.png" alt="image-20240330185124412"></p>
+<p><img src="/2024/03/22/%E6%99%BA%E6%97%85%E9%97%AE%E7%AD%94/image-20240330185124412.png" alt="image-20240330185124412"></p>
 <p>soft prompt比较依靠模型参数量，在参数量超过10B的模型上，效果追上了fine-tune，但是ptuning v2因为每层插入了token，增大模型训练的改变量，<strong>更加适用于小一点的模型</strong></p>
 <h4 id="Lora"><a href="#Lora" class="headerlink" title="Lora"></a>Lora</h4><p>Lora主要在模型中注入可训练模块，大模型在预训练完收敛之后模型包含许多进行矩阵乘法的稠密层，这些层通常是满秩的，在微调过程中其实改变量是比较小的，在矩阵乘法中表现为低秩的改变，注入可训练层的目的是想下游微调的低秩改变由可训练层来学习，冻结模型其他部分，大大减少模型训练参数。</p>
-<p><img src="/2024/03/22/A25/image-20240330185200220.png" alt="image-20240330185200220"></p>
+<p><img src="/2024/03/22/%E6%99%BA%E6%97%85%E9%97%AE%E7%AD%94/image-20240330185200220.png" alt="image-20240330185200220"></p>
 <p>推理计算的时候，因为没有改变预训练权重，所以换不同的下游任务时，lora模型保存的权重也是可以相应加载进来的，通过矩阵分解的方法参数量减少了很多，且推理时可以并行，对于推理性能并没有增加多少负担，算是比较好的低资源微调方法。</p>
 <h5 id="Low-rank-Adaptation低秩适配"><a href="#Low-rank-Adaptation低秩适配" class="headerlink" title="Low-rank Adaptation低秩适配:"></a><del>Low-rank Adaptation低秩适配:</del></h5><p><del>低秩适配方法致力于将模型权重的改变限制在一个<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E4%BD%8E%E7%A7%A9%E5%AD%90%E7%A9%BA%E9%97%B4&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:3370656147%7D">低秩子空间</a>内。这通常涉及对模型的权重矩阵进行分解，只微调其中的一小部分参数。这样可以有效减少计算资源的消耗，同时仍然允许模型有足够的灵活性来学习新任务。<strong>LoRA</strong>和它的变种，如Q-LoRA、Delta-LoRA、LoRA-FA等，都属于这个类别。</del></p>
 <h4 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h4><p>两者对于低资源微调大模型的共同点<strong>都是冻结大模型参数</strong>，通过小模块来学习微调产生的低秩改变。但目前存在的一些问题就是这两种训练方式很容易参数<strong>灾难性遗忘</strong>，因为模型在微调的时候整个模型层参数未改变，而少参数的学习模块微调时却是改变量巨大，容易给模型在推理时产生较大偏置，使得以前的回答能力被可学习模块带偏，在微调的时候也必须注意可学习模块不能过于拟合微调数据，否则会丧失原本的预训练知识能力，产生灾难性遗忘。</p>
@@ -308,9 +314,9 @@
 
 <p><strong>学习率的重要性</strong></p>
 <p>目前深度学习使用的都是非常简单的一阶收敛算法，梯度下降法，不管有多少自适应的优化算法，本质上都是对梯度下降法的各种变形，所以初始学习率对深层网络的收敛起着决定性的作用，下面就是梯度下降法的公式</p>
-<p><img src="/2024/03/22/A25/image-20240402154527727.png" alt="image-20240402154527727"></p>
+<p><img src="/2024/03/22/%E6%99%BA%E6%97%85%E9%97%AE%E7%AD%94/image-20240402154527727.png" alt="image-20240402154527727"></p>
 <p>这里 α 就是学习率，如果学习率太小，会导致网络loss下降非常慢，如果学习率太大，那么参数更新的幅度就非常大，就会导致网络收敛到局部最优点，或者loss直接开始增加，如下图所示。</p>
-<p><img src="/2024/03/22/A25/v2-6f1772cefad4befccd3e6cfd83b1fbfd_720w.webp" alt="img"></p>
+<p><img src="/2024/03/22/%E6%99%BA%E6%97%85%E9%97%AE%E7%AD%94/v2-6f1772cefad4befccd3e6cfd83b1fbfd_720w.webp" alt="img"></p>
 <h3 id="微调方法选择"><a href="#微调方法选择" class="headerlink" title="微调方法选择"></a>微调方法选择</h3><ol>
 <li><strong>LoRA（Low-Rank Adaptation）</strong>：LoRA 是一种高效的参数微调技术，旨在解决过拟合问题。它通过增加一个参数来调整模型中的知识级别，使其更好地适应特定任务。虽然不需要大量带标签的数据，<strong>但可能需要更多的计算资源</strong></li>
 <li><strong>P-tuning v2</strong>：P-tuning v2 是一种改进的微调方法，它通过使用预训练模型的一部分来进行微调，而不是使用整个预训练模型。这种方法可以减少计算需求，同时提高模型性能。然而，<strong>P-tuning v2 可能需要更精细的参数调整</strong></li>
@@ -353,7 +359,7 @@
 <td align="center">易过拟合；收敛速度慢</td>
 </tr>
 </tbody></table>
-<p><img src="/2024/03/22/A25/v2-c1c72c00c93f778ad91cefb6c8a8665d_720w.webp" alt="img"></p>
+<p><img src="/2024/03/22/%E6%99%BA%E6%97%85%E9%97%AE%E7%AD%94/v2-c1c72c00c93f778ad91cefb6c8a8665d_720w.webp" alt="img"></p>
 <ol>
 <li>曲线 初始时 上扬 【红线】：<br>Solution：初始 学习率过大 导致 振荡，应减小学习率，并 从头 开始训练 。</li>
 <li>曲线 初始时 强势下降 没多久 归于水平 【紫线】：<br>Solution：后期 学习率过大 导致 无法拟合，应减小学习率，并 重新训练 后几轮 。</li>
@@ -362,7 +368,7 @@
 <p>参考链接：<a href="https://link.zhihu.com/?target=https://blog.csdn.net/qq_33485434/article/details/80452941">深度学习：学习率learning rate 的设定规律</a></p>
 <h3 id="Batch-size"><a href="#Batch-size" class="headerlink" title="Batch size"></a><strong>Batch size</strong></h3><p>一般来说，在合理的范围之内，<strong>越大的 batch size</strong> 使下降方向越准确，震荡越小；batch size 如果过大，则可能会出现局部最优的情况（这也是其中的一个缺点吧）。<strong>小的 bath size</strong> 引入的随机性更大，难以达到收敛，极少数情况下可能会效果变好。</p>
 <p>会影响训练的稳定性，Batch size过小会使Loss曲线振荡的比较大，大小一般按照2的次幂规律选择，这是为了硬件计算效率考虑的。</p>
-<p><img src="/2024/03/22/A25/image-20240412092213348.png" alt="image-20240412092213348"></p>
+<p><img src="/2024/03/22/%E6%99%BA%E6%97%85%E9%97%AE%E7%AD%94/image-20240412092213348.png" alt="image-20240412092213348"></p>
 <p>batch size 太小了（如果学习率问题不大的话）</p>
 <h3 id="loss"><a href="#loss" class="headerlink" title="loss"></a>loss</h3><p>train loss 不断下降，test loss不断下降，说明网络仍在学习;</p>
 <p>train loss 不断下降，test loss趋于不变，说明网络过拟合;</p>
