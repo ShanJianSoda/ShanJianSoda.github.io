@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Chen • Posts by &#34;机器学习&#34; tag</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Mon, 12 Feb 2024 11:05:35 +0800</pubDate>
+        <lastBuildDate>Mon, 12 Feb 2024 11:05:35 +0800</lastBuildDate>
+        <category>GLM</category>
+        <category>位运算</category>
+        <category>分类讨论</category>
+        <category>dp</category>
+        <category>redis</category>
+        <category>lunix</category>
+        <category>git</category>
+        <category>vue3</category>
+        <category>机器学习</category>
+        <category>Vue.js</category>
+        <category>微信小程序</category>
+        <category>LLM</category>
+        <category>AI</category>
+        <category>面试</category>
+        <category>设计模式</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/02/12/supervised-learing-part01/</guid>
+            <title>supervised learing part01</title>
+            <link>http://example.com/2024/02/12/supervised-learing-part01/</link>
+            <category>机器学习</category>
+            <pubDate>Mon, 12 Feb 2024 11:05:35 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;监督式机器学习与非监督式机器学习&lt;/p&gt;
+&lt;p&gt;1. 监督学习&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1.1 回归 regression&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;1.2 分类 classification&lt;/p&gt;
+&lt;p&gt;Age 和 Tumor Size 可以当做是维度，可以引入 n 维，并可以找到这 n 维度下的 O 和 X 的边界&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240212112345431.png&#34; alt=&#34;image-20240212112345431&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;2. 非监督学习&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;聚类算法 clustering&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240212120641463.png&#34; alt=&#34;image-20240212120641463&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

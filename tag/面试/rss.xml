@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Chen • Posts by &#34;面试&#34; tag</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Fri, 12 Apr 2024 12:15:51 +0800</pubDate>
+        <lastBuildDate>Fri, 12 Apr 2024 12:15:51 +0800</lastBuildDate>
+        <category>GLM</category>
+        <category>位运算</category>
+        <category>分类讨论</category>
+        <category>dp</category>
+        <category>redis</category>
+        <category>lunix</category>
+        <category>git</category>
+        <category>vue3</category>
+        <category>机器学习</category>
+        <category>Vue.js</category>
+        <category>微信小程序</category>
+        <category>LLM</category>
+        <category>AI</category>
+        <category>面试</category>
+        <category>设计模式</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/04/12/%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/</guid>
+            <title>第一次面试准备</title>
+            <link>http://example.com/2024/04/12/%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/</link>
+            <category>面试</category>
+            <pubDate>Fri, 12 Apr 2024 12:15:51 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;前言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h1&gt;
+&lt;p&gt;大概三月末的时候，学校有个招聘会，然后我投了几家。刚刚打电话，问我明早有没有时间远程面试&lt;/p&gt;
+&lt;p&gt;没多想就答应了下来，这下好了，得回顾一下简历上写的东西了&lt;/p&gt;
+&lt;p&gt;对的，很烂&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412121818555.png&#34; alt=&#34;image-20240412121818555&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;想着把 Redis 看一下（其实我还没学完，当时想着做简历就写上去了，而且最近在忙着比赛和打游戏，Java 这方面已经落下很多了）&lt;/p&gt;
+&lt;p&gt;也许到时候可以把面试官往我最近比赛的方面引。&lt;/p&gt;
+&lt;h1 id=&#34;可能的面试内容&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#可能的面试内容&#34;&gt;#&lt;/a&gt; 可能的面试内容&lt;/h1&gt;
+&lt;p&gt;时间紧任务重，能准备的也不是很充分&lt;/p&gt;
+&lt;h2 id=&#34;自我介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自我介绍&#34;&gt;#&lt;/a&gt; &lt;s&gt;自我介绍&lt;/s&gt;&lt;/h2&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;h2 id=&#34;redis项目的细节&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#redis项目的细节&#34;&gt;#&lt;/a&gt; Redis 项目的细节 *&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;五种类型&lt;/p&gt;
+&lt;p&gt;字符串、列表、hash、set、zset&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;持久化策略&lt;/p&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内存淘汰策略&lt;/p&gt;
+&lt;p&gt;懒惰性删除 + 定期删除，懒惰性：用的时候才查是否过期。缺点：可能会有数据一直用不到，一直存在在内存。定期删除：定期删，缺点：遍历，时间长，内存压力大&lt;/p&gt;
+&lt;p&gt;结合：抽取一部分定期删除 + 懒惰&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;主从、哨兵&lt;/p&gt;
+&lt;p&gt;主服务器、从服务器，&lt;/p&gt;
+&lt;p&gt;哨兵：监控、提醒、自动故障迁移、统一的配置管理&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;其他见 &lt;em&gt;Redis 学习记录&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;spring-boot的相关知识&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#spring-boot的相关知识&#34;&gt;#&lt;/a&gt; Spring boot 的相关知识&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412231410321.png&#34; alt=&#34;image-20240412231410321&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412231458213.png&#34; alt=&#34;image-20240412231458213&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;最近比赛的内容&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最近比赛的内容&#34;&gt;#&lt;/a&gt; 最近比赛的内容&lt;/h2&gt;
+&lt;p&gt;见 &lt;em&gt;A25&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;git&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git&#34;&gt;#&lt;/a&gt; Git&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412231950813.png&#34; alt=&#34;image-20240412231950813&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412232258004.png&#34; alt=&#34;image-20240412232258004&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;面后整理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#面后整理&#34;&gt;#&lt;/a&gt; 面后整理&lt;/h1&gt;
+&lt;h2 id=&#34;自我介绍-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自我介绍-2&#34;&gt;#&lt;/a&gt; 自我介绍&lt;/h2&gt;
+&lt;p&gt;阿巴阿巴&lt;/p&gt;
+&lt;h2 id=&#34;问我什么项目提升最大redis&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问我什么项目提升最大redis&#34;&gt;#&lt;/a&gt; 问我什么项目提升最大（Redis）&lt;/h2&gt;
+&lt;p&gt;我说了 Redis 的那个，介绍一下项目实现，因为没有开视频，我对着昨晚做的 Redis 讲 + 分布式锁&lt;/p&gt;
+&lt;p&gt;（懂不懂一天速成 Redis 的含金量 后仰.jpg）&lt;/p&gt;
+&lt;h2 id=&#34;mysql&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql&#34;&gt;#&lt;/a&gt; Mysql&lt;/h2&gt;
+&lt;p&gt;索引、having、group by&lt;/p&gt;
+&lt;h2 id=&#34;mybatis配置文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mybatis配置文件&#34;&gt;#&lt;/a&gt; MyBatis 配置文件&lt;/h2&gt;
+&lt;p&gt;Mysql 配置，MyBatis 插件的配置类……&lt;/p&gt;
+&lt;h2 id=&#34;spring-boot&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#spring-boot&#34;&gt;#&lt;/a&gt; Spring Boot&lt;/h2&gt;
+&lt;p&gt;AOP（可恶，看了的没问，没看的忘了）&lt;/p&gt;
+&lt;h2 id=&#34;java基础&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#java基础&#34;&gt;#&lt;/a&gt; Java 基础&lt;/h2&gt;
+&lt;p&gt;ArrayList 和 LinkList 区别：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ArrayList 基于动态数组实现的非线程安全的集合；LinkedList 基于链表实现的非线程安全的集合。&lt;/li&gt;
+&lt;li&gt;对于随机 index 访问的 get 和 set 方法，一般 ArrayList 的速度要优于 LinkedList。因为 ArrayList 直接通过数组下标直接找到元素；LinkedList 要移动指针遍历每个元素直到找到为止。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;问我什么课感兴趣&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问我什么课感兴趣&#34;&gt;#&lt;/a&gt; 问我什么课感兴趣&lt;/h2&gt;
+&lt;p&gt;我说了 Java + 操作系统 + 数据结构&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;操作系统&lt;/p&gt;
+&lt;p&gt;银行家系统&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;git工具&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git工具&#34;&gt;#&lt;/a&gt; git 工具&lt;/h2&gt;
+&lt;p&gt;常用命令&lt;/p&gt;
+&lt;h2 id=&#34;最近比赛的内容-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最近比赛的内容-2&#34;&gt;#&lt;/a&gt; 最近比赛的内容&lt;/h2&gt;
+&lt;p&gt;因为我时不时提一嘴，我最近在打比赛，然后后面终于问了。&lt;strong&gt;之前在牛客学的精髓，引导面试官占据主导权&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这我可太熟了，然后问我参数的意义&lt;/p&gt;
+&lt;h2 id=&#34;由于涉及到ai问我ai对我们it行业的帮助&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#由于涉及到ai问我ai对我们it行业的帮助&#34;&gt;#&lt;/a&gt; 由于涉及到 AI，问我 AI 对我们 IT 行业的帮助&lt;/h2&gt;
+&lt;p&gt;弱 AI，基于大数据而不是逻辑，所以只能辅助开发，而非独立开发&lt;/p&gt;
+&lt;h2 id=&#34;结尾&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#结尾&#34;&gt;#&lt;/a&gt; 结尾&lt;/h2&gt;
+&lt;p&gt;问了一下我的情况&lt;/p&gt;
+&lt;h2 id=&#34;感想&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#感想&#34;&gt;#&lt;/a&gt; 感想&lt;/h2&gt;
+&lt;p&gt;上次双选会，哥们就拿着之前做好的简历过去投，啥也没准备&lt;/p&gt;
+&lt;p&gt;所以这一次算是第一次面试，昨天接到电话后一直在准备（虽然也玩了好些），但确实是半天速成 Redis，把敲代码的过程大部分跳了，然后关注原理，并记录。看完后昨晚看了一遍记录，今天看了一遍。&lt;/p&gt;
+&lt;p&gt;然后再对着简历，准备了俩 Spring Boot 高频考点，粗看了一下 Git。早上还很早就醒了，害怕，jpg&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

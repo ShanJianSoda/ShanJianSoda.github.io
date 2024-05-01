@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Chen • All posts by \"机器学习\" tag",
+    "description": "",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/2024/02/12/supervised-learing-part01/",
+            "url": "http://example.com/2024/02/12/supervised-learing-part01/",
+            "title": "supervised learing part01",
+            "date_published": "2024-02-12T03:05:35.000Z",
+            "content_html": "<p>监督式机器学习与非监督式机器学习</p>\n<p>1. 监督学习</p>\n<ul>\n<li>\n<p>1.1 回归 regression</p>\n</li>\n<li>\n<p>1.2 分类 classification</p>\n<p>Age 和 Tumor Size 可以当做是维度，可以引入 n 维，并可以找到这 n 维度下的 O 和 X 的边界</p>\n</li>\n</ul>\n<p><img data-src=\"image-20240212112345431.png\" alt=\"image-20240212112345431\" /></p>\n<p>2. 非监督学习</p>\n<ul>\n<li>\n<p>聚类算法 clustering</p>\n<p><img data-src=\"image-20240212120641463.png\" alt=\"image-20240212120641463\" /></p>\n</li>\n</ul>\n",
+            "tags": [
+                "机器学习"
+            ]
+        }
+    ]
+}

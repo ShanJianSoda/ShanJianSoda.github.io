@@ -1,0 +1,1554 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>Chen</title>
+    <link href="http://example.com" />
+    <updated>2024-05-01T02:22:23.000Z</updated>
+    <category term="GLM" />
+    <category term="位运算" />
+    <category term="分类讨论" />
+    <category term="dp" />
+    <category term="redis" />
+    <category term="lunix" />
+    <category term="git" />
+    <category term="vue3" />
+    <category term="机器学习" />
+    <category term="Vue.js" />
+    <category term="微信小程序" />
+    <category term="LLM" />
+    <category term="AI" />
+    <category term="面试" />
+    <category term="设计模式" />
+    <entry>
+        <id>http://example.com/2024/05/01/About-Me/</id>
+        <title>About Me</title>
+        <link rel="alternate" href="http://example.com/2024/05/01/About-Me/"/>
+        <content type="html">&lt;h1 id=&#34;test&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#test&#34;&gt;#&lt;/a&gt; test&lt;/h1&gt;
+&lt;p&gt;尝试给文章封面&lt;/p&gt;
+&lt;p&gt;!! 黑幕黑幕黑幕黑幕黑幕黑幕！！： 鼠标滑过显示内容&lt;/p&gt;
+&lt;p&gt;嘻嘻嘻&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;token import&#34;&gt;&lt;span class=&#34;token namespace&#34;&gt;java&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;util&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;Scanner&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;ScannerTest&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; args&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;Scanner&lt;/span&gt; scanner&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Scanner&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;in&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;out&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;请输入一个数&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;scanner&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;nextInt&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;out&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;%d的平方是%d\n&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;a&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#!/usr/bin/python&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# -*- coding: UTF-8 -*-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; j &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; k &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;!=&lt;/span&gt; k &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;i &lt;span class=&#34;token operator&#34;&gt;!=&lt;/span&gt; j&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;j &lt;span class=&#34;token operator&#34;&gt;!=&lt;/span&gt; k&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;j&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;k&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <updated>2024-05-01T02:22:23.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2024/04/26/%E5%9F%BA%E4%BA%8E%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%9E%84%E5%BB%BA%E6%99%BA%E8%83%BD%E9%97%AE%E7%AD%94%E7%B3%BB%E7%BB%9F/</id>
+        <title>基于大模型构建智能问答系统</title>
+        <link rel="alternate" href="http://example.com/2024/04/26/%E5%9F%BA%E4%BA%8E%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%9E%84%E5%BB%BA%E6%99%BA%E8%83%BD%E9%97%AE%E7%AD%94%E7%B3%BB%E7%BB%9F/"/>
+        <content type="html">&lt;h1 id=&#34;需求&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#需求&#34;&gt;#&lt;/a&gt; 需求&lt;/h1&gt;
+&lt;p&gt;老师：现有的 AI 还不太可控，可靠性不强，对企业来说，微调大模型意义不大。我是想在&lt;strong&gt;个性数据表&lt;/strong&gt;的基础上使用 AI，把所有的数据喂给 ai 来训练，变成把现有数据整理为 20 个数据表比如人际关系表、科研工作表。提问 xxx 的手机号为多少时？不是由 AI 来回答，由 AI 来确定，上面这句话应该属于哪个表 (比如确定为人际关系表)，再从人际关系表中找出相应的信息来返回。&lt;/p&gt;
+&lt;p&gt;看法：基于知识库问答？也许并不需要 &amp;quot;整理成 20 个数据表&amp;quot;，&lt;/p&gt;
+&lt;h1 id=&#34;学习&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#学习&#34;&gt;#&lt;/a&gt; 学习&lt;/h1&gt;
+&lt;h2 id=&#34;技术方案选型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#技术方案选型&#34;&gt;#&lt;/a&gt; &lt;strong&gt;技术方案选型&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;目前，大模型已经可以通过对自然语言的理解揣摩用户意图，并对原始知识进行汇总、整合，进而生成更具逻辑和完整性的答案。然而，仍存在以下几个问题，导致我们不能直接使用这些模型来对特定领域知识进行问答。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;专业性不足：作为通用大模型，对专业领域知识的训练不足，可能会产生幻觉以及信息丰富度不足的问题。&lt;/li&gt;
+&lt;li&gt;时效性问题：模型的训练数据基于某个时间之前的数据，缺乏最新的信息，每次添加新数据都会导致高昂的训练成本。&lt;/li&gt;
+&lt;li&gt;安全性问题：模型无法访问企业内部私密文档，且这些文档不能直接用于 Fine-Tuning。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;为了解决这些问题，业界采用了如下几种技术手段来为大型模型提供额外知识。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fine-Tuning（微调）：使用特定领域的知识对基础大模型进行微调，以改变神经网络参数的权重。虽然适用于特定任务或风格，但需要大量资源和高质量的训练数据。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prompt 工程&lt;/strong&gt;：将行业领域的知识作为输入消息提供给模型，让模型对消息中的知识进行分析和处理。这种方法在正确性和精度上表现良好，但有文本长度限制，对于大规模数据不够高效。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;与传统搜索结合&lt;/strong&gt;：使用传统搜索技术构建基础知识库，然后使用大语言模型处理用户请求，对召回结果进行二次加工。这种方法具有更高的可控性和效率，并适用于大规模数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;为了确保准确性和效率，我们选择了第 2 种和第 3 种方式相结合的方案，&lt;strong&gt;通过向量数据库将知识外挂作为大模型记忆体，使用 LangChain 作为基础开发框架来构建知识库问答系统，最终依靠 Prompt 工程和大模型进行交互。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82ODA3MjUxMjA=&#34;&gt;数据库运维工作量直接减少 50%，基于大模型构建智能问答系统的技术分享 - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="LLM" />
+        <category term="AI" />
+        <updated>2024-04-26T02:45:42.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2024/04/12/%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/</id>
+        <title>第一次面试准备</title>
+        <link rel="alternate" href="http://example.com/2024/04/12/%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/"/>
+        <content type="html">&lt;h1 id=&#34;前言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h1&gt;
+&lt;p&gt;大概三月末的时候，学校有个招聘会，然后我投了几家。刚刚打电话，问我明早有没有时间远程面试&lt;/p&gt;
+&lt;p&gt;没多想就答应了下来，这下好了，得回顾一下简历上写的东西了&lt;/p&gt;
+&lt;p&gt;对的，很烂&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412121818555.png&#34; alt=&#34;image-20240412121818555&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;想着把 Redis 看一下（其实我还没学完，当时想着做简历就写上去了，而且最近在忙着比赛和打游戏，Java 这方面已经落下很多了）&lt;/p&gt;
+&lt;p&gt;也许到时候可以把面试官往我最近比赛的方面引。&lt;/p&gt;
+&lt;h1 id=&#34;可能的面试内容&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#可能的面试内容&#34;&gt;#&lt;/a&gt; 可能的面试内容&lt;/h1&gt;
+&lt;p&gt;时间紧任务重，能准备的也不是很充分&lt;/p&gt;
+&lt;h2 id=&#34;自我介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自我介绍&#34;&gt;#&lt;/a&gt; &lt;s&gt;自我介绍&lt;/s&gt;&lt;/h2&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;h2 id=&#34;redis项目的细节&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#redis项目的细节&#34;&gt;#&lt;/a&gt; Redis 项目的细节 *&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;五种类型&lt;/p&gt;
+&lt;p&gt;字符串、列表、hash、set、zset&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;持久化策略&lt;/p&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内存淘汰策略&lt;/p&gt;
+&lt;p&gt;懒惰性删除 + 定期删除，懒惰性：用的时候才查是否过期。缺点：可能会有数据一直用不到，一直存在在内存。定期删除：定期删，缺点：遍历，时间长，内存压力大&lt;/p&gt;
+&lt;p&gt;结合：抽取一部分定期删除 + 懒惰&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;主从、哨兵&lt;/p&gt;
+&lt;p&gt;主服务器、从服务器，&lt;/p&gt;
+&lt;p&gt;哨兵：监控、提醒、自动故障迁移、统一的配置管理&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;其他见 &lt;em&gt;Redis 学习记录&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;spring-boot的相关知识&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#spring-boot的相关知识&#34;&gt;#&lt;/a&gt; Spring boot 的相关知识&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412231410321.png&#34; alt=&#34;image-20240412231410321&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412231458213.png&#34; alt=&#34;image-20240412231458213&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;最近比赛的内容&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最近比赛的内容&#34;&gt;#&lt;/a&gt; 最近比赛的内容&lt;/h2&gt;
+&lt;p&gt;见 &lt;em&gt;A25&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;git&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git&#34;&gt;#&lt;/a&gt; Git&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412231950813.png&#34; alt=&#34;image-20240412231950813&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412232258004.png&#34; alt=&#34;image-20240412232258004&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;面后整理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#面后整理&#34;&gt;#&lt;/a&gt; 面后整理&lt;/h1&gt;
+&lt;h2 id=&#34;自我介绍-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自我介绍-2&#34;&gt;#&lt;/a&gt; 自我介绍&lt;/h2&gt;
+&lt;p&gt;阿巴阿巴&lt;/p&gt;
+&lt;h2 id=&#34;问我什么项目提升最大redis&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问我什么项目提升最大redis&#34;&gt;#&lt;/a&gt; 问我什么项目提升最大（Redis）&lt;/h2&gt;
+&lt;p&gt;我说了 Redis 的那个，介绍一下项目实现，因为没有开视频，我对着昨晚做的 Redis 讲 + 分布式锁&lt;/p&gt;
+&lt;p&gt;（懂不懂一天速成 Redis 的含金量 后仰.jpg）&lt;/p&gt;
+&lt;h2 id=&#34;mysql&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql&#34;&gt;#&lt;/a&gt; Mysql&lt;/h2&gt;
+&lt;p&gt;索引、having、group by&lt;/p&gt;
+&lt;h2 id=&#34;mybatis配置文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mybatis配置文件&#34;&gt;#&lt;/a&gt; MyBatis 配置文件&lt;/h2&gt;
+&lt;p&gt;Mysql 配置，MyBatis 插件的配置类……&lt;/p&gt;
+&lt;h2 id=&#34;spring-boot&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#spring-boot&#34;&gt;#&lt;/a&gt; Spring Boot&lt;/h2&gt;
+&lt;p&gt;AOP（可恶，看了的没问，没看的忘了）&lt;/p&gt;
+&lt;h2 id=&#34;java基础&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#java基础&#34;&gt;#&lt;/a&gt; Java 基础&lt;/h2&gt;
+&lt;p&gt;ArrayList 和 LinkList 区别：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ArrayList 基于动态数组实现的非线程安全的集合；LinkedList 基于链表实现的非线程安全的集合。&lt;/li&gt;
+&lt;li&gt;对于随机 index 访问的 get 和 set 方法，一般 ArrayList 的速度要优于 LinkedList。因为 ArrayList 直接通过数组下标直接找到元素；LinkedList 要移动指针遍历每个元素直到找到为止。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;问我什么课感兴趣&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问我什么课感兴趣&#34;&gt;#&lt;/a&gt; 问我什么课感兴趣&lt;/h2&gt;
+&lt;p&gt;我说了 Java + 操作系统 + 数据结构&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;操作系统&lt;/p&gt;
+&lt;p&gt;银行家系统&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;git工具&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git工具&#34;&gt;#&lt;/a&gt; git 工具&lt;/h2&gt;
+&lt;p&gt;常用命令&lt;/p&gt;
+&lt;h2 id=&#34;最近比赛的内容-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最近比赛的内容-2&#34;&gt;#&lt;/a&gt; 最近比赛的内容&lt;/h2&gt;
+&lt;p&gt;因为我时不时提一嘴，我最近在打比赛，然后后面终于问了。&lt;strong&gt;之前在牛客学的精髓，引导面试官占据主导权&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这我可太熟了，然后问我参数的意义&lt;/p&gt;
+&lt;h2 id=&#34;由于涉及到ai问我ai对我们it行业的帮助&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#由于涉及到ai问我ai对我们it行业的帮助&#34;&gt;#&lt;/a&gt; 由于涉及到 AI，问我 AI 对我们 IT 行业的帮助&lt;/h2&gt;
+&lt;p&gt;弱 AI，基于大数据而不是逻辑，所以只能辅助开发，而非独立开发&lt;/p&gt;
+&lt;h2 id=&#34;结尾&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#结尾&#34;&gt;#&lt;/a&gt; 结尾&lt;/h2&gt;
+&lt;p&gt;问了一下我的情况&lt;/p&gt;
+&lt;h2 id=&#34;感想&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#感想&#34;&gt;#&lt;/a&gt; 感想&lt;/h2&gt;
+&lt;p&gt;上次双选会，哥们就拿着之前做好的简历过去投，啥也没准备&lt;/p&gt;
+&lt;p&gt;所以这一次算是第一次面试，昨天接到电话后一直在准备（虽然也玩了好些），但确实是半天速成 Redis，把敲代码的过程大部分跳了，然后关注原理，并记录。看完后昨晚看了一遍记录，今天看了一遍。&lt;/p&gt;
+&lt;p&gt;然后再对着简历，准备了俩 Spring Boot 高频考点，粗看了一下 Git。早上还很早就醒了，害怕，jpg&lt;/p&gt;
+</content>
+        <category term="面试" />
+        <updated>2024-04-12T04:15:51.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2024/03/22/%E6%99%BA%E6%97%85%E9%97%AE%E7%AD%94/</id>
+        <title>智旅问答</title>
+        <link rel="alternate" href="http://example.com/2024/03/22/%E6%99%BA%E6%97%85%E9%97%AE%E7%AD%94/"/>
+        <content type="html">&lt;h2 id=&#34;问题说明&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问题说明&#34;&gt;#&lt;/a&gt; 问题说明&lt;/h2&gt;
+&lt;p&gt;基于给定目标城市，城市可由参赛选手自己选择。通过网络、书籍等方法整理收集目标城市的文旅数据，包括但不限于&lt;strong&gt;城市的历史、名人、景点、饮食特色、热门店铺等信息&lt;/strong&gt;，构建语料库，并基于大模型微调的相关技术方法，实现基于大模型的语料库问答系统。其中对于大模型的选择可以选取一些开源模型，如 GLM、modelscope 开源的 GPT-3 中文版本、LLaMA、BLOOM 等。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;此次基于 chatglm3-6b 进行微调，使用较低的配置实现较高的性能&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;&lt;em&gt;24/04/09 突然觉得在做无意义的事，找一段文本或者根本不找，让一个模型（copilot、kimi…）跑出些问答数据集，再塞给另一个模型微调……&lt;/em&gt;&lt;/s&gt;&lt;/p&gt;
+&lt;h2 id=&#34;期望&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#期望&#34;&gt;#&lt;/a&gt; 期望&lt;/h2&gt;
+&lt;p&gt;基于目标城市的文旅数据，构建语料库并进行大模型的微调，实现基于大模型的语料库问答系统。通过问答系统实现用户输入以下问题，问题示例如下：&lt;/p&gt;
+&lt;p&gt;请推荐 XX 城市的三个最热门的景点？&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;XX 景点位于什么地方？&lt;/li&gt;
+&lt;li&gt;介绍一下 XX 景点的历史？&lt;/li&gt;
+&lt;li&gt;XX 附近有什么推荐的小吃店铺？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;该问答系统能够给出上述问题的回复。&lt;/p&gt;
+&lt;h2 id=&#34;要求&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#要求&#34;&gt;#&lt;/a&gt; 要求&lt;/h2&gt;
+&lt;p&gt;收集目标城市的相关文旅数据，进行语料库的构建（方法不限），并基于语料库进行大模型微调，实现基于该语料库的问答系统。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;详细方案内容完备，具有可行性和先进性；&lt;/li&gt;
+&lt;li&gt;模型支持至少两轮问答；&lt;/li&gt;
+&lt;li&gt;具备大模型的基础问答能力和基于语料库的问答能力。考核方法基于用户提供的语料范围，编制问题，对模型进行提问，对模型问答能力进行评估；&lt;/li&gt;
+&lt;li&gt;具有交互界面，可通过浏览器进行访问，页面的访问延迟和问答的响应延迟不超过 10s；&lt;/li&gt;
+&lt;li&gt;语料库数据不低于 3000 条。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;todo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#todo&#34;&gt;#&lt;/a&gt; TODO&lt;/h2&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_0&#34;&gt; 语料库格式、内容&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;（instruction + output + history + input + ？）&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;查看 SHA1 码：certutil -hashfile &amp;lt;filename&amp;gt; SHA1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_1&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_1&#34;&gt; 使用高德地图 API 或爬点什么网站的数据或使用其他方法构建语料库&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;（在建了在建了…）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_2&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_2&#34;&gt; 使用了高德地图的 API，能否使模型能调用 agent（工具），再根据返回的 json 进行回答&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_3&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_3&#34;&gt; 对于&lt;strong&gt;城市的历史、名人、景点、饮食特色、热门店铺等信息&lt;/strong&gt;，考虑到语聊集的格式，&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;某某某的周边热门店铺有哪些，不太方便输入，可以考虑语聊集 + 工具调用的方法，&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;好像也挺方便，比如 instruction 灵隐寺周边的奶茶店 output 古茗、一点点等……&lt;/p&gt;
+&lt;p&gt;（支持多轮，如果能再问 “灵隐寺最近的古茗”，此处调用 API 回答是否能加分）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_4&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_4&#34;&gt; &lt;s&gt;希望能把 composition-demo 里的 chat 和 tool 结合起来，并不以 streamlit 形式输出，&lt;/s&gt;&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;”Tool: 工具模式，模型除了对话外，还可以通过工具进行其他操作 “&lt;/p&gt;
+&lt;p&gt;似乎不需要结合？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_5&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_5&#34;&gt; 微调 &lt;s&gt;p-tuning&lt;/s&gt; | Lora | DPO |etc.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;24/03/30&lt;/em&gt; Lora 微调好了，且无报错的导出了模型，但是问答效果不好，想试试 DPO&lt;/p&gt;
+&lt;p&gt;​	 04/01 开始着手微调的优化：秩 (r)、缩放系数 (alpha)：一般 alpha 是 r 的两倍&lt;/p&gt;
+&lt;p&gt;​				是否需要制作偏好数据集（太麻烦了，优先级低）&lt;/p&gt;
+&lt;p&gt;​				“微调是为了修正一些向量的参数”，但假如通过微调修改了 chatglm 的自我认知，？&lt;/p&gt;
+&lt;p&gt;​	04/02 偏好数据集，制作中！&lt;/p&gt;
+&lt;p&gt;​				制作好了，第一次 DPO 微调&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;image-20240402153832714.png&amp;quot; alt=&amp;quot;image-20240402153832714&amp;quot; style=&amp;quot;zoom: 67%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;p&gt;​				微调出来效果貌似也一般，如果想准确回答的话，不应该用过&lt;strong&gt;向量数据库&lt;/strong&gt;吗（后知后觉），毕竟 chatGPT 也无法做到数据向的精准回答（增大某些词的参数吗…）&lt;/p&gt;
+&lt;p&gt;​		04/03 微调出了什么 **… 数据集不够大，轮数太多，导致了灾难性遗忘，只会阿巴阿巴了&lt;/p&gt;
+&lt;p&gt;​					调小轮数试试（DPO epochs3，r8，alpha16，0.15）&lt;/p&gt;
+&lt;p&gt;​		04/06 看看 open AI 文档 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL29wZW5haS9vcGVuYWktY29va2Jvb2svYmxvYi9tYWluL2V4YW1wbGVzL1F1ZXN0aW9uX2Fuc3dlcmluZ191c2luZ19lbWJlZGRpbmdzLmlweW5i&#34;&gt;Question answering using embeddings-based search&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​					&lt;strong&gt;Note: To answer questions based on text documents, we recommend the procedure in&lt;/strong&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL29wZW5haS9vcGVuYWktY29va2Jvb2svYmxvYi9tYWluL2V4YW1wbGVzL1F1ZXN0aW9uX2Fuc3dlcmluZ191c2luZ19lbWJlZGRpbmdzLmlweW5i&#34;&gt;Question Answering using Embeddings&lt;/span&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​					推荐使用 Embedding，不涉及微调，难搞&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240406135627455.png&#34; alt=&#34;image-20240406135627455&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;​		04/08 扩充一下数据集，再试着调一下&lt;/p&gt;
+&lt;p&gt;​					模型评估（loss、准确度）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_6&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_6&#34;&gt; 模型评估调优、测试&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​		&lt;strong&gt;知名景点&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​		&lt;strong&gt;/ 小众景点&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​		&lt;strong&gt;不存在的景点不乱答（幻觉现象少）&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_7&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_7&#34;&gt; 能回答附带图片（感觉是加分项）&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;conversation 里有 image 属性，似乎可以使用 / 拓展&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_8&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_8&#34;&gt; 前后端联调&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;24/03/30 尝试看源码，把 chatglm 提供的综合 demo 去除 streamlit&lt;/p&gt;
+&lt;p&gt;​	 03/31 fastAPI ?  似乎就 chat 而言，每次需要传输的，就是 conversation.py 里的&lt;/p&gt;
+&lt;p&gt;​	 04/01 查看了 FastAPI、uvicorn、Flask、ASGI/WSGI，&lt;s&gt;还是保留 streamlit（比如使用它的 session）+fastAPI 吧，好复杂（shi 山代码是如何形成的）&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;​	04/02 尝试用 FastAPI 给前端提供数据了&lt;/p&gt;
+&lt;p&gt;​				&lt;s&gt;目前看需要俩，一个是前端加载时提供一个 client；一个是 conversation 对话&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;​				从好几个方向写，但总感觉很卡手。无法同时部署 streamlit 和 uvicorn（FastAPI），俩服务器就不互通，数据使用起来很难受。Flask 和 streamlit 一样，是写在后端的前端界面。如果用 Vue+node.js，中间多出来的 request、response，以及前端该如何做，很陌生&lt;/p&gt;
+&lt;p&gt;​	04/03 有点混乱，简单的来看，就是前端，携带一推数据，用 get 向后端发起请求&lt;/p&gt;
+&lt;p&gt;​				后端收到请求后，此处对应的功能就是原代码中的 if prompt_text&lt;/p&gt;
+&lt;p&gt;​				需要解决的&lt;/p&gt;
+&lt;p&gt;​					&lt;s&gt;BaseModel 类&lt;/s&gt;（删掉就能跑了，好神奇）&lt;/p&gt;
+&lt;p&gt;​					history 这些参数该如何存储（json）&lt;/p&gt;
+&lt;p&gt;​	04/04 改来改去，改好了一个，&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240404105119348.png&#34; alt=&#34;image-20240404105119348&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240414013121762.png&#34; alt=&#34;image-20240414013121762&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240414013128871.png&#34; alt=&#34;image-20240414013128871&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240414013136042.png&#34; alt=&#34;image-20240414013136042&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;后续计算机设计大赛&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#后续计算机设计大赛&#34;&gt;#&lt;/a&gt; 后续（计算机设计大赛）&lt;/h3&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_9&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_9&#34;&gt; &lt;strong&gt;数据集优化&lt;/strong&gt;，使之更符合自然语言 &amp;amp; 多样化 —&amp;gt; 微调 —&amp;gt; 生成回答数据集 —&amp;gt; 计算相似度&lt;br /&gt;
+…&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_10&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_10&#34;&gt; 未微调过的模型 生成回答数据集 计算相似度 作为对比（前提是有&lt;strong&gt;高质量数据集&lt;/strong&gt;）&lt;br /&gt;
+…&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_11&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_11&#34;&gt; &lt;strong&gt;加一个功能&lt;/strong&gt;：当用户查看我们网站的内容时，为了便于浏览，用户可以通过模型输入要搜索的内容，快速找到网站中的内容&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;初步解决方法：问答的函数内，放一个函数，&lt;em&gt;实现:&lt;/em&gt; 先判断内容是否与网站内容有关，有则返回一个字符串 &amp;quot;您是否在查找这个 {网站链接}&amp;quot;，无则返回空。并拼接到此次回答中。&lt;/p&gt;
+&lt;p&gt;此处的判断，&amp;quot;与… 有关联&amp;quot;。v1：用列表（优先级）+ 字典（键值对） [{&amp;quot;西湖&amp;quot;: &amp;quot;URL&amp;quot;}, ……]，对输入进行处理，输入包含的词是否在字典里&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_12&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_12&#34;&gt; &lt;strong&gt;加一个功能&lt;/strong&gt;：希望在问答中能回答制定精品路线，明确关键词（如 &amp;quot;两天&amp;quot;、&amp;quot;指定几个景点&amp;quot;）&lt;br /&gt;
+…&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_13&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_13&#34;&gt; &lt;strong&gt;加一个语音输入&lt;/strong&gt;：讯飞 API&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;借鉴了四五年前的项目 https://github.com/Ma-Tao007/xunfei-vioceAl-vueSDK.git&lt;/p&gt;
+&lt;p&gt;没想到讯飞这么早就把语音转文字免费使用了吗（500 次 / 天）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_14&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_14&#34;&gt; &lt;strong&gt;代码重构&lt;/strong&gt;，去除 st&lt;br /&gt;
+ 没用到 st 的缓存什么的，只是用 st 显示，所以安全去除了&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_15&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_15&#34;&gt; 希望能联网（查询一些网站）&lt;br /&gt;
+之前的痛点是如要查询旅游攻略，需要多方平台查询对比，且搜索引擎给出的链接繁多。&lt;br /&gt;
+我们能做到联网，并统筹多方资讯，给出一个较优的回答。&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_16&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_16&#34;&gt; Groq 快速推理机制&lt;br /&gt;
+…&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_17&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_17&#34;&gt; Phidata—AI 助手框架&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3BoaWRhdGFocS9waGlkYXRh&#34;&gt;https://github.com/phidatahq/phidata&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;image-20240428115123566.png&amp;quot; alt=&amp;quot;image-20240428115123566&amp;quot; style=&amp;quot;zoom:50%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h1 id=&#34;相关知识&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#相关知识&#34;&gt;#&lt;/a&gt; 相关知识&lt;/h1&gt;
+&lt;h2 id=&#34;peft&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#peft&#34;&gt;#&lt;/a&gt; PEFT&lt;/h2&gt;
+&lt;p&gt;PEFT（Parameter-Efficient Fine-Tuning）是 hugging face 开源的&lt;strong&gt;一个参数高效微调大模型的工具&lt;/strong&gt;，里面集成了 4 种微调大模型的方法，可以通过微调少量参数就达到接近微调全量参数的效果，使得在 GPU 资源不足的情况下也可以微调大模型。&lt;/p&gt;
+&lt;h2 id=&#34;llama-factory&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#llama-factory&#34;&gt;#&lt;/a&gt; llama-factory&lt;/h2&gt;
+&lt;p&gt;Unify Efficient Fine-Tuning of 100+ LLMs，GitHub 上的一个统筹了&lt;strong&gt;支持多种大语言模型微调的工具&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;项目特色&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;多种模型：LLaMA、LLaVA、Mistral、Mixtral-MoE、Qwen、Yi、Gemma、Baichuan、&lt;strong&gt;ChatGLM&lt;/strong&gt;、Phi 等等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;集成方法：（增量）预训练、（多模态）指令监督微调（SFT）、奖励模型训练、PPO 训练、DPO 训练和 ORPO 训练。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;多种精度：32 比特全参数微调、16 比特冻结微调、16 比特 LoRA 微调和基于 AQLM/AWQ/GPTQ/LLM.int8 的 2/4/8 比特 QLoRA 微调。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;先进算法：GaLore、BAdam、DoRA、LongLoRA、LLaMA Pro、Mixture-of-Depths、&lt;strong&gt;LoRA+&lt;/strong&gt;、LoftQ 和 Agent 微调。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实用技巧：FlashAttention-2、Unsloth、RoPE scaling、NEFTune 和 rsLoRA。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实验监控：LlamaBoard、TensorBoard、Wandb、MLflow 等等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;极速推理：基于 vLLM 的 OpenAI 风格 API、浏览器界面和命令行接口。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;于是就用这个了&lt;/p&gt;
+&lt;p&gt;链接 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hpeW91Z2EvTExhTUEtRmFjdG9yeS9ibG9iL21haW4vUkVBRE1FX3poLm1k&#34;&gt;https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;微调&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微调&#34;&gt;#&lt;/a&gt; 微调&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;微调这个训练不是为了准确的搜索数据库（Embeddings 才是）&lt;/strong&gt;，微调是为了修正一些向量的参数：比方说我想写一个短视频口播文案，同样是论证观点，口播并不会像写论文等书面文案一样用严格的格式让你理解逻辑结构，所以&lt;strong&gt;一般口播中就不会用首先其次再次这样的说法。那么我需要通过训练把这些词的权重降低。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;重点是&lt;strong&gt;方法&lt;/strong&gt;和&lt;strong&gt;高质量数据集&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;微调可以分为全微调和部分微调两个方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;全微调（Full Fine-tuning）：全微调是指对整个预训练模型进行微调，包括所有的模型参数。在这种方法中，预训练模型的所有层和参数都会被更新和优化，以适应目标任务的需求。这种微调方法通常适用于&lt;strong&gt;任务和预训练模型之间存在较大差异&lt;/strong&gt;的情况，或者&lt;strong&gt;任务需要模型具有高度灵活性和自适应能力&lt;/strong&gt;的情况。Full Fine-tuning 需要较大的计算资源和时间，但可以获得更好的性能。&lt;/li&gt;
+&lt;li&gt;部分微调（Repurposing）：部分微调是指在微调过程中只更新模型的顶层或少数几层，而保持预训练模型的底层参数不变。这种方法的目的是在保留预训练模型的通用知识的同时，通过微调顶层来适应特定任务。Repurposing 通常适用于目标任务与预训练模型之间&lt;strong&gt;有一定相似性&lt;/strong&gt;的情况，或者&lt;strong&gt;任务数据集较小&lt;/strong&gt;的情况。由于只更新少数层，Repurposing 相对于 Full Fine-tuning 需要较少的计算资源和时间，但在某些情况下性能可能会有所降低。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;从另一层次看，微调预训练模型的方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;微调所有层：将预训练模型的所有层都参与微调，以适应新的任务。&lt;/li&gt;
+&lt;li&gt;微调顶层：只微调预训练模型的顶层，以适应新的任务。&lt;/li&gt;
+&lt;li&gt;冻结底层：将预训练模型的底层固定不变，只对顶层进行微调。&lt;/li&gt;
+&lt;li&gt;逐层微调：从底层开始，逐层微调预训练模型，直到所有层都被微调。&lt;/li&gt;
+&lt;li&gt;迁移学习：将预训练模型的知识迁移到新的任务中，以提高模型性能。这种方法通常使用微调顶层或冻结底层的方法。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;p-tuning和lora的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#p-tuning和lora的区别&#34;&gt;#&lt;/a&gt; p-tuning 和 Lora 的区别&lt;/h3&gt;
+&lt;h4 id=&#34;p-tuning&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#p-tuning&#34;&gt;#&lt;/a&gt; p-tuning&lt;/h4&gt;
+&lt;p&gt;p-tuning v2 并不是一个新技术，而是之前用于少样本学习，少样本学习分为离散型模板和连续性模板，离散性模板主要是构建文字描述模板，而连续型模板则是插入连续型 token 构成的模板，之前文章中我也讲述了离散型和连续型两种 prompt 方法。&lt;/p&gt;
+&lt;p&gt;p-tuning v2 简单来说其实是 soft prompt 的一种改进，soft prompt 是只作用在 embedding 层中，实际测试下来只作用在 embedding 层的话交互能力会变弱，而且冻结模型所有参数去学习插入 token，改变量偏小使得效果有时候不太稳定，会差于微调。p-tuning v2 则不只是针对 embedding 层，而是将连续型 token 插入每一层，增大改变量和交互性。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240330185124412.png&#34; alt=&#34;image-20240330185124412&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;soft prompt 比较依靠模型参数量，在参数量超过 10B 的模型上，效果追上了 fine-tune，但是 ptuning v2 因为每层插入了 token，增大模型训练的改变量，&lt;strong&gt;更加适用于小一点的模型&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;lora&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#lora&#34;&gt;#&lt;/a&gt; Lora&lt;/h4&gt;
+&lt;p&gt;Lora 主要在模型中注入可训练模块，大模型在预训练完收敛之后模型包含许多进行矩阵乘法的稠密层，这些层通常是满秩的，在微调过程中其实改变量是比较小的，在矩阵乘法中表现为低秩的改变，注入可训练层的目的是想下游微调的低秩改变由可训练层来学习，冻结模型其他部分，大大减少模型训练参数。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240330185200220.png&#34; alt=&#34;image-20240330185200220&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;推理计算的时候，因为没有改变预训练权重，所以换不同的下游任务时，lora 模型保存的权重也是可以相应加载进来的，通过矩阵分解的方法参数量减少了很多，且推理时可以并行，对于推理性能并没有增加多少负担，算是比较好的低资源微调方法。&lt;/p&gt;
+&lt;h5 id=&#34;low-rank-adaptation低秩适配&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#low-rank-adaptation低秩适配&#34;&gt;#&lt;/a&gt; &lt;s&gt;Low-rank Adaptation 低秩适配:&lt;/s&gt;&lt;/h5&gt;
+&lt;p&gt;&lt;s&gt;低秩适配方法致力于将模型权重的改变限制在一个&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuemhpaHUuY29tL3NlYXJjaD9xPSVFNCVCRCU4RSVFNyVBNyVBOSVFNSVBRCU5MCVFNyVBOSVCQSVFOSU5NyVCNCZhbXA7c2VhcmNoX3NvdXJjZT1FbnRpdHkmYW1wO2h5YnJpZF9zZWFyY2hfc291cmNlPUVudGl0eSZhbXA7aHlicmlkX3NlYXJjaF9leHRyYT0lN0IlMjJzb3VyY2VUeXBlJTIyJTNBJTIyYW5zd2VyJTIyJTJDJTIyc291cmNlSWQlMjIlM0EzMzcwNjU2MTQ3JTdE&#34;&gt;低秩子空间&lt;/span&gt;内。这通常涉及对模型的权重矩阵进行分解，只微调其中的一小部分参数。这样可以有效减少计算资源的消耗，同时仍然允许模型有足够的灵活性来学习新任务。&lt;strong&gt;LoRA&lt;/strong&gt; 和它的变种，如 Q-LoRA、Delta-LoRA、LoRA-FA 等，都属于这个类别。&lt;/s&gt;&lt;/p&gt;
+&lt;h4 id=&#34;总结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#总结&#34;&gt;#&lt;/a&gt; 总结&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;共同点&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;两者对于低资源微调大模型的&lt;strong&gt;都是冻结大模型参数&lt;/strong&gt;，通过小模块来学习微调产生的低秩改变。但目前存在的一些问题就是这两种训练方式很容易参数&lt;strong&gt;灾难性遗忘&lt;/strong&gt;，因为模型在微调的时候整个模型层参数未改变，而少参数的学习模块微调时却是改变量巨大，容易给模型在推理时产生较大偏置，使得以前的回答能力被可学习模块带偏，在微调的时候也必须注意可学习模块不能过于拟合微调数据，否则会丧失原本的预训练知识能力，产生灾难性遗忘。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最好能够在微调语料中也加入通用学习语料一起微调，避免产生对微调语料极大的偏向&lt;/strong&gt;，在 instruct gpt 论文中也提到在强化学习 ppo 的时候模型也会很容易对于 ppo 数据拟合，降低模型通用自然语言任务能力，所以在 ppo loss 中加入了 SFT 梯度和预训练梯度来缓解这种遗忘问题。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;区别&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;LoRA（Low-Rank Adaptation）&lt;/strong&gt;：LoRA 是一种高效的参数微调技术，旨在&lt;strong&gt;解决过拟合&lt;/strong&gt;问题。它通过增加一个参数来调整模型中的知识级别，使其更好地适应特定任务。虽然不需要大量带标签的数据，&lt;strong&gt;但可能需要更多的计算资源&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;P-tuning v2&lt;/strong&gt;：P-tuning v2 是一种改进的微调方法，它通过使用预训练模型的一部分来进行微调，而不是使用整个预训练模型。这种方法可以减少计算需求，同时提高模型性能。然而，&lt;strong&gt;P-tuning v2 可能需要更精细的参数调整&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果你有大量标注数据，&lt;strong&gt;SFT&lt;/strong&gt;（Standard Fine-Tuning） 可能是更好的选择。对于半监督学习场景，&lt;strong&gt;LoRA&lt;/strong&gt; 可能更适合。而对于防止过拟合和轻量级微调场景，&lt;strong&gt;Freeze&lt;/strong&gt; 可能更合适。请根据你的需求选择最适合的方法，以优化你的模型性能。（来自 copilot）&lt;/p&gt;
+&lt;h3 id=&#34;fine-tune-a-mistral-7b-model-with-direct-preference-optimization&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#fine-tune-a-mistral-7b-model-with-direct-preference-optimization&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVuY2UuY29tL2ZpbmUtdHVuZS1hLW1pc3RyYWwtN2ItbW9kZWwtd2l0aC1kaXJlY3QtcHJlZmVyZW5jZS1vcHRpbWl6YXRpb24tNzA4MDQyNzQ1YWFj&#34;&gt;Fine-tune a Mistral-7b model with Direct Preference Optimization&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;hugging face 上某一榜上前三提供的一种微调方法，前提：已经经过监督式微调的模型 + 高质量偏好数据集，不知道能不能学习一下&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# 以下是作者提供的参数
+# LoRA configuration
+peft_config = LoraConfig(
+    r=16,
+    lora_alpha=16,
+    lora_dropout=0.05,
+    bias=&amp;quot;none&amp;quot;,
+    task_type=&amp;quot;CAUSAL_LM&amp;quot;,
+    target_modules=[&#39;k_proj&#39;, &#39;gate_proj&#39;, &#39;v_proj&#39;, &#39;up_proj&#39;, &#39;q_proj&#39;, &#39;o_proj&#39;, &#39;down_proj&#39;]
+)
+
+# Training arguments
+training_args = TrainingArguments(
+    per_device_train_batch_size=4,
+    gradient_accumulation_steps=4,
+    gradient_checkpointing=True,
+    learning_rate=5e-5,
+    lr_scheduler_type=&amp;quot;cosine&amp;quot;,
+    max_steps=200,
+    save_strategy=&amp;quot;no&amp;quot;,
+    logging_steps=1,
+    output_dir=new_model,
+    optim=&amp;quot;paged_adamw_32bit&amp;quot;,
+    warmup_steps=100,
+    bf16=True,
+    report_to=&amp;quot;wandb&amp;quot;,
+)
+
+# Create DPO trainer
+dpo_trainer = DPOTrainer(
+    model,
+    ref_model,
+    args=training_args,
+    train_dataset=dataset,
+    tokenizer=tokenizer,
+    peft_config=peft_config,
+    beta=0.1,
+    max_prompt_length=1024,
+    max_length=1536,
+)
+
+# Fine-tune model with DPO
+dpo_trainer.train()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;学习率的重要性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#学习率的重要性&#34;&gt;#&lt;/a&gt; &lt;strong&gt;学习率的重要性&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;目前深度学习使用的都是非常简单的一阶收敛算法，梯度下降法，不管有多少自适应的优化算法，本质上都是对梯度下降法的各种变形，所以初始学习率对深层网络的收敛起着决定性的作用，下面就是梯度下降法的公式&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240402154527727.png&#34; alt=&#34;image-20240402154527727&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;这里 α 就是学习率，如果学习率太小，会导致网络 loss 下降非常慢，如果学习率太大，那么参数更新的幅度就非常大，就会导致网络收敛到局部最优点，或者 loss 直接开始增加，如下图所示。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;v2-6f1772cefad4befccd3e6cfd83b1fbfd_720w.webp&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;大模型微调步骤&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#大模型微调步骤&#34;&gt;#&lt;/a&gt; 大模型微调步骤&lt;/h3&gt;
+&lt;p&gt;大模型微调如上文所述有很多方法，并且对于每种方法都会有不同的微调流程、方式、准备工作和周期。然而大部分的大模型微调，都有以下几个主要步骤，并需要做相关的准备：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;准备数据集&lt;/strong&gt;：收集和准备与目标任务相关的训练数据集。确保数据集质量和标注准确性，并进行必要的数据清洗和预处理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;选择预训练模型 / 基础模型&lt;/strong&gt;：根据目标任务的性质和数据集的特点，选择适合的预训练模型。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;设定微调策略&lt;/strong&gt;：根据任务需求和可用资源，选择适当的微调策略。考虑是进行全微调还是部分微调，以及微调的层级和范围。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;设置超参数&lt;/strong&gt;：确定微调过程中的超参数，如学习率、批量大小、训练轮数等。这些超参数的选择对微调的性能和收敛速度有重要影响。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;初始化模型参数&lt;/strong&gt;：根据预训练模型的权重，初始化微调模型的参数。对于全微调，所有模型参数都会被随机初始化；对于部分微调，只有顶层或少数层的参数会被随机初始化。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;进行微调训练&lt;/strong&gt;：使用准备好的数据集和微调策略，对模型进行训练。在训练过程中，根据设定的超参数和优化算法，逐渐调整模型参数以最小化&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuemhpaHUuY29tL3NlYXJjaD9xPSVFNiU4RCU5RiVFNSVBNCVCMSVFNSU4NyVCRCVFNiU5NSVCMCZhbXA7c2VhcmNoX3NvdXJjZT1FbnRpdHkmYW1wO2h5YnJpZF9zZWFyY2hfc291cmNlPUVudGl0eSZhbXA7aHlicmlkX3NlYXJjaF9leHRyYT0lN0IlMjJzb3VyY2VUeXBlJTIyJTNBJTIyYW5zd2VyJTIyJTJDJTIyc291cmNlSWQlMjIlM0EzMzcwNjU2MTQ3JTdE&#34;&gt;损失函数&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;模型评估和调优&lt;/strong&gt;：在训练过程中，使用验证集对模型进行定期评估，并根据评估结果调整超参数或微调策略。这有助于提高模型的性能和泛化能力。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;测试模型性能&lt;/strong&gt;：在微调完成后，使用测试集对最终的微调模型进行评估，以获得最终的性能指标。这有助于评估模型在实际应用中的表现。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;模型部署和应用&lt;/strong&gt;：将微调完成的模型部署到实际应用中，并进行进一步的优化和调整，以满足实际需求。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;使用llama-factory示例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用llama-factory示例&#34;&gt;#&lt;/a&gt; 使用 LLaMA-Factory 示例&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;数据集准备&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;按照要求 LLaMA-Factory\data\README_zh.md 里的格式准备好数据集，格式的话，可以在生成时就按照特定格式生成，也可以后期写脚本修改成需要的格式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 LLaMA-Factory\data\dataset_info.json 把该数据集配置好 需要使用 SHA1 码。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;certutil -hashfile &amp;lt;filename&amp;gt; SHA1 # 查看SHA1码
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;训练&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;启动 LLaMA-Factory 的 webUI&lt;/li&gt;
+&lt;li&gt;设置好参数（参数可以参考下面文档调）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;模型评估&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;训练结果好与坏可以从给出的 loss 函数来看，不震荡、收敛到 1 左右的就还行&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;模型调用&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;可以在 webUI 的 chat 部分加载，把训练好的适配器加上后，即可调用。缺点是貌似有 bug，有时候会出现 assistant、自问自答等情况&lt;/p&gt;
+&lt;p&gt;也可以导出模型，使用 chatglm 文件夹下的 demo 启动的话，缺点是导出耗时&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;调参&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#调参&#34;&gt;#&lt;/a&gt; 调参&lt;/h2&gt;
+&lt;p&gt;以下是 LLaMA-Factory 里，可以修改的大部分参数&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240429130319802.png&#34; alt=&#34;image-20240429130319802&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240429130430005.png&#34; alt=&#34;image-20240429130430005&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;训练阶段sft&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#训练阶段sft&#34;&gt;#&lt;/a&gt; 训练阶段（SFT…）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;SFT&lt;/p&gt;
+&lt;p&gt;监督微调&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DPO&lt;/p&gt;
+&lt;p&gt;直接偏好微调，一个问题 X 多个回答（优质、劣质）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;学习率&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#学习率&#34;&gt;#&lt;/a&gt; 学习率&lt;/h3&gt;
+&lt;p&gt;数值举例：5e-5 的计算是&lt;strong&gt;科学计数法&lt;/strong&gt;中的一个数值，即 5 乘以 10 的负 5 次方，即 0.00005&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;学习率过大&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;学习率过小&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;学习速度&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;快&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;慢&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;使用时间点&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;训练开始&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;一定轮数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;副作用&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;易损失值爆炸；易震荡&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;易过拟合；收敛速度慢&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img data-src=&#34;v2-c1c72c00c93f778ad91cefb6c8a8665d_720w.webp&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;曲线 初始时 上扬 【红线】：&lt;br /&gt;
+Solution：初始 学习率过大 导致 振荡，应减小学习率，并 从头 开始训练 。&lt;/li&gt;
+&lt;li&gt;曲线 初始时 强势下降 没多久 归于水平 【紫线】：&lt;br /&gt;
+Solution：后期 学习率过大 导致 无法拟合，应减小学习率，并 重新训练 后几轮 。&lt;/li&gt;
+&lt;li&gt;曲线 全程缓慢 【黄线】：&lt;br /&gt;
+Solution：初始 学习率过小 导致 收敛慢，应增大学习率，并 从头 开始训练 。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;参考链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzJTNBLy9ibG9nLmNzZG4ubmV0L3FxXzMzNDg1NDM0L2FydGljbGUvZGV0YWlscy84MDQ1Mjk0MQ==&#34;&gt;深度学习：学习率 learning rate 的设定规律&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;epochs训练轮数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#epochs训练轮数&#34;&gt;#&lt;/a&gt; Epochs 训练轮数&lt;/h3&gt;
+&lt;p&gt;目前智旅项目的轮数都是在 3~24 轮。跟学习率、数据集等有关。轮数过多会过拟合。&lt;/p&gt;
+&lt;h3 id=&#34;最大梯度范数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最大梯度范数&#34;&gt;#&lt;/a&gt; 最大梯度范数&lt;/h3&gt;
+&lt;p&gt;梯度是指损失函数对模型参数的偏导数，它表示了模型在当前参数值下的变化方向和速度。通过限制梯度的最大范数，可以控制模型参数的更新幅度，防止梯度爆炸（gradient explosion）或梯度消失（gradient vanishing）&lt;/p&gt;
+&lt;p&gt;例如前面我们学的学习率，你设置一个较大的值，那极可能会梯度爆炸，你会看到曲线过山车一样！所以这个参数可以一定程度上减少这种情况！&lt;strong&gt;一般默认 1&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;梯度累积&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#梯度累积&#34;&gt;#&lt;/a&gt; 梯度累积&lt;/h3&gt;
+&lt;p&gt;梯度累积允许我们将多个小批次的梯度相加，然后再进行参数更新。梯度累积对于具有较大批大小的模型或具有较小 GPU 显存的情况特别有用&lt;/p&gt;
+&lt;p&gt;这相当于让大模型去学习，如果一边学，一边把之前所学进行总结，通常比较累，而且需要消耗的显存也越大。如果让大模型看了 10 页书之后再总结，是不是学得更轻松些？占用的显存资源也少了。！但也会导致训练速度变慢。&lt;/p&gt;
+&lt;h3 id=&#34;计算类型fp16&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计算类型fp16&#34;&gt;#&lt;/a&gt; 计算类型（FP16…）&lt;/h3&gt;
+&lt;p&gt;&lt;s&gt;FP16 是 16 位浮点数数据类型，相比于传统的 32 位浮点数（FP32），它可以减少一半的存储空间和计算开销。在混合精度训练中，模型参数和梯度可以使用 FP16 进行计算和存储，从而减少内存占用和计算时间。然而，由于 FP16 的精度较低，可能会引入一些数值精度损失，导致训练过程中的数值不够准确&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;BF16 是一种更为近似于 FP32 的 16 位浮点数数据类型。相比于 FP16，BF16 在保持较低的存储和计算开销的同时，提供了更接近 FP32 的数值精度。因此，BF16 在混合精度训练中可以更好地平衡计算效率和数值精度。&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;有些模型会有推荐训练方法，你只需要知道什么回事即可，默认 FP16&lt;/s&gt;&lt;/p&gt;
+&lt;h3 id=&#34;截断长度&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#截断长度&#34;&gt;#&lt;/a&gt; 截断长度&lt;/h3&gt;
+&lt;p&gt;一条数据分词后会成为一个 token 序列，当 token 序列的长度超过截断长度时会被分割成若干段输入进模型，这里保持 1024 不变&lt;/p&gt;
+&lt;h3 id=&#34;batch-size批处理大小&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#batch-size批处理大小&#34;&gt;#&lt;/a&gt; &lt;strong&gt;Batch size&lt;/strong&gt; (批处理大小)&lt;/h3&gt;
+&lt;p&gt;一般来说，在合理的范围之内，&lt;strong&gt;越大的 batch size&lt;/strong&gt; 使下降方向越准确，震荡越小；batch size 如果过大，则可能会出现局部最优的情况（这也是其中的一个缺点吧）。&lt;strong&gt;小的 bath size&lt;/strong&gt; 引入的随机性更大，难以达到收敛，极少数情况下可能会效果变好。&lt;/p&gt;
+&lt;p&gt;会影响训练的稳定性，Batch size 过小会使 Loss 曲线振荡的比较大，大小一般按照 2 的次幂规律选择，这是为了硬件计算效率考虑的。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412092213348.png&#34; alt=&#34;image-20240412092213348&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;（此处问题可能 batch size 太小了（如果学习率问题不大的话））&lt;/p&gt;
+&lt;p&gt;考虑到我们的显卡，一般设置在 2~8 之间&lt;/p&gt;
+&lt;h3 id=&#34;验证集比例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#验证集比例&#34;&gt;#&lt;/a&gt; 验证集比例&lt;/h3&gt;
+&lt;p&gt;一般设置成 0.2&lt;/p&gt;
+&lt;h3 id=&#34;学习率调节器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#学习率调节器&#34;&gt;#&lt;/a&gt; 学习率调节器&lt;/h3&gt;
+&lt;p&gt;使用默认的 cosine&lt;/p&gt;
+&lt;h3 id=&#34;其他参数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#其他参数&#34;&gt;#&lt;/a&gt; 其他参数&lt;/h3&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;h3 id=&#34;部分参数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#部分参数&#34;&gt;#&lt;/a&gt; 部分参数&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;可训练层数&lt;/p&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可训练模块&lt;/p&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;lora参数设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#lora参数设置&#34;&gt;#&lt;/a&gt; LoRA 参数设置&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;LoRA 秩&lt;/p&gt;
+&lt;p&gt;一般为 8，是缩放系数的一半&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LoRA 缩放系数&lt;/p&gt;
+&lt;p&gt;一般为 16&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;随机丢弃&lt;/p&gt;
+&lt;p&gt;一般设置成 0.1&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;loss-损失函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#loss-损失函数&#34;&gt;#&lt;/a&gt; loss 损失函数&lt;/h3&gt;
+&lt;p&gt;train loss 不断下降，test loss 不断下降，说明网络仍在学习；&lt;/p&gt;
+&lt;p&gt;train loss 不断下降，test loss 趋于不变，说明网络过拟合；&lt;/p&gt;
+&lt;p&gt;train loss 趋于不变，test loss 不断下降，说明数据集 100% 有问题；&lt;/p&gt;
+&lt;p&gt;train loss 趋于不变，test loss 趋于不变，说明学习遇到瓶颈，需要减小学习率或批量数目；&lt;/p&gt;
+&lt;p&gt;train loss 不断上升，test loss 不断上升，说明网络结构设计不当，训练超参数设置不当，数据集经过清洗等问题。&lt;/p&gt;
+&lt;h3 id=&#34;top-p采样-temperature温度&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#top-p采样-temperature温度&#34;&gt;#&lt;/a&gt; top-p 采样 /temperature 温度&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;temperature  官网解释&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. We generally recommend altering this or top_p but not both.&lt;/p&gt;
+&lt;p&gt;翻译：“采样温度” 是在 0 到 2 之间选择的参数。较高的值（如 0.8）会使输出更具随机性，而较低的值（如 0.2）则会使输出更集中，更确定性。通常，我们建议修改 “采样温度” 或 “top_p” 其中之一，而不是同时修改两者。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;top-p 采样 官网解释&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with top_p probability mass. So 0.1 means only the tokens comprising the top 10% probability mass are considered.&lt;/p&gt;
+&lt;p&gt;翻译：&amp;quot;nucleus sampling&amp;quot;（核采样或者叫做 top-p 采样）是一个替代温度采样的方法，其中模型考虑了具有 top_p 概率质量的 token 的结果。因此，0.1 表示只考虑包含在最高 10% 概率质量中的 token。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;总结&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;quot;temperature&amp;quot; 影响了结果的随机性，而 &amp;quot;top_p&amp;quot; 则影响了结果的确定性。但他们是从不同的角度影响输出的：temperature 更偏向于控制输出的 “随机性”，而 top-p 则是在给定的可能结果中设定一个 “阈值”。&lt;/p&gt;
+&lt;h2 id=&#34;文本相似度&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文本相似度&#34;&gt;#&lt;/a&gt; 文本相似度&lt;/h2&gt;
+&lt;p&gt;为了&lt;strong&gt;评估&lt;/strong&gt;我们微调后的效果，我们引入&lt;strong&gt;文本相似度&lt;/strong&gt;，而使用&lt;strong&gt;余弦相似度&lt;/strong&gt;来判断文本相似度高与否&lt;/p&gt;
+&lt;p&gt;初步实现：jieba 分词 + 余弦相似度 + numpy 处理 + matplotlib.pyplot 画图&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;	# 计算平均值
+    average = sum(data) / len(data)
+    # 输出结果
+    print(&amp;quot;平均值为:&amp;quot;, average)
+
+    # 生成示例数据，假设这是余弦相似度的一些值
+    cosine_similarities = data  # 生成1000个随机余弦相似度值，范围在0到1之间
+
+    # 统计相似度值的频率分布
+    bins = np.linspace(0, 1, 50)  # 将x轴分为50个区间
+    hist, bins = np.histogram(cosine_similarities, bins=bins)
+
+    # 绘制频率分布图
+    plt.bar(bins[:-1], hist, width=(bins[1] - bins[0]), align=&#39;edge&#39;)
+    plt.xlabel(&amp;quot;余弦相似度&amp;quot;)
+    plt.ylabel(&amp;quot;数量&amp;quot;)
+    plt.title(&amp;quot;余弦相似度的频率分布图&amp;quot;)
+    plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用：&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzYzODgwMzQ4OC9hbnN3ZXIvMzM3MDY1NjE0Nw==&#34;&gt;初学者如何对大模型进行微调？ - 爱吃牛油果的璐璐的回答 - 知乎&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NpbmF0XzM3NTc0MTg3L2FydGljbGUvZGV0YWlscy8xMzEyNDE4OTI=&#34;&gt;p-tuning 和 Lora 的区别_ptuning 和 lora 对比 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVuY2UuY29tL2ZpbmUtdHVuZS1hLW1pc3RyYWwtN2ItbW9kZWwtd2l0aC1kaXJlY3QtcHJlZmVyZW5jZS1vcHRpbWl6YXRpb24tNzA4MDQyNzQ1YWFj&#34;&gt;Fine-tune a Mistral-7b model with Direct Preference Optimization | by Maxime Labonne | Towards Data Science&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC80MjAwNTM4MzE=&#34;&gt;loss 问题汇总（不收敛、震荡、nan） - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82NjM0ODMxODk=&#34;&gt;2023 - 全网首个 (Q) Lora 微调大模型指令说明书！收藏就对了！45 天玩转大模型微调 + 知识库落地！8/45 - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L09ubHlfQVIvYXJ0aWNsZS9kZXRhaWxzLzEzNzE0ODk1MA==&#34;&gt;LLaMA Factory+ModelScope 实战 —— 使用 Web UI 进行监督微调_modalscope webui 不能启动 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="AI" />
+        <updated>2024-03-22T07:01:23.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2024/02/12/supervised-learing-part01/</id>
+        <title>supervised learing part01</title>
+        <link rel="alternate" href="http://example.com/2024/02/12/supervised-learing-part01/"/>
+        <content type="html">&lt;p&gt;监督式机器学习与非监督式机器学习&lt;/p&gt;
+&lt;p&gt;1. 监督学习&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1.1 回归 regression&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;1.2 分类 classification&lt;/p&gt;
+&lt;p&gt;Age 和 Tumor Size 可以当做是维度，可以引入 n 维，并可以找到这 n 维度下的 O 和 X 的边界&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240212112345431.png&#34; alt=&#34;image-20240212112345431&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;2. 非监督学习&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;聚类算法 clustering&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240212120641463.png&#34; alt=&#34;image-20240212120641463&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="机器学习" />
+        <updated>2024-02-12T03:05:35.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2024/02/11/Long-term-Memory/</id>
+        <title>Long-term Memory-机器学习01</title>
+        <link rel="alternate" href="http://example.com/2024/02/11/Long-term-Memory/"/>
+        <content type="html">&lt;p&gt;想了解一下如何实现 GLM 的长记忆，以实现像 neuro 那样的长记忆功能。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly95dWxsZXlpLm1lZGl1bS5jb20vbGFyZ2UtbGFuZ3VhZ2UtbW9kZWxzLWxsbS13aXRoLWxvbmctdGVybS1tZW1vcnktYWR2YW5jZW1lbnRzLWFuZC1vcHBvcnR1bml0aWVzLWluLWdlbmFpLWZjYzM1OTBmMWMwZQ==&#34;&gt;AI has a long-term memory problem (how to make neural networks less forgetful)&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+
+“虽然像OpenAI的GPT这样的AI模型被训练了数十亿条数据，但它们不会记住你向它们展示的任何东西，甚至不会记住它们向你返回的任何东西，”Pinecone的创始人兼首席执行官Edo Liberty说道。“AI模型是无状态的。它们没有记忆。”
+
+显然，“如果你无法回忆起任何东西，记忆就是无用的，”Liberty说。
+
+在生成AI上下文和范围的局限性
+今天许多领先的AI系统都是循环神经网络（RNNs）。这种深度学习方法使用过去的信息来提高对当前和未来输入的性能。其中最常用的之一是长短期记忆（LSTM）模型。
+
+这些模型可以处理顺序信息，并保留一定数量的先前输入的上下文以处理下一个输入，CELUS战略发展合伙人兼联合创始人André Alcalde解释道。
+
+“你可以考虑在处理句子中的单词时，这对你有多有用，”他说道。
+
+例如，你可能有些单词是从先前的单词中引用的，所以这个模型能够保持对有限数量的输入的理解。
+
+但这是关于LSTM模型的关键词：它们是有限的。
+
+简单来说，“神经网络通常是健忘的，”Gartner分析师Erick Brethenoux说道。
+
+他们“记住”了以前训练会话中的信息，并在短时间内将其考虑在内，他说。当新的训练信息进入时，模型将识别它之前见过和未见过的内容，并利用它来适应和修改。
+
+但是，如果它看到了某些东西，然后在下一个会话中没有看到它——或者在那之后的会话中也没有看到它——模型将忘记该信息。在某种意义上，模型正在考虑：“在[当前会话]之前要记住多少个会话？”
+
+Alcalde还指出，LSTM——以及RNNs一般——在实际应用中可能会遇到一些问题，比如训练过程中的指数（或消失）梯度、长时间的训练期和计算内存效率低下。
+
+“要将少量数据存储在神经网络内存中，您可能需要训练大量参数，”他解释道。
+
+更长期的AI记忆模型
+Alcalde表示，长期记忆模型可以通过使用注意力增强的LSTM或具有注意力机制的新的神经网络架构来解决这些问题。这使得模型能够更好地关注重要的上下文信息，并将其视为更重要的信息。
+
+因此，长期记忆能够更长时间地保留上下文信息，并以更节省内存的方式进行操作，从而节省计算资源，他说。这为语言模型和翻译任务提供了更好的性能，因为它们可以更好地理解正在处理的文本的上下文。
+
+“就像人类保持长期记忆一样，[模型]可以捕获并保留几个月甚至几年的上下文，”Alcalde说道。
+
+为了提高这种能力，例如，一组研究人员最近提出了他们所谓的“主动长期记忆网络”。他们将其描述为“一种能够在学习新知识的同时保持先前学习到的感官输入和行为输出之间关联的序列多任务深度学习模型”。
+
+他们写道，“在人工神经网络中进行持续学习时，当顺序学习不同任务时会出现干扰和遗忘。”
+
+增强AI记忆的矢量数据库的力量
+提高AI记忆的另一种工具是矢量数据库。
+
+正如Pinecone的Liberty所解释的，AI应用依赖于理解自然语言或图像等输入的模型。就像大脑使用化学或电神经信号传递信息一样，AI模型将它们对您展示的任何东西的理解编码为称为矢量嵌入的数字格式。
+
+但是，他说，传统的关系数据库不设计存储和搜索矢量嵌入；AI模型需要一个专门的数据库——矢量数据库——它允许开发人员搜索“这些记忆”以找到最相关的内容，Liberty说。
+
+矢量数据库存储大量的嵌入和相关元数据，例如标签或原始用户输入。然后，它使用算
+
+法对这些嵌入进行索引以进行快速检索。然后，当给定一个查询（也是嵌入的形式）时，它会迅速返回最相关的结果。
+
+“这其中的美妙之处在于搜索是通过含义而不是精确匹配完成的，因此您不需要在数据库中有任何与查询完全匹配的内容才能获得有用的答案，”Liberty说。
+
+应用含义和上下文
+Liberty表示，矢量数据库试图解决的基本问题有两个。第一个是搜索应用中缺乏意义。他指出，几十年来，工具一直依赖于将查询中的关键字与数据库中的关键字匹配。
+
+他描述的第二个问题——他将其描述为“最近的但更痛苦的”问题，因为它阻止组织实施像ChatGPT这样的高级工具——是缺乏上下文。
+
+“ChatGPT之类的解决方案可以解释和生成语言，但它生成的答案并不总是正确的，”他说道。这是一种被称为“幻觉”的现象。
+
+矢量数据库可以通过让工程师构建应用程序，该应用程序搜索嵌入而不是原始文本来解决搜索应用程序中缺乏意义的问题。这种语义搜索可以产生显著更好的结果，Liberty说。
+
+他说：“在搜索应用程序或推荐系统中，这意味着更满意的用户。”“在安全系统中，这意味着更好地检测威胁。”
+
+与此同时，矢量数据库通过让工程师存储和发现相关上下文，并将其与原始输入/问题一起提供给AI模型来解决缺乏上下文的问题。然后，AI模型将基于其对语言的理解以及“超相关”信息生成对问题的答案。
+
+“AI总是会给出答案，但不总是正确的，”他说。“当您将AI模型与用于长期记忆的矢量数据库相结合时，它会给出正确的答案。”
+
+人类化行为——而不是人类的替代品
+最终，长期记忆可以推动AI模型朝着更像人类行为的学习路径发展，Alcalde说。
+
+例如，它们可以从自己的互动中学习；记住并仅应用“消耗”的书籍、新闻、音频和视频中的重要信息块；并且具有参考这些内容的能力。
+
+但是，Brethenoux说，前进的道路应该是具有“混合学习能力”的人与机器结合。
+
+Gartner提出了一个高级概念，称为“复合AI”或“混合AI”。这是“将不同的AI技术结合应用以提高学习效率，扩展知识表示水平，并最终以更有效的方式解决更广泛的业务问题。”
+
+Brethenoux指出，自然，人类有长期记忆，并且我们的大脑利用抽象、感知和上下文来做出决策。正如他所说，机器应该给我们提供一些我们可以解释和行动的东西，以共生的方式。
+
+“我希望我们不仅仅是为了自动化事物，也不仅仅是将事物呈现给人类，而是要找到更好的方法来增强智能，”他说。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;[Large Language Models (LLM) with Long-Term Memory: Advancements and Opportunities in GenAI Applications](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc2R4Y2VudHJhbC5jb20vYXJ0aWNsZXMvYW5hbHlzaXMvYWktaGFzLWEtbG9uZy10ZXJtLW1lbW9yeS1wcm9ibGVtLWhvdy10by1tYWtlLW5ldXJhbC1uZXR3b3Jrcy1sZXNzLWZvcmdldGZ1bC8yMDIzLzAzLw==&#34;&gt;AI has a long-term memory problem (how to make neural networks less forgetful) - SDxCentral&lt;/span&gt;)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;导论
+大型语言模型（LLMs）是在大量文本库上训练的参数众多的先进机器学习模型。从技术角度来看，语言建模（LM）是推动机器语言智能进步的关键技术。LM的主要目标是开发能够准确估计生成单词序列概率的模型，从而便于估计与未来标记相关或不存在的概率。
+
+自然语言处理及相关学科的最新发展得益于大型语言模型（LLMs），如ChatGPT。研究表明，当这些模型达到一定规模时，它们会表现出新兴行为，例如具有“推理”能力。通过结合“思维链”方法，即推理示例或简单提示如“我们逐步思考”，这些模型可以通过明确的逻辑步骤回答问题。
+
+一个LLMs可以处理的例子是：“所有鲸鱼都是哺乳动物，所有哺乳动物都有肾脏；因此，所有鲸鱼都有肾脏。”这个特定的例子在研究界引起了极大的兴奋。之所以如此激动，是因为推理的能力被认为是人类智能的基本特征，而目前的人工智能系统往往被认为缺乏这种能力。
+
+尽管大型语言模型（LLMs）在特定推理任务上表现出色，但它们的通用推理能力以及它们可以参与推理过程的程度仍然存在争议。这种不确定性引发了研究界的持续辩论和不同观点。例如，有人说LLMs是“足够的零-shot推理者”，而其他作者得出的结论是“LLMs在日常规划/推理任务上仍有很长的路要走，这对人类来说并不构成挑战”。
+
+在本文中，我们开始探讨记忆在推动LLMs、一些新兴架构以及它们应用的机会中的作用。后续文章将更多地涵盖实现细节和不同方法与设计模式的具体内容。
+
+带有长期记忆的LLMs
+LLMs建立在一种称为Transformer模型的深度学习架构上。Transformer模型利用自注意机制来确定文本序列中单词或元素之间的关系。这一基础及相关发展使得模型能够更好地理解和生成具有更大上下文和连贯性的文本。
+
+为了提高LLMs的能力，研究人员考虑将长期记忆机制纳入这些模型。长期记忆允许模型在较长时间内存储信息，并在开发响应时利用这些信息。目前有两种主要方式可以将长期记忆纳入其中。
+
+LLMs可以纳入长期记忆的一种方式是利用额外的记忆组件，例如第三方数据库，包括向量数据库或（知识）图数据库。这些组件存储事实数据或嵌入，模型可以访问并用于生成文本。通过访问这些外部记忆，LLMs可以提供更精确和准确的响应。
+
+另一种方式是将记忆纳入模型本身。例如，模型可以包括一个内部记忆模块（例如索引、修改的注意机制等），在文本处理过程中存储相关数据。这种内部记忆可以被修改和访问，以影响模型的行为。通过在实际模型架构中使用长期记忆，LLMs可以展示更一致的行为，并针对给定上下文创建适当的响应。
+
+架构设计考虑因素:
+开发具有长期记忆的LLMs时必须考虑几个架构因素。一些关键考虑因素包括：
+
+存储：模型的内存应该足够大，可以存储和检索相关信息。内存组件的大小和架构必须设计为容纳预期长期数据量。
+存储更新：模型应该包括机制，以对新输入或数据进行长期记忆的修订。这确保了记忆的及时更新，并与当前上下文相关。
+记忆检索：模型需要有效的访问和检索机制，用于从长期记忆中检索信息。这个检索过程必须快速而准确，以使模型能够在文本生成过程中利用存储的信息而不会造成过多的延迟。这在使用外部记忆组件的方法中尤为重要，比如第三方数据库。
+与注意机制结合：模型的长期记忆应该与自注意机制结合。这使得模型能够在文本生成过程中关注记忆的相关部分，并根据存储的数据做出明智的决策。
+训练和选择：训练具有长期记忆的LLMs需要对记忆在训练过程中如何更新和利用有透彻的理解。为了确保有效地学习和利用存储的数据，必须采用健壮的选择技术来考虑记忆组件。
+为此，研究界出现了一些新的新兴架构，试图考虑这些设计考虑因素，同时改进成
+
+本和长期记忆效率。一个例子，如下图所示，是添加一个解耦缓存层，在训练过程中保持新鲜，以补充预训练模型。
+
+另一个例子如下图所示，是“Hyena Hierarchy”，该架构试图通过在新的稠密、无注意力架构中使用亚二次运算符来打破注意力机制的二次障碍（导致缩放成本和计算时间）。
+
+使用来自Poli等人（2023）的Hyena Hierarchy的示例架构
+
+这些新的范式以及研究和开发社区中出现的其他范式将在未来的文章中更详细地探讨。
+
+GenAI应用的进展和机会
+基于LLM的GenAI应用的发展为许多领域带来了新的机会。随着模型在理解和记忆扩展上变得越来越熟练，它们可以在越来越复杂和动态的情况下得到利用。
+
+LLMs的进展
+提高文本生成中的上下文理解和连贯性
+GenAI应用程序理解和生成具有增强上下文理解和连贯性的文本的能力是它们的重要优势之一。现代LLMs，如GPT-3.5及以上版本，已经在大量数据上进行了训练，可能会产生更恰当和与上下文相关的响应。这种改进使得跨多个应用程序进行更有意义和精确的交互成为可能。这在长期记忆机制的改进方面进一步加强，涵盖了以下领域。
+
+提高生成响应的准确性和特异性：
+将LLMs调整到获得特定领域专业知识的能力是GenAI应用程序的主要优势之一。这超越了仅仅使用现有通用LLMs的“导言”或提示工程化。通过向模型引入大量特定领域的数据并相应地调整其参数，我们可以训练它生成表现出对话题的深刻理解的响应。这种专业化使得模型能够提供更精确和与上下文相关的数据。
+
+此外，通过使用精细调整的LLMs，GenAI应用在信息检索方面表现出色。通过整合长期记忆机制，这些模型可以以更高的精度和相关性检索信息，从而使模型能够向用户查询提供更准确的结果。
+
+一致的行为和减少LLMs中的偏见：
+确保LLMs的一致性，减少LLMs中的幻觉和消除LLMs中的偏见，是具有巨大挑战的。通过在LLMs中利用更好的长期记忆机制，我们可以潜在地改善以下领域的偏见：
+
+减少偏见：AI模型从数据中获取知识。如果训练数据中包含偏见，模型也会展现出相同的偏见。因此，关键是精心策划一个平衡和多样化的训练数据集。这需要精确的数据选择和评估，以减少内在和显性偏见。更好的长期记忆可以提高输出的质量，减少幻觉并可能减少有偏见的输出。
+
+公平评估：实施和监测公正度指标可以帮助量化偏见。这些指标可以作为LLMs行为的指导原则。这其中一部分还涉及到审视LLMs在用户互动层面的输入（提示）和输出（响应）。在这方面，具有外部长期记忆机制也可能会有所帮助。在整个过程中进行定期审计和评估是识别和纠正AI系统中任何偏见的重要环节。
+
+算法透明性：大多数LLMs在决策过程中仍然非常不透明。虽然有解释性AI技术可以帮助识别内在偏见，揭示模型是如何做出决策的，但是新兴模型架构中的记忆机制也有可能提供机会，使模型更加透明。例如，可以冻结或更新模型的某些部分或其运行的长期记忆的技术可能使模型保持最新，但也确保其符合“被遗忘权”等法规而无需重新训练。
+
+机会:
+生成AI是人工智能的一个子领域，其重点是开发模型和系统以生成新的独特内容。与传统的人工智能系统相比，传统AI系统旨在识别和分类现有数据，而生成AI旨在生成新的数据，模仿其所接触的训练数据的趋势和特征。在LLMs中加强记忆功能可以显著影响以下领域：
+
+内容创作：AI在生成书面内容方面已经取得了显著进展，包括诗歌、新闻文章和技术论文。例如，企业可以使用AI生成营销文案或提供内容建议，从而极大地减少创建和修改内容的时间。此外，生成AI模型使用生成对抗网络（GANs）、变分自动编码器（VAEs）和R
+
+NN等方法来生成新的内容，如图片、视频、文本和音乐。这些模型发现了训练数据的基本模式和框架，然后利用这些信息生成具有类似特征的新样本。更长的记忆时间可以帮助基于更长的上下文演变内容，并参考以前的陈述或作品中的关键要素。
+
+个性化体验：无论是通过生成个性化购买体验还是在教育中创建独特的学习路径，生成AI都有潜力个性化我们日常生活的许多方面。改进的记忆功能将提供更好的个性化能力，可以考虑更长时间的偏好。
+
+药物发现：生成AI已经用于预测分子的潜在属性，并在药物发现中生成新的潜在药物候选物。这已经被证明可以显著加速药物发现和开发过程。更好的长期记忆可以通过包含更多关于每种分子或药物候选物的上下文信息，进一步提高这些应用的潜力。
+
+结论
+尽管有令人兴奋的发展和机会，但仍然存在重大挑战。训练这些先进LLMs的计算复杂性很高，它们的复杂性使得理解和控制它们变得更加困难。研究人员仍在探索如何有效地处理这些权衡。这个讨论的一个关键部分是LLMs和GenAI更广泛的长期记忆的作用。
+
+对这些先进的AI模型的伦理影响的关注不断增长。仍然存在未解决的隐私问题，特别是考虑到模型可以记住信息很长时间。至关重要的是，这些模型是否会记住并延续有害或有偏见的行为。
+
+研究人员、开发人员、监管机构和最终用户必须合作解决这些挑战。为了负责任地挖掘基于LLM的GenAI应用的每一种潜力，有必要开发新的方法来理解模型、AI使用的伦理标准以及更有效的隐私保护方法。
+
+总之，基于记忆和上下文的GenAI应用的快速发展代表了人工智能发展的重要里程碑。随着我们继续挑战AI可以回忆、推理和识别的界限，人类与人工智能任务之间的界限变得越来越模糊。LLMs的发展为各行各业提供了有趣的机会，但也带来了新的挑战。随着我们继续发展人工智能，前方的道路既令人兴奋又充满潜力。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上篇文章内的配图&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;0fb7O_linBXjDTysw.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Example architecture with augmented memory mechanism from&lt;/em&gt; &lt;a href=&#34;https://arxiv.org/pdf/2306.07174.pdf&#34;&gt;&lt;em&gt;Wang et al. (2023)&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;0YJ9EjdKTiBi6ox6q.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Example architecture using Hyena Hierarchy from&lt;/em&gt; &lt;a href=&#34;https://arxiv.org/abs/2302.10866&#34;&gt;&lt;em&gt;Poli et al. (2023)&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;算是初步学习机器学习相关的知识，此前只听过些专有名词。&lt;/p&gt;
+&lt;p&gt;但是之前就看过一些向量数据库和知识图片的文章，在看上述两篇文章之前，我就认为可以使用到类似概念的数据库来存储，&lt;/p&gt;
+&lt;p&gt;“应该是修改某一部分的 “记忆”，使完成本次对话的时候，能够可能访问到该此更新。而不是携带前 n 次的 qa。”&lt;/p&gt;
+&lt;p&gt;“记忆也应该有多层。”&lt;/p&gt;
+&lt;p&gt;今天也看了 GLM 的&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMWI2NDIxdTc0RS8/c2hhcmVfc291cmNlPWNvcHlfd2ViJmFtcDt2ZF9zb3VyY2U9ZmYyY2QxYmIyMDc2NmE2OTE5ZTJhZmM3ZmEzNjM2YTM=&#34;&gt; 2024，智能体 Builder 时代，来临了吗？&lt;/span&gt;，初步了解了大模型的架构&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240211194517900.png&#34; alt=&#34;image-20240211194517900&#34; /&gt;&lt;/p&gt;
+</content>
+        <category term="GLM" />
+        <updated>2024-02-11T11:26:02.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2024/01/27/redis%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</id>
+        <title>redis学习记录</title>
+        <link rel="alternate" href="http://example.com/2024/01/27/redis%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+        <content type="html">&lt;p&gt;&lt;em&gt;大三上的寒假，玩了两周后，觉得该学一些东西了，于是在 b 站上找项目跟做，最后在鱼皮的推荐下，跟做了黑马的 redis。&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;问题1resp连接不上虚拟机上的redis&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问题1resp连接不上虚拟机上的redis&#34;&gt;#&lt;/a&gt; 问题 1：RESP 连接不上虚拟机上的 redis&lt;/h3&gt;
+&lt;h4 id=&#34;搜索了csdnresp项目下的issue做了如下操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#搜索了csdnresp项目下的issue做了如下操作&#34;&gt;#&lt;/a&gt; 搜索了 CSDN，RESP 项目下的 issue，做了如下操作：&lt;/h4&gt;
+&lt;p&gt;我检查了配置文件，重新按照安装说明配置了一遍 redis，都无法解决&lt;/p&gt;
+&lt;p&gt;—&amp;gt; 不是 redis 的问题&lt;/p&gt;
+&lt;p&gt;我又试了试我电脑能不能 ping 上虚拟机，查找了如何获取虚拟机的 ip（ &lt;code&gt;ip addr&lt;/code&gt; ），ping 成功了&lt;/p&gt;
+&lt;p&gt;—&amp;gt; 不是我电脑的问题&lt;/p&gt;
+&lt;p&gt;虚拟机没学，于是我也束手无策了&lt;/p&gt;
+&lt;p&gt;吃完饭后又尝试搜了一下，看了一下 &lt;a href=&#34;%5B%E5%85%8D%E8%B4%B9Redis%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%95%8C%E9%9D%A2%EF%BC%88RESP%EF%BC%89%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80%E5%92%8C%E8%BF%9E%E6%8E%A5%E6%AD%A5%E9%AA%A4_resp%E4%B8%8B%E8%BD%BD-CSDN%E5%8D%9A%E5%AE%A2%5D(https://blog.csdn.net/drhnb/article/details/131717836)&#34;&gt;免费 Redis 图形化界面（RESP）下载地址和连接步骤&lt;/a&gt; ，发现里面有写到连接不上的问题，是 linux 的防火墙拦截了（不太懂 ping 的规则，能 ping 成功，但是防火墙会拦截）&lt;/p&gt;
+&lt;h4 id=&#34;连接不成功尝试在linux中执行下面的两个命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#连接不成功尝试在linux中执行下面的两个命令&#34;&gt;#&lt;/a&gt; 连接不成功：尝试在 linux 中执行下面的两个命令：&lt;/h4&gt;
+&lt;p&gt;以下命令是用于配置 Linux 防火墙（firewalld）以开放指定的端口 （6379/tcp）。&lt;br /&gt;
+1、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;firewall-cmd --zone=public --add-port=6379/tcp --permanent
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这个命令添加一个规则到 “public” 区域（zone）的防火墙配置中，允许通过端口 6379 的 TCP 连接。–permanent 参数表示该规则将被永久保存，重新启动后仍然有效。&lt;/p&gt;
+&lt;p&gt;2、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;firewall-cmd --reload
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这个命令重新加载防火墙规则，使最新的修改生效。当你添加、删除或修改防火墙规则时，都需要执行这个命令才能使更改生效。&lt;/p&gt;
+&lt;p&gt;注意事项：&lt;/p&gt;
+&lt;p&gt;以上命令需要以管理员权限（例如 root 用户或者使用 sudo）来执行。&lt;br /&gt;
+1、在执行前，请确保已经安装了 firewalld，并且正在运行。&lt;br /&gt;
+2、6379 是 Redis 默认的端口号，如果你在使用其他端口，则需要相应地修改上述命令中的端口号。&lt;/p&gt;
+&lt;h3 id=&#34;git问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git问题&#34;&gt;#&lt;/a&gt; git 问题&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;F:\HexoBlog2&amp;gt;ssh -T git@github.com
+ssh: connect to host github.com port 22: Connection timed out
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;解决&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解决&#34;&gt;#&lt;/a&gt; 解决&lt;/h4&gt;
+&lt;p&gt;此处是端口问题，可能是被占用了或者什么的&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git clone git@github.com:xxxxx/xxxx.git my-awesome-proj
+Cloning into &#39;my-awesome-proj&#39;...
+ssh: connect to host github.com port 22: Connection timed out
+fatal: Could not read from remote repository.
+
+$ # This should also timeout
+$ ssh -T git@github.com
+ssh: connect to host github.com port 22: Connection timed out
+
+$ # but this might work
+$ # 换个端口尝试，成功
+$ ssh -T -p 443 git@ssh.github.com
+Hi xxxx! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+
+$ # Override SSH settings
+$ # 添加一个配置文件，会读取该文件，使用配置的端口
+$ vim ~/.ssh/config
+```
+# Add section below to it
+Host github.com
+  Hostname ssh.github.com
+  Port 443
+```
+$ ssh -T git@github.com
+Hi xxxxx! You&#39;ve successfully authenticated, but GitHub does not
+provide shell access.
+
+$ git clone git@github.com:xxxxxx/xxxxx.git my-awesome-proj
+Cloning into &#39;my-awesome-proj&#39;...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 15 (delta 0), reused 15 (delta 0), pack-reused 0
+Receiving objects: 100% (15/15), 22.90 KiB | 4.58 MiB/s, done.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;记录&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#记录&#34;&gt;#&lt;/a&gt; 记录&lt;/h3&gt;
+&lt;h4 id=&#34;短信登陆部分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#短信登陆部分&#34;&gt;#&lt;/a&gt; 短信登陆部分&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412122633753.png&#34; alt=&#34;image-20240412122633753&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412122758798.png&#34; alt=&#34;image-20240412122758798&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412123054149.png&#34; alt=&#34;image-20240412123054149&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;缓存&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#缓存&#34;&gt;#&lt;/a&gt; 缓存&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412123942695.png&#34; alt=&#34;image-20240412123942695&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412124114988.png&#34; alt=&#34;image-20240412124114988&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;缓存更新策略&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#缓存更新策略&#34;&gt;#&lt;/a&gt; 缓存更新策略&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412124326274.png&#34; alt=&#34;image-20240412124326274&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412124636426.png&#34; alt=&#34;image-20240412124636426&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;一般用第一个&lt;img data-src=&#34;image-20240412124808845.png&#34; alt=&#34;image-20240412124808845&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412125028236.png&#34; alt=&#34;image-20240412125028236&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;缓存穿透&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#缓存穿透&#34;&gt;#&lt;/a&gt; 缓存穿透&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412130240329.png&#34; alt=&#34;image-20240412130240329&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;缓存雪崩&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#缓存雪崩&#34;&gt;#&lt;/a&gt; 缓存雪崩&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412130346583.png&#34; alt=&#34;image-20240412130346583&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;缓存击穿&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#缓存击穿&#34;&gt;#&lt;/a&gt; 缓存击穿&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412130622535.png&#34; alt=&#34;image-20240412130622535&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412130742006.png&#34; alt=&#34;image-20240412130742006&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412130802722.png&#34; alt=&#34;image-20240412130802722&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412131031442.png&#34; alt=&#34;image-20240412131031442&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412131423996.png&#34; alt=&#34;image-20240412131423996&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;优惠券秒杀&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#优惠券秒杀&#34;&gt;#&lt;/a&gt; 优惠券秒杀&lt;/h4&gt;
+&lt;h5 id=&#34;全局id生成器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#全局id生成器&#34;&gt;#&lt;/a&gt; 全局 ID 生成器&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412140415747.png&#34; alt=&#34;image-20240412140415747&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412140436380.png&#34; alt=&#34;image-20240412140436380&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;实现功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实现功能&#34;&gt;#&lt;/a&gt; 实现功能&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412140853291.png&#34; alt=&#34;image-20240412140853291&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;超卖问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#超卖问题&#34;&gt;#&lt;/a&gt; 超卖问题&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412141102576.png&#34; alt=&#34;image-20240412141102576&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412141125679.png&#34; alt=&#34;image-20240412141125679&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412141309616.png&#34; alt=&#34;image-20240412141309616&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412141410276.png&#34; alt=&#34;image-20240412141410276&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;一人一单功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一人一单功能&#34;&gt;#&lt;/a&gt; 一人一单功能&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412141516843.png&#34; alt=&#34;image-20240412141516843&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;分布式锁&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分布式锁&#34;&gt;#&lt;/a&gt; 分布式锁&lt;/h4&gt;
+&lt;h5 id=&#34;并发安全问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#并发安全问题&#34;&gt;#&lt;/a&gt; 并发安全问题&lt;/h5&gt;
+&lt;p&gt;多个 JVM 的锁监视器不一样，会同时放行&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412142353714.png&#34; alt=&#34;image-20240412142353714&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;基于redis的分布式锁&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基于redis的分布式锁&#34;&gt;#&lt;/a&gt; 基于 Redis 的分布式锁&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412142523089.png&#34; alt=&#34;image-20240412142523089&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;超时释放导致误删&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#超时释放导致误删&#34;&gt;#&lt;/a&gt; 超时释放导致误删&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412144240999.png&#34; alt=&#34;image-20240412144240999&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;image-20240412144612172.png&#34; alt=&#34;image-20240412144612172&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;原子性问题-事务&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#原子性问题-事务&#34;&gt;#&lt;/a&gt; 原子性问题 （事务）&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412145321833.png&#34; alt=&#34;image-20240412145321833&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;解决方法&lt;/p&gt;
+&lt;p&gt;用 Lua 脚本批量执行命令，达到原子性&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412160658766.png&#34; alt=&#34;image-20240412160658766&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;redission&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#redission&#34;&gt;#&lt;/a&gt; Redission&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412161148239.png&#34; alt=&#34;image-20240412161148239&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412161447719.png&#34; alt=&#34;image-20240412161447719&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;使用redission的分布式锁&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用redission的分布式锁&#34;&gt;#&lt;/a&gt; 使用 Redission 的分布式锁&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412161535930.png&#34; alt=&#34;image-20240412161535930&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412161908045.png&#34; alt=&#34;image-20240412161908045&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412161945922.png&#34; alt=&#34;image-20240412161945922&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412162327381.png&#34; alt=&#34;image-20240412162327381&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412162658354.png&#34; alt=&#34;image-20240412162658354&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412163406408.png&#34; alt=&#34;image-20240412163406408&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;优化优惠券秒杀&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#优化优惠券秒杀&#34;&gt;#&lt;/a&gt; 优化优惠券秒杀&lt;/h4&gt;
+&lt;p&gt;把&lt;strong&gt;抢购&lt;/strong&gt;和&lt;strong&gt;下单&lt;/strong&gt;分开&lt;/p&gt;
+&lt;h5 id=&#34;基于redis优化秒杀资格判断使用lua脚本&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基于redis优化秒杀资格判断使用lua脚本&#34;&gt;#&lt;/a&gt; 基于 Redis 优化秒杀资格判断（使用 Lua 脚本）&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412164112620.png&#34; alt=&#34;image-20240412164112620&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412164924880.png&#34; alt=&#34;image-20240412164924880&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;基于阻塞队列优化异步下单&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基于阻塞队列优化异步下单&#34;&gt;#&lt;/a&gt; 基于阻塞队列优化异步下单&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412164621748.png&#34; alt=&#34;image-20240412164621748&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;问题解决消息队列&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问题解决消息队列&#34;&gt;#&lt;/a&gt; 问题 &amp;amp; 解决（消息队列）&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412165449807.png&#34; alt=&#34;image-20240412165449807&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;消息队列&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#消息队列&#34;&gt;#&lt;/a&gt; 消息队列&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412180418366.png&#34; alt=&#34;image-20240412180418366&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412180446142.png&#34; alt=&#34;image-20240412180446142&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;image-20240412183222085.png&amp;quot; alt=&amp;quot;image-20240412183222085&amp;quot; style=&amp;quot;zoom: 50%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;h5 id=&#34;redis的list模拟消息队列&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#redis的list模拟消息队列&#34;&gt;#&lt;/a&gt; redis 的 list 模拟消息队列&lt;/h5&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;h5 id=&#34;pubsub发布订阅&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pubsub发布订阅&#34;&gt;#&lt;/a&gt; pubsub 发布订阅&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412181838756.png&#34; alt=&#34;image-20240412181838756&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;stream类型消息队列&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#stream类型消息队列&#34;&gt;#&lt;/a&gt; STREAM 类型消息队列&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412182433868.png&#34; alt=&#34;image-20240412182433868&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;image-20240412182643317.png&amp;quot; alt=&amp;quot;image-20240412182643317&amp;quot; style=&amp;quot;zoom:50%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;image-20240412183033083.png&amp;quot; alt=&amp;quot;image-20240412183033083&amp;quot; style=&amp;quot;zoom:67%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;h4 id=&#34;功能-达人探店&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#功能-达人探店&#34;&gt;#&lt;/a&gt; 功能 - 达人探店&lt;/h4&gt;
+&lt;h5 id=&#34;发布&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#发布&#34;&gt;#&lt;/a&gt; 发布&lt;/h5&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;h5 id=&#34;查看&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查看&#34;&gt;#&lt;/a&gt; 查看&lt;/h5&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;h5 id=&#34;点赞功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#点赞功能&#34;&gt;#&lt;/a&gt; 点赞功能&lt;/h5&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;h5 id=&#34;点赞排行榜&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#点赞排行榜&#34;&gt;#&lt;/a&gt; 点赞排行榜&lt;/h5&gt;
+&lt;p&gt;在 Redis 获取 top n&lt;/p&gt;
+&lt;h4 id=&#34;功能-好友关注&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#功能-好友关注&#34;&gt;#&lt;/a&gt; 功能 - 好友关注&lt;/h4&gt;
+&lt;h5 id=&#34;关注取关&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关注取关&#34;&gt;#&lt;/a&gt; 关注取关&lt;/h5&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;h5 id=&#34;共同关注&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#共同关注&#34;&gt;#&lt;/a&gt; 共同关注&lt;/h5&gt;
+&lt;p&gt;把关注列表放到 redis，取交集&lt;/p&gt;
+&lt;h5 id=&#34;feed流&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#feed流&#34;&gt;#&lt;/a&gt; Feed 流&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412190422462.png&#34; alt=&#34;image-20240412190422462&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412190413921.png&#34; alt=&#34;image-20240412190413921&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;实现方案&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412190835135.png&#34; alt=&#34;image-20240412190835135&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;推送到粉丝收件箱&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#推送到粉丝收件箱&#34;&gt;#&lt;/a&gt; 推送到粉丝收件箱&lt;/h5&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;h5 id=&#34;滚动分页查询收件箱的思路&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#滚动分页查询收件箱的思路&#34;&gt;#&lt;/a&gt; 滚动分页查询收件箱的思路&lt;/h5&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;h5 id=&#34;实现滚动分页查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实现滚动分页查询&#34;&gt;#&lt;/a&gt; 实现滚动分页查询&lt;/h5&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;h4 id=&#34;附近商户&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#附近商户&#34;&gt;#&lt;/a&gt; 附近商户&lt;/h4&gt;
+&lt;h5 id=&#34;geo数据结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#geo数据结构&#34;&gt;#&lt;/a&gt; GEO 数据结构&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412193025180.png&#34; alt=&#34;image-20240412193025180&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;导入店铺数据到geo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#导入店铺数据到geo&#34;&gt;#&lt;/a&gt; 导入店铺数据到 GEO&lt;/h5&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;h5 id=&#34;实现附近商户功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实现附近商户功能&#34;&gt;#&lt;/a&gt; 实现附近商户功能&lt;/h5&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;p&gt;……&lt;/p&gt;
+</content>
+        <category term="redis" />
+        <category term="lunix" />
+        <category term="git" />
+        <updated>2024-01-27T04:46:04.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2023/12/24/%E5%AE%9E%E8%AE%AD%E5%91%A8%E5%81%9A%E4%BA%86%E5%95%A5/</id>
+        <title>实训周做了啥</title>
+        <link rel="alternate" href="http://example.com/2023/12/24/%E5%AE%9E%E8%AE%AD%E5%91%A8%E5%81%9A%E4%BA%86%E5%95%A5/"/>
+        <content type="html">&lt;h1 id=&#34;开始&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#开始&#34;&gt;#&lt;/a&gt; 开始&lt;/h1&gt;
+&lt;p&gt;又到了实训周，之前实训周做了啥都忘记了…… 于是记录一下，表示我真的做了（&lt;/p&gt;
+&lt;p&gt;老师的要求是，先用 Vue.js 做一个简单的 Todo List，有点基础后，再做一个微信小程序。&lt;/p&gt;
+&lt;h2 id=&#34;看法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#看法&#34;&gt;#&lt;/a&gt; 看法&lt;/h2&gt;
+&lt;p&gt;我觉得前端界面，简单一点的话，就是组件的拼装，组件自身的样式，组件和同级组件的关系，组件和父级组件的关系。&lt;/p&gt;
+&lt;h1 id=&#34;做todo-list&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#做todo-list&#34;&gt;#&lt;/a&gt; 做 Todo List&lt;/h1&gt;
+&lt;h2 id=&#34;npm&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#npm&#34;&gt;#&lt;/a&gt; npm&lt;/h2&gt;
+&lt;p&gt;，用 npm 创建了项目框架。而 bootstrap 组件库也不错，有好多好看的组件供使用&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;npm run dev&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;数据绑定传输等&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据绑定传输等&#34;&gt;#&lt;/a&gt; 数据绑定传输等&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;@&lt;/code&gt; （v-on）和 &lt;code&gt;：&lt;/code&gt; （v-vbind），&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@ 用于处理事件，而 : 用于处理属性绑定。这两个符号都是Vue.js中的常见语法糖，使代码更简洁易读 
+@ 符号是 v-on 指令的缩写。它用于监听DOM事件并触发相应的Vue实例中的方法。
+: 符号是 v-bind 指令的缩写。它用于动态绑定属性或表达式
+查自chatgpt 2023/12/11
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;我大致理解成，@是绑定事件（函数），：是跟参数之类的有关，也就是属性&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;v-model&lt;/code&gt;  可以在组件上使用以实现双向绑定&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;#123;&amp;#123; item.task &amp;#125;&amp;#125;&lt;/code&gt;  ，可以动态获取属性的值&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;@click=&amp;quot;changeCompleted(item.id)&amp;quot;&lt;/code&gt; ，（）里的，可以传参，而在微信小程序里，可以用 &lt;code&gt;data-xxx=“”&lt;/code&gt;  传递参数&lt;/p&gt;
+&lt;h2 id=&#34;emit的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#emit的使用&#34;&gt;#&lt;/a&gt; $emit 的使用&lt;/h2&gt;
+&lt;p&gt;起初是想在 todoList.vue 调用 App.vue 里的函数，我用的是方法是，在 todoList.vue 里导入 App.vue，然后用 &lt;code&gt;App.method.XXX()&lt;/code&gt; ，结果不行，后来老师说使用 emit 什么的，并帮我找到在官方文档哪，让我自己学一下。&lt;/p&gt;
+&lt;p&gt;以下摘自 Vue.js - 事件 - 事件参数&lt;/p&gt;
+&lt;p&gt;有时候我们会需要在触发事件时附带一个特定的值。举例来说，我们想要  &lt;code&gt;&amp;lt;BlogPost&amp;gt;&lt;/code&gt;  组件来管理文本会缩放得多大。在这个场景下，我们可以给  &lt;code&gt;$emit&lt;/code&gt;  提供一个额外的参数：&lt;/p&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;button @click=&amp;quot;$emit(&#39;increaseBy&#39;, 1)&amp;quot;&amp;gt;
+  Increase by 1
+&amp;lt;/button&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后我们在父组件中监听事件，我们可以先简单写一个内联的箭头函数作为监听器，此函数会接收到事件附带的参数：&lt;/p&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;MyButton @increase-by=&amp;quot;(n) =&amp;gt; count += n&amp;quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;或者，也可以用一个组件方法来作为事件处理函数：&lt;/p&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;MyButton @increase-by=&amp;quot;increaseCount&amp;quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;该方法也会接收到事件所传递的参数：&lt;/p&gt;
+&lt;p&gt;js&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function increaseCount(n) &amp;#123;
+  count.value += n
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;axios的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#axios的使用&#34;&gt;#&lt;/a&gt; axios 的使用&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;npm install axios&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;figcaption data-lang=&#34;javascript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;remove&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;itemid&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				&lt;span class=&#34;token comment&#34;&gt;// 发送 POST 请求给后端添加新任务&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				axios&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;post&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;http://localhost:8080/todolist/removeTodolist&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;						&lt;span class=&#34;token comment&#34;&gt;// 参数传递&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    	&lt;span class=&#34;token literal-property property&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; itemid&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;					&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;then&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;response&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;						&lt;span class=&#34;token comment&#34;&gt;// 添加成功后，重新获取待办事项列表&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;						&lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;$emit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;fetchTodoList&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;					&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;					&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;catch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;error&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;						&lt;span class=&#34;token comment&#34;&gt;// 处理错误&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;						console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;error&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;Error adding task:&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; error&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;					&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;后端的搭建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#后端的搭建&#34;&gt;#&lt;/a&gt; 后端的搭建&lt;/h2&gt;
+&lt;p&gt;老师说如果有后端能加分，我想着这不能错过啊，于是几个月前学的 java 的 Spring Boot + Mybatis plus + mysql 就派上用场了&lt;/p&gt;
+&lt;p&gt;根据之前跟着做的一个项目配置好 Todo List 后端后，写了点简单的增删查改，好些用法都忘记了，悲。&lt;/p&gt;
+&lt;h1 id=&#34;做微信小程序&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#做微信小程序&#34;&gt;#&lt;/a&gt; 做微信小程序&lt;/h1&gt;
+&lt;p&gt;想着我自己也有个公众号，做一个我也能用的上的小程序接上去。&lt;/p&gt;
+&lt;p&gt;挑来挑去，做了番茄时钟和一个简单的待办。&lt;/p&gt;
+&lt;p&gt;也用了 van weapp 组件库，不过用不太来。&lt;/p&gt;
+&lt;h2 id=&#34;界面样式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#界面样式&#34;&gt;#&lt;/a&gt; 界面样式&lt;/h2&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;../../public/images/2023/12 / 番茄时钟主界面.png&amp;quot; alt=&amp;quot;番茄时钟主界面&amp;quot; style=&amp;quot;zoom: 50%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;../../public/images/2023/12 / 番茄时钟 active.png&amp;quot; alt=&amp;quot;番茄时钟 active&amp;quot; style=&amp;quot;zoom: 50%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;../../public/images/2023/12/todolist.png&amp;quot; alt=&amp;quot;todolist&amp;quot; style=&amp;quot;zoom: 50%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;../../public/images/2023/12 / 番茄时钟 - 今日记录界面.png&amp;quot; alt=&amp;quot;番茄时钟 - 今日记录界面&amp;quot; style=&amp;quot;zoom: 50%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;h2 id=&#34;今日诗词的api&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#今日诗词的api&#34;&gt;#&lt;/a&gt; 今日诗词的 API&lt;/h2&gt;
+&lt;p&gt;搭在 github 上的 hexo 博客也接入了这个免费的 API，需要在小程序后台添加该 API 的地址到可访问名单&lt;/p&gt;
+&lt;h2 id=&#34;界面的搭建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#界面的搭建&#34;&gt;#&lt;/a&gt; 界面的搭建&lt;/h2&gt;
+&lt;p&gt;直到做的差不多了，我才把大一时的前端课、近期学习的，在脑内乱成一锅粥的知识整理的差不多，也就是前端界面，简单一点的话，就是组件的拼装，组件自身的样式，组件和同级组件的关系，组件和父级组件的关系。&lt;/p&gt;
+&lt;h2 id=&#34;数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据&#34;&gt;#&lt;/a&gt; 数据&lt;/h2&gt;
+&lt;p&gt;数据则有的放 page 的 data 里，有的放缓存里，通过 &lt;code&gt;wx.setStorageSync(&#39;logs&#39;, logs);&lt;/code&gt;  和 &lt;code&gt;wx.getStorageSync(&#39;logs&#39;, logs);&lt;/code&gt;&lt;/p&gt;
+</content>
+        <category term="Vue.js" />
+        <category term="微信小程序" />
+        <updated>2023-12-24T06:37:13.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2023/12/11/todolist/</id>
+        <title>todolist</title>
+        <link rel="alternate" href="http://example.com/2023/12/11/todolist/"/>
+        <content type="html">&lt;p&gt;这两周是实践周，跟着老师做点东西&lt;/p&gt;
+&lt;p&gt;相对简单的是，用 vue 框架做一个简单的待办清单&lt;/p&gt;
+&lt;h1 id=&#34;步骤&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#步骤&#34;&gt;#&lt;/a&gt; 步骤&lt;/h1&gt;
+&lt;p&gt;结合 bootstrap 框架做了如下待办清单&lt;/p&gt;
+&lt;p&gt;首先用 npm 新建一个项目（需要 npm）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm init vite-app todolist
+//安装需要的依赖
+npm install
+//启动
+npm run dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;其中，Bootstrap 需要从官方下载（可 git clone）&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3R3YnMvYm9vdHN0cmFwL3JlbGVhc2VzL2Rvd25sb2FkL3Y0LjYuMi9ib290c3RyYXAtNC42LjItZGlzdC56aXA=&#34;&gt;https://github.com/twbs/bootstrap/releases/download/v4.6.2/bootstrap-4.6.2-dist.zip&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;结构
+todolist
+--node_modules //依赖库
+--public
+--src
+----assets //Bootstrap放这
+----components //存放部件
+------todoButton.vue //todolist的按钮
+------todoInput.vue //todolist的输入
+------todoList.vue //todolist的列表
+----App.vue // 主界面
+----index.css
+----main.js // 启动入口
+--...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;todoButton.vue&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;template&amp;gt;
+	&amp;lt;div class=&amp;quot;btn-group&amp;quot; role=&amp;quot;group&amp;quot; aria-label=&amp;quot;Basic example&amp;quot;&amp;gt;
+		&amp;lt;button type=&amp;quot;button&amp;quot; class=&amp;quot;btn&amp;quot; :class=&amp;quot;active === 0 ? &#39;btn-primary&#39; : btn-secondary&amp;quot;
+			@click=&amp;quot;changeActive(0)&amp;quot;&amp;gt;全部&amp;lt;/button&amp;gt;
+		&amp;lt;button type=&amp;quot;button&amp;quot; class=&amp;quot;btn&amp;quot; :class=&amp;quot;active === 1 ? &#39;btn-primary&#39; : btn-secondary&amp;quot;
+			@click=&amp;quot;changeActive(1)&amp;quot;&amp;gt;已完成&amp;lt;/button&amp;gt;
+		&amp;lt;button type=&amp;quot;button&amp;quot; class=&amp;quot;btn&amp;quot; :class=&amp;quot;active === 2 ? &#39;btn-primary&#39; : btn-secondary&amp;quot;
+			@click=&amp;quot;changeActive(2)&amp;quot;&amp;gt;未完成&amp;lt;/button&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+	export default &amp;#123;
+		name: &amp;quot;todoButton&amp;quot;,
+		data() &amp;#123;
+			return &amp;#123;
+				active: 0,
+			&amp;#125;;
+		&amp;#125;,
+		emits: [&amp;quot;changeActive&amp;quot;],
+		methods: &amp;#123;
+			changeActive(index) &amp;#123;
+				this.active = index;
+				this.$emit(&amp;quot;changeActive&amp;quot;, index);
+			&amp;#125;,
+		&amp;#125;,
+	&amp;#125;;
+&amp;lt;/script&amp;gt;
+
+&amp;lt;style scoped&amp;gt;
+	.btn-group &amp;#123;
+		width: 20%;
+		margin: 20px auto;
+	&amp;#125;
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;todoInput.vue&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;template&amp;gt;
+	&amp;lt;div class=&amp;quot;input-group mb-3&amp;quot;&amp;gt;
+		&amp;lt;div class=&amp;quot;input-group-prepend&amp;quot;&amp;gt;
+			&amp;lt;button class=&amp;quot;btn-primary&amp;quot; @click=&amp;quot;onsubmit&amp;quot;&amp;gt;提交&amp;lt;/button&amp;gt;
+		&amp;lt;/div&amp;gt;
+		&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot; placeholder=&amp;quot;添加任务&amp;quot; aria-label=&amp;quot;Username&amp;quot; aria-describedby=&amp;quot;basic-addon1&amp;quot;
+			v-model=&amp;quot;taskname&amp;quot;&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+	export default &amp;#123;
+		name: &amp;quot;todoInput&amp;quot;,
+		data() &amp;#123;
+			return &amp;#123;
+				taskname: &amp;quot;&amp;quot;,
+			&amp;#125;;
+		&amp;#125;,
+		emits: [&amp;quot;addTask&amp;quot;],
+		methods: &amp;#123;
+			onsubmit() &amp;#123;
+				this.$emit(&amp;quot;addTask&amp;quot;, this.taskname);
+				this.taskname = &amp;quot;&amp;quot;;
+			&amp;#125;
+		&amp;#125;,
+	&amp;#125;;
+&amp;lt;/script&amp;gt;
+
+&amp;lt;style scoped&amp;gt;
+	.input-group &amp;#123;
+		width: 40%;
+		margin: 20px auto;
+	&amp;#125;
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;todoList.vue&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;template&amp;gt;
+	&amp;lt;ul class=&amp;quot;list-group&amp;quot;&amp;gt;
+		&amp;lt;li class=&amp;quot;list-group-item d-flex justify-content-between align-items-center&amp;quot; v-for=&amp;quot;item in todolist&amp;quot; :
+			key=&amp;quot;item.id&amp;quot;&amp;gt;
+			&amp;lt;!-- 复选框 --&amp;gt;
+			&amp;lt;div class=&amp;quot;form-check&amp;quot;&amp;gt;
+				&amp;lt;input class=&amp;quot;form-check-input&amp;quot; type=&amp;quot;checkbox&amp;quot; value=&amp;quot;&amp;quot; :id=&amp;quot;item.id&amp;quot; v-model=&amp;quot;item.isCompleted&amp;quot;&amp;gt;
+				&amp;lt;label class=&amp;quot;form-check-label&amp;quot; :for=&amp;quot;item.id&amp;quot; :class=&amp;quot;item.isCompleted ? &#39;delete&#39; : &#39;&#39;&amp;quot;&amp;gt;
+					&amp;#123;&amp;#123; item.task &amp;#125;&amp;#125;
+				&amp;lt;/label&amp;gt;
+			&amp;lt;/div&amp;gt;
+			&amp;lt;span class=&amp;quot;badge badge-success badge-pill&amp;quot; v-if=&amp;quot;item.isCompleted&amp;quot;&amp;gt;已完成&amp;lt;/span&amp;gt;
+			&amp;lt;span class=&amp;quot;badge badge-warning badge-pill&amp;quot; v-else&amp;gt;未完成&amp;lt;/span&amp;gt;
+		&amp;lt;/li&amp;gt;
+	&amp;lt;/ul&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+	export default &amp;#123;
+		name: &#39;todoList&#39;,
+		props: &amp;#123;
+			todolist: &amp;#123;
+				type: Array,
+				required: true,
+				default: [],
+			&amp;#125;
+		&amp;#125;
+	&amp;#125;
+&amp;lt;/script&amp;gt;
+
+&amp;lt;style scoped&amp;gt;
+	.list-group &amp;#123;
+		width: 40%;
+		margin: 20px auto;
+	&amp;#125;
+
+	.delete &amp;#123;
+		text-decoration: line-through;
+	&amp;#125;
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;App.vue&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;template&amp;gt;
+	&amp;lt;div id=&amp;quot;app&amp;quot;&amp;gt;
+		&amp;lt;h1&amp;gt;TodoList&amp;lt;/h1&amp;gt;
+		&amp;lt;h6&amp;gt;edit by Chen&amp;lt;/h6&amp;gt;
+		&amp;lt;!-- @ 用于处理事件，而 : 用于处理属性绑定。这两个符号都是Vue.js中的常见语法糖，使代码更简洁易读 --&amp;gt;
+		&amp;lt;!-- @ 符号是 v-on 指令的缩写。它用于监听DOM事件并触发相应的Vue实例中的方法。 --&amp;gt;
+		&amp;lt;!-- : 符号是 v-bind 指令的缩写。它用于动态绑定属性或表达式 --&amp;gt;
+		&amp;lt;!-- 查自chatgpt 2023/12/11 --&amp;gt;
+		&amp;lt;todoInput @addTask=&amp;quot;addTask&amp;quot;&amp;gt;&amp;lt;/todoInput&amp;gt;
+		&amp;lt;todoList :todolist=&amp;quot;todoList&amp;quot;&amp;gt;&amp;lt;/todoList&amp;gt;
+		&amp;lt;todoButton @changeActive=&amp;quot;changeActive&amp;quot;&amp;gt;&amp;lt;/todoButton&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+	import todoList from &#39;./components/todoList.vue&#39;
+	import todoButton from &#39;./components/todoButton.vue&#39;
+	import todoInput from &#39;./components/todoInput.vue&#39;
+
+	export default &amp;#123;
+		name: &amp;quot;App&amp;quot;,
+		data() &amp;#123;
+			return &amp;#123;
+				// 假数据
+				todoList: [&amp;#123;
+						id: 1,
+						task: &#39;吃饭&#39;,
+						isCompleted: true
+					&amp;#125;,
+					&amp;#123;
+						id: 2,
+						task: &#39;嘻嘻嘻&#39;,
+						isCompleted: false
+					&amp;#125;,
+					&amp;#123;
+						id: 3,
+						task: &#39;zzzzzzzz&#39;,
+						isCompleted: true
+					&amp;#125;,
+				],
+				active: 0,
+			&amp;#125;;
+		&amp;#125;,
+		computed: &amp;#123;
+			todoList() &amp;#123;
+				if (this.active === 0) &amp;#123;
+					return this.todoList;
+				&amp;#125; else if (this.active === 1) &amp;#123;
+					return this.todoList.filter(item =&amp;gt; item.isCompleted);
+				&amp;#125; else &amp;#123;
+					return this.todoList.filter(item =&amp;gt; !item.isCompleted);
+				&amp;#125;
+			&amp;#125;
+		&amp;#125;,
+		methods: &amp;#123;
+			changeActive(active) &amp;#123;
+				this.active = active;
+				console.log(this.active);
+			&amp;#125;,
+			addTask(taskname) &amp;#123;
+				this.todoList.push(&amp;#123;
+					id: this.todoList.length + 1,
+					task: taskname,
+					isCompleted: false,
+				&amp;#125;)
+			&amp;#125;,
+		&amp;#125;,
+		components: &amp;#123;
+			todoList,
+			todoButton,
+			todoInput
+		&amp;#125;
+	&amp;#125;
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;main.vue&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import &amp;#123; createApp &amp;#125; from &#39;vue&#39;
+import App from &#39;./App.vue&#39;
+import &#39;./assets/css/bootstrap.css&#39;
+import &#39;./index.css&#39;
+
+createApp(App).mount(&#39;#app&#39;)
+
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        <category term="vue3" />
+        <updated>2023-12-11T08:52:51.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2023/11/07/leetcodeDP/</id>
+        <title>“leetcodeDP”</title>
+        <link rel="alternate" href="http://example.com/2023/11/07/leetcodeDP/"/>
+        <content type="html">&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy90cmlhbmdsZS8=&#34;&gt;120. 三角形最小路径和&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Solution&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;minimumTotal&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; triangle&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; List&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;List&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;# [2],&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;# [3,4],&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;# [6,5,7],&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;# [4,1,8,3]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;# dp[k][i] += min(dp[k-1][i-1], dp[k-1][i])&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        n &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;triangle&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; n&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            m &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; j &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;m&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; j &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    triangle&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;j&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; triangle&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;j&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                &lt;span class=&#34;token keyword&#34;&gt;elif&lt;/span&gt; j &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; m&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    triangle&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;j&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; triangle&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;j&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                &lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    triangle&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;j&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;min&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;triangle&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;j&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; triangle&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;j&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;min&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;triangle&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9taW5pbXVtLXBhdGgtc3VtLw==&#34;&gt;64. 最小路径和&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Solution&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;minPathSum&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; grid&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; List&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;List&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        n &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;grid&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        m &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;grid&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;# 每次只能向下或者向右移动一步&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;# -&gt; dp[next] = min(dp[left], dp[up]) + dp[i]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;# 第一行只能从左往右，第一列只能从上往下&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; n&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            grid&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; grid&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; m&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            grid&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; grid&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; n&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; j &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; m&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                grid&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;j&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;min&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;grid&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;j&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; grid&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;j&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; grid&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;n&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;m&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy91bmlxdWUtcGF0aHMtaWkv&#34;&gt;63. 不同路径 II&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Solution&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;uniquePathsWithObstacles&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; obstacleGrid&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; List&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;List&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        n &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;obstacleGrid&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        m &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;obstacleGrid&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token decorator annotation punctuation&#34;&gt;@cache&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;dfs&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; j&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token comment&#34;&gt;# 如果到达右下角且右下角不为 1，则当前路线有效&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; n&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; j &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; m&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; obstacleGrid&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;j&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token comment&#34;&gt;# 如果越界或者碰到阻碍，则无效&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;&gt;=&lt;/span&gt; n &lt;span class=&#34;token keyword&#34;&gt;or&lt;/span&gt; j &lt;span class=&#34;token operator&#34;&gt;&gt;=&lt;/span&gt; m &lt;span class=&#34;token keyword&#34;&gt;or&lt;/span&gt; obstacleGrid&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;j&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token comment&#34;&gt;# 返回 向左走向下走&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; dfs&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;i&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; j&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; dfs&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; j&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; dfs&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="dp" />
+        <updated>2023-11-07T11:52:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2023/11/01/leetcode369/</id>
+        <title>leetcode369</title>
+        <link rel="alternate" href="http://example.com/2023/11/01/leetcode369/"/>
+        <content type="html">&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9maW5kLXRoZS1rLW9yLW9mLWFuLWFycmF5Lw==&#34;&gt;2917. 找出数组中的 K-or 值&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Solution&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;findKOr&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; nums&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; List&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; k&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;# 位运算&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        ans &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;# num &amp;lt; 2^31, i 是第 i 位&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;31&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            cnt &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token comment&#34;&gt;# 所有数的二进制的第 i 位是否为 1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; num &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; nums&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; num &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    cnt &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token comment&#34;&gt;# 满足条件，加&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; cnt &lt;span class=&#34;token operator&#34;&gt;&gt;=&lt;/span&gt; k&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                ans &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; i&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; ans&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9taW5pbXVtLWVxdWFsLXN1bS1vZi10d28tYXJyYXlzLWFmdGVyLXJlcGxhY2luZy16ZXJvcy8=&#34;&gt;2918. 数组的最小相等和&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Solution&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;minSum&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; nums1&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; List&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; nums2&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; List&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        sum1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;nums1&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        cnt1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; nums1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;count&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        sum2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;nums2&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        cnt2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; nums2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;count&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; cnt1&lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; cnt2&lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; sum1 &lt;span class=&#34;token operator&#34;&gt;!=&lt;/span&gt; sum2 &lt;span class=&#34;token keyword&#34;&gt;or&lt;/span&gt; cnt1&lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; sum2 &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; cnt2&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;sum1 &lt;span class=&#34;token keyword&#34;&gt;or&lt;/span&gt; cnt2&lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; sum1 &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; cnt1&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;sum2&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;max&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sum1&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;cnt1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; sum2&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;cnt2&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9taW5pbXVtLWluY3JlbWVudC1vcGVyYXRpb25zLXRvLW1ha2UtYXJyYXktYmVhdXRpZnVsLw==&#34;&gt;2919. 使数组变美的最小增量运算数&lt;/span&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Solution&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;minIncrementOperations&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; nums&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; List&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; k&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;#python3 注解，记忆化搜索，其他语言可用 visit [] 数组记录&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token decorator annotation punctuation&#34;&gt;@cache&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;dp&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; j&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token comment&#34;&gt;# 不选&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            res &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; dp&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;i&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;  &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;max&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;k&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;nums&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token comment&#34;&gt;# 选&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; j &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                res &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;min&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;res&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; dp&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;i&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; j&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; res&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; dp&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;nums&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="位运算" />
+        <category term="分类讨论" />
+        <category term="dp" />
+        <updated>2023-11-01T14:00:47.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2023/10/23/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F01/</id>
+        <title>设计模式01</title>
+        <link rel="alternate" href="http://example.com/2023/10/23/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F01/"/>
+        <content type="html">&lt;p&gt;跟着该视频做的一个笔记&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMUc0NDExYzdONA==&#34;&gt;尚硅谷 Java 设计模式（图解 + 框架源码剖析）&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;设计模式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设计模式&#34;&gt;#&lt;/a&gt; 设计模式&lt;/h1&gt;
+&lt;h2 id=&#34;1设计模式的目的&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1设计模式的目的&#34;&gt;#&lt;/a&gt; 1 设计模式的目的&lt;/h2&gt;
+&lt;p&gt;编写软件过程中，程序员面临着来自&lt;strong&gt;耦合性，内聚性以及可维护性，可扩展性，重用性，灵活性&lt;/strong&gt;等多方面的挑战，设计模式是为了让程序 (软件)，具有更好的&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;代码重用性 (即：相同功能的代码，不用多次编写)&lt;/li&gt;
+&lt;li&gt;可读性 (即：编程规范性，便于其他程序员的阅读和理解)&lt;/li&gt;
+&lt;li&gt;可扩展性 (即：当需要增加新的功能时，非常的方便，称为可维护)&lt;/li&gt;
+&lt;li&gt;可靠性 (即：当我们增加新的功能后，对原来的功能没有影响)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使程序呈现&lt;strong&gt;高内聚，低耦合&lt;/strong&gt;的特性&lt;/p&gt;
+&lt;h2 id=&#34;2设计模式七大原则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2设计模式七大原则&#34;&gt;#&lt;/a&gt; 2 设计模式七大原则&lt;/h2&gt;
+&lt;p&gt;设计模式原则，其实就是程序员在编程时，应当遵守的原则，也是各种设计模式的基础 (即：设计模式为什么这样设计的依据)&lt;/p&gt;
+&lt;p&gt;设计模式常用的七大原则有:&lt;/p&gt;
+&lt;h3 id=&#34;21-单一职责原则single-responsibility-principle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#21-单一职责原则single-responsibility-principle&#34;&gt;#&lt;/a&gt; 2.1 单一职责原则（Single Responsibility Principle）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;降低类的复杂度，一个类只负责一项职责&lt;/li&gt;
+&lt;li&gt;提高类的可读性，可维护性，降低变更引起的风险&lt;/li&gt;
+&lt;li&gt;通常情况下，我们应当遵守单一职责原则，只有逻辑足够简单，才可以在代码级违反单一职责原则；只有类中方法数量足够少，可以在方法级别保持单一职责原则&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对类来说的，即一个类应该只负责&lt;strong&gt;一项职责&lt;/strong&gt;。如类 A 负责两个不同职责：职责 1，职责 2。当职责 1 需求变更而改变 A 时，可能造成职责 2 执行错误，所以需要将类 A 的粒度分解为 A1，A2&lt;/p&gt;
+&lt;h3 id=&#34;22接口隔离原则interface-segregation-principle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#22接口隔离原则interface-segregation-principle&#34;&gt;#&lt;/a&gt; 2.2 接口隔离原则（Interface Segregation Principle）&lt;/h3&gt;
+&lt;p&gt;客户端不应该依赖它不需要的接口，即一个类对另一个类的依赖应该建立在最小的接口上&lt;/p&gt;
+&lt;p&gt;也就是说接口要细拆分，类只需要实现相关的接口，不需要实现用不到的&lt;/p&gt;
+&lt;h3 id=&#34;23依赖倒转倒置原则dependence-inversion-principle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#23依赖倒转倒置原则dependence-inversion-principle&#34;&gt;#&lt;/a&gt; 2.3 依赖倒转 (倒置) 原则（Dependence Inversion Principle）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;高层模块不应该依赖低层模块，二者都应该依赖其抽象&lt;/li&gt;
+&lt;li&gt;抽象不应该依赖细节，细节应该依赖抽象&lt;/li&gt;
+&lt;li&gt;依赖倒转 (倒置) 的中心思想是面向接口编程&lt;/li&gt;
+&lt;li&gt;依赖倒转原则是基于这样的设计理念：相对于细节的多变性，抽象的东西要稳定的多。以抽象为基础搭建的架构比以细节为基础的架构要稳定的多。在 java 中，抽象指的是接口或抽象类，细节就是具体的实现类&lt;/li&gt;
+&lt;li&gt;使用接口或抽象类的目的是制定好规范，而不涉及任何具体的操作，把展现细节的任务交给他们的实现类去完成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;依赖倒转原则的注意事项和细节&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;低层模块尽量都要有抽象类或接口&lt;/strong&gt;，或者两者都有，程序稳定性更好，最好不要一个类孤零零的&lt;/li&gt;
+&lt;li&gt;变量的声明类型尽量是抽象类或接口，这样我们的变量引用和实际对象间，就存在一个&lt;strong&gt;缓冲层&lt;/strong&gt;，利于程序扩展和优化&lt;/li&gt;
+&lt;li&gt;继承时遵循里氏替换原则&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;24里氏替换原则liskov-substitution-principle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#24里氏替换原则liskov-substitution-principle&#34;&gt;#&lt;/a&gt; 2.4 里氏替换原则（Liskov Substitution Principle）&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;OO 中的继承性的思考和说明：&lt;/p&gt;
+&lt;p&gt;继承包含这样一层含义：父类中凡是已经实现好的方法，实际上是在设定规范和契约，虽然它不强制要求所有的子类必须遵循这些契约，但是如果子类对这些已经实现的方法任意修改，就会对整个继承体系造成破坏。&lt;/p&gt;
+&lt;p&gt;继承在给程序设计带来便利的同时，也带来了弊端。比如使用继承会给程序带来侵入性，程序的可移植性降低，增加对象间的耦合性，如果一个类被其他的类所继承则当这个类需要修改时，必须考虑到所有的子类，并且父类修改后，所有涉及到子类的功能都有可能产生故障&lt;/p&gt;
+&lt;p&gt;问题提出：在编程中，&lt;strong&gt;如何正确的使用继承&lt;/strong&gt;？=&amp;gt; 里氏替换原则&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在使用继承时，遵循里氏替换原则，在&lt;strong&gt;子类中尽量不要重写父类的方法&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;里氏替换原则告诉我们，继承实际上让两个类耦合性增强了，在适当的情况下，可以通过聚合，组合，依赖来解决问题。&lt;/p&gt;
+&lt;h3 id=&#34;25开闭原则open-closed-principle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#25开闭原则open-closed-principle&#34;&gt;#&lt;/a&gt; 2.5 开闭原则 (Open Closed Principle)&lt;/h3&gt;
+&lt;p&gt;开闭原则是编程中&lt;em&gt;&lt;strong&gt;最基础、最重要&lt;/strong&gt;&lt;/em&gt;的设计原则&lt;/p&gt;
+&lt;p&gt;一个软件实体如类、模块和函数应该对扩展开放 (对提供方)，对修改关闭 (对使用方)。用抽象构建框架，用实扩展细节。&lt;/p&gt;
+&lt;p&gt;当软件需要变化时，尽量通过扩展软件实体的行为来实现变化，而不是通过修改已有的代码来实现变化&lt;/p&gt;
+&lt;h3 id=&#34;26迪米特法则demeter-principle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#26迪米特法则demeter-principle&#34;&gt;#&lt;/a&gt; 2.6 迪米特法则（Demeter Principle）&lt;/h3&gt;
+&lt;p&gt;迪米特法则的核心是降低类之间的耦合。由于每个类都减少了不必要的依赖，因此迪米特法则只是要求降低类间 (对象间) 耦合关系， 并不是要求完全没有依赖关系&lt;/p&gt;
+&lt;p&gt;迪米特法则又叫&lt;strong&gt;最少知道原则&lt;/strong&gt;，即一个类对自己依赖的类知道的越少越好。也就是说，对于被依赖的类不管多么复杂，都尽量将逻辑封装在类的内部。对外除了提供的 public 方法，不对外泄露任何信息。迪米特法则还有个更简单的定义：只与直接的朋友通信&lt;/p&gt;
+&lt;p&gt;直接的朋友：每个对象都会与其他对象有耦合关系，只要两个对象之间有耦合关系，我们就说这两个对象之间是朋友关系。耦合的方式很多，依赖，关联，组合，聚合等。其中，我们称出现成员变量、方法参数、方法返回值中的类为直接的朋友，而出现在局部变量中的类不是直接的朋友。也就是说，陌生的类最好不要以局部变量的形式出现在类的内部。&lt;/p&gt;
+&lt;h3 id=&#34;27合成复用原则composite-reuse-principle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#27合成复用原则composite-reuse-principle&#34;&gt;#&lt;/a&gt; 2.7 合成复用原则 (Composite Reuse Principle)&lt;/h3&gt;
+&lt;p&gt;原则是尽量使用合成 / 聚合的方式，而不是使用继承&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240301154812906.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;28设计模式的原则核心&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#28设计模式的原则核心&#34;&gt;#&lt;/a&gt; 2.8 设计模式的原则核心&lt;/h3&gt;
+&lt;p&gt;找出应用中可能需要变化之处，把它们独立出来，不要和那些不需要变化的代码混在一起。&lt;/p&gt;
+&lt;p&gt;针对接口编程，而不是针对实现编程。&lt;/p&gt;
+&lt;p&gt;为了交互对象之间的松耦合设计而努力。&lt;/p&gt;
+&lt;h2 id=&#34;3uml类图&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3uml类图&#34;&gt;#&lt;/a&gt; 3.UML 类图&lt;/h2&gt;
+&lt;h3 id=&#34;31基本介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#31基本介绍&#34;&gt;#&lt;/a&gt; 3.1 基本介绍&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240301155116451.png&#34; alt=&#34;image-20240301155116451&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;32类图分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#32类图分类&#34;&gt;#&lt;/a&gt; 3.2 类图分类&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;用例图（use case）&lt;/li&gt;
+&lt;li&gt;静态结构图: &lt;strong&gt;类图&lt;/strong&gt;、对象图、包图、组件图、部署图&lt;/li&gt;
+&lt;li&gt;动态行为图：交互图 (时序图与协作图)、状态图、活动图&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;33类之间的关系&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#33类之间的关系&#34;&gt;#&lt;/a&gt; 3.3 类之间的关系&lt;/h3&gt;
+&lt;p&gt;依赖、泛化（继承）、实现、关联、聚合、组合&lt;/p&gt;
+&lt;h4 id=&#34;依赖&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#依赖&#34;&gt;#&lt;/a&gt; 依赖&lt;/h4&gt;
+&lt;p&gt;只要类中用到了对方，则构成依赖关系&lt;/p&gt;
+&lt;p&gt;类成员属性、方法返回类型、方法参数接受的参数类型、方法中使用到&lt;/p&gt;
+&lt;h4 id=&#34;泛化继承&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#泛化继承&#34;&gt;#&lt;/a&gt; 泛化（继承）&lt;/h4&gt;
+&lt;p&gt;继承，依赖关系的特例&lt;/p&gt;
+&lt;h4 id=&#34;实现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实现&#34;&gt;#&lt;/a&gt; 实现&lt;/h4&gt;
+&lt;p&gt;接口实现，依赖关系的特例&lt;/p&gt;
+&lt;h4 id=&#34;关联&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关联&#34;&gt;#&lt;/a&gt; 关联&lt;/h4&gt;
+&lt;p&gt;类与类之间的联系，依赖关系的特例&lt;/p&gt;
+&lt;h4 id=&#34;聚合&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#聚合&#34;&gt;#&lt;/a&gt; 聚合&lt;/h4&gt;
+&lt;p&gt;表示整体和部分的关系，整体和部分能分开，关联关系特例（private A；）&lt;/p&gt;
+&lt;p&gt;如果不能分开，则升级为组合关系（private A = new A（）；）&lt;/p&gt;
+&lt;h4 id=&#34;组合&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#组合&#34;&gt;#&lt;/a&gt; 组合&lt;/h4&gt;
+&lt;p&gt;整体和部分不能分开&lt;/p&gt;
+&lt;h2 id=&#34;4设计模式概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4设计模式概述&#34;&gt;#&lt;/a&gt; 4. 设计模式概述&lt;/h2&gt;
+&lt;p&gt;设计模式分为三种类型，共 23 种（？）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;创建型模式&lt;/strong&gt;：&amp;lt;u&amp;gt; 单例模式 &amp;lt;/u&amp;gt;、抽象工厂模式、原型模式、建造者模式、&amp;lt;u &amp;gt; 工厂模式 &amp;lt;/u&amp;gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结构型模式&lt;/strong&gt;：适配器模式、桥接模式、&amp;lt;u&amp;gt; 装饰模式 &amp;lt;/u&amp;gt;、组合模式、外观模式、享元模式、&amp;lt;u &amp;gt; 代理模式 &amp;lt;/u&amp;gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;行为型模式&lt;/strong&gt;：模版方法模式、命令模式、访问者模式、迭代器模式、&amp;lt;u&amp;gt; 观察者模式 &amp;lt;/u&amp;gt;、中介者模式、备忘录模式、解释器模式 (Interpreter 模式)、状态模式、策略模式、职责链模式 (责任链模式)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;单例模式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#单例模式&#34;&gt;#&lt;/a&gt; 单例模式&lt;/h3&gt;
+&lt;p&gt;单例模式有八种方式&lt;/p&gt;
+&lt;h4 id=&#34;饿汉式静态常量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#饿汉式静态常量&#34;&gt;#&lt;/a&gt; 饿汉式 (静态常量)&lt;/h4&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 饿汉式（静态变量）&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 用之前就创建&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 构造器私有化，外部不能 new&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 本类内部创建对象实例&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;final&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton&lt;/span&gt; instance &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 提供一个公有的静态方法，返回对象实例&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;getInstance&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; instance&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;避免了线程同步问题，但是没实现懒加载，&lt;strong&gt;可能&lt;/strong&gt;会造成内存浪费&lt;/p&gt;
+&lt;h4 id=&#34;饿汉式静态代码块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#饿汉式静态代码块&#34;&gt;#&lt;/a&gt; 饿汉式 (静态代码块)&lt;/h4&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;……&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 静态代码块&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        instance &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;……&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;懒汉式线程不安全&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#懒汉式线程不安全&#34;&gt;#&lt;/a&gt; 懒汉式 (线程不安全)&lt;/h4&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 构造器私有化，外部不能 new&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt; instance&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 提供一个静态的公有方法，当使用到该方法时，才去创建&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 饿汉模式&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;//synchronized, 解决线程同步问题，但是效率低，后续获取都要进行同步&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;synchronized&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;getInstance&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;instance &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            instance &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; instance&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;懒汉式线程安全同步方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#懒汉式线程安全同步方法&#34;&gt;#&lt;/a&gt; 懒汉式 (线程安全，同步方法)&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;synchronized //效率低，不使用
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;懒汉式线程安全同步代码块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#懒汉式线程安全同步代码块&#34;&gt;#&lt;/a&gt; 懒汉式 (线程安全，同步代码块)&lt;/h4&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;synchronized&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;getInstance&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;instance &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token comment&#34;&gt;// 当多个现程进入后，即使一个个来，但是还是会选择创建，不使用&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;synchronized&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                instance &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; instance&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;双重检查&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#双重检查&#34;&gt;#&lt;/a&gt; 双重检查&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;public static synchronized Singleton02 getInstance() &amp;#123;
+        if (instance == null) &amp;#123;
+            synchronized (Singleton02.class) &amp;#123;
+                if (instance == null)
+                    instance = new Singleton02();
+            &amp;#125;
+        &amp;#125;
+        return instance;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;静态内部类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#静态内部类&#34;&gt;#&lt;/a&gt; 静态内部类&lt;/h4&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton03&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 构造器私有化，外部不能 new&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton03&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 当外部类被装载时，静态内部类并不会装载&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;// 当静态内部类装载时，是线程安全 (JVM 底层提供的机制)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;SingletonInstance&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;final&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton03&lt;/span&gt; singleton &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton03&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;synchronized&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;getInstance&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;getInstance&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;枚举&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#枚举&#34;&gt;#&lt;/a&gt; 枚举&lt;/h4&gt;
+&lt;p&gt;借助 JDK1.5 中添加的枚举类实现，不仅避免多线程同步问题，而且防止反序列化重新创建新的对象&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;enum&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton04&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token constant&#34;&gt;INSTANCE&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 属性&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sayLove&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;out&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;heart~&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;单例模式注意事项和细节说明&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#单例模式注意事项和细节说明&#34;&gt;#&lt;/a&gt; 单例模式注意事项和细节说明&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;单例模式保证了 系统内存中该类只存在一个对象，节省了系统资源，对于一些需要频繁创建销毁的对象，使用单例模式可以提高系统性能&lt;/li&gt;
+&lt;li&gt;当想实例化一个单例类的时候，必须要记住使用相应的获取对象的方法，而不是使用 new&lt;/li&gt;
+&lt;li&gt;单例模式使用的场景：需要频繁的进行创建和销毁的对象、创建对象时耗时过多或耗费资源过多 (即：重量级对象)，但又经常用到的对象、工具类对象、频繁访问数据库或文件的对象 (比如数据源、session 工厂等)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;工厂设计模式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#工厂设计模式&#34;&gt;#&lt;/a&gt; 工厂设计模式&lt;/h3&gt;
+&lt;h4 id=&#34;简单工厂&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#简单工厂&#34;&gt;#&lt;/a&gt; 简单工厂&lt;/h4&gt;
+&lt;h4 id=&#34;工厂方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#工厂方法&#34;&gt;#&lt;/a&gt; 工厂方法&lt;/h4&gt;
+&lt;h4 id=&#34;抽象工厂&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#抽象工厂&#34;&gt;#&lt;/a&gt; 抽象工厂&lt;/h4&gt;
+</content>
+        <category term="设计模式" />
+        <updated>2023-10-23T07:03:19.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2023/10/20/dp-normal/</id>
+        <title>dp_normal</title>
+        <link rel="alternate" href="http://example.com/2023/10/20/dp-normal/"/>
+        <content type="html">&lt;p&gt;今晚写了几题简单的动态规划。&lt;/p&gt;
+&lt;p&gt;##70. 爬楼梯&lt;br /&gt;
+假设你正在爬楼梯。需要 n 阶你才能到达楼顶。&lt;br /&gt;
+每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？&lt;/p&gt;
+&lt;p&gt;### 时间复杂度: O (N)&lt;br /&gt;
+### 空间复杂度：用数组记录 O (n)， 用 p1, p2 循环 O (1)&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python3&#34;&gt;class Solution:
+    def climbStairs(self, n: int) -&amp;gt; int:
+        #p[i] = p[i-1] + p[i-2]
+        if n==1:
+            return 1
+        if n==2:
+            return 2
+        # p = [0] * n
+        # p[0] = 1
+        # p[1] = 2
+        # for i in range(2, n):
+        #     p[i] = p[i-1] + p[i-2]
+        # return p[i]
+        p1 = 1
+        p2 = 2
+        for i in range(2, n):
+            p2, p1 = p2+p1, p2
+        return p2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;##198. 打家劫舍&lt;br /&gt;
+你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。&lt;br /&gt;
+给定一个代表每个房屋存放金额的非负整数数组，计算你 不触动警报装置的情况下 ，一夜之内能够偷窃到的最高金额。&lt;/p&gt;
+&lt;p&gt;### 时间复杂度: O (N)&lt;br /&gt;
+### 空间复杂度：用数组记录 O (n)&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python3&#34;&gt;class Solution:
+    def rob(self, nums: List[int]) -&amp;gt; int:
+        if len(nums)==1:
+            return nums[0]
+        if len(nums)==2:
+            return max(nums[0], nums[1])
+        # dp[i] = max(dp[i-1], dp[i-2]+nums[i])
+        dp = [0] * len(nums)
+        dp[0] = nums[0]
+        dp[1] = max(nums[0], nums[1])
+        for i in range(2, len(nums)):
+            dp[i] = max(dp[i-1], dp[i-2]+nums[i])
+        return dp[-1] 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;##139. 单词拆分&lt;br /&gt;
+给你一个字符串 s 和一个字符串列表 wordDict 作为字典。请你判断是否可以利用字典中出现的单词拼接出 s 。&lt;/p&gt;
+&lt;p&gt;注意：不要求字典中出现的单词全部都使用，并且字典中的单词可以重复使用。&lt;/p&gt;
+&lt;p&gt;示例 1：&lt;br /&gt;
+输入: s = &amp;quot;leetcode&amp;quot;, wordDict = [&amp;quot;leet&amp;quot;, &amp;quot;code&amp;quot;]&lt;br /&gt;
+ 输出: true&lt;br /&gt;
+ 解释：返回 true 因为 &amp;quot;leetcode&amp;quot; 可以由 &amp;quot;leet&amp;quot; 和 &amp;quot;code&amp;quot; 拼接成。&lt;/p&gt;
+&lt;p&gt;### 时间复杂度: O (N2)* 字符串查找&lt;br /&gt;
+ ### 空间复杂度：用数组记录 O (n)&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-Python3&#34;&gt;class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -&amp;gt; bool:
+        # dp[x] = &amp;#123;dp[i] + isinword(s[i:x])&amp;#125;
+        n = len(s)
+        # dp[i]表示s的前i位是否可以用wordDict中的单词表示
+        dp = [False] * (n+1)
+        # 初始化dp[0]=True，空字符可以被表示
+        dp[0] = True
+        for i in range(n):
+            for j in range(i+1, n+1):
+                if dp[i] and s[i:j] in wordDict:
+                    dp[j] = True
+        return dp[-1]
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        <category term="dp" />
+        <updated>2023-10-20T15:39:14.000Z</updated>
+    </entry>
+</feed>

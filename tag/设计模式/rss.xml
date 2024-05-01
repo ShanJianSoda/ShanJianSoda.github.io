@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Chen • Posts by &#34;设计模式&#34; tag</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Mon, 23 Oct 2023 15:03:19 +0800</pubDate>
+        <lastBuildDate>Mon, 23 Oct 2023 15:03:19 +0800</lastBuildDate>
+        <category>GLM</category>
+        <category>位运算</category>
+        <category>分类讨论</category>
+        <category>dp</category>
+        <category>redis</category>
+        <category>lunix</category>
+        <category>git</category>
+        <category>vue3</category>
+        <category>机器学习</category>
+        <category>Vue.js</category>
+        <category>微信小程序</category>
+        <category>LLM</category>
+        <category>AI</category>
+        <category>面试</category>
+        <category>设计模式</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/10/23/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F01/</guid>
+            <title>设计模式01</title>
+            <link>http://example.com/2023/10/23/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F01/</link>
+            <category>设计模式</category>
+            <pubDate>Mon, 23 Oct 2023 15:03:19 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;跟着该视频做的一个笔记&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMUc0NDExYzdONA==&#34;&gt;尚硅谷 Java 设计模式（图解 + 框架源码剖析）&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;设计模式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设计模式&#34;&gt;#&lt;/a&gt; 设计模式&lt;/h1&gt;
+&lt;h2 id=&#34;1设计模式的目的&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1设计模式的目的&#34;&gt;#&lt;/a&gt; 1 设计模式的目的&lt;/h2&gt;
+&lt;p&gt;编写软件过程中，程序员面临着来自&lt;strong&gt;耦合性，内聚性以及可维护性，可扩展性，重用性，灵活性&lt;/strong&gt;等多方面的挑战，设计模式是为了让程序 (软件)，具有更好的&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;代码重用性 (即：相同功能的代码，不用多次编写)&lt;/li&gt;
+&lt;li&gt;可读性 (即：编程规范性，便于其他程序员的阅读和理解)&lt;/li&gt;
+&lt;li&gt;可扩展性 (即：当需要增加新的功能时，非常的方便，称为可维护)&lt;/li&gt;
+&lt;li&gt;可靠性 (即：当我们增加新的功能后，对原来的功能没有影响)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使程序呈现&lt;strong&gt;高内聚，低耦合&lt;/strong&gt;的特性&lt;/p&gt;
+&lt;h2 id=&#34;2设计模式七大原则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2设计模式七大原则&#34;&gt;#&lt;/a&gt; 2 设计模式七大原则&lt;/h2&gt;
+&lt;p&gt;设计模式原则，其实就是程序员在编程时，应当遵守的原则，也是各种设计模式的基础 (即：设计模式为什么这样设计的依据)&lt;/p&gt;
+&lt;p&gt;设计模式常用的七大原则有:&lt;/p&gt;
+&lt;h3 id=&#34;21-单一职责原则single-responsibility-principle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#21-单一职责原则single-responsibility-principle&#34;&gt;#&lt;/a&gt; 2.1 单一职责原则（Single Responsibility Principle）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;降低类的复杂度，一个类只负责一项职责&lt;/li&gt;
+&lt;li&gt;提高类的可读性，可维护性，降低变更引起的风险&lt;/li&gt;
+&lt;li&gt;通常情况下，我们应当遵守单一职责原则，只有逻辑足够简单，才可以在代码级违反单一职责原则；只有类中方法数量足够少，可以在方法级别保持单一职责原则&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对类来说的，即一个类应该只负责&lt;strong&gt;一项职责&lt;/strong&gt;。如类 A 负责两个不同职责：职责 1，职责 2。当职责 1 需求变更而改变 A 时，可能造成职责 2 执行错误，所以需要将类 A 的粒度分解为 A1，A2&lt;/p&gt;
+&lt;h3 id=&#34;22接口隔离原则interface-segregation-principle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#22接口隔离原则interface-segregation-principle&#34;&gt;#&lt;/a&gt; 2.2 接口隔离原则（Interface Segregation Principle）&lt;/h3&gt;
+&lt;p&gt;客户端不应该依赖它不需要的接口，即一个类对另一个类的依赖应该建立在最小的接口上&lt;/p&gt;
+&lt;p&gt;也就是说接口要细拆分，类只需要实现相关的接口，不需要实现用不到的&lt;/p&gt;
+&lt;h3 id=&#34;23依赖倒转倒置原则dependence-inversion-principle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#23依赖倒转倒置原则dependence-inversion-principle&#34;&gt;#&lt;/a&gt; 2.3 依赖倒转 (倒置) 原则（Dependence Inversion Principle）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;高层模块不应该依赖低层模块，二者都应该依赖其抽象&lt;/li&gt;
+&lt;li&gt;抽象不应该依赖细节，细节应该依赖抽象&lt;/li&gt;
+&lt;li&gt;依赖倒转 (倒置) 的中心思想是面向接口编程&lt;/li&gt;
+&lt;li&gt;依赖倒转原则是基于这样的设计理念：相对于细节的多变性，抽象的东西要稳定的多。以抽象为基础搭建的架构比以细节为基础的架构要稳定的多。在 java 中，抽象指的是接口或抽象类，细节就是具体的实现类&lt;/li&gt;
+&lt;li&gt;使用接口或抽象类的目的是制定好规范，而不涉及任何具体的操作，把展现细节的任务交给他们的实现类去完成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;依赖倒转原则的注意事项和细节&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;低层模块尽量都要有抽象类或接口&lt;/strong&gt;，或者两者都有，程序稳定性更好，最好不要一个类孤零零的&lt;/li&gt;
+&lt;li&gt;变量的声明类型尽量是抽象类或接口，这样我们的变量引用和实际对象间，就存在一个&lt;strong&gt;缓冲层&lt;/strong&gt;，利于程序扩展和优化&lt;/li&gt;
+&lt;li&gt;继承时遵循里氏替换原则&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;24里氏替换原则liskov-substitution-principle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#24里氏替换原则liskov-substitution-principle&#34;&gt;#&lt;/a&gt; 2.4 里氏替换原则（Liskov Substitution Principle）&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;OO 中的继承性的思考和说明：&lt;/p&gt;
+&lt;p&gt;继承包含这样一层含义：父类中凡是已经实现好的方法，实际上是在设定规范和契约，虽然它不强制要求所有的子类必须遵循这些契约，但是如果子类对这些已经实现的方法任意修改，就会对整个继承体系造成破坏。&lt;/p&gt;
+&lt;p&gt;继承在给程序设计带来便利的同时，也带来了弊端。比如使用继承会给程序带来侵入性，程序的可移植性降低，增加对象间的耦合性，如果一个类被其他的类所继承则当这个类需要修改时，必须考虑到所有的子类，并且父类修改后，所有涉及到子类的功能都有可能产生故障&lt;/p&gt;
+&lt;p&gt;问题提出：在编程中，&lt;strong&gt;如何正确的使用继承&lt;/strong&gt;？=&amp;gt; 里氏替换原则&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在使用继承时，遵循里氏替换原则，在&lt;strong&gt;子类中尽量不要重写父类的方法&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;里氏替换原则告诉我们，继承实际上让两个类耦合性增强了，在适当的情况下，可以通过聚合，组合，依赖来解决问题。&lt;/p&gt;
+&lt;h3 id=&#34;25开闭原则open-closed-principle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#25开闭原则open-closed-principle&#34;&gt;#&lt;/a&gt; 2.5 开闭原则 (Open Closed Principle)&lt;/h3&gt;
+&lt;p&gt;开闭原则是编程中&lt;em&gt;&lt;strong&gt;最基础、最重要&lt;/strong&gt;&lt;/em&gt;的设计原则&lt;/p&gt;
+&lt;p&gt;一个软件实体如类、模块和函数应该对扩展开放 (对提供方)，对修改关闭 (对使用方)。用抽象构建框架，用实扩展细节。&lt;/p&gt;
+&lt;p&gt;当软件需要变化时，尽量通过扩展软件实体的行为来实现变化，而不是通过修改已有的代码来实现变化&lt;/p&gt;
+&lt;h3 id=&#34;26迪米特法则demeter-principle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#26迪米特法则demeter-principle&#34;&gt;#&lt;/a&gt; 2.6 迪米特法则（Demeter Principle）&lt;/h3&gt;
+&lt;p&gt;迪米特法则的核心是降低类之间的耦合。由于每个类都减少了不必要的依赖，因此迪米特法则只是要求降低类间 (对象间) 耦合关系， 并不是要求完全没有依赖关系&lt;/p&gt;
+&lt;p&gt;迪米特法则又叫&lt;strong&gt;最少知道原则&lt;/strong&gt;，即一个类对自己依赖的类知道的越少越好。也就是说，对于被依赖的类不管多么复杂，都尽量将逻辑封装在类的内部。对外除了提供的 public 方法，不对外泄露任何信息。迪米特法则还有个更简单的定义：只与直接的朋友通信&lt;/p&gt;
+&lt;p&gt;直接的朋友：每个对象都会与其他对象有耦合关系，只要两个对象之间有耦合关系，我们就说这两个对象之间是朋友关系。耦合的方式很多，依赖，关联，组合，聚合等。其中，我们称出现成员变量、方法参数、方法返回值中的类为直接的朋友，而出现在局部变量中的类不是直接的朋友。也就是说，陌生的类最好不要以局部变量的形式出现在类的内部。&lt;/p&gt;
+&lt;h3 id=&#34;27合成复用原则composite-reuse-principle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#27合成复用原则composite-reuse-principle&#34;&gt;#&lt;/a&gt; 2.7 合成复用原则 (Composite Reuse Principle)&lt;/h3&gt;
+&lt;p&gt;原则是尽量使用合成 / 聚合的方式，而不是使用继承&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240301154812906.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;28设计模式的原则核心&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#28设计模式的原则核心&#34;&gt;#&lt;/a&gt; 2.8 设计模式的原则核心&lt;/h3&gt;
+&lt;p&gt;找出应用中可能需要变化之处，把它们独立出来，不要和那些不需要变化的代码混在一起。&lt;/p&gt;
+&lt;p&gt;针对接口编程，而不是针对实现编程。&lt;/p&gt;
+&lt;p&gt;为了交互对象之间的松耦合设计而努力。&lt;/p&gt;
+&lt;h2 id=&#34;3uml类图&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3uml类图&#34;&gt;#&lt;/a&gt; 3.UML 类图&lt;/h2&gt;
+&lt;h3 id=&#34;31基本介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#31基本介绍&#34;&gt;#&lt;/a&gt; 3.1 基本介绍&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240301155116451.png&#34; alt=&#34;image-20240301155116451&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;32类图分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#32类图分类&#34;&gt;#&lt;/a&gt; 3.2 类图分类&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;用例图（use case）&lt;/li&gt;
+&lt;li&gt;静态结构图: &lt;strong&gt;类图&lt;/strong&gt;、对象图、包图、组件图、部署图&lt;/li&gt;
+&lt;li&gt;动态行为图：交互图 (时序图与协作图)、状态图、活动图&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;33类之间的关系&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#33类之间的关系&#34;&gt;#&lt;/a&gt; 3.3 类之间的关系&lt;/h3&gt;
+&lt;p&gt;依赖、泛化（继承）、实现、关联、聚合、组合&lt;/p&gt;
+&lt;h4 id=&#34;依赖&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#依赖&#34;&gt;#&lt;/a&gt; 依赖&lt;/h4&gt;
+&lt;p&gt;只要类中用到了对方，则构成依赖关系&lt;/p&gt;
+&lt;p&gt;类成员属性、方法返回类型、方法参数接受的参数类型、方法中使用到&lt;/p&gt;
+&lt;h4 id=&#34;泛化继承&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#泛化继承&#34;&gt;#&lt;/a&gt; 泛化（继承）&lt;/h4&gt;
+&lt;p&gt;继承，依赖关系的特例&lt;/p&gt;
+&lt;h4 id=&#34;实现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实现&#34;&gt;#&lt;/a&gt; 实现&lt;/h4&gt;
+&lt;p&gt;接口实现，依赖关系的特例&lt;/p&gt;
+&lt;h4 id=&#34;关联&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关联&#34;&gt;#&lt;/a&gt; 关联&lt;/h4&gt;
+&lt;p&gt;类与类之间的联系，依赖关系的特例&lt;/p&gt;
+&lt;h4 id=&#34;聚合&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#聚合&#34;&gt;#&lt;/a&gt; 聚合&lt;/h4&gt;
+&lt;p&gt;表示整体和部分的关系，整体和部分能分开，关联关系特例（private A；）&lt;/p&gt;
+&lt;p&gt;如果不能分开，则升级为组合关系（private A = new A（）；）&lt;/p&gt;
+&lt;h4 id=&#34;组合&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#组合&#34;&gt;#&lt;/a&gt; 组合&lt;/h4&gt;
+&lt;p&gt;整体和部分不能分开&lt;/p&gt;
+&lt;h2 id=&#34;4设计模式概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4设计模式概述&#34;&gt;#&lt;/a&gt; 4. 设计模式概述&lt;/h2&gt;
+&lt;p&gt;设计模式分为三种类型，共 23 种（？）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;创建型模式&lt;/strong&gt;：&amp;lt;u&amp;gt; 单例模式 &amp;lt;/u&amp;gt;、抽象工厂模式、原型模式、建造者模式、&amp;lt;u &amp;gt; 工厂模式 &amp;lt;/u&amp;gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结构型模式&lt;/strong&gt;：适配器模式、桥接模式、&amp;lt;u&amp;gt; 装饰模式 &amp;lt;/u&amp;gt;、组合模式、外观模式、享元模式、&amp;lt;u &amp;gt; 代理模式 &amp;lt;/u&amp;gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;行为型模式&lt;/strong&gt;：模版方法模式、命令模式、访问者模式、迭代器模式、&amp;lt;u&amp;gt; 观察者模式 &amp;lt;/u&amp;gt;、中介者模式、备忘录模式、解释器模式 (Interpreter 模式)、状态模式、策略模式、职责链模式 (责任链模式)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;单例模式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#单例模式&#34;&gt;#&lt;/a&gt; 单例模式&lt;/h3&gt;
+&lt;p&gt;单例模式有八种方式&lt;/p&gt;
+&lt;h4 id=&#34;饿汉式静态常量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#饿汉式静态常量&#34;&gt;#&lt;/a&gt; 饿汉式 (静态常量)&lt;/h4&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 饿汉式（静态变量）&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 用之前就创建&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 构造器私有化，外部不能 new&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 本类内部创建对象实例&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;final&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton&lt;/span&gt; instance &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 提供一个公有的静态方法，返回对象实例&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;getInstance&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; instance&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;避免了线程同步问题，但是没实现懒加载，&lt;strong&gt;可能&lt;/strong&gt;会造成内存浪费&lt;/p&gt;
+&lt;h4 id=&#34;饿汉式静态代码块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#饿汉式静态代码块&#34;&gt;#&lt;/a&gt; 饿汉式 (静态代码块)&lt;/h4&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;……&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 静态代码块&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        instance &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;……&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;懒汉式线程不安全&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#懒汉式线程不安全&#34;&gt;#&lt;/a&gt; 懒汉式 (线程不安全)&lt;/h4&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 构造器私有化，外部不能 new&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt; instance&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 提供一个静态的公有方法，当使用到该方法时，才去创建&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 饿汉模式&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;//synchronized, 解决线程同步问题，但是效率低，后续获取都要进行同步&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;synchronized&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;getInstance&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;instance &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            instance &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; instance&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;懒汉式线程安全同步方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#懒汉式线程安全同步方法&#34;&gt;#&lt;/a&gt; 懒汉式 (线程安全，同步方法)&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;synchronized //效率低，不使用
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;懒汉式线程安全同步代码块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#懒汉式线程安全同步代码块&#34;&gt;#&lt;/a&gt; 懒汉式 (线程安全，同步代码块)&lt;/h4&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;synchronized&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;getInstance&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;instance &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token comment&#34;&gt;// 当多个现程进入后，即使一个个来，但是还是会选择创建，不使用&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;synchronized&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                instance &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; instance&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;双重检查&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#双重检查&#34;&gt;#&lt;/a&gt; 双重检查&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;public static synchronized Singleton02 getInstance() &amp;#123;
+        if (instance == null) &amp;#123;
+            synchronized (Singleton02.class) &amp;#123;
+                if (instance == null)
+                    instance = new Singleton02();
+            &amp;#125;
+        &amp;#125;
+        return instance;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;静态内部类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#静态内部类&#34;&gt;#&lt;/a&gt; 静态内部类&lt;/h4&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton03&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 构造器私有化，外部不能 new&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton03&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 当外部类被装载时，静态内部类并不会装载&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;// 当静态内部类装载时，是线程安全 (JVM 底层提供的机制)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;SingletonInstance&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;final&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton03&lt;/span&gt; singleton &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton03&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;synchronized&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;getInstance&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton02&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;getInstance&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;枚举&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#枚举&#34;&gt;#&lt;/a&gt; 枚举&lt;/h4&gt;
+&lt;p&gt;借助 JDK1.5 中添加的枚举类实现，不仅避免多线程同步问题，而且防止反序列化重新创建新的对象&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;enum&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Singleton04&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token constant&#34;&gt;INSTANCE&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 属性&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sayLove&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;out&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;heart~&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;单例模式注意事项和细节说明&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#单例模式注意事项和细节说明&#34;&gt;#&lt;/a&gt; 单例模式注意事项和细节说明&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;单例模式保证了 系统内存中该类只存在一个对象，节省了系统资源，对于一些需要频繁创建销毁的对象，使用单例模式可以提高系统性能&lt;/li&gt;
+&lt;li&gt;当想实例化一个单例类的时候，必须要记住使用相应的获取对象的方法，而不是使用 new&lt;/li&gt;
+&lt;li&gt;单例模式使用的场景：需要频繁的进行创建和销毁的对象、创建对象时耗时过多或耗费资源过多 (即：重量级对象)，但又经常用到的对象、工具类对象、频繁访问数据库或文件的对象 (比如数据源、session 工厂等)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;工厂设计模式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#工厂设计模式&#34;&gt;#&lt;/a&gt; 工厂设计模式&lt;/h3&gt;
+&lt;h4 id=&#34;简单工厂&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#简单工厂&#34;&gt;#&lt;/a&gt; 简单工厂&lt;/h4&gt;
+&lt;h4 id=&#34;工厂方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#工厂方法&#34;&gt;#&lt;/a&gt; 工厂方法&lt;/h4&gt;
+&lt;h4 id=&#34;抽象工厂&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#抽象工厂&#34;&gt;#&lt;/a&gt; 抽象工厂&lt;/h4&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

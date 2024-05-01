@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>Chen • Posts by &#34;机器学习&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2024-02-12T03:05:35.000Z</updated>
+    <category term="GLM" />
+    <category term="位运算" />
+    <category term="分类讨论" />
+    <category term="dp" />
+    <category term="redis" />
+    <category term="lunix" />
+    <category term="git" />
+    <category term="vue3" />
+    <category term="机器学习" />
+    <category term="Vue.js" />
+    <category term="微信小程序" />
+    <category term="LLM" />
+    <category term="AI" />
+    <category term="面试" />
+    <category term="设计模式" />
+    <entry>
+        <id>http://example.com/2024/02/12/supervised-learing-part01/</id>
+        <title>supervised learing part01</title>
+        <link rel="alternate" href="http://example.com/2024/02/12/supervised-learing-part01/"/>
+        <content type="html">&lt;p&gt;监督式机器学习与非监督式机器学习&lt;/p&gt;
+&lt;p&gt;1. 监督学习&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1.1 回归 regression&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;1.2 分类 classification&lt;/p&gt;
+&lt;p&gt;Age 和 Tumor Size 可以当做是维度，可以引入 n 维，并可以找到这 n 维度下的 O 和 X 的边界&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240212112345431.png&#34; alt=&#34;image-20240212112345431&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;2. 非监督学习&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;聚类算法 clustering&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240212120641463.png&#34; alt=&#34;image-20240212120641463&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="机器学习" />
+        <updated>2024-02-12T03:05:35.000Z</updated>
+    </entry>
+</feed>

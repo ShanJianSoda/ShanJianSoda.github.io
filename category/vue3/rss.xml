@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Chen • Posts by &#34;vue3&#34; category</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Mon, 11 Dec 2023 16:52:51 +0800</pubDate>
+        <lastBuildDate>Mon, 11 Dec 2023 16:52:51 +0800</lastBuildDate>
+        <category>GLM</category>
+        <category>位运算</category>
+        <category>分类讨论</category>
+        <category>dp</category>
+        <category>redis</category>
+        <category>lunix</category>
+        <category>git</category>
+        <category>vue3</category>
+        <category>机器学习</category>
+        <category>Vue.js</category>
+        <category>微信小程序</category>
+        <category>LLM</category>
+        <category>AI</category>
+        <category>面试</category>
+        <category>设计模式</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/12/11/todolist/</guid>
+            <title>todolist</title>
+            <link>http://example.com/2023/12/11/todolist/</link>
+            <category>vue3</category>
+            <pubDate>Mon, 11 Dec 2023 16:52:51 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;这两周是实践周，跟着老师做点东西&lt;/p&gt;
+&lt;p&gt;相对简单的是，用 vue 框架做一个简单的待办清单&lt;/p&gt;
+&lt;h1 id=&#34;步骤&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#步骤&#34;&gt;#&lt;/a&gt; 步骤&lt;/h1&gt;
+&lt;p&gt;结合 bootstrap 框架做了如下待办清单&lt;/p&gt;
+&lt;p&gt;首先用 npm 新建一个项目（需要 npm）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm init vite-app todolist
+//安装需要的依赖
+npm install
+//启动
+npm run dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;其中，Bootstrap 需要从官方下载（可 git clone）&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3R3YnMvYm9vdHN0cmFwL3JlbGVhc2VzL2Rvd25sb2FkL3Y0LjYuMi9ib290c3RyYXAtNC42LjItZGlzdC56aXA=&#34;&gt;https://github.com/twbs/bootstrap/releases/download/v4.6.2/bootstrap-4.6.2-dist.zip&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;结构
+todolist
+--node_modules //依赖库
+--public
+--src
+----assets //Bootstrap放这
+----components //存放部件
+------todoButton.vue //todolist的按钮
+------todoInput.vue //todolist的输入
+------todoList.vue //todolist的列表
+----App.vue // 主界面
+----index.css
+----main.js // 启动入口
+--...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;todoButton.vue&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;template&amp;gt;
+	&amp;lt;div class=&amp;quot;btn-group&amp;quot; role=&amp;quot;group&amp;quot; aria-label=&amp;quot;Basic example&amp;quot;&amp;gt;
+		&amp;lt;button type=&amp;quot;button&amp;quot; class=&amp;quot;btn&amp;quot; :class=&amp;quot;active === 0 ? &#39;btn-primary&#39; : btn-secondary&amp;quot;
+			@click=&amp;quot;changeActive(0)&amp;quot;&amp;gt;全部&amp;lt;/button&amp;gt;
+		&amp;lt;button type=&amp;quot;button&amp;quot; class=&amp;quot;btn&amp;quot; :class=&amp;quot;active === 1 ? &#39;btn-primary&#39; : btn-secondary&amp;quot;
+			@click=&amp;quot;changeActive(1)&amp;quot;&amp;gt;已完成&amp;lt;/button&amp;gt;
+		&amp;lt;button type=&amp;quot;button&amp;quot; class=&amp;quot;btn&amp;quot; :class=&amp;quot;active === 2 ? &#39;btn-primary&#39; : btn-secondary&amp;quot;
+			@click=&amp;quot;changeActive(2)&amp;quot;&amp;gt;未完成&amp;lt;/button&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+	export default &amp;#123;
+		name: &amp;quot;todoButton&amp;quot;,
+		data() &amp;#123;
+			return &amp;#123;
+				active: 0,
+			&amp;#125;;
+		&amp;#125;,
+		emits: [&amp;quot;changeActive&amp;quot;],
+		methods: &amp;#123;
+			changeActive(index) &amp;#123;
+				this.active = index;
+				this.$emit(&amp;quot;changeActive&amp;quot;, index);
+			&amp;#125;,
+		&amp;#125;,
+	&amp;#125;;
+&amp;lt;/script&amp;gt;
+
+&amp;lt;style scoped&amp;gt;
+	.btn-group &amp;#123;
+		width: 20%;
+		margin: 20px auto;
+	&amp;#125;
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;todoInput.vue&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;template&amp;gt;
+	&amp;lt;div class=&amp;quot;input-group mb-3&amp;quot;&amp;gt;
+		&amp;lt;div class=&amp;quot;input-group-prepend&amp;quot;&amp;gt;
+			&amp;lt;button class=&amp;quot;btn-primary&amp;quot; @click=&amp;quot;onsubmit&amp;quot;&amp;gt;提交&amp;lt;/button&amp;gt;
+		&amp;lt;/div&amp;gt;
+		&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot; placeholder=&amp;quot;添加任务&amp;quot; aria-label=&amp;quot;Username&amp;quot; aria-describedby=&amp;quot;basic-addon1&amp;quot;
+			v-model=&amp;quot;taskname&amp;quot;&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+	export default &amp;#123;
+		name: &amp;quot;todoInput&amp;quot;,
+		data() &amp;#123;
+			return &amp;#123;
+				taskname: &amp;quot;&amp;quot;,
+			&amp;#125;;
+		&amp;#125;,
+		emits: [&amp;quot;addTask&amp;quot;],
+		methods: &amp;#123;
+			onsubmit() &amp;#123;
+				this.$emit(&amp;quot;addTask&amp;quot;, this.taskname);
+				this.taskname = &amp;quot;&amp;quot;;
+			&amp;#125;
+		&amp;#125;,
+	&amp;#125;;
+&amp;lt;/script&amp;gt;
+
+&amp;lt;style scoped&amp;gt;
+	.input-group &amp;#123;
+		width: 40%;
+		margin: 20px auto;
+	&amp;#125;
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;todoList.vue&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;template&amp;gt;
+	&amp;lt;ul class=&amp;quot;list-group&amp;quot;&amp;gt;
+		&amp;lt;li class=&amp;quot;list-group-item d-flex justify-content-between align-items-center&amp;quot; v-for=&amp;quot;item in todolist&amp;quot; :
+			key=&amp;quot;item.id&amp;quot;&amp;gt;
+			&amp;lt;!-- 复选框 --&amp;gt;
+			&amp;lt;div class=&amp;quot;form-check&amp;quot;&amp;gt;
+				&amp;lt;input class=&amp;quot;form-check-input&amp;quot; type=&amp;quot;checkbox&amp;quot; value=&amp;quot;&amp;quot; :id=&amp;quot;item.id&amp;quot; v-model=&amp;quot;item.isCompleted&amp;quot;&amp;gt;
+				&amp;lt;label class=&amp;quot;form-check-label&amp;quot; :for=&amp;quot;item.id&amp;quot; :class=&amp;quot;item.isCompleted ? &#39;delete&#39; : &#39;&#39;&amp;quot;&amp;gt;
+					&amp;#123;&amp;#123; item.task &amp;#125;&amp;#125;
+				&amp;lt;/label&amp;gt;
+			&amp;lt;/div&amp;gt;
+			&amp;lt;span class=&amp;quot;badge badge-success badge-pill&amp;quot; v-if=&amp;quot;item.isCompleted&amp;quot;&amp;gt;已完成&amp;lt;/span&amp;gt;
+			&amp;lt;span class=&amp;quot;badge badge-warning badge-pill&amp;quot; v-else&amp;gt;未完成&amp;lt;/span&amp;gt;
+		&amp;lt;/li&amp;gt;
+	&amp;lt;/ul&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+	export default &amp;#123;
+		name: &#39;todoList&#39;,
+		props: &amp;#123;
+			todolist: &amp;#123;
+				type: Array,
+				required: true,
+				default: [],
+			&amp;#125;
+		&amp;#125;
+	&amp;#125;
+&amp;lt;/script&amp;gt;
+
+&amp;lt;style scoped&amp;gt;
+	.list-group &amp;#123;
+		width: 40%;
+		margin: 20px auto;
+	&amp;#125;
+
+	.delete &amp;#123;
+		text-decoration: line-through;
+	&amp;#125;
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;App.vue&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;template&amp;gt;
+	&amp;lt;div id=&amp;quot;app&amp;quot;&amp;gt;
+		&amp;lt;h1&amp;gt;TodoList&amp;lt;/h1&amp;gt;
+		&amp;lt;h6&amp;gt;edit by Chen&amp;lt;/h6&amp;gt;
+		&amp;lt;!-- @ 用于处理事件，而 : 用于处理属性绑定。这两个符号都是Vue.js中的常见语法糖，使代码更简洁易读 --&amp;gt;
+		&amp;lt;!-- @ 符号是 v-on 指令的缩写。它用于监听DOM事件并触发相应的Vue实例中的方法。 --&amp;gt;
+		&amp;lt;!-- : 符号是 v-bind 指令的缩写。它用于动态绑定属性或表达式 --&amp;gt;
+		&amp;lt;!-- 查自chatgpt 2023/12/11 --&amp;gt;
+		&amp;lt;todoInput @addTask=&amp;quot;addTask&amp;quot;&amp;gt;&amp;lt;/todoInput&amp;gt;
+		&amp;lt;todoList :todolist=&amp;quot;todoList&amp;quot;&amp;gt;&amp;lt;/todoList&amp;gt;
+		&amp;lt;todoButton @changeActive=&amp;quot;changeActive&amp;quot;&amp;gt;&amp;lt;/todoButton&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+	import todoList from &#39;./components/todoList.vue&#39;
+	import todoButton from &#39;./components/todoButton.vue&#39;
+	import todoInput from &#39;./components/todoInput.vue&#39;
+
+	export default &amp;#123;
+		name: &amp;quot;App&amp;quot;,
+		data() &amp;#123;
+			return &amp;#123;
+				// 假数据
+				todoList: [&amp;#123;
+						id: 1,
+						task: &#39;吃饭&#39;,
+						isCompleted: true
+					&amp;#125;,
+					&amp;#123;
+						id: 2,
+						task: &#39;嘻嘻嘻&#39;,
+						isCompleted: false
+					&amp;#125;,
+					&amp;#123;
+						id: 3,
+						task: &#39;zzzzzzzz&#39;,
+						isCompleted: true
+					&amp;#125;,
+				],
+				active: 0,
+			&amp;#125;;
+		&amp;#125;,
+		computed: &amp;#123;
+			todoList() &amp;#123;
+				if (this.active === 0) &amp;#123;
+					return this.todoList;
+				&amp;#125; else if (this.active === 1) &amp;#123;
+					return this.todoList.filter(item =&amp;gt; item.isCompleted);
+				&amp;#125; else &amp;#123;
+					return this.todoList.filter(item =&amp;gt; !item.isCompleted);
+				&amp;#125;
+			&amp;#125;
+		&amp;#125;,
+		methods: &amp;#123;
+			changeActive(active) &amp;#123;
+				this.active = active;
+				console.log(this.active);
+			&amp;#125;,
+			addTask(taskname) &amp;#123;
+				this.todoList.push(&amp;#123;
+					id: this.todoList.length + 1,
+					task: taskname,
+					isCompleted: false,
+				&amp;#125;)
+			&amp;#125;,
+		&amp;#125;,
+		components: &amp;#123;
+			todoList,
+			todoButton,
+			todoInput
+		&amp;#125;
+	&amp;#125;
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;main.vue&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import &amp;#123; createApp &amp;#125; from &#39;vue&#39;
+import App from &#39;./App.vue&#39;
+import &#39;./assets/css/bootstrap.css&#39;
+import &#39;./index.css&#39;
+
+createApp(App).mount(&#39;#app&#39;)
+
+&lt;/code&gt;&lt;/pre&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

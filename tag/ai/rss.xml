@@ -1,0 +1,519 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Chen • Posts by &#34;ai&#34; tag</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Fri, 26 Apr 2024 10:45:42 +0800</pubDate>
+        <lastBuildDate>Fri, 26 Apr 2024 10:45:42 +0800</lastBuildDate>
+        <category>GLM</category>
+        <category>位运算</category>
+        <category>分类讨论</category>
+        <category>dp</category>
+        <category>redis</category>
+        <category>lunix</category>
+        <category>git</category>
+        <category>vue3</category>
+        <category>机器学习</category>
+        <category>Vue.js</category>
+        <category>微信小程序</category>
+        <category>LLM</category>
+        <category>AI</category>
+        <category>面试</category>
+        <category>设计模式</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/04/26/%E5%9F%BA%E4%BA%8E%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%9E%84%E5%BB%BA%E6%99%BA%E8%83%BD%E9%97%AE%E7%AD%94%E7%B3%BB%E7%BB%9F/</guid>
+            <title>基于大模型构建智能问答系统</title>
+            <link>http://example.com/2024/04/26/%E5%9F%BA%E4%BA%8E%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%9E%84%E5%BB%BA%E6%99%BA%E8%83%BD%E9%97%AE%E7%AD%94%E7%B3%BB%E7%BB%9F/</link>
+            <category>LLM</category>
+            <category>AI</category>
+            <pubDate>Fri, 26 Apr 2024 10:45:42 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;需求&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#需求&#34;&gt;#&lt;/a&gt; 需求&lt;/h1&gt;
+&lt;p&gt;老师：现有的 AI 还不太可控，可靠性不强，对企业来说，微调大模型意义不大。我是想在&lt;strong&gt;个性数据表&lt;/strong&gt;的基础上使用 AI，把所有的数据喂给 ai 来训练，变成把现有数据整理为 20 个数据表比如人际关系表、科研工作表。提问 xxx 的手机号为多少时？不是由 AI 来回答，由 AI 来确定，上面这句话应该属于哪个表 (比如确定为人际关系表)，再从人际关系表中找出相应的信息来返回。&lt;/p&gt;
+&lt;p&gt;看法：基于知识库问答？也许并不需要 &amp;quot;整理成 20 个数据表&amp;quot;，&lt;/p&gt;
+&lt;h1 id=&#34;学习&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#学习&#34;&gt;#&lt;/a&gt; 学习&lt;/h1&gt;
+&lt;h2 id=&#34;技术方案选型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#技术方案选型&#34;&gt;#&lt;/a&gt; &lt;strong&gt;技术方案选型&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;目前，大模型已经可以通过对自然语言的理解揣摩用户意图，并对原始知识进行汇总、整合，进而生成更具逻辑和完整性的答案。然而，仍存在以下几个问题，导致我们不能直接使用这些模型来对特定领域知识进行问答。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;专业性不足：作为通用大模型，对专业领域知识的训练不足，可能会产生幻觉以及信息丰富度不足的问题。&lt;/li&gt;
+&lt;li&gt;时效性问题：模型的训练数据基于某个时间之前的数据，缺乏最新的信息，每次添加新数据都会导致高昂的训练成本。&lt;/li&gt;
+&lt;li&gt;安全性问题：模型无法访问企业内部私密文档，且这些文档不能直接用于 Fine-Tuning。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;为了解决这些问题，业界采用了如下几种技术手段来为大型模型提供额外知识。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fine-Tuning（微调）：使用特定领域的知识对基础大模型进行微调，以改变神经网络参数的权重。虽然适用于特定任务或风格，但需要大量资源和高质量的训练数据。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prompt 工程&lt;/strong&gt;：将行业领域的知识作为输入消息提供给模型，让模型对消息中的知识进行分析和处理。这种方法在正确性和精度上表现良好，但有文本长度限制，对于大规模数据不够高效。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;与传统搜索结合&lt;/strong&gt;：使用传统搜索技术构建基础知识库，然后使用大语言模型处理用户请求，对召回结果进行二次加工。这种方法具有更高的可控性和效率，并适用于大规模数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;为了确保准确性和效率，我们选择了第 2 种和第 3 种方式相结合的方案，&lt;strong&gt;通过向量数据库将知识外挂作为大模型记忆体，使用 LangChain 作为基础开发框架来构建知识库问答系统，最终依靠 Prompt 工程和大模型进行交互。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82ODA3MjUxMjA=&#34;&gt;数据库运维工作量直接减少 50%，基于大模型构建智能问答系统的技术分享 - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/03/22/%E6%99%BA%E6%97%85%E9%97%AE%E7%AD%94/</guid>
+            <title>智旅问答</title>
+            <link>http://example.com/2024/03/22/%E6%99%BA%E6%97%85%E9%97%AE%E7%AD%94/</link>
+            <category>AI</category>
+            <pubDate>Fri, 22 Mar 2024 15:01:23 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;问题说明&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问题说明&#34;&gt;#&lt;/a&gt; 问题说明&lt;/h2&gt;
+&lt;p&gt;基于给定目标城市，城市可由参赛选手自己选择。通过网络、书籍等方法整理收集目标城市的文旅数据，包括但不限于&lt;strong&gt;城市的历史、名人、景点、饮食特色、热门店铺等信息&lt;/strong&gt;，构建语料库，并基于大模型微调的相关技术方法，实现基于大模型的语料库问答系统。其中对于大模型的选择可以选取一些开源模型，如 GLM、modelscope 开源的 GPT-3 中文版本、LLaMA、BLOOM 等。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;此次基于 chatglm3-6b 进行微调，使用较低的配置实现较高的性能&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;&lt;em&gt;24/04/09 突然觉得在做无意义的事，找一段文本或者根本不找，让一个模型（copilot、kimi…）跑出些问答数据集，再塞给另一个模型微调……&lt;/em&gt;&lt;/s&gt;&lt;/p&gt;
+&lt;h2 id=&#34;期望&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#期望&#34;&gt;#&lt;/a&gt; 期望&lt;/h2&gt;
+&lt;p&gt;基于目标城市的文旅数据，构建语料库并进行大模型的微调，实现基于大模型的语料库问答系统。通过问答系统实现用户输入以下问题，问题示例如下：&lt;/p&gt;
+&lt;p&gt;请推荐 XX 城市的三个最热门的景点？&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;XX 景点位于什么地方？&lt;/li&gt;
+&lt;li&gt;介绍一下 XX 景点的历史？&lt;/li&gt;
+&lt;li&gt;XX 附近有什么推荐的小吃店铺？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;该问答系统能够给出上述问题的回复。&lt;/p&gt;
+&lt;h2 id=&#34;要求&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#要求&#34;&gt;#&lt;/a&gt; 要求&lt;/h2&gt;
+&lt;p&gt;收集目标城市的相关文旅数据，进行语料库的构建（方法不限），并基于语料库进行大模型微调，实现基于该语料库的问答系统。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;详细方案内容完备，具有可行性和先进性；&lt;/li&gt;
+&lt;li&gt;模型支持至少两轮问答；&lt;/li&gt;
+&lt;li&gt;具备大模型的基础问答能力和基于语料库的问答能力。考核方法基于用户提供的语料范围，编制问题，对模型进行提问，对模型问答能力进行评估；&lt;/li&gt;
+&lt;li&gt;具有交互界面，可通过浏览器进行访问，页面的访问延迟和问答的响应延迟不超过 10s；&lt;/li&gt;
+&lt;li&gt;语料库数据不低于 3000 条。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;todo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#todo&#34;&gt;#&lt;/a&gt; TODO&lt;/h2&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_0&#34;&gt; 语料库格式、内容&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;（instruction + output + history + input + ？）&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;查看 SHA1 码：certutil -hashfile &amp;lt;filename&amp;gt; SHA1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_1&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_1&#34;&gt; 使用高德地图 API 或爬点什么网站的数据或使用其他方法构建语料库&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;（在建了在建了…）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_2&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_2&#34;&gt; 使用了高德地图的 API，能否使模型能调用 agent（工具），再根据返回的 json 进行回答&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_3&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_3&#34;&gt; 对于&lt;strong&gt;城市的历史、名人、景点、饮食特色、热门店铺等信息&lt;/strong&gt;，考虑到语聊集的格式，&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;某某某的周边热门店铺有哪些，不太方便输入，可以考虑语聊集 + 工具调用的方法，&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;好像也挺方便，比如 instruction 灵隐寺周边的奶茶店 output 古茗、一点点等……&lt;/p&gt;
+&lt;p&gt;（支持多轮，如果能再问 “灵隐寺最近的古茗”，此处调用 API 回答是否能加分）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_4&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_4&#34;&gt; &lt;s&gt;希望能把 composition-demo 里的 chat 和 tool 结合起来，并不以 streamlit 形式输出，&lt;/s&gt;&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;”Tool: 工具模式，模型除了对话外，还可以通过工具进行其他操作 “&lt;/p&gt;
+&lt;p&gt;似乎不需要结合？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_5&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_5&#34;&gt; 微调 &lt;s&gt;p-tuning&lt;/s&gt; | Lora | DPO |etc.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;24/03/30&lt;/em&gt; Lora 微调好了，且无报错的导出了模型，但是问答效果不好，想试试 DPO&lt;/p&gt;
+&lt;p&gt;​	 04/01 开始着手微调的优化：秩 (r)、缩放系数 (alpha)：一般 alpha 是 r 的两倍&lt;/p&gt;
+&lt;p&gt;​				是否需要制作偏好数据集（太麻烦了，优先级低）&lt;/p&gt;
+&lt;p&gt;​				“微调是为了修正一些向量的参数”，但假如通过微调修改了 chatglm 的自我认知，？&lt;/p&gt;
+&lt;p&gt;​	04/02 偏好数据集，制作中！&lt;/p&gt;
+&lt;p&gt;​				制作好了，第一次 DPO 微调&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;image-20240402153832714.png&amp;quot; alt=&amp;quot;image-20240402153832714&amp;quot; style=&amp;quot;zoom: 67%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;p&gt;​				微调出来效果貌似也一般，如果想准确回答的话，不应该用过&lt;strong&gt;向量数据库&lt;/strong&gt;吗（后知后觉），毕竟 chatGPT 也无法做到数据向的精准回答（增大某些词的参数吗…）&lt;/p&gt;
+&lt;p&gt;​		04/03 微调出了什么 **… 数据集不够大，轮数太多，导致了灾难性遗忘，只会阿巴阿巴了&lt;/p&gt;
+&lt;p&gt;​					调小轮数试试（DPO epochs3，r8，alpha16，0.15）&lt;/p&gt;
+&lt;p&gt;​		04/06 看看 open AI 文档 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL29wZW5haS9vcGVuYWktY29va2Jvb2svYmxvYi9tYWluL2V4YW1wbGVzL1F1ZXN0aW9uX2Fuc3dlcmluZ191c2luZ19lbWJlZGRpbmdzLmlweW5i&#34;&gt;Question answering using embeddings-based search&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​					&lt;strong&gt;Note: To answer questions based on text documents, we recommend the procedure in&lt;/strong&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL29wZW5haS9vcGVuYWktY29va2Jvb2svYmxvYi9tYWluL2V4YW1wbGVzL1F1ZXN0aW9uX2Fuc3dlcmluZ191c2luZ19lbWJlZGRpbmdzLmlweW5i&#34;&gt;Question Answering using Embeddings&lt;/span&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​					推荐使用 Embedding，不涉及微调，难搞&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240406135627455.png&#34; alt=&#34;image-20240406135627455&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;​		04/08 扩充一下数据集，再试着调一下&lt;/p&gt;
+&lt;p&gt;​					模型评估（loss、准确度）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_6&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_6&#34;&gt; 模型评估调优、测试&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​		&lt;strong&gt;知名景点&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​		&lt;strong&gt;/ 小众景点&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​		&lt;strong&gt;不存在的景点不乱答（幻觉现象少）&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_7&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_7&#34;&gt; 能回答附带图片（感觉是加分项）&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;conversation 里有 image 属性，似乎可以使用 / 拓展&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_8&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_8&#34;&gt; 前后端联调&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;24/03/30 尝试看源码，把 chatglm 提供的综合 demo 去除 streamlit&lt;/p&gt;
+&lt;p&gt;​	 03/31 fastAPI ?  似乎就 chat 而言，每次需要传输的，就是 conversation.py 里的&lt;/p&gt;
+&lt;p&gt;​	 04/01 查看了 FastAPI、uvicorn、Flask、ASGI/WSGI，&lt;s&gt;还是保留 streamlit（比如使用它的 session）+fastAPI 吧，好复杂（shi 山代码是如何形成的）&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;​	04/02 尝试用 FastAPI 给前端提供数据了&lt;/p&gt;
+&lt;p&gt;​				&lt;s&gt;目前看需要俩，一个是前端加载时提供一个 client；一个是 conversation 对话&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;​				从好几个方向写，但总感觉很卡手。无法同时部署 streamlit 和 uvicorn（FastAPI），俩服务器就不互通，数据使用起来很难受。Flask 和 streamlit 一样，是写在后端的前端界面。如果用 Vue+node.js，中间多出来的 request、response，以及前端该如何做，很陌生&lt;/p&gt;
+&lt;p&gt;​	04/03 有点混乱，简单的来看，就是前端，携带一推数据，用 get 向后端发起请求&lt;/p&gt;
+&lt;p&gt;​				后端收到请求后，此处对应的功能就是原代码中的 if prompt_text&lt;/p&gt;
+&lt;p&gt;​				需要解决的&lt;/p&gt;
+&lt;p&gt;​					&lt;s&gt;BaseModel 类&lt;/s&gt;（删掉就能跑了，好神奇）&lt;/p&gt;
+&lt;p&gt;​					history 这些参数该如何存储（json）&lt;/p&gt;
+&lt;p&gt;​	04/04 改来改去，改好了一个，&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240404105119348.png&#34; alt=&#34;image-20240404105119348&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240414013121762.png&#34; alt=&#34;image-20240414013121762&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240414013128871.png&#34; alt=&#34;image-20240414013128871&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240414013136042.png&#34; alt=&#34;image-20240414013136042&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;后续计算机设计大赛&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#后续计算机设计大赛&#34;&gt;#&lt;/a&gt; 后续（计算机设计大赛）&lt;/h3&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_9&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_9&#34;&gt; &lt;strong&gt;数据集优化&lt;/strong&gt;，使之更符合自然语言 &amp;amp; 多样化 —&amp;gt; 微调 —&amp;gt; 生成回答数据集 —&amp;gt; 计算相似度&lt;br /&gt;
+…&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_10&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_10&#34;&gt; 未微调过的模型 生成回答数据集 计算相似度 作为对比（前提是有&lt;strong&gt;高质量数据集&lt;/strong&gt;）&lt;br /&gt;
+…&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_11&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_11&#34;&gt; &lt;strong&gt;加一个功能&lt;/strong&gt;：当用户查看我们网站的内容时，为了便于浏览，用户可以通过模型输入要搜索的内容，快速找到网站中的内容&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;初步解决方法：问答的函数内，放一个函数，&lt;em&gt;实现:&lt;/em&gt; 先判断内容是否与网站内容有关，有则返回一个字符串 &amp;quot;您是否在查找这个 {网站链接}&amp;quot;，无则返回空。并拼接到此次回答中。&lt;/p&gt;
+&lt;p&gt;此处的判断，&amp;quot;与… 有关联&amp;quot;。v1：用列表（优先级）+ 字典（键值对） [{&amp;quot;西湖&amp;quot;: &amp;quot;URL&amp;quot;}, ……]，对输入进行处理，输入包含的词是否在字典里&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_12&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_12&#34;&gt; &lt;strong&gt;加一个功能&lt;/strong&gt;：希望在问答中能回答制定精品路线，明确关键词（如 &amp;quot;两天&amp;quot;、&amp;quot;指定几个景点&amp;quot;）&lt;br /&gt;
+…&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_13&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_13&#34;&gt; &lt;strong&gt;加一个语音输入&lt;/strong&gt;：讯飞 API&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;借鉴了四五年前的项目 https://github.com/Ma-Tao007/xunfei-vioceAl-vueSDK.git&lt;/p&gt;
+&lt;p&gt;没想到讯飞这么早就把语音转文字免费使用了吗（500 次 / 天）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_14&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_14&#34;&gt; &lt;strong&gt;代码重构&lt;/strong&gt;，去除 st&lt;br /&gt;
+ 没用到 st 的缓存什么的，只是用 st 显示，所以安全去除了&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_15&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_15&#34;&gt; 希望能联网（查询一些网站）&lt;br /&gt;
+之前的痛点是如要查询旅游攻略，需要多方平台查询对比，且搜索引擎给出的链接繁多。&lt;br /&gt;
+我们能做到联网，并统筹多方资讯，给出一个较优的回答。&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_16&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_16&#34;&gt; Groq 快速推理机制&lt;br /&gt;
+…&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_17&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_17&#34;&gt; Phidata—AI 助手框架&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3BoaWRhdGFocS9waGlkYXRh&#34;&gt;https://github.com/phidatahq/phidata&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;image-20240428115123566.png&amp;quot; alt=&amp;quot;image-20240428115123566&amp;quot; style=&amp;quot;zoom:50%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h1 id=&#34;相关知识&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#相关知识&#34;&gt;#&lt;/a&gt; 相关知识&lt;/h1&gt;
+&lt;h2 id=&#34;peft&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#peft&#34;&gt;#&lt;/a&gt; PEFT&lt;/h2&gt;
+&lt;p&gt;PEFT（Parameter-Efficient Fine-Tuning）是 hugging face 开源的&lt;strong&gt;一个参数高效微调大模型的工具&lt;/strong&gt;，里面集成了 4 种微调大模型的方法，可以通过微调少量参数就达到接近微调全量参数的效果，使得在 GPU 资源不足的情况下也可以微调大模型。&lt;/p&gt;
+&lt;h2 id=&#34;llama-factory&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#llama-factory&#34;&gt;#&lt;/a&gt; llama-factory&lt;/h2&gt;
+&lt;p&gt;Unify Efficient Fine-Tuning of 100+ LLMs，GitHub 上的一个统筹了&lt;strong&gt;支持多种大语言模型微调的工具&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;项目特色&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;多种模型：LLaMA、LLaVA、Mistral、Mixtral-MoE、Qwen、Yi、Gemma、Baichuan、&lt;strong&gt;ChatGLM&lt;/strong&gt;、Phi 等等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;集成方法：（增量）预训练、（多模态）指令监督微调（SFT）、奖励模型训练、PPO 训练、DPO 训练和 ORPO 训练。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;多种精度：32 比特全参数微调、16 比特冻结微调、16 比特 LoRA 微调和基于 AQLM/AWQ/GPTQ/LLM.int8 的 2/4/8 比特 QLoRA 微调。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;先进算法：GaLore、BAdam、DoRA、LongLoRA、LLaMA Pro、Mixture-of-Depths、&lt;strong&gt;LoRA+&lt;/strong&gt;、LoftQ 和 Agent 微调。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实用技巧：FlashAttention-2、Unsloth、RoPE scaling、NEFTune 和 rsLoRA。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实验监控：LlamaBoard、TensorBoard、Wandb、MLflow 等等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;极速推理：基于 vLLM 的 OpenAI 风格 API、浏览器界面和命令行接口。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;于是就用这个了&lt;/p&gt;
+&lt;p&gt;链接 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hpeW91Z2EvTExhTUEtRmFjdG9yeS9ibG9iL21haW4vUkVBRE1FX3poLm1k&#34;&gt;https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;微调&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微调&#34;&gt;#&lt;/a&gt; 微调&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;微调这个训练不是为了准确的搜索数据库（Embeddings 才是）&lt;/strong&gt;，微调是为了修正一些向量的参数：比方说我想写一个短视频口播文案，同样是论证观点，口播并不会像写论文等书面文案一样用严格的格式让你理解逻辑结构，所以&lt;strong&gt;一般口播中就不会用首先其次再次这样的说法。那么我需要通过训练把这些词的权重降低。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;重点是&lt;strong&gt;方法&lt;/strong&gt;和&lt;strong&gt;高质量数据集&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;微调可以分为全微调和部分微调两个方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;全微调（Full Fine-tuning）：全微调是指对整个预训练模型进行微调，包括所有的模型参数。在这种方法中，预训练模型的所有层和参数都会被更新和优化，以适应目标任务的需求。这种微调方法通常适用于&lt;strong&gt;任务和预训练模型之间存在较大差异&lt;/strong&gt;的情况，或者&lt;strong&gt;任务需要模型具有高度灵活性和自适应能力&lt;/strong&gt;的情况。Full Fine-tuning 需要较大的计算资源和时间，但可以获得更好的性能。&lt;/li&gt;
+&lt;li&gt;部分微调（Repurposing）：部分微调是指在微调过程中只更新模型的顶层或少数几层，而保持预训练模型的底层参数不变。这种方法的目的是在保留预训练模型的通用知识的同时，通过微调顶层来适应特定任务。Repurposing 通常适用于目标任务与预训练模型之间&lt;strong&gt;有一定相似性&lt;/strong&gt;的情况，或者&lt;strong&gt;任务数据集较小&lt;/strong&gt;的情况。由于只更新少数层，Repurposing 相对于 Full Fine-tuning 需要较少的计算资源和时间，但在某些情况下性能可能会有所降低。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;从另一层次看，微调预训练模型的方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;微调所有层：将预训练模型的所有层都参与微调，以适应新的任务。&lt;/li&gt;
+&lt;li&gt;微调顶层：只微调预训练模型的顶层，以适应新的任务。&lt;/li&gt;
+&lt;li&gt;冻结底层：将预训练模型的底层固定不变，只对顶层进行微调。&lt;/li&gt;
+&lt;li&gt;逐层微调：从底层开始，逐层微调预训练模型，直到所有层都被微调。&lt;/li&gt;
+&lt;li&gt;迁移学习：将预训练模型的知识迁移到新的任务中，以提高模型性能。这种方法通常使用微调顶层或冻结底层的方法。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;p-tuning和lora的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#p-tuning和lora的区别&#34;&gt;#&lt;/a&gt; p-tuning 和 Lora 的区别&lt;/h3&gt;
+&lt;h4 id=&#34;p-tuning&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#p-tuning&#34;&gt;#&lt;/a&gt; p-tuning&lt;/h4&gt;
+&lt;p&gt;p-tuning v2 并不是一个新技术，而是之前用于少样本学习，少样本学习分为离散型模板和连续性模板，离散性模板主要是构建文字描述模板，而连续型模板则是插入连续型 token 构成的模板，之前文章中我也讲述了离散型和连续型两种 prompt 方法。&lt;/p&gt;
+&lt;p&gt;p-tuning v2 简单来说其实是 soft prompt 的一种改进，soft prompt 是只作用在 embedding 层中，实际测试下来只作用在 embedding 层的话交互能力会变弱，而且冻结模型所有参数去学习插入 token，改变量偏小使得效果有时候不太稳定，会差于微调。p-tuning v2 则不只是针对 embedding 层，而是将连续型 token 插入每一层，增大改变量和交互性。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240330185124412.png&#34; alt=&#34;image-20240330185124412&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;soft prompt 比较依靠模型参数量，在参数量超过 10B 的模型上，效果追上了 fine-tune，但是 ptuning v2 因为每层插入了 token，增大模型训练的改变量，&lt;strong&gt;更加适用于小一点的模型&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;lora&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#lora&#34;&gt;#&lt;/a&gt; Lora&lt;/h4&gt;
+&lt;p&gt;Lora 主要在模型中注入可训练模块，大模型在预训练完收敛之后模型包含许多进行矩阵乘法的稠密层，这些层通常是满秩的，在微调过程中其实改变量是比较小的，在矩阵乘法中表现为低秩的改变，注入可训练层的目的是想下游微调的低秩改变由可训练层来学习，冻结模型其他部分，大大减少模型训练参数。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240330185200220.png&#34; alt=&#34;image-20240330185200220&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;推理计算的时候，因为没有改变预训练权重，所以换不同的下游任务时，lora 模型保存的权重也是可以相应加载进来的，通过矩阵分解的方法参数量减少了很多，且推理时可以并行，对于推理性能并没有增加多少负担，算是比较好的低资源微调方法。&lt;/p&gt;
+&lt;h5 id=&#34;low-rank-adaptation低秩适配&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#low-rank-adaptation低秩适配&#34;&gt;#&lt;/a&gt; &lt;s&gt;Low-rank Adaptation 低秩适配:&lt;/s&gt;&lt;/h5&gt;
+&lt;p&gt;&lt;s&gt;低秩适配方法致力于将模型权重的改变限制在一个&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuemhpaHUuY29tL3NlYXJjaD9xPSVFNCVCRCU4RSVFNyVBNyVBOSVFNSVBRCU5MCVFNyVBOSVCQSVFOSU5NyVCNCZhbXA7c2VhcmNoX3NvdXJjZT1FbnRpdHkmYW1wO2h5YnJpZF9zZWFyY2hfc291cmNlPUVudGl0eSZhbXA7aHlicmlkX3NlYXJjaF9leHRyYT0lN0IlMjJzb3VyY2VUeXBlJTIyJTNBJTIyYW5zd2VyJTIyJTJDJTIyc291cmNlSWQlMjIlM0EzMzcwNjU2MTQ3JTdE&#34;&gt;低秩子空间&lt;/span&gt;内。这通常涉及对模型的权重矩阵进行分解，只微调其中的一小部分参数。这样可以有效减少计算资源的消耗，同时仍然允许模型有足够的灵活性来学习新任务。&lt;strong&gt;LoRA&lt;/strong&gt; 和它的变种，如 Q-LoRA、Delta-LoRA、LoRA-FA 等，都属于这个类别。&lt;/s&gt;&lt;/p&gt;
+&lt;h4 id=&#34;总结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#总结&#34;&gt;#&lt;/a&gt; 总结&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;共同点&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;两者对于低资源微调大模型的&lt;strong&gt;都是冻结大模型参数&lt;/strong&gt;，通过小模块来学习微调产生的低秩改变。但目前存在的一些问题就是这两种训练方式很容易参数&lt;strong&gt;灾难性遗忘&lt;/strong&gt;，因为模型在微调的时候整个模型层参数未改变，而少参数的学习模块微调时却是改变量巨大，容易给模型在推理时产生较大偏置，使得以前的回答能力被可学习模块带偏，在微调的时候也必须注意可学习模块不能过于拟合微调数据，否则会丧失原本的预训练知识能力，产生灾难性遗忘。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最好能够在微调语料中也加入通用学习语料一起微调，避免产生对微调语料极大的偏向&lt;/strong&gt;，在 instruct gpt 论文中也提到在强化学习 ppo 的时候模型也会很容易对于 ppo 数据拟合，降低模型通用自然语言任务能力，所以在 ppo loss 中加入了 SFT 梯度和预训练梯度来缓解这种遗忘问题。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;区别&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;LoRA（Low-Rank Adaptation）&lt;/strong&gt;：LoRA 是一种高效的参数微调技术，旨在&lt;strong&gt;解决过拟合&lt;/strong&gt;问题。它通过增加一个参数来调整模型中的知识级别，使其更好地适应特定任务。虽然不需要大量带标签的数据，&lt;strong&gt;但可能需要更多的计算资源&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;P-tuning v2&lt;/strong&gt;：P-tuning v2 是一种改进的微调方法，它通过使用预训练模型的一部分来进行微调，而不是使用整个预训练模型。这种方法可以减少计算需求，同时提高模型性能。然而，&lt;strong&gt;P-tuning v2 可能需要更精细的参数调整&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果你有大量标注数据，&lt;strong&gt;SFT&lt;/strong&gt;（Standard Fine-Tuning） 可能是更好的选择。对于半监督学习场景，&lt;strong&gt;LoRA&lt;/strong&gt; 可能更适合。而对于防止过拟合和轻量级微调场景，&lt;strong&gt;Freeze&lt;/strong&gt; 可能更合适。请根据你的需求选择最适合的方法，以优化你的模型性能。（来自 copilot）&lt;/p&gt;
+&lt;h3 id=&#34;fine-tune-a-mistral-7b-model-with-direct-preference-optimization&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#fine-tune-a-mistral-7b-model-with-direct-preference-optimization&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVuY2UuY29tL2ZpbmUtdHVuZS1hLW1pc3RyYWwtN2ItbW9kZWwtd2l0aC1kaXJlY3QtcHJlZmVyZW5jZS1vcHRpbWl6YXRpb24tNzA4MDQyNzQ1YWFj&#34;&gt;Fine-tune a Mistral-7b model with Direct Preference Optimization&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;hugging face 上某一榜上前三提供的一种微调方法，前提：已经经过监督式微调的模型 + 高质量偏好数据集，不知道能不能学习一下&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# 以下是作者提供的参数
+# LoRA configuration
+peft_config = LoraConfig(
+    r=16,
+    lora_alpha=16,
+    lora_dropout=0.05,
+    bias=&amp;quot;none&amp;quot;,
+    task_type=&amp;quot;CAUSAL_LM&amp;quot;,
+    target_modules=[&#39;k_proj&#39;, &#39;gate_proj&#39;, &#39;v_proj&#39;, &#39;up_proj&#39;, &#39;q_proj&#39;, &#39;o_proj&#39;, &#39;down_proj&#39;]
+)
+
+# Training arguments
+training_args = TrainingArguments(
+    per_device_train_batch_size=4,
+    gradient_accumulation_steps=4,
+    gradient_checkpointing=True,
+    learning_rate=5e-5,
+    lr_scheduler_type=&amp;quot;cosine&amp;quot;,
+    max_steps=200,
+    save_strategy=&amp;quot;no&amp;quot;,
+    logging_steps=1,
+    output_dir=new_model,
+    optim=&amp;quot;paged_adamw_32bit&amp;quot;,
+    warmup_steps=100,
+    bf16=True,
+    report_to=&amp;quot;wandb&amp;quot;,
+)
+
+# Create DPO trainer
+dpo_trainer = DPOTrainer(
+    model,
+    ref_model,
+    args=training_args,
+    train_dataset=dataset,
+    tokenizer=tokenizer,
+    peft_config=peft_config,
+    beta=0.1,
+    max_prompt_length=1024,
+    max_length=1536,
+)
+
+# Fine-tune model with DPO
+dpo_trainer.train()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;学习率的重要性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#学习率的重要性&#34;&gt;#&lt;/a&gt; &lt;strong&gt;学习率的重要性&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;目前深度学习使用的都是非常简单的一阶收敛算法，梯度下降法，不管有多少自适应的优化算法，本质上都是对梯度下降法的各种变形，所以初始学习率对深层网络的收敛起着决定性的作用，下面就是梯度下降法的公式&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240402154527727.png&#34; alt=&#34;image-20240402154527727&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;这里 α 就是学习率，如果学习率太小，会导致网络 loss 下降非常慢，如果学习率太大，那么参数更新的幅度就非常大，就会导致网络收敛到局部最优点，或者 loss 直接开始增加，如下图所示。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;v2-6f1772cefad4befccd3e6cfd83b1fbfd_720w.webp&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;大模型微调步骤&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#大模型微调步骤&#34;&gt;#&lt;/a&gt; 大模型微调步骤&lt;/h3&gt;
+&lt;p&gt;大模型微调如上文所述有很多方法，并且对于每种方法都会有不同的微调流程、方式、准备工作和周期。然而大部分的大模型微调，都有以下几个主要步骤，并需要做相关的准备：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;准备数据集&lt;/strong&gt;：收集和准备与目标任务相关的训练数据集。确保数据集质量和标注准确性，并进行必要的数据清洗和预处理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;选择预训练模型 / 基础模型&lt;/strong&gt;：根据目标任务的性质和数据集的特点，选择适合的预训练模型。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;设定微调策略&lt;/strong&gt;：根据任务需求和可用资源，选择适当的微调策略。考虑是进行全微调还是部分微调，以及微调的层级和范围。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;设置超参数&lt;/strong&gt;：确定微调过程中的超参数，如学习率、批量大小、训练轮数等。这些超参数的选择对微调的性能和收敛速度有重要影响。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;初始化模型参数&lt;/strong&gt;：根据预训练模型的权重，初始化微调模型的参数。对于全微调，所有模型参数都会被随机初始化；对于部分微调，只有顶层或少数层的参数会被随机初始化。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;进行微调训练&lt;/strong&gt;：使用准备好的数据集和微调策略，对模型进行训练。在训练过程中，根据设定的超参数和优化算法，逐渐调整模型参数以最小化&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuemhpaHUuY29tL3NlYXJjaD9xPSVFNiU4RCU5RiVFNSVBNCVCMSVFNSU4NyVCRCVFNiU5NSVCMCZhbXA7c2VhcmNoX3NvdXJjZT1FbnRpdHkmYW1wO2h5YnJpZF9zZWFyY2hfc291cmNlPUVudGl0eSZhbXA7aHlicmlkX3NlYXJjaF9leHRyYT0lN0IlMjJzb3VyY2VUeXBlJTIyJTNBJTIyYW5zd2VyJTIyJTJDJTIyc291cmNlSWQlMjIlM0EzMzcwNjU2MTQ3JTdE&#34;&gt;损失函数&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;模型评估和调优&lt;/strong&gt;：在训练过程中，使用验证集对模型进行定期评估，并根据评估结果调整超参数或微调策略。这有助于提高模型的性能和泛化能力。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;测试模型性能&lt;/strong&gt;：在微调完成后，使用测试集对最终的微调模型进行评估，以获得最终的性能指标。这有助于评估模型在实际应用中的表现。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;模型部署和应用&lt;/strong&gt;：将微调完成的模型部署到实际应用中，并进行进一步的优化和调整，以满足实际需求。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;使用llama-factory示例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用llama-factory示例&#34;&gt;#&lt;/a&gt; 使用 LLaMA-Factory 示例&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;数据集准备&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;按照要求 LLaMA-Factory\data\README_zh.md 里的格式准备好数据集，格式的话，可以在生成时就按照特定格式生成，也可以后期写脚本修改成需要的格式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 LLaMA-Factory\data\dataset_info.json 把该数据集配置好 需要使用 SHA1 码。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;certutil -hashfile &amp;lt;filename&amp;gt; SHA1 # 查看SHA1码
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;训练&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;启动 LLaMA-Factory 的 webUI&lt;/li&gt;
+&lt;li&gt;设置好参数（参数可以参考下面文档调）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;模型评估&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;训练结果好与坏可以从给出的 loss 函数来看，不震荡、收敛到 1 左右的就还行&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;模型调用&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;可以在 webUI 的 chat 部分加载，把训练好的适配器加上后，即可调用。缺点是貌似有 bug，有时候会出现 assistant、自问自答等情况&lt;/p&gt;
+&lt;p&gt;也可以导出模型，使用 chatglm 文件夹下的 demo 启动的话，缺点是导出耗时&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;调参&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#调参&#34;&gt;#&lt;/a&gt; 调参&lt;/h2&gt;
+&lt;p&gt;以下是 LLaMA-Factory 里，可以修改的大部分参数&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240429130319802.png&#34; alt=&#34;image-20240429130319802&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240429130430005.png&#34; alt=&#34;image-20240429130430005&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;训练阶段sft&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#训练阶段sft&#34;&gt;#&lt;/a&gt; 训练阶段（SFT…）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;SFT&lt;/p&gt;
+&lt;p&gt;监督微调&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DPO&lt;/p&gt;
+&lt;p&gt;直接偏好微调，一个问题 X 多个回答（优质、劣质）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;学习率&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#学习率&#34;&gt;#&lt;/a&gt; 学习率&lt;/h3&gt;
+&lt;p&gt;数值举例：5e-5 的计算是&lt;strong&gt;科学计数法&lt;/strong&gt;中的一个数值，即 5 乘以 10 的负 5 次方，即 0.00005&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;学习率过大&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;学习率过小&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;学习速度&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;快&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;慢&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;使用时间点&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;训练开始&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;一定轮数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;副作用&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;易损失值爆炸；易震荡&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;易过拟合；收敛速度慢&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img data-src=&#34;v2-c1c72c00c93f778ad91cefb6c8a8665d_720w.webp&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;曲线 初始时 上扬 【红线】：&lt;br /&gt;
+Solution：初始 学习率过大 导致 振荡，应减小学习率，并 从头 开始训练 。&lt;/li&gt;
+&lt;li&gt;曲线 初始时 强势下降 没多久 归于水平 【紫线】：&lt;br /&gt;
+Solution：后期 学习率过大 导致 无法拟合，应减小学习率，并 重新训练 后几轮 。&lt;/li&gt;
+&lt;li&gt;曲线 全程缓慢 【黄线】：&lt;br /&gt;
+Solution：初始 学习率过小 导致 收敛慢，应增大学习率，并 从头 开始训练 。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;参考链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzJTNBLy9ibG9nLmNzZG4ubmV0L3FxXzMzNDg1NDM0L2FydGljbGUvZGV0YWlscy84MDQ1Mjk0MQ==&#34;&gt;深度学习：学习率 learning rate 的设定规律&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;epochs训练轮数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#epochs训练轮数&#34;&gt;#&lt;/a&gt; Epochs 训练轮数&lt;/h3&gt;
+&lt;p&gt;目前智旅项目的轮数都是在 3~24 轮。跟学习率、数据集等有关。轮数过多会过拟合。&lt;/p&gt;
+&lt;h3 id=&#34;最大梯度范数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最大梯度范数&#34;&gt;#&lt;/a&gt; 最大梯度范数&lt;/h3&gt;
+&lt;p&gt;梯度是指损失函数对模型参数的偏导数，它表示了模型在当前参数值下的变化方向和速度。通过限制梯度的最大范数，可以控制模型参数的更新幅度，防止梯度爆炸（gradient explosion）或梯度消失（gradient vanishing）&lt;/p&gt;
+&lt;p&gt;例如前面我们学的学习率，你设置一个较大的值，那极可能会梯度爆炸，你会看到曲线过山车一样！所以这个参数可以一定程度上减少这种情况！&lt;strong&gt;一般默认 1&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;梯度累积&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#梯度累积&#34;&gt;#&lt;/a&gt; 梯度累积&lt;/h3&gt;
+&lt;p&gt;梯度累积允许我们将多个小批次的梯度相加，然后再进行参数更新。梯度累积对于具有较大批大小的模型或具有较小 GPU 显存的情况特别有用&lt;/p&gt;
+&lt;p&gt;这相当于让大模型去学习，如果一边学，一边把之前所学进行总结，通常比较累，而且需要消耗的显存也越大。如果让大模型看了 10 页书之后再总结，是不是学得更轻松些？占用的显存资源也少了。！但也会导致训练速度变慢。&lt;/p&gt;
+&lt;h3 id=&#34;计算类型fp16&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计算类型fp16&#34;&gt;#&lt;/a&gt; 计算类型（FP16…）&lt;/h3&gt;
+&lt;p&gt;&lt;s&gt;FP16 是 16 位浮点数数据类型，相比于传统的 32 位浮点数（FP32），它可以减少一半的存储空间和计算开销。在混合精度训练中，模型参数和梯度可以使用 FP16 进行计算和存储，从而减少内存占用和计算时间。然而，由于 FP16 的精度较低，可能会引入一些数值精度损失，导致训练过程中的数值不够准确&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;BF16 是一种更为近似于 FP32 的 16 位浮点数数据类型。相比于 FP16，BF16 在保持较低的存储和计算开销的同时，提供了更接近 FP32 的数值精度。因此，BF16 在混合精度训练中可以更好地平衡计算效率和数值精度。&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;有些模型会有推荐训练方法，你只需要知道什么回事即可，默认 FP16&lt;/s&gt;&lt;/p&gt;
+&lt;h3 id=&#34;截断长度&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#截断长度&#34;&gt;#&lt;/a&gt; 截断长度&lt;/h3&gt;
+&lt;p&gt;一条数据分词后会成为一个 token 序列，当 token 序列的长度超过截断长度时会被分割成若干段输入进模型，这里保持 1024 不变&lt;/p&gt;
+&lt;h3 id=&#34;batch-size批处理大小&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#batch-size批处理大小&#34;&gt;#&lt;/a&gt; &lt;strong&gt;Batch size&lt;/strong&gt; (批处理大小)&lt;/h3&gt;
+&lt;p&gt;一般来说，在合理的范围之内，&lt;strong&gt;越大的 batch size&lt;/strong&gt; 使下降方向越准确，震荡越小；batch size 如果过大，则可能会出现局部最优的情况（这也是其中的一个缺点吧）。&lt;strong&gt;小的 bath size&lt;/strong&gt; 引入的随机性更大，难以达到收敛，极少数情况下可能会效果变好。&lt;/p&gt;
+&lt;p&gt;会影响训练的稳定性，Batch size 过小会使 Loss 曲线振荡的比较大，大小一般按照 2 的次幂规律选择，这是为了硬件计算效率考虑的。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240412092213348.png&#34; alt=&#34;image-20240412092213348&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;（此处问题可能 batch size 太小了（如果学习率问题不大的话））&lt;/p&gt;
+&lt;p&gt;考虑到我们的显卡，一般设置在 2~8 之间&lt;/p&gt;
+&lt;h3 id=&#34;验证集比例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#验证集比例&#34;&gt;#&lt;/a&gt; 验证集比例&lt;/h3&gt;
+&lt;p&gt;一般设置成 0.2&lt;/p&gt;
+&lt;h3 id=&#34;学习率调节器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#学习率调节器&#34;&gt;#&lt;/a&gt; 学习率调节器&lt;/h3&gt;
+&lt;p&gt;使用默认的 cosine&lt;/p&gt;
+&lt;h3 id=&#34;其他参数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#其他参数&#34;&gt;#&lt;/a&gt; 其他参数&lt;/h3&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;h3 id=&#34;部分参数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#部分参数&#34;&gt;#&lt;/a&gt; 部分参数&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;可训练层数&lt;/p&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可训练模块&lt;/p&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;lora参数设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#lora参数设置&#34;&gt;#&lt;/a&gt; LoRA 参数设置&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;LoRA 秩&lt;/p&gt;
+&lt;p&gt;一般为 8，是缩放系数的一半&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LoRA 缩放系数&lt;/p&gt;
+&lt;p&gt;一般为 16&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;随机丢弃&lt;/p&gt;
+&lt;p&gt;一般设置成 0.1&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;loss-损失函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#loss-损失函数&#34;&gt;#&lt;/a&gt; loss 损失函数&lt;/h3&gt;
+&lt;p&gt;train loss 不断下降，test loss 不断下降，说明网络仍在学习；&lt;/p&gt;
+&lt;p&gt;train loss 不断下降，test loss 趋于不变，说明网络过拟合；&lt;/p&gt;
+&lt;p&gt;train loss 趋于不变，test loss 不断下降，说明数据集 100% 有问题；&lt;/p&gt;
+&lt;p&gt;train loss 趋于不变，test loss 趋于不变，说明学习遇到瓶颈，需要减小学习率或批量数目；&lt;/p&gt;
+&lt;p&gt;train loss 不断上升，test loss 不断上升，说明网络结构设计不当，训练超参数设置不当，数据集经过清洗等问题。&lt;/p&gt;
+&lt;h3 id=&#34;top-p采样-temperature温度&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#top-p采样-temperature温度&#34;&gt;#&lt;/a&gt; top-p 采样 /temperature 温度&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;temperature  官网解释&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. We generally recommend altering this or top_p but not both.&lt;/p&gt;
+&lt;p&gt;翻译：“采样温度” 是在 0 到 2 之间选择的参数。较高的值（如 0.8）会使输出更具随机性，而较低的值（如 0.2）则会使输出更集中，更确定性。通常，我们建议修改 “采样温度” 或 “top_p” 其中之一，而不是同时修改两者。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;top-p 采样 官网解释&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with top_p probability mass. So 0.1 means only the tokens comprising the top 10% probability mass are considered.&lt;/p&gt;
+&lt;p&gt;翻译：&amp;quot;nucleus sampling&amp;quot;（核采样或者叫做 top-p 采样）是一个替代温度采样的方法，其中模型考虑了具有 top_p 概率质量的 token 的结果。因此，0.1 表示只考虑包含在最高 10% 概率质量中的 token。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;总结&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;quot;temperature&amp;quot; 影响了结果的随机性，而 &amp;quot;top_p&amp;quot; 则影响了结果的确定性。但他们是从不同的角度影响输出的：temperature 更偏向于控制输出的 “随机性”，而 top-p 则是在给定的可能结果中设定一个 “阈值”。&lt;/p&gt;
+&lt;h2 id=&#34;文本相似度&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文本相似度&#34;&gt;#&lt;/a&gt; 文本相似度&lt;/h2&gt;
+&lt;p&gt;为了&lt;strong&gt;评估&lt;/strong&gt;我们微调后的效果，我们引入&lt;strong&gt;文本相似度&lt;/strong&gt;，而使用&lt;strong&gt;余弦相似度&lt;/strong&gt;来判断文本相似度高与否&lt;/p&gt;
+&lt;p&gt;初步实现：jieba 分词 + 余弦相似度 + numpy 处理 + matplotlib.pyplot 画图&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;	# 计算平均值
+    average = sum(data) / len(data)
+    # 输出结果
+    print(&amp;quot;平均值为:&amp;quot;, average)
+
+    # 生成示例数据，假设这是余弦相似度的一些值
+    cosine_similarities = data  # 生成1000个随机余弦相似度值，范围在0到1之间
+
+    # 统计相似度值的频率分布
+    bins = np.linspace(0, 1, 50)  # 将x轴分为50个区间
+    hist, bins = np.histogram(cosine_similarities, bins=bins)
+
+    # 绘制频率分布图
+    plt.bar(bins[:-1], hist, width=(bins[1] - bins[0]), align=&#39;edge&#39;)
+    plt.xlabel(&amp;quot;余弦相似度&amp;quot;)
+    plt.ylabel(&amp;quot;数量&amp;quot;)
+    plt.title(&amp;quot;余弦相似度的频率分布图&amp;quot;)
+    plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用：&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzYzODgwMzQ4OC9hbnN3ZXIvMzM3MDY1NjE0Nw==&#34;&gt;初学者如何对大模型进行微调？ - 爱吃牛油果的璐璐的回答 - 知乎&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NpbmF0XzM3NTc0MTg3L2FydGljbGUvZGV0YWlscy8xMzEyNDE4OTI=&#34;&gt;p-tuning 和 Lora 的区别_ptuning 和 lora 对比 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVuY2UuY29tL2ZpbmUtdHVuZS1hLW1pc3RyYWwtN2ItbW9kZWwtd2l0aC1kaXJlY3QtcHJlZmVyZW5jZS1vcHRpbWl6YXRpb24tNzA4MDQyNzQ1YWFj&#34;&gt;Fine-tune a Mistral-7b model with Direct Preference Optimization | by Maxime Labonne | Towards Data Science&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC80MjAwNTM4MzE=&#34;&gt;loss 问题汇总（不收敛、震荡、nan） - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82NjM0ODMxODk=&#34;&gt;2023 - 全网首个 (Q) Lora 微调大模型指令说明书！收藏就对了！45 天玩转大模型微调 + 知识库落地！8/45 - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L09ubHlfQVIvYXJ0aWNsZS9kZXRhaWxzLzEzNzE0ODk1MA==&#34;&gt;LLaMA Factory+ModelScope 实战 —— 使用 Web UI 进行监督微调_modalscope webui 不能启动 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

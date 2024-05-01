@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>Chen • Posts by &#34;微信小程序&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2023-12-24T06:37:13.000Z</updated>
+    <category term="GLM" />
+    <category term="位运算" />
+    <category term="分类讨论" />
+    <category term="dp" />
+    <category term="redis" />
+    <category term="lunix" />
+    <category term="git" />
+    <category term="vue3" />
+    <category term="机器学习" />
+    <category term="Vue.js" />
+    <category term="微信小程序" />
+    <category term="LLM" />
+    <category term="AI" />
+    <category term="面试" />
+    <category term="设计模式" />
+    <entry>
+        <id>http://example.com/2023/12/24/%E5%AE%9E%E8%AE%AD%E5%91%A8%E5%81%9A%E4%BA%86%E5%95%A5/</id>
+        <title>实训周做了啥</title>
+        <link rel="alternate" href="http://example.com/2023/12/24/%E5%AE%9E%E8%AE%AD%E5%91%A8%E5%81%9A%E4%BA%86%E5%95%A5/"/>
+        <content type="html">&lt;h1 id=&#34;开始&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#开始&#34;&gt;#&lt;/a&gt; 开始&lt;/h1&gt;
+&lt;p&gt;又到了实训周，之前实训周做了啥都忘记了…… 于是记录一下，表示我真的做了（&lt;/p&gt;
+&lt;p&gt;老师的要求是，先用 Vue.js 做一个简单的 Todo List，有点基础后，再做一个微信小程序。&lt;/p&gt;
+&lt;h2 id=&#34;看法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#看法&#34;&gt;#&lt;/a&gt; 看法&lt;/h2&gt;
+&lt;p&gt;我觉得前端界面，简单一点的话，就是组件的拼装，组件自身的样式，组件和同级组件的关系，组件和父级组件的关系。&lt;/p&gt;
+&lt;h1 id=&#34;做todo-list&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#做todo-list&#34;&gt;#&lt;/a&gt; 做 Todo List&lt;/h1&gt;
+&lt;h2 id=&#34;npm&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#npm&#34;&gt;#&lt;/a&gt; npm&lt;/h2&gt;
+&lt;p&gt;，用 npm 创建了项目框架。而 bootstrap 组件库也不错，有好多好看的组件供使用&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;npm run dev&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;数据绑定传输等&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据绑定传输等&#34;&gt;#&lt;/a&gt; 数据绑定传输等&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;@&lt;/code&gt; （v-on）和 &lt;code&gt;：&lt;/code&gt; （v-vbind），&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@ 用于处理事件，而 : 用于处理属性绑定。这两个符号都是Vue.js中的常见语法糖，使代码更简洁易读 
+@ 符号是 v-on 指令的缩写。它用于监听DOM事件并触发相应的Vue实例中的方法。
+: 符号是 v-bind 指令的缩写。它用于动态绑定属性或表达式
+查自chatgpt 2023/12/11
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;我大致理解成，@是绑定事件（函数），：是跟参数之类的有关，也就是属性&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;v-model&lt;/code&gt;  可以在组件上使用以实现双向绑定&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;#123;&amp;#123; item.task &amp;#125;&amp;#125;&lt;/code&gt;  ，可以动态获取属性的值&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;@click=&amp;quot;changeCompleted(item.id)&amp;quot;&lt;/code&gt; ，（）里的，可以传参，而在微信小程序里，可以用 &lt;code&gt;data-xxx=“”&lt;/code&gt;  传递参数&lt;/p&gt;
+&lt;h2 id=&#34;emit的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#emit的使用&#34;&gt;#&lt;/a&gt; $emit 的使用&lt;/h2&gt;
+&lt;p&gt;起初是想在 todoList.vue 调用 App.vue 里的函数，我用的是方法是，在 todoList.vue 里导入 App.vue，然后用 &lt;code&gt;App.method.XXX()&lt;/code&gt; ，结果不行，后来老师说使用 emit 什么的，并帮我找到在官方文档哪，让我自己学一下。&lt;/p&gt;
+&lt;p&gt;以下摘自 Vue.js - 事件 - 事件参数&lt;/p&gt;
+&lt;p&gt;有时候我们会需要在触发事件时附带一个特定的值。举例来说，我们想要  &lt;code&gt;&amp;lt;BlogPost&amp;gt;&lt;/code&gt;  组件来管理文本会缩放得多大。在这个场景下，我们可以给  &lt;code&gt;$emit&lt;/code&gt;  提供一个额外的参数：&lt;/p&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;button @click=&amp;quot;$emit(&#39;increaseBy&#39;, 1)&amp;quot;&amp;gt;
+  Increase by 1
+&amp;lt;/button&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后我们在父组件中监听事件，我们可以先简单写一个内联的箭头函数作为监听器，此函数会接收到事件附带的参数：&lt;/p&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;MyButton @increase-by=&amp;quot;(n) =&amp;gt; count += n&amp;quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;或者，也可以用一个组件方法来作为事件处理函数：&lt;/p&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;MyButton @increase-by=&amp;quot;increaseCount&amp;quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;该方法也会接收到事件所传递的参数：&lt;/p&gt;
+&lt;p&gt;js&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function increaseCount(n) &amp;#123;
+  count.value += n
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;axios的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#axios的使用&#34;&gt;#&lt;/a&gt; axios 的使用&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;npm install axios&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;figcaption data-lang=&#34;javascript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;remove&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;itemid&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				&lt;span class=&#34;token comment&#34;&gt;// 发送 POST 请求给后端添加新任务&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				axios&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;post&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;http://localhost:8080/todolist/removeTodolist&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;						&lt;span class=&#34;token comment&#34;&gt;// 参数传递&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    	&lt;span class=&#34;token literal-property property&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; itemid&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;					&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;then&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;response&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;						&lt;span class=&#34;token comment&#34;&gt;// 添加成功后，重新获取待办事项列表&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;						&lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;$emit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;fetchTodoList&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;					&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;					&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;catch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;error&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;						&lt;span class=&#34;token comment&#34;&gt;// 处理错误&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;						console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;error&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;Error adding task:&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; error&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;					&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;后端的搭建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#后端的搭建&#34;&gt;#&lt;/a&gt; 后端的搭建&lt;/h2&gt;
+&lt;p&gt;老师说如果有后端能加分，我想着这不能错过啊，于是几个月前学的 java 的 Spring Boot + Mybatis plus + mysql 就派上用场了&lt;/p&gt;
+&lt;p&gt;根据之前跟着做的一个项目配置好 Todo List 后端后，写了点简单的增删查改，好些用法都忘记了，悲。&lt;/p&gt;
+&lt;h1 id=&#34;做微信小程序&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#做微信小程序&#34;&gt;#&lt;/a&gt; 做微信小程序&lt;/h1&gt;
+&lt;p&gt;想着我自己也有个公众号，做一个我也能用的上的小程序接上去。&lt;/p&gt;
+&lt;p&gt;挑来挑去，做了番茄时钟和一个简单的待办。&lt;/p&gt;
+&lt;p&gt;也用了 van weapp 组件库，不过用不太来。&lt;/p&gt;
+&lt;h2 id=&#34;界面样式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#界面样式&#34;&gt;#&lt;/a&gt; 界面样式&lt;/h2&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;../../public/images/2023/12 / 番茄时钟主界面.png&amp;quot; alt=&amp;quot;番茄时钟主界面&amp;quot; style=&amp;quot;zoom: 50%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;../../public/images/2023/12 / 番茄时钟 active.png&amp;quot; alt=&amp;quot;番茄时钟 active&amp;quot; style=&amp;quot;zoom: 50%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;../../public/images/2023/12/todolist.png&amp;quot; alt=&amp;quot;todolist&amp;quot; style=&amp;quot;zoom: 50%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;../../public/images/2023/12 / 番茄时钟 - 今日记录界面.png&amp;quot; alt=&amp;quot;番茄时钟 - 今日记录界面&amp;quot; style=&amp;quot;zoom: 50%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;h2 id=&#34;今日诗词的api&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#今日诗词的api&#34;&gt;#&lt;/a&gt; 今日诗词的 API&lt;/h2&gt;
+&lt;p&gt;搭在 github 上的 hexo 博客也接入了这个免费的 API，需要在小程序后台添加该 API 的地址到可访问名单&lt;/p&gt;
+&lt;h2 id=&#34;界面的搭建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#界面的搭建&#34;&gt;#&lt;/a&gt; 界面的搭建&lt;/h2&gt;
+&lt;p&gt;直到做的差不多了，我才把大一时的前端课、近期学习的，在脑内乱成一锅粥的知识整理的差不多，也就是前端界面，简单一点的话，就是组件的拼装，组件自身的样式，组件和同级组件的关系，组件和父级组件的关系。&lt;/p&gt;
+&lt;h2 id=&#34;数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据&#34;&gt;#&lt;/a&gt; 数据&lt;/h2&gt;
+&lt;p&gt;数据则有的放 page 的 data 里，有的放缓存里，通过 &lt;code&gt;wx.setStorageSync(&#39;logs&#39;, logs);&lt;/code&gt;  和 &lt;code&gt;wx.getStorageSync(&#39;logs&#39;, logs);&lt;/code&gt;&lt;/p&gt;
+</content>
+        <category term="Vue.js" />
+        <category term="微信小程序" />
+        <updated>2023-12-24T06:37:13.000Z</updated>
+    </entry>
+</feed>
