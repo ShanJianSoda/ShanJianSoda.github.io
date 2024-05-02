@@ -8,13 +8,13 @@
     <category term="dp" />
     <category term="位运算" />
     <category term="分类讨论" />
-    <category term="机器学习" />
     <category term="redis" />
     <category term="lunix" />
     <category term="git" />
+    <category term="机器学习" />
+    <category term="vue3" />
     <category term="LLM" />
     <category term="AI" />
-    <category term="vue3" />
     <category term="Vue.js" />
     <category term="微信小程序" />
     <category term="面试" />
@@ -100,7 +100,7 @@
 &lt;p&gt;似乎不需要结合？&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_5&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_5&#34;&gt; 微调 &lt;s&gt;p-tuning&lt;/s&gt; | Lora | DPO |etc.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_5&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_5&#34;&gt; 微调 &lt;s&gt;p-tuning&lt;/s&gt; | Lora | DPO |etc.&lt;/label&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;24/03/30&lt;/em&gt; Lora 微调好了，且无报错的导出了模型，但是问答效果不好，想试试 DPO&lt;/p&gt;
 &lt;p&gt;​	 04/01 开始着手微调的优化：秩 (r)、缩放系数 (alpha)：一般 alpha 是 r 的两倍&lt;/p&gt;
 &lt;p&gt;​				是否需要制作偏好数据集（太麻烦了，优先级低）&lt;/p&gt;

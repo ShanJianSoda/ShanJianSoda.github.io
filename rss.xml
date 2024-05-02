@@ -11,13 +11,13 @@
         <category>dp</category>
         <category>位运算</category>
         <category>分类讨论</category>
-        <category>机器学习</category>
         <category>redis</category>
         <category>lunix</category>
         <category>git</category>
+        <category>机器学习</category>
+        <category>vue3</category>
         <category>LLM</category>
         <category>AI</category>
-        <category>vue3</category>
         <category>Vue.js</category>
         <category>微信小程序</category>
         <category>面试</category>
@@ -206,7 +206,7 @@
 &lt;p&gt;似乎不需要结合？&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_5&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_5&#34;&gt; 微调 &lt;s&gt;p-tuning&lt;/s&gt; | Lora | DPO |etc.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_5&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_5&#34;&gt; 微调 &lt;s&gt;p-tuning&lt;/s&gt; | Lora | DPO |etc.&lt;/label&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;24/03/30&lt;/em&gt; Lora 微调好了，且无报错的导出了模型，但是问答效果不好，想试试 DPO&lt;/p&gt;
 &lt;p&gt;​	 04/01 开始着手微调的优化：秩 (r)、缩放系数 (alpha)：一般 alpha 是 r 的两倍&lt;/p&gt;
 &lt;p&gt;​				是否需要制作偏好数据集（太麻烦了，优先级低）&lt;/p&gt;
