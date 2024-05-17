@@ -20,6 +20,7 @@
         <category>AI</category>
         <category>Vue.js</category>
         <category>微信小程序</category>
+        <category>chatgpt</category>
         <category>面试</category>
         <category>设计模式</category>
         <item>
@@ -180,24 +181,33 @@
 &lt;p&gt;没想到讯飞这么早就把语音转文字免费使用了吗（500 次 / 天）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_14&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_14&#34;&gt; &lt;strong&gt;代码重构&lt;/strong&gt;，去除 st&lt;br /&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_14&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_14&#34;&gt; 加上调用&lt;strong&gt;天气&lt;/strong&gt; API&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_15&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_15&#34;&gt; &lt;strong&gt;代码重构&lt;/strong&gt;，去除 st&lt;br /&gt;
  没用到 st 的缓存什么的，只是用 st 显示，所以安全去除了&lt;/label&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_15&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_15&#34;&gt; 希望能联网（查询一些网站）&lt;br /&gt;
-之前的痛点是如要查询旅游攻略，需要多方平台查询对比，且搜索引擎给出的链接繁多。&lt;br /&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_16&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_16&#34;&gt; 希望能&lt;strong&gt;联网&lt;/strong&gt;（查询一些网站）, 检索增强 RAG&lt;br /&gt;
+ 之前的痛点是如要查询旅游攻略，需要多方平台查询对比，且搜索引擎给出的链接繁多。&lt;br /&gt;
 我们能做到联网，并统筹多方资讯，给出一个较优的回答。&lt;/label&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_16&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_16&#34;&gt; Groq 快速推理机制&lt;br /&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_17&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_17&#34;&gt; 增加天气、客流量等数据的（实时）&lt;strong&gt;数据可视化&lt;/strong&gt;&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_18&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_18&#34;&gt; Groq 快速推理机制&lt;br /&gt;
 …&lt;/label&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_17&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_17&#34;&gt; Phidata—AI 助手框架&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_19&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_19&#34;&gt; Phidata—AI 助手框架&lt;/label&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3BoaWRhdGFocS9waGlkYXRh&#34;&gt;https://github.com/phidatahq/phidata&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&amp;lt;img src=&amp;quot;image-20240428115123566.png&amp;quot; alt=&amp;quot;image-20240428115123566&amp;quot; style=&amp;quot;zoom:50%;&amp;quot; /&amp;gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;05/06 截止前&lt;/p&gt;
+&lt;p&gt;老师认为还是太空了，技术也得讲，检索得讲，可以个例子，说 “岳庙” 就能知道指的是 “岳王庙”&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h1 id=&#34;相关知识&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#相关知识&#34;&gt;#&lt;/a&gt; 相关知识&lt;/h1&gt;
 &lt;h2 id=&#34;peft&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#peft&#34;&gt;#&lt;/a&gt; PEFT&lt;/h2&gt;
@@ -231,7 +241,7 @@
 &lt;p&gt;于是就用这个了&lt;/p&gt;
 &lt;p&gt;链接 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hpeW91Z2EvTExhTUEtRmFjdG9yeS9ibG9iL21haW4vUkVBRE1FX3poLm1k&#34;&gt;https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;微调&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#微调&#34;&gt;#&lt;/a&gt; 微调&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;微调这个训练不是为了准确的搜索数据库（Embeddings 才是）&lt;/strong&gt;，微调是为了修正一些向量的参数：比方说我想写一个短视频口播文案，同样是论证观点，口播并不会像写论文等书面文案一样用严格的格式让你理解逻辑结构，所以&lt;strong&gt;一般口播中就不会用首先其次再次这样的说法。那么我需要通过训练把这些词的权重降低。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;微调不是为了准确的搜索数据库（Embeddings 才是）&lt;/strong&gt;，微调是为了修正一些向量的参数：比方说我想写一个短视频口播文案，同样是论证观点，口播并不会像写论文等书面文案一样用严格的格式让你理解逻辑结构，所以&lt;strong&gt;一般口播中就不会用首先其次再次这样的说法。那么我需要通过训练把这些词的权重降低。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;重点是&lt;strong&gt;方法&lt;/strong&gt;和&lt;strong&gt;高质量数据集&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;微调可以分为全微调和部分微调两个方法：&lt;/p&gt;
 &lt;ol&gt;
@@ -361,11 +371,11 @@ dpo_trainer.train()
 &lt;p&gt;也可以导出模型，使用 chatglm 文件夹下的 demo 启动的话，缺点是导出耗时&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;调参&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#调参&#34;&gt;#&lt;/a&gt; 调参&lt;/h2&gt;
+&lt;h3 id=&#34;调参&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#调参&#34;&gt;#&lt;/a&gt; 调参&lt;/h3&gt;
 &lt;p&gt;以下是 LLaMA-Factory 里，可以修改的大部分参数&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;image-20240429130319802.png&#34; alt=&#34;image-20240429130319802&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;image-20240429130430005.png&#34; alt=&#34;image-20240429130430005&#34; /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;训练阶段sft&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#训练阶段sft&#34;&gt;#&lt;/a&gt; 训练阶段（SFT…）&lt;/h3&gt;
+&lt;h4 id=&#34;训练阶段sft&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#训练阶段sft&#34;&gt;#&lt;/a&gt; 训练阶段（SFT…）&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;SFT&lt;/p&gt;
@@ -379,7 +389,7 @@ dpo_trainer.train()
 &lt;p&gt;…&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;学习率&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#学习率&#34;&gt;#&lt;/a&gt; 学习率&lt;/h3&gt;
+&lt;h4 id=&#34;学习率&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#学习率&#34;&gt;#&lt;/a&gt; 学习率&lt;/h4&gt;
 &lt;p&gt;数值举例：5e-5 的计算是&lt;strong&gt;科学计数法&lt;/strong&gt;中的一个数值，即 5 乘以 10 的负 5 次方，即 0.00005&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -417,33 +427,33 @@ Solution：后期 学习率过大 导致 无法拟合，应减小学习率，并
 Solution：初始 学习率过小 导致 收敛慢，应增大学习率，并 从头 开始训练 。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;参考链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzJTNBLy9ibG9nLmNzZG4ubmV0L3FxXzMzNDg1NDM0L2FydGljbGUvZGV0YWlscy84MDQ1Mjk0MQ==&#34;&gt;深度学习：学习率 learning rate 的设定规律&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;epochs训练轮数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#epochs训练轮数&#34;&gt;#&lt;/a&gt; Epochs 训练轮数&lt;/h3&gt;
+&lt;h4 id=&#34;epochs训练轮数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#epochs训练轮数&#34;&gt;#&lt;/a&gt; Epochs 训练轮数&lt;/h4&gt;
 &lt;p&gt;目前智旅项目的轮数都是在 3~24 轮。跟学习率、数据集等有关。轮数过多会过拟合。&lt;/p&gt;
-&lt;h3 id=&#34;最大梯度范数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最大梯度范数&#34;&gt;#&lt;/a&gt; 最大梯度范数&lt;/h3&gt;
+&lt;h4 id=&#34;最大梯度范数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最大梯度范数&#34;&gt;#&lt;/a&gt; 最大梯度范数&lt;/h4&gt;
 &lt;p&gt;梯度是指损失函数对模型参数的偏导数，它表示了模型在当前参数值下的变化方向和速度。通过限制梯度的最大范数，可以控制模型参数的更新幅度，防止梯度爆炸（gradient explosion）或梯度消失（gradient vanishing）&lt;/p&gt;
 &lt;p&gt;例如前面我们学的学习率，你设置一个较大的值，那极可能会梯度爆炸，你会看到曲线过山车一样！所以这个参数可以一定程度上减少这种情况！&lt;strong&gt;一般默认 1&lt;/strong&gt;。&lt;/p&gt;
-&lt;h3 id=&#34;梯度累积&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#梯度累积&#34;&gt;#&lt;/a&gt; 梯度累积&lt;/h3&gt;
+&lt;h4 id=&#34;梯度累积&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#梯度累积&#34;&gt;#&lt;/a&gt; 梯度累积&lt;/h4&gt;
 &lt;p&gt;梯度累积允许我们将多个小批次的梯度相加，然后再进行参数更新。梯度累积对于具有较大批大小的模型或具有较小 GPU 显存的情况特别有用&lt;/p&gt;
 &lt;p&gt;这相当于让大模型去学习，如果一边学，一边把之前所学进行总结，通常比较累，而且需要消耗的显存也越大。如果让大模型看了 10 页书之后再总结，是不是学得更轻松些？占用的显存资源也少了。！但也会导致训练速度变慢。&lt;/p&gt;
-&lt;h3 id=&#34;计算类型fp16&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计算类型fp16&#34;&gt;#&lt;/a&gt; 计算类型（FP16…）&lt;/h3&gt;
+&lt;h4 id=&#34;计算类型fp16&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计算类型fp16&#34;&gt;#&lt;/a&gt; 计算类型（FP16…）&lt;/h4&gt;
 &lt;p&gt;&lt;s&gt;FP16 是 16 位浮点数数据类型，相比于传统的 32 位浮点数（FP32），它可以减少一半的存储空间和计算开销。在混合精度训练中，模型参数和梯度可以使用 FP16 进行计算和存储，从而减少内存占用和计算时间。然而，由于 FP16 的精度较低，可能会引入一些数值精度损失，导致训练过程中的数值不够准确&lt;/s&gt;&lt;/p&gt;
 &lt;p&gt;&lt;s&gt;BF16 是一种更为近似于 FP32 的 16 位浮点数数据类型。相比于 FP16，BF16 在保持较低的存储和计算开销的同时，提供了更接近 FP32 的数值精度。因此，BF16 在混合精度训练中可以更好地平衡计算效率和数值精度。&lt;/s&gt;&lt;/p&gt;
 &lt;p&gt;&lt;s&gt;有些模型会有推荐训练方法，你只需要知道什么回事即可，默认 FP16&lt;/s&gt;&lt;/p&gt;
-&lt;h3 id=&#34;截断长度&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#截断长度&#34;&gt;#&lt;/a&gt; 截断长度&lt;/h3&gt;
+&lt;h4 id=&#34;截断长度&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#截断长度&#34;&gt;#&lt;/a&gt; 截断长度&lt;/h4&gt;
 &lt;p&gt;一条数据分词后会成为一个 token 序列，当 token 序列的长度超过截断长度时会被分割成若干段输入进模型，这里保持 1024 不变&lt;/p&gt;
-&lt;h3 id=&#34;batch-size批处理大小&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#batch-size批处理大小&#34;&gt;#&lt;/a&gt; &lt;strong&gt;Batch size&lt;/strong&gt; (批处理大小)&lt;/h3&gt;
+&lt;h4 id=&#34;batch-size批处理大小&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#batch-size批处理大小&#34;&gt;#&lt;/a&gt; &lt;strong&gt;Batch size&lt;/strong&gt; (批处理大小)&lt;/h4&gt;
 &lt;p&gt;一般来说，在合理的范围之内，&lt;strong&gt;越大的 batch size&lt;/strong&gt; 使下降方向越准确，震荡越小；batch size 如果过大，则可能会出现局部最优的情况（这也是其中的一个缺点吧）。&lt;strong&gt;小的 bath size&lt;/strong&gt; 引入的随机性更大，难以达到收敛，极少数情况下可能会效果变好。&lt;/p&gt;
 &lt;p&gt;会影响训练的稳定性，Batch size 过小会使 Loss 曲线振荡的比较大，大小一般按照 2 的次幂规律选择，这是为了硬件计算效率考虑的。&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;image-20240412092213348.png&#34; alt=&#34;image-20240412092213348&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;（此处问题可能 batch size 太小了（如果学习率问题不大的话））&lt;/p&gt;
 &lt;p&gt;考虑到我们的显卡，一般设置在 2~8 之间&lt;/p&gt;
-&lt;h3 id=&#34;验证集比例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#验证集比例&#34;&gt;#&lt;/a&gt; 验证集比例&lt;/h3&gt;
+&lt;h4 id=&#34;验证集比例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#验证集比例&#34;&gt;#&lt;/a&gt; 验证集比例&lt;/h4&gt;
 &lt;p&gt;一般设置成 0.2&lt;/p&gt;
-&lt;h3 id=&#34;学习率调节器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#学习率调节器&#34;&gt;#&lt;/a&gt; 学习率调节器&lt;/h3&gt;
+&lt;h4 id=&#34;学习率调节器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#学习率调节器&#34;&gt;#&lt;/a&gt; 学习率调节器&lt;/h4&gt;
 &lt;p&gt;使用默认的 cosine&lt;/p&gt;
-&lt;h3 id=&#34;其他参数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#其他参数&#34;&gt;#&lt;/a&gt; 其他参数&lt;/h3&gt;
+&lt;h4 id=&#34;其他参数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#其他参数&#34;&gt;#&lt;/a&gt; 其他参数&lt;/h4&gt;
 &lt;p&gt;……&lt;/p&gt;
-&lt;h3 id=&#34;部分参数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#部分参数&#34;&gt;#&lt;/a&gt; 部分参数&lt;/h3&gt;
+&lt;h4 id=&#34;部分参数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#部分参数&#34;&gt;#&lt;/a&gt; 部分参数&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;可训练层数&lt;/p&gt;
@@ -454,7 +464,7 @@ Solution：初始 学习率过小 导致 收敛慢，应增大学习率，并 �
 &lt;p&gt;……&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;lora参数设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#lora参数设置&#34;&gt;#&lt;/a&gt; LoRA 参数设置&lt;/h3&gt;
+&lt;h4 id=&#34;lora参数设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#lora参数设置&#34;&gt;#&lt;/a&gt; LoRA 参数设置&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;LoRA 秩&lt;/p&gt;
@@ -469,13 +479,13 @@ Solution：初始 学习率过小 导致 收敛慢，应增大学习率，并 �
 &lt;p&gt;一般设置成 0.1&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;loss-损失函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#loss-损失函数&#34;&gt;#&lt;/a&gt; loss 损失函数&lt;/h3&gt;
+&lt;h4 id=&#34;loss-损失函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#loss-损失函数&#34;&gt;#&lt;/a&gt; loss 损失函数&lt;/h4&gt;
 &lt;p&gt;train loss 不断下降，test loss 不断下降，说明网络仍在学习；&lt;/p&gt;
 &lt;p&gt;train loss 不断下降，test loss 趋于不变，说明网络过拟合；&lt;/p&gt;
 &lt;p&gt;train loss 趋于不变，test loss 不断下降，说明数据集 100% 有问题；&lt;/p&gt;
 &lt;p&gt;train loss 趋于不变，test loss 趋于不变，说明学习遇到瓶颈，需要减小学习率或批量数目；&lt;/p&gt;
 &lt;p&gt;train loss 不断上升，test loss 不断上升，说明网络结构设计不当，训练超参数设置不当，数据集经过清洗等问题。&lt;/p&gt;
-&lt;h3 id=&#34;top-p采样-temperature温度&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#top-p采样-temperature温度&#34;&gt;#&lt;/a&gt; top-p 采样 /temperature 温度&lt;/h3&gt;
+&lt;h4 id=&#34;top-p采样-temperature温度&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#top-p采样-temperature温度&#34;&gt;#&lt;/a&gt; top-p 采样 /temperature 温度&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;temperature  官网解释&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. We generally recommend altering this or top_p but not both.&lt;/p&gt;
 &lt;p&gt;翻译：“采样温度” 是在 0 到 2 之间选择的参数。较高的值（如 0.8）会使输出更具随机性，而较低的值（如 0.2）则会使输出更集中，更确定性。通常，我们建议修改 “采样温度” 或 “top_p” 其中之一，而不是同时修改两者。&lt;/p&gt;
@@ -484,7 +494,7 @@ Solution：初始 学习率过小 导致 收敛慢，应增大学习率，并 �
 &lt;p&gt;翻译：&amp;quot;nucleus sampling&amp;quot;（核采样或者叫做 top-p 采样）是一个替代温度采样的方法，其中模型考虑了具有 top_p 概率质量的 token 的结果。因此，0.1 表示只考虑包含在最高 10% 概率质量中的 token。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;总结&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&amp;quot;temperature&amp;quot; 影响了结果的随机性，而 &amp;quot;top_p&amp;quot; 则影响了结果的确定性。但他们是从不同的角度影响输出的：temperature 更偏向于控制输出的 “随机性”，而 top-p 则是在给定的可能结果中设定一个 “阈值”。&lt;/p&gt;
-&lt;h2 id=&#34;文本相似度&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文本相似度&#34;&gt;#&lt;/a&gt; 文本相似度&lt;/h2&gt;
+&lt;h3 id=&#34;文本相似度&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文本相似度&#34;&gt;#&lt;/a&gt; 文本相似度&lt;/h3&gt;
 &lt;p&gt;为了&lt;strong&gt;评估&lt;/strong&gt;我们微调后的效果，我们引入&lt;strong&gt;文本相似度&lt;/strong&gt;，而使用&lt;strong&gt;余弦相似度&lt;/strong&gt;来判断文本相似度高与否&lt;/p&gt;
 &lt;p&gt;初步实现：jieba 分词 + 余弦相似度 + numpy 处理 + matplotlib.pyplot 画图&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;	# 计算平均值
@@ -506,6 +516,30 @@ Solution：初始 学习率过小 导致 收敛慢，应增大学习率，并 �
     plt.title(&amp;quot;余弦相似度的频率分布图&amp;quot;)
     plt.show()
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;langchain-agentchatglm-6b-本地知识库联网检索能力&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#langchain-agentchatglm-6b-本地知识库联网检索能力&#34;&gt;#&lt;/a&gt; [LangChain Agent] ChatGLM-6B + 本地知识库 + 联网检索能力&lt;/h3&gt;
+&lt;h4 id=&#34;agent&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#agent&#34;&gt;#&lt;/a&gt; Agent&lt;/h4&gt;
+&lt;p&gt;** 什么是 Agent？** 简单讲 Agent 利用 LLM 的理解推理能力来简化原本十分复杂的逻辑判断，决定什么问题由什么工具来解决，最后汇总成一个 “答案” 返回给用户。&lt;/p&gt;
+&lt;p&gt;LangChain 把这个过程用一个非常经典的 Prompt 模板定义了出来，这个模板中包括四个环节：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Thought（LLM 的思考过程和决定）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Action（要采取的行动以及要给他的输入）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Observation（执行 Action 后预计的输出结果）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tools（Action 行动的调用函数）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;prompt 示例&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240504123333424.png&#34; alt=&#34;image-20240504123333424&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;rag检索增强&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#rag检索增强&#34;&gt;#&lt;/a&gt; RAG 检索增强&lt;/h4&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;h4 id=&#34;无头浏览器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#无头浏览器&#34;&gt;#&lt;/a&gt; &lt;s&gt;无头浏览器&lt;/s&gt;&lt;/h4&gt;
+&lt;p&gt;……&lt;/p&gt;
 &lt;h1 id=&#34;引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用：&lt;/h1&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzYzODgwMzQ4OC9hbnN3ZXIvMzM3MDY1NjE0Nw==&#34;&gt;初学者如何对大模型进行微调？ - 爱吃牛油果的璐璐的回答 - 知乎&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NpbmF0XzM3NTc0MTg3L2FydGljbGUvZGV0YWlscy8xMzEyNDE4OTI=&#34;&gt;p-tuning 和 Lora 的区别_ptuning 和 lora 对比 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
@@ -513,6 +547,7 @@ Solution：初始 学习率过小 导致 收敛慢，应增大学习率，并 �
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC80MjAwNTM4MzE=&#34;&gt;loss 问题汇总（不收敛、震荡、nan） - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82NjM0ODMxODk=&#34;&gt;2023 - 全网首个 (Q) Lora 微调大模型指令说明书！收藏就对了！45 天玩转大模型微调 + 知识库落地！8/45 - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L09ubHlfQVIvYXJ0aWNsZS9kZXRhaWxzLzEzNzE0ODk1MA==&#34;&gt;LLaMA Factory+ModelScope 实战 —— 使用 Web UI 进行监督微调_modalscope webui 不能启动 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82MzU3MjQ3MDcjJUU0JUJBJThDJUVGJUJDJTg5QWdlbnRfJUU1JTkyJThDX0NoYXRHTE0=&#34;&gt;定制基于 ChatGLM-6B 的本地知识库 + 联网检索能力的 LangChain Agent - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>Chen • Posts by &#34;chatgpt&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2024-05-17T01:35:15.000Z</updated>
+    <category term="GLM" />
+    <category term="dp" />
+    <category term="位运算" />
+    <category term="分类讨论" />
+    <category term="redis" />
+    <category term="lunix" />
+    <category term="git" />
+    <category term="机器学习" />
+    <category term="vue3" />
+    <category term="LLM" />
+    <category term="AI" />
+    <category term="Vue.js" />
+    <category term="微信小程序" />
+    <category term="chatgpt" />
+    <category term="面试" />
+    <category term="设计模式" />
+    <entry>
+        <id>http://example.com/2024/05/17/%E8%A7%82%E7%9C%8Bchatgpt-4o%E5%8F%91%E5%B8%83%E4%BC%9A/</id>
+        <title>观看chatgpt-4o发布会</title>
+        <link rel="alternate" href="http://example.com/2024/05/17/%E8%A7%82%E7%9C%8Bchatgpt-4o%E5%8F%91%E5%B8%83%E4%BC%9A/"/>
+        <content type="html">&lt;p&gt;观看 vedal 看 chatgpt-4o 发布会……&lt;/p&gt;
+&lt;p&gt;（vedal：一个人工智能 vtuber 的家长、制作者）&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMWpnTWZldkVDVA==&#34;&gt;【与 AI VTuber 工程师 Vedal 一起看 OpenAI GPT-4o 发布会 【Neuro-sama】（文化绿洲）】&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;发布会内容&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#发布会内容&#34;&gt;#&lt;/a&gt; 发布会内容&lt;/h1&gt;
+&lt;h2 id=&#34;chatgpt-4o-可以在电脑上使用而非和以前一样的网页端&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#chatgpt-4o-可以在电脑上使用而非和以前一样的网页端&#34;&gt;#&lt;/a&gt; chatgpt-4o 可以在电脑上使用，而非和以前一样的网页端&lt;/h2&gt;
+&lt;p&gt;看到的显示内容&lt;/p&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;h2 id=&#34;chatgpt-4o-api&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#chatgpt-4o-api&#34;&gt;#&lt;/a&gt; chatgpt-4o API&lt;/h2&gt;
+&lt;p&gt;能在 chatgpt 以外的地方使用 chatgpt-4o&lt;/p&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;h2 id=&#34;chatgpt-4o-语音-voice-mode&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#chatgpt-4o-语音-voice-mode&#34;&gt;#&lt;/a&gt; chatgpt-4o 语音 Voice Mode&lt;/h2&gt;
+&lt;p&gt;neuro 的语音输入是语音识别，然后把文字输入到模型。这样子存在听错的问题，且无法对环境音，声音的情况以及其他进行判断。我之前把讯飞语音接入到项目也是这样子做的。&lt;/p&gt;
+&lt;h3 id=&#34;多模态输入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#多模态输入&#34;&gt;#&lt;/a&gt; 多模态输入&lt;/h3&gt;
+&lt;p&gt;可以&lt;strong&gt;语音、视觉、文字同时理解&lt;/strong&gt;，&lt;strong&gt;听得懂声音的缓急&lt;/strong&gt;，且&lt;strong&gt;可以打断它的输出&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;tts&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tts&#34;&gt;#&lt;/a&gt; TTS&lt;/h3&gt;
+&lt;p&gt;不是传统的 TTS，能有&lt;strong&gt;不同音色的转换&lt;/strong&gt;（比如机器人式音色，唱歌的方法）。&lt;/p&gt;
+&lt;p&gt;（输入部分开源社区有相应项目）&lt;/p&gt;
+&lt;h2 id=&#34;chatgpt-4o-视觉&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#chatgpt-4o-视觉&#34;&gt;#&lt;/a&gt; chatgpt-4o 视觉&lt;/h2&gt;
+&lt;h3 id=&#34;线性方程指导&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线性方程指导&#34;&gt;#&lt;/a&gt; 线性方程指导&lt;/h3&gt;
+&lt;p&gt;加入视觉，比如写下一个线性方程，然后让它给出提示（像一个老师一样）&lt;/p&gt;
+&lt;p&gt;它能一步步提示，并很好地做到 &lt;strong&gt;指导&lt;/strong&gt; 这件事&lt;/p&gt;
+&lt;p&gt;最后画上，爱心，有误导性的 t（+），G（6），能正确识别，并有感情的返回（似乎有笑声）&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240517095423190.png&#34; alt=&#34;image-20240517095423190&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;识别屏幕&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#识别屏幕&#34;&gt;#&lt;/a&gt; 识别屏幕&lt;/h3&gt;
+&lt;p&gt;电脑版，可以获取到屏幕内容，看得懂代码，并分析输出&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240517095650310.png&#34; alt=&#34;image-20240517095650310&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;其他&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#其他&#34;&gt;#&lt;/a&gt; 其他&lt;/h2&gt;
+&lt;h3 id=&#34;实时翻译输出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实时翻译输出&#34;&gt;#&lt;/a&gt; 实时翻译 + 输出&lt;/h3&gt;
+&lt;p&gt;实现了意大利语和英语的&lt;strong&gt;实时翻译&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;识别人表情的情感&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#识别人表情的情感&#34;&gt;#&lt;/a&gt; 识别人表情的情感&lt;/h3&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;h1 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;/h1&gt;
+</content>
+        <category term="chatgpt" />
+        <updated>2024-05-17T01:35:15.000Z</updated>
+    </entry>
+</feed>

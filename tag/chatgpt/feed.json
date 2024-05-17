@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Chen • All posts by \"chatgpt\" tag",
+    "description": "",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/2024/05/17/%E8%A7%82%E7%9C%8Bchatgpt-4o%E5%8F%91%E5%B8%83%E4%BC%9A/",
+            "url": "http://example.com/2024/05/17/%E8%A7%82%E7%9C%8Bchatgpt-4o%E5%8F%91%E5%B8%83%E4%BC%9A/",
+            "title": "观看chatgpt-4o发布会",
+            "date_published": "2024-05-17T01:35:15.000Z",
+            "content_html": "<p>观看 vedal 看 chatgpt-4o 发布会……</p>\n<p>（vedal：一个人工智能 vtuber 的家长、制作者）</p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMWpnTWZldkVDVA==\">【与 AI VTuber 工程师 Vedal 一起看 OpenAI GPT-4o 发布会 【Neuro-sama】（文化绿洲）】</span></p>\n<h1 id=\"发布会内容\"><a class=\"anchor\" href=\"#发布会内容\">#</a> 发布会内容</h1>\n<h2 id=\"chatgpt-4o-可以在电脑上使用而非和以前一样的网页端\"><a class=\"anchor\" href=\"#chatgpt-4o-可以在电脑上使用而非和以前一样的网页端\">#</a> chatgpt-4o 可以在电脑上使用，而非和以前一样的网页端</h2>\n<p>看到的显示内容</p>\n<p>……</p>\n<h2 id=\"chatgpt-4o-api\"><a class=\"anchor\" href=\"#chatgpt-4o-api\">#</a> chatgpt-4o API</h2>\n<p>能在 chatgpt 以外的地方使用 chatgpt-4o</p>\n<p>……</p>\n<h2 id=\"chatgpt-4o-语音-voice-mode\"><a class=\"anchor\" href=\"#chatgpt-4o-语音-voice-mode\">#</a> chatgpt-4o 语音 Voice Mode</h2>\n<p>neuro 的语音输入是语音识别，然后把文字输入到模型。这样子存在听错的问题，且无法对环境音，声音的情况以及其他进行判断。我之前把讯飞语音接入到项目也是这样子做的。</p>\n<h3 id=\"多模态输入\"><a class=\"anchor\" href=\"#多模态输入\">#</a> 多模态输入</h3>\n<p>可以<strong>语音、视觉、文字同时理解</strong>，<strong>听得懂声音的缓急</strong>，且<strong>可以打断它的输出</strong>。</p>\n<h3 id=\"tts\"><a class=\"anchor\" href=\"#tts\">#</a> TTS</h3>\n<p>不是传统的 TTS，能有<strong>不同音色的转换</strong>（比如机器人式音色，唱歌的方法）。</p>\n<p>（输入部分开源社区有相应项目）</p>\n<h2 id=\"chatgpt-4o-视觉\"><a class=\"anchor\" href=\"#chatgpt-4o-视觉\">#</a> chatgpt-4o 视觉</h2>\n<h3 id=\"线性方程指导\"><a class=\"anchor\" href=\"#线性方程指导\">#</a> 线性方程指导</h3>\n<p>加入视觉，比如写下一个线性方程，然后让它给出提示（像一个老师一样）</p>\n<p>它能一步步提示，并很好地做到 <strong>指导</strong> 这件事</p>\n<p>最后画上，爱心，有误导性的 t（+），G（6），能正确识别，并有感情的返回（似乎有笑声）</p>\n<p><img data-src=\"image-20240517095423190.png\" alt=\"image-20240517095423190\" /></p>\n<h3 id=\"识别屏幕\"><a class=\"anchor\" href=\"#识别屏幕\">#</a> 识别屏幕</h3>\n<p>电脑版，可以获取到屏幕内容，看得懂代码，并分析输出</p>\n<p><img data-src=\"image-20240517095650310.png\" alt=\"image-20240517095650310\" /></p>\n<h2 id=\"其他\"><a class=\"anchor\" href=\"#其他\">#</a> 其他</h2>\n<h3 id=\"实时翻译输出\"><a class=\"anchor\" href=\"#实时翻译输出\">#</a> 实时翻译 + 输出</h3>\n<p>实现了意大利语和英语的<strong>实时翻译</strong></p>\n<h3 id=\"识别人表情的情感\"><a class=\"anchor\" href=\"#识别人表情的情感\">#</a> 识别人表情的情感</h3>\n<p>……</p>\n<h1 id=\"\"><a class=\"anchor\" href=\"#\">#</a> </h1>\n",
+            "tags": [
+                "chatgpt"
+            ]
+        }
+    ]
+}
