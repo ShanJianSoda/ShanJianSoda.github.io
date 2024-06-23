@@ -3,23 +3,118 @@
     <id>http://example.com</id>
     <title>Chen • Posts by &#34;面试&#34; category</title>
     <link href="http://example.com" />
-    <updated>2024-04-12T04:15:51.000Z</updated>
-    <category term="GLM" />
+    <updated>2024-06-23T08:42:22.000Z</updated>
     <category term="dp" />
+    <category term="GLM" />
     <category term="位运算" />
     <category term="分类讨论" />
+    <category term="LLM" />
+    <category term="AI" />
     <category term="机器学习" />
+    <category term="vue3" />
     <category term="redis" />
     <category term="lunix" />
     <category term="git" />
-    <category term="vue3" />
-    <category term="LLM" />
-    <category term="AI" />
     <category term="Vue.js" />
     <category term="微信小程序" />
     <category term="面试" />
     <category term="chatgpt" />
     <category term="设计模式" />
+    <entry>
+        <id>http://example.com/2024/06/23/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/</id>
+        <title>第二次面试准备~</title>
+        <link rel="alternate" href="http://example.com/2024/06/23/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/"/>
+        <content type="html">&lt;h1 id=&#34;第二次面试准备&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第二次面试准备&#34;&gt;#&lt;/a&gt; 第二次面试准备&lt;/h1&gt;
+&lt;p&gt;我的简历，又又又优化了一下&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240623164731985.png&#34; alt=&#34;image-20240623164731985&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;了解一下公司&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#了解一下公司&#34;&gt;#&lt;/a&gt; 了解一下公司&lt;/h2&gt;
+&lt;h3 id=&#34;公司介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#公司介绍&#34;&gt;#&lt;/a&gt; 公司介绍&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;云行计划技术布道者&lt;/li&gt;
+&lt;li&gt;成立于 2009 年，坐落于杭州湾畔，我们自认为是中国比较优秀的互联网服务提供商。自成立以来，专注于&lt;strong&gt;云计算技术、移动互联应用、B/S 架构系统研发&lt;/strong&gt;，为企业客户的互联网应用提供一站式服务。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;（来自 boss）&lt;/p&gt;
+&lt;h3 id=&#34;官网&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#官网&#34;&gt;#&lt;/a&gt; 官网&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240623165735071.png&#34; alt=&#34;image-20240623165735071&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;这个地方加载的很慢，如何优化&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;image-20240623165917959.png&amp;quot; alt=&amp;quot;image-20240623165917959&amp;quot;/&amp;gt;&lt;/p&gt;
+&lt;h2 id=&#34;岗位要求&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#岗位要求&#34;&gt;#&lt;/a&gt; 岗位要求&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;扎实的 Java&lt;/li&gt;
+&lt;li&gt;熟练使用 Linux&lt;/li&gt;
+&lt;li&gt;熟练 Mysql、PostgreSQL&lt;/li&gt;
+&lt;li&gt;Spring、Dubbo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;自我介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自我介绍&#34;&gt;#&lt;/a&gt; 自我介绍&lt;/h2&gt;
+&lt;h2 id=&#34;项目&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#项目&#34;&gt;#&lt;/a&gt; &lt;strong&gt;项目&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;基础知识&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基础知识&#34;&gt;#&lt;/a&gt; 基础知识&lt;/h2&gt;
+&lt;h3 id=&#34;linux&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#linux&#34;&gt;#&lt;/a&gt; Linux&lt;/h3&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;h3 id=&#34;java-spring-mysql-postgresql&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#java-spring-mysql-postgresql&#34;&gt;#&lt;/a&gt; Java、Spring、MySQL、&lt;s&gt;PostgreSQL&lt;/s&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;什么是spring框架spring框架有哪些主要模块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是spring框架spring框架有哪些主要模块&#34;&gt;#&lt;/a&gt; 什么是 Spring 框架？Spring 框架有哪些主要模块？&lt;/h4&gt;
+&lt;p&gt;Spring 是一个轻量级的 JavaEE 框架，它主要解决企业应用中的复杂性问题。&lt;/p&gt;
+&lt;p&gt;Spring 框架有三个核心部分: lOC 容器、AOP 和数据访问 / 集成层。&lt;/p&gt;
+&lt;p&gt;lOC 容器提供了一种对象创建和对象之间关系管理的机制，以实现松散耦合和可扩展性，&lt;/p&gt;
+&lt;p&gt;AOP 提供了一种很好的方式来实现横向关注点的处理，如事务管理，安全检查，缓存等。&lt;/p&gt;
+&lt;p&gt;数据访问 / 集成层则提供了许多针对不同数据持久化技术的实现，比如 JDBC，ORM 和 NoSQL。&lt;/p&gt;
+&lt;p&gt;Spring 框架本身亦是按照设计模式精心打造，这使得我们可以在开发环境中安心的集成 Spring 框架，不必担心 Spring 是如何在后台进行工作的。spring 框架至今已集成了 20 多个模块。这些模块主要被分如下图所示的核心容器、数据访问 / 集成、Web、AOP (面向切面编程)、工具、消息和测试模块&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;生态、基石&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240623192514857.png&#34; alt=&#34;image-20240623192514857&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;h3 id=&#34;dubbo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dubbo&#34;&gt;#&lt;/a&gt; &lt;s&gt;Dubbo&lt;/s&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;s&gt;随着互联网的发展，&lt;strong&gt;网站应用的规模不断扩大，常规的垂直应用架构已无法应对，分布式服务架构以及流动计算架构势在必行&lt;/strong&gt;，亟需一个治理系统确保架构有条不紊的演进。&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;Apache Dubbo 最初是为了解决&lt;strong&gt;阿里巴巴内部的微服务架构问题&lt;/strong&gt;而设计并开发的，最早在 2008 年，阿里巴巴就将 Dubbo 捐献到开源社区。在 2017 年，Dubbo 被正式捐献 Apache 软件基金会并成为 Apache 顶级项目，开始了一段新的征程。&lt;/s&gt;&lt;/p&gt;
+&lt;h4 id=&#34;为什么需要-dubbo它能做什么&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#为什么需要-dubbo它能做什么&#34;&gt;#&lt;/a&gt; &lt;s&gt;为什么需要 Dubbo，它能做什么？&lt;/s&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;s&gt;按照微服务架构的定义，采用它的组织能够很好的提高业务迭代效率与系统稳定性，但前提是要先能保证微服务按照期望的方式运行，要做到这一点需要解决服务拆分与定义、数据通信、地址发现、流量管理、数据一致性、系统容错能力等一系列问题。&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;Dubbo 可以帮助解决如下微服务实践问题：&lt;/s&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;s&gt;&lt;strong&gt;微服务编程范式和工具&lt;/strong&gt;&lt;/s&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;s&gt;Dubbo 支持基于 IDL 或语言特定方式的服务定义，提供多种形式的服务调用形式（如同步、异步、流式等）&lt;/s&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;s&gt;&lt;strong&gt;高性能的 RPC 通信&lt;/strong&gt;&lt;/s&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;s&gt;Dubbo 帮助解决微服务组件之间的通信问题，提供了基于 HTTP、HTTP/2、TCP 等的多种高性能通信协议实现，并支持序列化协议扩展，在实现上解决网络连接管理、数据传输等基础问题。&lt;/s&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;s&gt;&lt;strong&gt;微服务监控与治理&lt;/strong&gt;&lt;/s&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;s&gt;Dubbo 官方提供的服务发现、动态配置、负载均衡、流量路由等基础组件可以很好的帮助解决微服务基础实践的问题。除此之外，您还可以用 Admin 控制台监控微服务状态，通过周边生态完成限流降级、数据一致性、链路追踪等能力。&lt;/s&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;s&gt;&lt;strong&gt;部署在多种环境&lt;/strong&gt;&lt;/s&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;s&gt;Dubbo 服务可以直接部署在容器、Kubernetes、Service Mesh 等多种架构下。&lt;/s&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;s&gt;&lt;strong&gt;活跃的社区&lt;/strong&gt;&lt;/s&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;s&gt;Dubbo 项目托管在 Apache 社区，有来自国际、国内的活跃贡献者维护着超 10 个生态项目，贡献者包括来自海外、阿里巴巴、工商银行、携程、蚂蚁、腾讯等知名企业技术专家，确保 Dubbo 及时解决项目缺陷、需求及安全漏洞，跟进业界最新技术发展趋势。&lt;/s&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;s&gt;&lt;strong&gt;庞大的用户群体&lt;/strong&gt;&lt;/s&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;s&gt;Dubbo3 已在阿里巴巴成功落地，实现了对老版本 HSF2 框架全面升级，成为阿里集团面向云原生时代的统一服务框架底座，庞大的用户群体是 Dubbo 保持稳定性、需求来源、先进性的基础。&lt;/s&gt;&lt;/p&gt;
+&lt;h4 id=&#34;dubbo-不是什么&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dubbo-不是什么&#34;&gt;#&lt;/a&gt; &lt;s&gt;Dubbo 不是什么？&lt;/s&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;s&gt;&lt;strong&gt;不是应用开发框架的替代者&lt;/strong&gt;&lt;/s&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;s&gt;Dubbo 设计为让开发者以主流的应用开发框架的开发模式工作，它不是各个语言应用开发框架的替代者，如它不是 Spring/Spring Boot 的竞争者，当你使用 Spring 时，Dubbo 可以无缝的与 Spring &amp;amp; Spring Boot 集成在一起。&lt;/s&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;s&gt;&lt;strong&gt;不仅仅只是一款 RPC 框架&lt;/strong&gt;&lt;/s&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;s&gt;Dubbo 提供了内置 RPC 通信协议实现，但它不仅仅是一款 RPC 框架。首先，它不绑定某一个具体的 RPC 协议，开发者可以在基于 Dubbo 开发的微服务体系中使用多种通信协议；其次，除了 RPC 通信之外，Dubbo 提供了丰富的服务治理能力与生态。&lt;/s&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;s&gt;&lt;strong&gt;不是 gRPC 协议的替代品&lt;/strong&gt;&lt;/s&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;s&gt;Dubbo 支持基于 gRPC 作为底层通信协议，在 Dubbo 模式下使用 gRPC 可以带来更好的开发体验，享有统一的编程模型和更低的服务治理接入成本&lt;/s&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;s&gt;&lt;strong&gt;不只有 Java 语言实现&lt;/strong&gt;&lt;/s&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;s&gt;自 Dubbo3 开始，Dubbo 提供了 Java、Golang、Rust、Node.js 等多语言实现，未来会有更多的语言实现。&lt;/s&gt;&lt;/p&gt;
+&lt;h2 id=&#34;知识拓展&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#知识拓展&#34;&gt;#&lt;/a&gt; 知识拓展&lt;/h2&gt;
+&lt;h2 id=&#34;引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbi5kdWJiby5hcGFjaGUub3JnL3poLWNuL292ZXJ2aWV3L3doYXQv&#34;&gt;Dubbo 介绍 | Apache Dubbo&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="面试" />
+        <updated>2024-06-23T08:42:22.000Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/2024/04/12/%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/</id>
         <title>第一次面试准备</title>
