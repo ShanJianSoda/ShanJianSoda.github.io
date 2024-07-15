@@ -7,10 +7,11 @@
         <language>en</language>
         <pubDate>Sun, 14 Jul 2024 09:56:54 +0800</pubDate>
         <lastBuildDate>Sun, 14 Jul 2024 09:56:54 +0800</lastBuildDate>
+        <category>Java</category>
         <category>GLM</category>
+        <category>dp</category>
         <category>位运算</category>
         <category>分类讨论</category>
-        <category>dp</category>
         <category>redis</category>
         <category>lunix</category>
         <category>git</category>
@@ -27,6 +28,7 @@
             <guid isPermalink="true">http://example.com/2024/07/14/Java%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
             <title>Java面试题</title>
             <link>http://example.com/2024/07/14/Java%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+            <category>Java</category>
             <pubDate>Sun, 14 Jul 2024 09:56:54 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;记录&lt;/p&gt;
 &lt;h2 id=&#34;1-jdk-jre-jvm-三者区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-jdk-jre-jvm-三者区别&#34;&gt;#&lt;/a&gt; 1. JDK、JRE、JVM 三者区别&lt;/h2&gt;
@@ -56,8 +58,8 @@
  请注意，不推荐使用 finalize 方法进行内存资源的释放，因为它没有被及时执行的保证，也可能导&lt;br /&gt;
 致性能问题&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;4-两个对象hashcode相同那么equals为true吗&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4-两个对象hashcode相同那么equals为true吗&#34;&gt;#&lt;/a&gt; 4. 两个对象 HashCode 相同，那么 equals（）为 true 吗&lt;/h2&gt;
-&lt;p&gt;不一定&lt;/p&gt;
+&lt;h2 id=&#34;4-null&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4-null&#34;&gt;#&lt;/a&gt; 4.  null&lt;/h2&gt;
+&lt;p&gt;pass&lt;/p&gt;
 &lt;h2 id=&#34;5两个对象的-hashcode0-相同则-equals-也一定为-true-吗&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5两个对象的-hashcode0-相同则-equals-也一定为-true-吗&#34;&gt;#&lt;/a&gt; 5. 两个对象的 hashCode0 相同，则 equals ( 也一定为 true 吗？&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;两个对象的 hashCode (相同，equals) 不一定为 true;&lt;/li&gt;
@@ -218,6 +220,12 @@ JDK Proxy 是 Java 标准库的一部分，无需额外的依赖&lt;br /&gt;
 &lt;li&gt;抽象类中的属性访问控制符无限制，可为任意控制符&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;tip：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;接口可&lt;strong&gt;继承&lt;/strong&gt;多个父接口&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;16-什么是浅拷贝和深拷贝&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#16-什么是浅拷贝和深拷贝&#34;&gt;#&lt;/a&gt; 16. 什么是浅拷贝和深拷贝？&lt;/h2&gt;
 &lt;ul&gt;
@@ -318,6 +326,155 @@ JDK Proxy 是 Java 标准库的一部分，无需额外的依赖&lt;br /&gt;
 &lt;p&gt;BeanFactory 是 Spring 中非常核心的组件，表示 Bean 工厂，可以生成 bean，维护 bean，&lt;/p&gt;
 &lt;p&gt;而 ApplicationContxt 继承了 Beanfactory，所以具有 BeanFactory 的特点。&lt;/p&gt;
 &lt;p&gt;ApplicationContext 除了继承 BeanFactory 之外，还继承了诸如 EnvironmentCapable、MessageSource、ApplicationEventPublisher 等接口，从而 ApplicationContext 还有获取系统环境变量、国际化、事件发布等功能，这是 BeanFactory 不具备的。&lt;/p&gt;
+&lt;h2 id=&#34;22-arraylist和linkedlist区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#22-arraylist和linkedlist区别&#34;&gt;#&lt;/a&gt; 22. ArrayList 和 LinkedList 区别&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;底层数据结构不同，ArrayList 底层是基于数组实现的，LinkedList 底层是基于链表实现的&lt;/li&gt;
+&lt;li&gt;由于底层数据结构不同，他们所适用的场景也不同，ArrayList 更适合随机查找，Linkedlist 更适合删除和添加，查询、添加、删除的时间复杂度不同&lt;/li&gt;
+&lt;li&gt;另外 Arravlist 和 LinkedList 都实现了 List 接口，但是 LinkedList 还额外实现了 Deque 接口，所以 LinkedlList 还可以当做队列来使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;23-b树和b树的区别为什么mysql使用b树&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#23-b树和b树的区别为什么mysql使用b树&#34;&gt;#&lt;/a&gt; 23. B 树和 B + 树的区别，为什么 Mysql 使用 B + 树&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;B 树的特点&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;节点排序&lt;/li&gt;
+&lt;li&gt;一个节点可以存多个元素，多个元素也排序了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;B + 树的特点&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;拥有 B 例的特点&lt;/li&gt;
+&lt;li&gt;子节点之间有指钊&lt;/li&gt;
+&lt;li&gt;非叶子节点上的元素仙叶子节点上都冗余了，也就是叶子节点中存储了所有的元素，并且排好顺序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mysq 索引使用的是 B+，因为索引是用来加快查询的，而 B + 树通过对数据排序所以是可以提高查询速度的&lt;/p&gt;
+&lt;p&gt;然后通过一个节点中可以有储多个元素，从而可以使得 B + 树的高度不会太高，在 Mysql 中一个 Innodb 页就是一个 B + 树节点，一 Innodb 页默认 16kb，所以一般情况下一颗两层的 B + 可以存 2000 万行左右的数&lt;/p&gt;
+&lt;p&gt;然后通过利用 B + 树叶子节点存储了所有数据并且进行了排序，并且叶子节点之间有指针，以微了的支持全表描，范围查找等 SQL 语句&lt;/p&gt;
+&lt;h2 id=&#34;24-copyonwritearraylist的底层原理是怎样的&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#24-copyonwritearraylist的底层原理是怎样的&#34;&gt;#&lt;/a&gt; 24. CopyOnWriteArrayList 的底层原理是怎样的&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;首先 CopyOnWriteArrayList 内也是用时数组来实现的，在向 CopyOnWriteArrayList 添元索时，会复制一个新的数组，&lt;strong&gt;写操作在新数进行，读操作在原数组上进行&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;并且，&lt;strong&gt;写操作会加锁&lt;/strong&gt;，防止出现并发写入丢失数据的问题&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;写操作结束之后会把原数组指向新数组&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;CopyOnWiteArraylist&lt;strong&gt; 允许在写操作时来读取数据，大大提高了读的性能，因此适合读多写少的应用场&lt;/strong&gt;，但是 CopyOnWiteAraylist 会比较占内存，同时可能读到的数据不是实时最新的数据，所以不&lt;strong&gt;适合实时性要求很高的场景&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;h2 id=&#34;30-hashmap的扩容机制原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#30-hashmap的扩容机制原理&#34;&gt;#&lt;/a&gt; 30. HashMap 的扩容机制原理&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;1.7 版本&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;先生成新数组&lt;/li&gt;
+&lt;li&gt;遍历老数组中的每个位置上的链表上的每个元素&lt;/li&gt;
+&lt;li&gt;取每个元素的 key，并基于新数组长度，计算出每个元素在新数组中的下标&lt;/li&gt;
+&lt;li&gt;将元素添加到新数组中去&lt;/li&gt;
+&lt;li&gt;所有元素转移完了之后，将新数组赋值给 HashMap 对象的 table 属性&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;1.8 版本&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;先生成新数组&lt;/li&gt;
+&lt;li&gt;遍历老数组中的每个位置上的链表或红黑树&lt;/li&gt;
+&lt;li&gt;如果是链表，则直接将链表中的每个元素重新计算下标，并添加到新数组中去&lt;/li&gt;
+&lt;li&gt;如果是红黑树，则先遍历红黑树，先计算出红黑树中每个元素对应在新数组中的下标位置
+&lt;ol&gt;
+&lt;li&gt;统计每个下标位置的元素个数&lt;/li&gt;
+&lt;li&gt;如果该位置下的元素个数超过了 8，则生成一个新的红黑树，并将根节点的添加到新数组的对应位置&lt;/li&gt;
+&lt;li&gt;如果该位置下的元素个数没有超过 8，那么则生成一个链表，并将链表的头节点添加到新数组的对应位置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;所有元素转移完了之后，将新数组赋值给 HashMap 对象的 table 属性&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Tips:&lt;/p&gt;
+&lt;p&gt;1.7 版本的 hash 链表的部分是头插法，不需要遍历到尾部，更快&lt;/p&gt;
+&lt;p&gt;1.8 版本的 hash 链表的部分是尾插法，因为要判断是否大于 8，大于 8 就转换成红黑树，而知道数量需要遍历链表，则用尾插法&lt;/p&gt;
+&lt;h2 id=&#34;32-java死锁如何避免&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#32-java死锁如何避免&#34;&gt;#&lt;/a&gt; 32. Java 死锁如何避免&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;造成死锁的几个原因&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一个资源每次只能被一个线程使用&lt;/li&gt;
+&lt;li&gt;一个线程在阻塞等待某个资源时，不释放已占有资源&lt;/li&gt;
+&lt;li&gt;一个线程已经获得的资源，在未使用完之前，不能被强行剥夺&lt;/li&gt;
+&lt;li&gt;若干线程形成头尾相接的循环等待资源关系&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这是造成死锁必须要达到的 4 个条件，如果要避免死锁，只需要不满足其中某一个条件即可。&lt;/p&gt;
+&lt;p&gt;而其中前 3 个条件是作为锁要符合的条件，所以要避免死执就需要打破第 4 个条件，不出现循环等待锁的关系&lt;/p&gt;
+&lt;p&gt;在开发过程中:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;要注意&lt;strong&gt;加锁顺序&lt;/strong&gt;，保证每个线程按同样的顺序进行加锁&lt;/li&gt;
+&lt;li&gt;要注意加锁时限，可以针对所设置一个&lt;strong&gt;超时时间&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;要注意&lt;strong&gt;死锁检查&lt;/strong&gt;，这是一种预防机制，确保在第一时间发现死锁并进行解决&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;34-java中有哪些类加载器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#34-java中有哪些类加载器&#34;&gt;#&lt;/a&gt; 34. Java 中有哪些类加载器&lt;/h2&gt;
+&lt;p&gt;JDK 自带有三个类加载器: bootstrap ClassLoader、ExtClassLoader、AppClassLoader。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BootStrapClassLoader 是 ExtClassLoader 的父类加载器，默认负责加载 % JAVA HOME% lib 下的 iar 包和 cass 文件&lt;/li&gt;
+&lt;li&gt;ExtClassLoader 是 AppClassLoader 的父类加载器，负责加载 % JAVA HOME%/lib/ext 文件夹下的 jar 包和 class 类&lt;/li&gt;
+&lt;li&gt;AppClassLoader 是自定义类加载器的父类，负责加载 lasspath 下的类文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;38-mybatis的优缺点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#38-mybatis的优缺点&#34;&gt;#&lt;/a&gt; 38. Mybatis 的优缺点&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;优点:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基于 SOL 语句编程，相当灵活，不会对应用程序或者数据库的现有设计造成任何影响，SQL 写在 XML 里，解除 sql 与程序代码的耦合，便于统一管理；提供 XML 标签，支持编写动态 SQL 语句，并可重用。&lt;/li&gt;
+&lt;li&gt;与 JDBC 相比，减少了 50% 以上的代码量，消除了 JDBC 大量几余的代码，不需要手动开关连接；&lt;/li&gt;
+&lt;li&gt;很好的与各种数据库兼容 (因为 MyBatis 使用 JDBC 来连接数据库，所以只要 JDBC 支持的数据库 MyBatis 都支持)&lt;/li&gt;
+&lt;li&gt;能够与 Spring 很好的集成&lt;/li&gt;
+&lt;li&gt;提供映射标签，支持对象与数据库的 ORM 字段关系映射，提供对象关系映射标签，支持对象关系组件维护&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;缺点:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SQL 语句的编写工作量较大，尤其当字段多、关联表多时，对开发人员编写 SQL 语句的功底有一定要求&lt;/li&gt;
+&lt;li&gt;SQL 语句依赖于数据库，导致数据库移植性差，不能随意更换数据库。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;39-和的区别是什么&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#39-和的区别是什么&#34;&gt;#&lt;/a&gt; 39. #{} 和 ${} 的区别是什么？&lt;/h2&gt;
+&lt;p&gt;#{} 是预编译处理、是占位符，${} 是字符串替换、是拼接符。&lt;/p&gt;
+&lt;p&gt;Mybatis 在处理 #{} 时，会将 sql 中的 #{} 替换为？号，调用 PreparedStatement 来赋值&lt;/p&gt;
+&lt;p&gt;Mybatis 在处理&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mrow&gt;&lt;/mrow&gt;&lt;mtext&gt;时，会将&lt;/mtext&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;q&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mtext&gt;中的&lt;/mtext&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;{}时，会将sql中的&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8888799999999999em;vertical-align:-0.19444em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;时&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;，&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;会&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;将&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;s&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.03588em;&#34;&gt;q&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.01968em;&#34;&gt;l&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;中&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;的&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; {} 替换成变量的值，调用 Statement 来赋值&lt;/p&gt;
+&lt;p&gt;使用 #{} 可以有效的防止 SQL 注入，提高系统安全性&lt;/p&gt;
+&lt;h2 id=&#34;40-mysql慢查询该如何优化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#40-mysql慢查询该如何优化&#34;&gt;#&lt;/a&gt; 40. Mysql 慢查询该如何优化？&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;检查是否走了索引，如果没有则优化 SQL 利用索引&lt;/li&gt;
+&lt;li&gt;检查所利用的索引，是否是最优索引&lt;/li&gt;
+&lt;li&gt;检查所查字段是否都是必须的，是否查询了过多字段，查出了多余数据检查表中数据是否过多，是否应该进行分库分表了&lt;/li&gt;
+&lt;li&gt;检查数据库实例所在机器的性能配置，是否太低，是否可以适当增加资源&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;41-mysql锁有哪些如何理解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#41-mysql锁有哪些如何理解&#34;&gt;#&lt;/a&gt; 41. Mysql 锁有哪些，如何理解&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;按锁粒度分类
+&lt;ul&gt;
+&lt;li&gt;行锁：锁某行数据，锁粒度最小，并发度高&lt;/li&gt;
+&lt;li&gt;表锁：锁整张表，锁粒度最大，并发度低&lt;/li&gt;
+&lt;li&gt;间隙锁：锁的是一个区间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;读写分类
+&lt;ul&gt;
+&lt;li&gt;共享锁：也就是读锁。一个事务给某行数据加了读锁，其他事务也可以读，但是不能写&lt;/li&gt;
+&lt;li&gt;排它锁：也就是写锁，一个事务给某行数据加了写锁，其他事务不能读，也不能写&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;还可以分为
+&lt;ul&gt;
+&lt;li&gt;乐观锁：并不会真正的去锁某行记录，而是通过一个版本号来实现的&lt;/li&gt;
+&lt;li&gt;悲观锁：上面所的行锁、表锁等都是悲观锁&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;在事务的隔离级别实现中，就需要利用锁来解决幻读&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;42-redis和mysql如何保证数据一致&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#42-redis和mysql如何保证数据一致&#34;&gt;#&lt;/a&gt; 42. Redis 和 Mysql 如何保证数据一致&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;先更新 Mysql，再更新 Redis&lt;/strong&gt;，如果更新 Redis 失败，可能仍然不一致&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;先删除 Redis 存数据，再更新 Mysql&lt;/strong&gt;，再次查询的时候在将数据添加到存中，这种方案能解决 1 方案的问题，但是在高并发下性能较低，而且仍然会出现数据不一致的问题，比如线程 1 删除了 Redis 缓存数据，正在更新 Mysql，此时另外一个查询再查询，那么就会把 Mysql 中老数据又查到 Redis 中&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;延时双删&lt;/strong&gt;，步骤是：先删除 Redis 存数据，再更新 Mysql，延几百毫秒再删除 Redis 存数据，这样就算在更新 Mysql 时，有其他线程读了 Mysql，把老教据读到了 Redis 中，那么也会被删除掉，从而把数据保持一致&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;43-redis有哪些数据结构-分别有哪些典型的应用场景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#43-redis有哪些数据结构-分别有哪些典型的应用场景&#34;&gt;#&lt;/a&gt; 43. Redis 有哪些数据结构？分别有哪些典型的应用场景？&lt;/h2&gt;
+&lt;p&gt;Redis 的数据结构有:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;字符串 string&lt;/strong&gt;: 可以用来做最简单的数，可以存某个简单的字符串，也可以存某个 json 格式的字符审，Redis 分布式锁的实现就利用了这种数结构，还包括可以实现计数器、Session 共享、分布式 ID&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;哈希表 hash&lt;/strong&gt;: 可以用来存储一些 key-value 对，更适合用来存储对象&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;列表 list&lt;/strong&gt;: Redis 的列表通过命令的组合，既可以当做栈，也可以当做队列来使用，可以用来缓存类似微信公众号、微博等消息流数据&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;集合 set&lt;/strong&gt;: 和列表类似，也可以存储多个元素，但是不能重复，集合可以进行交集、并集、差集操作，从而可以实现类似，我和某人共同关注的人、朋友圈点赞等功能&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;有序集合 zset&lt;/strong&gt;: 集合是无序的，有序集合可以设置顺序，可以用来实现排行榜功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; ……&lt;/h6&gt;
+&lt;h2 id=&#34;48-spring-boot是如何启动tomcat的&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#48-spring-boot是如何启动tomcat的&#34;&gt;#&lt;/a&gt; 48. Spring Boot 是如何启动 Tomcat 的&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;首先，SpringBoot 在启动时会先创建一个 Spring 容器&lt;/li&gt;
+&lt;li&gt;在创建 Spring 容器时程中，会 @ConditionalOnClass 技术来判新当前 classpath 中是否存在 Tomcat 依赖，如果存在会生成一个启动 Tomcat 的 Bean&lt;/li&gt;
+&lt;li&gt;Spring 容器创建完之后，就会获取启动 Tomcat 的 Bean，并创建 Tomcat 对象，并绑定端口等，然后启动 Tomcat&lt;/li&gt;
+&lt;/ol&gt;
  ]]></description>
         </item>
         <item>
@@ -552,18 +709,6 @@ JDK Proxy 是 Java 标准库的一部分，无需额外的依赖&lt;br /&gt;
 &lt;h3 id=&#34;识别人表情的情感&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#识别人表情的情感&#34;&gt;#&lt;/a&gt; 识别人表情的情感&lt;/h3&gt;
 &lt;p&gt;……&lt;/p&gt;
 &lt;h1 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;/h1&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2024/05/01/About-Me/</guid>
-            <title>About Me</title>
-            <link>http://example.com/2024/05/01/About-Me/</link>
-            <pubDate>Wed, 01 May 2024 10:22:23 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;test&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#test&#34;&gt;#&lt;/a&gt; test&lt;/h1&gt;
-&lt;p&gt;尝试给文章封面&lt;/p&gt;
-&lt;p&gt;!! 黑幕黑幕黑幕黑幕黑幕黑幕！！： 鼠标滑过显示内容&lt;/p&gt;
-&lt;p&gt;嘻嘻嘻&lt;/p&gt;
-&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;token import&#34;&gt;&lt;span class=&#34;token namespace&#34;&gt;java&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;util&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;Scanner&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;ScannerTest&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; args&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;Scanner&lt;/span&gt; scanner&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Scanner&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;in&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;out&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;请输入一个数&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;scanner&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;nextInt&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;out&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;%d的平方是%d\n&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;a&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#!/usr/bin/python&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# -*- coding: UTF-8 -*-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; j &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; k &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;!=&lt;/span&gt; k &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;i &lt;span class=&#34;token operator&#34;&gt;!=&lt;/span&gt; j&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;j &lt;span class=&#34;token operator&#34;&gt;!=&lt;/span&gt; k&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;j&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;k&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;xxxxxxxxxx class Solution:    def wordBreak (self, s: str, wordDict: List [str]) -&amp;gt; bool:        # dp [x] = {dp [i] + isinword (s [i:x])}        n = len (s)        # dp [i] 表示 s 的前 i 位是否可以用 wordDict 中的单词表示        dp = [False] * (n+1)        # 初始化 dp [0]=True，空字符可以被表示        dp [0] = True        for i in range (n):            for j in range (i+1, n+1):                if dp [i] and s [i:j] in wordDict:                    dp [j] = True        return dp [-1] Python3&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -1901,9 +2046,9 @@ createApp(App).mount(&#39;#app&#39;)
             <guid isPermalink="true">http://example.com/2023/11/01/leetcode369/</guid>
             <title>leetcode369</title>
             <link>http://example.com/2023/11/01/leetcode369/</link>
+            <category>dp</category>
             <category>位运算</category>
             <category>分类讨论</category>
-            <category>dp</category>
             <pubDate>Wed, 01 Nov 2023 22:00:47 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9maW5kLXRoZS1rLW9yLW9mLWFuLWFycmF5Lw==&#34;&gt;2917. 找出数组中的 K-or 值&lt;/span&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Solution&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;findKOr&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; nums&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; List&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; k&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;# 位运算&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        ans &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;# num &amp;lt; 2^31, i 是第 i 位&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;31&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            cnt &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token comment&#34;&gt;# 所有数的二进制的第 i 位是否为 1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; num &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; nums&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; num &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    cnt &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token comment&#34;&gt;# 满足条件，加&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; cnt &lt;span class=&#34;token operator&#34;&gt;&gt;=&lt;/span&gt; k&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                ans &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; i&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; ans&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9taW5pbXVtLWVxdWFsLXN1bS1vZi10d28tYXJyYXlzLWFmdGVyLXJlcGxhY2luZy16ZXJvcy8=&#34;&gt;2918. 数组的最小相等和&lt;/span&gt;&lt;/p&gt;
