@@ -15,8 +15,8 @@
         <category>redis</category>
         <category>lunix</category>
         <category>git</category>
-        <category>机器学习</category>
         <category>vue3</category>
+        <category>机器学习</category>
         <category>LLM</category>
         <category>AI</category>
         <category>Vue.js</category>
@@ -354,7 +354,6 @@ JDK Proxy 是 Java 标准库的一部分，无需额外的依赖&lt;br /&gt;
 &lt;li&gt;&lt;strong&gt;写操作结束之后会把原数组指向新数组&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;CopyOnWiteArraylist&lt;strong&gt; 允许在写操作时来读取数据，大大提高了读的性能，因此适合读多写少的应用场&lt;/strong&gt;，但是 CopyOnWiteAraylist 会比较占内存，同时可能读到的数据不是实时最新的数据，所以不&lt;strong&gt;适合实时性要求很高的场景&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;……&lt;/p&gt;
 &lt;h2 id=&#34;30-hashmap的扩容机制原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#30-hashmap的扩容机制原理&#34;&gt;#&lt;/a&gt; 30. HashMap 的扩容机制原理&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;1.7 版本&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -468,18 +467,124 @@ JDK Proxy 是 Java 标准库的一部分，无需额外的依赖&lt;br /&gt;
 &lt;li&gt;&lt;strong&gt;集合 set&lt;/strong&gt;: 和列表类似，也可以存储多个元素，但是不能重复，集合可以进行交集、并集、差集操作，从而可以实现类似，我和某人共同关注的人、朋友圈点赞等功能&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;有序集合 zset&lt;/strong&gt;: 集合是无序的，有序集合可以设置顺序，可以用来实现排行榜功能&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h6 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; ……&lt;/h6&gt;
 &lt;h2 id=&#34;48-spring-boot是如何启动tomcat的&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#48-spring-boot是如何启动tomcat的&#34;&gt;#&lt;/a&gt; 48. Spring Boot 是如何启动 Tomcat 的&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;首先，SpringBoot 在启动时会先创建一个 Spring 容器&lt;/li&gt;
 &lt;li&gt;在创建 Spring 容器时程中，会 @ConditionalOnClass 技术来判新当前 classpath 中是否存在 Tomcat 依赖，如果存在会生成一个启动 Tomcat 的 Bean&lt;/li&gt;
 &lt;li&gt;Spring 容器创建完之后，就会获取启动 Tomcat 的 Bean，并创建 Tomcat 对象，并绑定端口等，然后启动 Tomcat&lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id=&#34;49-spring-boot中常用注解及其底层实现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#49-spring-boot中常用注解及其底层实现&#34;&gt;#&lt;/a&gt; 49. Spring Boot 中常用注解及其底层实现&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;@SpringBootApplication&lt;/strong&gt; 注解：这个注解标识了一个 SpringBoot 工程，它实际上是另外三个注解的组合，这三个注解是:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;@SpringBootConfiquration&lt;/strong&gt;: 这个注解实际就是一个 @Configuration，表示启动类也是一个配置类&lt;/li&gt;
+&lt;li&gt;@&lt;strong&gt;EnableAutoConfiquration&lt;/strong&gt;: 向 Spring 容器中导入了一个 Selector，用来加载 ClassPath 下 SpringFatories 中所定义的自动配置类，将这些自动动载为配置 Bean&lt;/li&gt;
+&lt;li&gt;@&lt;strong&gt;ComponentScan&lt;/strong&gt;: 标识扫描路径，因为默认是没有配置实际扫描路径，所以 SpringBoot 扫描的路径是启动类所在的当前目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;@&lt;strong&gt;Bean&lt;/strong&gt; 注解：用来定义 Bean，类似于 XML 中的 bean &amp;gt; 标签，Spring 在启动时，会对加了 @Bean 注解的方法进行解折，将方法的名字做为 beanName，并通过执行方法得到 bean 对象&lt;/li&gt;
+&lt;li&gt;@&lt;strong&gt;Controller&lt;/strong&gt;、@&lt;strong&gt;Service&lt;/strong&gt;、 @&lt;strong&gt;ResponseBody&lt;/strong&gt;、@&lt;strong&gt;Autowired&lt;/strong&gt; 等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;52-spring-优点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#52-spring-优点&#34;&gt;#&lt;/a&gt; 52. Spring 优点&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;轻量级&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;控制反转（IOC）&lt;/strong&gt;、依赖注入&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;切片编程（AOP）&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;容器&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MVC 框架&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;事务管理&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;异常处理&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;可拓展性&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;spring-ioc的理解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#spring-ioc的理解&#34;&gt;#&lt;/a&gt; &lt;strong&gt;Spring IOC 的理解&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;控制反转&lt;/p&gt;
+&lt;p&gt;整个 IOC 容器创建的流程和步骤如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;向 bean 工厂中设置一些参数&lt;/li&gt;
+&lt;li&gt;加载解析 bean 对象&lt;/li&gt;
+&lt;li&gt;BeanPostProcessor 的注册功能&lt;/li&gt;
+&lt;li&gt;通过反射的方式讲 BeanDefinition 对象实例化成具体的 bean 对象&lt;/li&gt;
+&lt;li&gt;bean 对象的初始化过程&lt;/li&gt;
+&lt;li&gt;生成完整的 bean 对象&lt;/li&gt;
+&lt;li&gt;通过 getBean 方法可以直接获取&lt;/li&gt;
+&lt;li&gt;销毁过程&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;spring-aop的理解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#spring-aop的理解&#34;&gt;#&lt;/a&gt; &lt;strong&gt;spring AOP 的理解&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;面向切面编程（AOP）：允许程序员模块化横向业务逻辑，或定义核心部分的功能，例如&lt;strong&gt;日志管理和事务管理&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;在 Spring AOP 中，切面通过带有 **@Aspect** 注解的类实现&lt;/p&gt;
+&lt;p&gt;通知 (Advice)：通知表示在方法执行前后需要执行的动作。实际上它是 Spring AOP 框架在程序执行过程中触发的一些代码。有前置通知、后置通知、环绕通知等&lt;/p&gt;
+&lt;p&gt;动态代理：代理是将通知应用到目标对象后创建的对象。从客户端的角度看，代理对象和目标对象是一样的。&lt;/p&gt;
+&lt;h2 id=&#34;事务&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事务&#34;&gt;#&lt;/a&gt; 事务&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;事务是逻辑上的一组操作，要么都执行，要么都不执行。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;事务的特性（ACID）&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;原子性&lt;/strong&gt;（ &lt;code&gt;Atomicity&lt;/code&gt; ）：事务是最小的执行单位，不允许分割。事务的原子性确保动作要么全部完成，要么完全不起作用；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;一致性&lt;/strong&gt;（ &lt;code&gt;Consistency&lt;/code&gt; ）：执行事务前后，数据保持一致，例如转账业务中，无论事务是否成功，转账者和收款人的总额应该是不变的；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;隔离性&lt;/strong&gt;（ &lt;code&gt;Isolation&lt;/code&gt; ）：并发访问数据库时，一个用户的事务不被其他事务所干扰，各并发事务之间数据库是独立的；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;持久性&lt;/strong&gt;（ &lt;code&gt;Durability&lt;/code&gt; ）：一个事务被提交之后。它对数据库中数据的改变是持久的，即使数据库发生故障也不应该对其有任何影响。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;🌈 这里要额外补充一点：&lt;strong&gt;只有保证了事务的持久性、原子性、隔离性之后，一致性才能得到保障。也就是说 A、I、D 是手段，C 是目的&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;事务管理&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;编程式事务管理&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;通过  &lt;code&gt;TransactionTemplate&lt;/code&gt;  或者 &lt;code&gt;TransactionManager&lt;/code&gt;  手动管理事务，实际应用中很少使用&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;声明式事务管理&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;推荐使用（代码侵入性最小），实际是通过 AOP 实现（基于 &lt;code&gt;@Transactional&lt;/code&gt;  的全注解方式使用最多）。&lt;/p&gt;
+&lt;p&gt;使用  &lt;code&gt;@Transactional&lt;/code&gt;  注解进行事务管理的示例代码如下：&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token annotation punctuation&#34;&gt;@Transactional&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;propagation &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Propagation&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token constant&#34;&gt;REQUIRED&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; aMethod &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;//do something&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token class-name&#34;&gt;B&lt;/span&gt; b &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;B&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token class-name&#34;&gt;C&lt;/span&gt; c &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;C&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  b&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;bMethod&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  c&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;cMethod&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;54-spring-事务什么时候会失效&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#54-spring-事务什么时候会失效&#34;&gt;#&lt;/a&gt; 54. Spring 事务什么时候会失效？&lt;/h2&gt;
+&lt;p&gt;spring 事务的原理是 AOP，进行了切面增强，那么失效的根本原因是这个 AOP 不起作用了！常见情况有如下几种&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;发生自调用，类里面使用 this 调用本类的方法 (this 通常省略)，此时这个 this 对象不是代理类，而是 UserService 对象本身！&lt;/li&gt;
+&lt;li&gt;解决方法很简单，让那个 this 变成 UserService 的代理类即可！&lt;/li&gt;
+&lt;li&gt;方法不是 public 的: @Transactional 只能用于 public 的方法上，否则事务不会失效，如果要用在非 public 法上，可以开启 AspectJ 代理模式&lt;/li&gt;
+&lt;li&gt;数据库不支持事务&lt;/li&gt;
+&lt;li&gt;没有被 spring 管理&lt;/li&gt;
+&lt;li&gt;异常被吃掉，事务不会回滚 (或者抛出的异常没有被定义，默认为 RuntimeException)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;55-spring中bean是线程安全的吗&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#55-spring中bean是线程安全的吗&#34;&gt;#&lt;/a&gt; 55. Spring 中 Bean 是线程安全的吗&lt;/h2&gt;
+&lt;p&gt;Spring 本身并没有针对 Bean 做线程安全的处理，所以:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果 Bean 是无状态的，那么 Bean 则是线程安全的&lt;/li&gt;
+&lt;li&gt;如果 Bean 是有状态的，那么 Bean 则不是线程安全的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;另外，Bean 是不是线程安全，跟 Bean 的作用域没有关系，Bean 的作用域只是表示 Bean 的生命周期范围，对于任何生命固期的 Bean 都是一个对象，这个对象是不是线程安全的，还是得看这个 Bean 对象本身。&lt;/p&gt;
+&lt;p&gt;tips：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;有状态对象 (Stateful Bean)&lt;/strong&gt; ：就是 ** 有实例变量的对象，可以保存数据，是非线程安全的。** 每个用户有自己特有的一个实例，在用户的生存期内，bean 保持了用户的信息，即 “有状态”；一旦用户灭亡（调用结束或实例结束），bean 的生命期也告结束。即每个用户最初都会得到一个初始的 bean。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;无状态对象 (Stateless Bean)&lt;/strong&gt;：就是 ** 没有实例变量的对象，不能保存数据，是不变类，是线程安全的。**bean 一旦实例化就被加进会话池中，各个用户都可以共用。即使用户已经消亡，bean 的生命期也不一定结束，它可能依然存在于会话池中，供其他用户调用。由于没有特定的用户，那么也就不能保持某一用户的状态，所以叫无状态 bean。但无状态会话 bean 并非没有状态，如果它有自己的属性（变量），那么这些变量就会受到所有调用它的用户的影响，这是在实际应用中必须注意的。&lt;/p&gt;
+&lt;h2 id=&#34;60-sychronized和reentrantlock的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#60-sychronized和reentrantlock的区别&#34;&gt;#&lt;/a&gt; 60. Sychronized 和 ReentrantLock 的区别&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Sychronized 是一个&lt;strong&gt;关键字&lt;/strong&gt;，ReentrantLock 是一个类&lt;/li&gt;
+&lt;li&gt;Sychronized 会&lt;strong&gt;自动的加锁与释放锁&lt;/strong&gt;，ReentrantLock 需要程序员手动加锁与释放锁&lt;/li&gt;
+&lt;li&gt;Sychronized 的底层是&lt;strong&gt; JVM 层面的锁&lt;/strong&gt;，ReentrantLock 是&lt;strong&gt; API 层面的锁&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Sychronized 是&lt;strong&gt;非公平锁&lt;/strong&gt;，ReentrantLock&lt;strong&gt; 可以选择公平锁或非公平锁&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Sychronized 锁的是对象，锁信息保存在对象头中，ReentrantLock 通过代码中 int 类型的 state 标识来标识锁的状态&lt;/li&gt;
+&lt;li&gt;Sychronized 底层有一个锁升级的过程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;……&lt;/p&gt;
  ]]></description>
         </item>
         <item>
             <guid isPermalink="true">http://example.com/2024/06/23/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/</guid>
-            <title>第二次面试准备~</title>
+            <title>第二次面试准备</title>
             <link>http://example.com/2024/06/23/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/</link>
             <category>面试</category>
             <pubDate>Sun, 23 Jun 2024 16:42:22 +0800</pubDate>
