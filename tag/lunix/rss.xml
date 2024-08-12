@@ -7,16 +7,16 @@
         <language>en</language>
         <pubDate>Sat, 27 Jan 2024 12:46:04 +0800</pubDate>
         <lastBuildDate>Sat, 27 Jan 2024 12:46:04 +0800</lastBuildDate>
+        <category>Java</category>
         <category>GLM</category>
         <category>dp</category>
-        <category>Java</category>
+        <category>git</category>
         <category>位运算</category>
         <category>分类讨论</category>
         <category>redis</category>
         <category>lunix</category>
-        <category>git</category>
-        <category>vue3</category>
         <category>机器学习</category>
+        <category>vue3</category>
         <category>LLM</category>
         <category>AI</category>
         <category>Vue.js</category>
@@ -28,9 +28,9 @@
             <guid isPermalink="true">http://example.com/2024/01/27/redis%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
             <title>redis学习记录</title>
             <link>http://example.com/2024/01/27/redis%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
+            <category>git</category>
             <category>redis</category>
             <category>lunix</category>
-            <category>git</category>
             <pubDate>Sat, 27 Jan 2024 12:46:04 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;&lt;em&gt;大三上的寒假，玩了两周后，觉得该学一些东西了，于是在 b 站上找项目跟做，最后在鱼皮的推荐下，跟做了黑马的 redis。&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;问题1resp连接不上虚拟机上的redis&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问题1resp连接不上虚拟机上的redis&#34;&gt;#&lt;/a&gt; 问题 1：RESP 连接不上虚拟机上的 redis&lt;/h3&gt;

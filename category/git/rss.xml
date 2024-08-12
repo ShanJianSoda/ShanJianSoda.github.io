@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Chen • Posts by &#34;git&#34; category</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Thu, 08 Aug 2024 11:31:56 +0800</pubDate>
+        <lastBuildDate>Thu, 08 Aug 2024 11:31:56 +0800</lastBuildDate>
+        <category>Java</category>
+        <category>GLM</category>
+        <category>dp</category>
+        <category>git</category>
+        <category>位运算</category>
+        <category>分类讨论</category>
+        <category>redis</category>
+        <category>lunix</category>
+        <category>机器学习</category>
+        <category>vue3</category>
+        <category>LLM</category>
+        <category>AI</category>
+        <category>Vue.js</category>
+        <category>微信小程序</category>
+        <category>面试</category>
+        <category>chatgpt</category>
+        <category>设计模式</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/08/08/git-questions/</guid>
+            <title>git_questions</title>
+            <link>http://example.com/2024/08/08/git-questions/</link>
+            <category>git</category>
+            <pubDate>Thu, 08 Aug 2024 11:31:56 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;本地初始化仓库远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#本地初始化仓库远程仓库&#34;&gt;#&lt;/a&gt; 本地初始化仓库 + 远程仓库&lt;/h3&gt;
+&lt;p&gt;本地合并时遇到 refusing to merge unrelated histories 的错误&lt;/p&gt;
+&lt;p&gt;如果 git merge 合并的时候出现 refusing to merge unrelated histories 的错误，原因是两个仓库不同而导致的，需要在后面加上 ** &lt;code&gt;--allow-unrelated-histories&lt;/code&gt; ** 进行允许合并，即可解决问题&lt;/p&gt;
+&lt;p&gt;如果还不能解决问题，就把本地的 remote 删除，重新 git remote add 添加远程仓库，再按上面的方法来，问题解决。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git init
+
+G:\GoLandProjects\go_learn&amp;gt;git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 893 bytes | 59.00 KiB/s, done.
+From github.com:ShanJianSoda/golang_learn
+ * [new branch]      main       -&amp;gt; origin/main
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull &amp;lt;remote&amp;gt; &amp;lt;branch&amp;gt;
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/&amp;lt;branch&amp;gt; main
+
+
+G:\GoLandProjects\go_learn&amp;gt;git branch --set-upstream-to=origin/main main
+branch &#39;main&#39; set up to track &#39;origin/main&#39;.
+
+G:\GoLandProjects\go_learn&amp;gt;git pull
+fatal: refusing to merge unrelated histories
+
+G:\GoLandProjects\go_learn&amp;gt;git pull --allow-unrelated-histories
+Merge made by the &#39;ort&#39; strategy.
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+G:\GoLandProjects\go_learn&amp;gt;git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.06 KiB | 1.06 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:ShanJianSoda/golang_learn.git
+   d130b38..e33a5c1  main -&amp;gt; main
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;本地分支更名&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git branch -m oldname newname
+&lt;/code&gt;&lt;/pre&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

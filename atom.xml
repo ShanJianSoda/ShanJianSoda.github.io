@@ -3,17 +3,17 @@
     <id>http://example.com</id>
     <title>Chen</title>
     <link href="http://example.com" />
-    <updated>2024-07-14T01:56:54.000Z</updated>
+    <updated>2024-08-12T11:40:08.000Z</updated>
+    <category term="Java" />
     <category term="GLM" />
     <category term="dp" />
-    <category term="Java" />
+    <category term="git" />
     <category term="位运算" />
     <category term="分类讨论" />
     <category term="redis" />
     <category term="lunix" />
-    <category term="git" />
-    <category term="vue3" />
     <category term="机器学习" />
+    <category term="vue3" />
     <category term="LLM" />
     <category term="AI" />
     <category term="Vue.js" />
@@ -21,6 +21,178 @@
     <category term="面试" />
     <category term="chatgpt" />
     <category term="设计模式" />
+    <entry>
+        <id>http://example.com/2024/08/12/My-INTER-KNOT/</id>
+        <title>My INTER-KNOT</title>
+        <link rel="alternate" href="http://example.com/2024/08/12/My-INTER-KNOT/"/>
+        <content type="html">&lt;p&gt;1&lt;/p&gt;
+&lt;p&gt;前言&lt;/p&gt;
+&lt;p&gt;看到 b 站有 up 做了个绳网，基于 github 的&lt;/p&gt;
+&lt;p&gt;感觉自己也可以动手做一个&lt;/p&gt;
+&lt;h3 id=&#34;初步打算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#初步打算&#34;&gt;#&lt;/a&gt; 初步打算&lt;/h3&gt;
+&lt;p&gt;部署到阿里云的学生（baipiao）服务器上&lt;/p&gt;
+&lt;h3 id=&#34;页面&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#页面&#34;&gt;#&lt;/a&gt; 页面&lt;/h3&gt;
+&lt;p&gt;主页面&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240812195020723.png&#34; alt=&#34;image-20240812195020723&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;文章详情页面&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240812195055210.png&#34; alt=&#34;image-20240812195055210&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;登陆 / 注册页面&lt;/p&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;p&gt;留言&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240812195208533.png&#34; alt=&#34;image-20240812195208533&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#过程&#34;&gt;#&lt;/a&gt; 过程&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;服务器&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;购买 阿里云服务器&lt;/li&gt;
+&lt;li&gt;连接 xshell（免费版）通过阿里云下载的密钥 xxx.pem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;安装 jdk&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;yum -y install lrzsz&lt;/code&gt;  失败，一直 killed，遂用离线安装&lt;/p&gt;
+&lt;p&gt;（一直爆 killed 是因为内存不够，只有 0.5G，后来配置改到 1G 就暂时没问题了）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// 下载安装包 
+$ wget https://ohse.de/uwe/releases/lrzsz-0.12.20.tar.gz //来自lrzsz官网
+$ tar -zxvf lrzsz-0.12.20.tar.gz 
+$ cd lrzsz-0.12.20 
+// 编译 
+$ ./configure –prefix=/usr/local/lrzsz 
+$ make 
+$ make install 
+// 建立软连接 
+$ ln -s /usr/local/lrzsz/bin/lrz /usr/bin/rz 
+$ ln -s /usr/local/lrzsz/bin/lsz /usr/bin/sz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;传输 jdk&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;rz -be // 避免乱码&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;解压&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;tar -zxvf jdk-8u331-linux-x64.tar.gz&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;配置环境变量&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[root@iZj6cac8jcykj0uvk65o5oZ usr]# cd ..
+[root@iZj6cac8jcykj0uvk65o5oZ /]# cd /etc/
+[root@iZj6cac8jcykj0uvk65o5oZ etc]# vim profile
+
+# i 编辑 
+# ：wq 保存
+# 末尾加上如下
+export JAVA_HOME=/usr/jdk-21.0.4 # 版本
+export CLASSPATH=$JAVA_HOME/lib/
+export PATH=$PATH:$JAVA_HOME/bin
+export PATHJAVA_HOME CLASSPATH
+
+# 修改完后，使之生效
+source /etc/profile 
+
+# 查看是否生效
+java -version
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;MySql&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# 创建目录
+
+# 获取下载yum源
+wget &#39;https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm&#39;
+
+# 安装
+rpm -Uvh mysql57-community-release-el7-11.noarch.rpm
+
+# 查看拥有的mysql
+yum repolist all | grep mysql
+
+# 安装mysql
+yum install -y mysql-community-server
+
+# Error:GPG check FAILED
+yum install -y mysql-community-server --nogpgcheck
+
+# 启动
+systemctl start mysqld
+systemctl status mysqld
+
+# 生成临时密码
+grep &#39;temporary password&#39; /var/log/mysqld.log 
+
+# 登陆
+mysql -u root -p
+
+# 修改密码
+UPDATE mysql.user SET authentication_string=PASSWORD(&#39;your_new_password&#39;) WHERE User=&#39;root&#39;;
+
+# You must reset your password using ALTER USER statement before executing this statement.
+ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;CCCChen@@@@29&#39;;
+
+# 打开权限 让本地能连接上阿里云
+mysql&amp;gt; UPDATE mysql.user SET host = &#39;%&#39; WHERE user=&#39;root&#39;;
+# 进行刷新
+mysql&amp;gt; FLUSH PRIVILEGES;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;阿里云安全组编辑&lt;/p&gt;
+&lt;p&gt;加上自己 ip 或者 对全部源开放&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;部署 SpringBoot 项目&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;配置&lt;/p&gt;
+&lt;p&gt;打包（jar）&lt;/p&gt;
+&lt;p&gt;上传 &lt;code&gt;rz&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;参考&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0Vsb24xNS9hcnRpY2xlL2RldGFpbHMvMTI0NTE2OTI5&#34;&gt;保姆级教程 —— 将 springboot 项目部署到阿里云服务器（小白包会）_怎么把框架项目放到阿里云公网上 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2lteWFuZzIwMDcvYXJ0aWNsZS9kZXRhaWxzLzc2MzQ0NzA=&#34;&gt;linux tar 解压命令总结 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
+</content>
+        <updated>2024-08-12T11:40:08.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2024/08/08/git-questions/</id>
+        <title>git_questions</title>
+        <link rel="alternate" href="http://example.com/2024/08/08/git-questions/"/>
+        <content type="html">&lt;h3 id=&#34;本地初始化仓库远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#本地初始化仓库远程仓库&#34;&gt;#&lt;/a&gt; 本地初始化仓库 + 远程仓库&lt;/h3&gt;
+&lt;p&gt;本地合并时遇到 refusing to merge unrelated histories 的错误&lt;/p&gt;
+&lt;p&gt;如果 git merge 合并的时候出现 refusing to merge unrelated histories 的错误，原因是两个仓库不同而导致的，需要在后面加上 ** &lt;code&gt;--allow-unrelated-histories&lt;/code&gt; ** 进行允许合并，即可解决问题&lt;/p&gt;
+&lt;p&gt;如果还不能解决问题，就把本地的 remote 删除，重新 git remote add 添加远程仓库，再按上面的方法来，问题解决。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git init
+
+G:\GoLandProjects\go_learn&amp;gt;git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 893 bytes | 59.00 KiB/s, done.
+From github.com:ShanJianSoda/golang_learn
+ * [new branch]      main       -&amp;gt; origin/main
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull &amp;lt;remote&amp;gt; &amp;lt;branch&amp;gt;
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/&amp;lt;branch&amp;gt; main
+
+
+G:\GoLandProjects\go_learn&amp;gt;git branch --set-upstream-to=origin/main main
+branch &#39;main&#39; set up to track &#39;origin/main&#39;.
+
+G:\GoLandProjects\go_learn&amp;gt;git pull
+fatal: refusing to merge unrelated histories
+
+G:\GoLandProjects\go_learn&amp;gt;git pull --allow-unrelated-histories
+Merge made by the &#39;ort&#39; strategy.
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+G:\GoLandProjects\go_learn&amp;gt;git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.06 KiB | 1.06 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:ShanJianSoda/golang_learn.git
+   d130b38..e33a5c1  main -&amp;gt; main
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;本地分支更名&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git branch -m oldname newname
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        <category term="git" />
+        <updated>2024-08-08T03:31:56.000Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/2024/07/14/Java%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
         <title>Java面试题</title>
@@ -426,12 +598,70 @@ JDK Proxy 是 Java 标准库的一部分，无需额外的依赖&lt;br /&gt;
 &lt;p&gt;&lt;img data-src=&#34;image-20240802153419417.png&#34; alt=&#34;image-20240802153419417&#34; /&gt;&lt;/p&gt;
 &lt;h1 id=&#34;数据结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据结构&#34;&gt;#&lt;/a&gt; 数据结构&lt;/h1&gt;
 &lt;h2 id=&#34;跳表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#跳表&#34;&gt;#&lt;/a&gt; 跳表&lt;/h2&gt;
-&lt;p&gt;[跳表的原理与实现 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FwcGxlZWF0aW5nYm95L2FydGljbGUvZGV0YWlscy8xMTk5NDgzNDA=&#34;&gt;图解]_跳表实现 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FwcGxlZWF0aW5nYm95L2FydGljbGUvZGV0YWlscy8xMTk5NDgzNDA=&#34;&gt;跳表的原理与实现 &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;将&lt;strong&gt;单链表先进行排序&lt;/strong&gt;，然后针对 &lt;strong&gt;有序链表&lt;/strong&gt; 为了实现高效的查找，可以使用跳表这种数据结构。&lt;/p&gt;
 &lt;p&gt;其根本思想是 &lt;strong&gt;二分查找&lt;/strong&gt; 的思想。&lt;/p&gt;
 &lt;p&gt;跳表的前提条件是 针对 &lt;strong&gt;有序的单链表&lt;/strong&gt; ，实现高效地查找，插入，删除。&lt;/p&gt;
 &lt;p&gt;Redis 中的 有序集合 &lt;strong&gt;sorted set&lt;/strong&gt; 就是用跳表实现的。&lt;/p&gt;
 &lt;h1 id=&#34;mysql-redis&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql-redis&#34;&gt;#&lt;/a&gt; MySQL、Redis&lt;/h1&gt;
+&lt;h2 id=&#34;mysql索引实现有哪些&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql索引实现有哪些&#34;&gt;#&lt;/a&gt; MySQL 索引实现有哪些&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzc2NzAxNS9hcnRpY2xlL2RldGFpbHMvMTE5MTA5Mzg1&#34;&gt;MySQL 索引的概念以及七种索引类型介绍_什么是数据库索引，mysql 常见的索引类型有哪些？-CSDN 博客&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1-索引的概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-索引的概念&#34;&gt;#&lt;/a&gt; 1 索引的概念&lt;/h3&gt;
+&lt;p&gt;索引（在 MySQL 中也叫做 “键（key）”）是存储引擎用于快速找到记录的一种数据结构，这也是索引最基本的功能。&lt;/p&gt;
+&lt;p&gt;索引对于良好的性能非常关键。数据量越大时，索引对性能的影响也越重要，好的索引可以将查询性能提高几个数量级。在数据量较小且负载较低时，不恰当的索引对性能的影响可能还不明显，但是在数据量逐渐增大时，糟糕的索引会使 MySQL 的性能急剧的下降。&lt;/p&gt;
+&lt;p&gt;索引优化是查询性能优化最有效的手段。&lt;/p&gt;
+&lt;h3 id=&#34;2-索引的类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-索引的类型&#34;&gt;#&lt;/a&gt; 2 索引的类型&lt;/h3&gt;
+&lt;p&gt;按照功能逻辑区分，MySQL 目前主要有以下索引类型：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;主键索引&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;数据列不允许重复，不允许为 NULL，一个表只能有一个主键。&lt;/li&gt;
+&lt;li&gt;ALTER TABLE table_name ADD PRIMARY KEY (column);&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;普通索引&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;MySQL 中基本索引类型，没有什么限制，允许在定义索引的列中插入重复值和 NULL 值。一个表允许多个列创建普通索引。&lt;/li&gt;
+&lt;li&gt;ALTER TABLE table_name ADD INDEX index_name (column);&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;唯一索引&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;索引列中的值必须是唯一的，但是允许 NULL 值。建立唯一索引的目的大部分时候都是为了该属性列的数据的唯一性，而不是为了查询效率。一个表允许多个列创建唯一索引。&lt;/li&gt;
+&lt;li&gt;ALTER TABLE table_name ADD UNIQUE (column);&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;全文索引&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;主要是为了快速检索大文本数据中的关键字的信息。字段长度比较大时，如果创建普通索引，在进行 like 模糊查询时效率比较低，这时可以创建全文索引，基于倒排索引，类似于搜索引擎。MyISAM 存储引擎支持全文索引，InnoDB 存储引擎在 MySQL 5.6.4 版本中也开始支持全文索引。&lt;/li&gt;
+&lt;li&gt;ALTER TABLE table_name ADD FULLTEXT (column);&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;前缀索引&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;在文本类型如 BLOB、TEXT 或者很长的 VARCHAR 列上创建索引时，可以使用前缀索引，数据量相比普通索引更小，可以指定索引列的长度，但是数值类型不能指定。&lt;/li&gt;
+&lt;li&gt;ALTER TABLE table_name ADD KEY(column_name(prefix_length));&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;组合索引&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;指多个字段上创建的索引，只有在查询条件中使用了创建索引时的第一个字段，索引才会被使用。使用组合索引时遵循最左前缀原则。&lt;/li&gt;
+&lt;li&gt;主键索引、普通索引、唯一索引等都可以使用多个字段形成组合索引。例如，ALTER TABLE table_name ADD INDEX index_name (column1, column2, column3);&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;空间索引&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;MySQL 在 5.7 之后的版本支持了空间索引，而且支持 OpenGIS 几何数据模型。MySQL 在空间索引这方面遵循 OpenGIS 几何数据模型规则。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mysql索引有哪些实现方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql索引有哪些实现方式&#34;&gt;#&lt;/a&gt; MySQL 索引有哪些实现方式&lt;/h3&gt;
+&lt;p&gt;什么是 B+Tree 索引，B+Tree 索引的构建过程，跟二叉树、红黑树的对比&lt;/p&gt;
+&lt;p&gt;为什么数据库存储用 B+tree 索引，局部性原理是什么，为什么推荐自增 id&lt;/p&gt;
+&lt;p&gt;MySQL 有哪些索引，聚集索引，二级索引，覆盖索引区别，回表是什么&lt;/p&gt;
+&lt;p&gt;怎么加索引，索引的使用场景有哪些，加索引一定好吗&lt;/p&gt;
+&lt;p&gt;索引失效的场景，引发什么后果&lt;/p&gt;
+&lt;p&gt;EXPLAIN 关键字查看 MySQL 是否使用索引&lt;/p&gt;
 &lt;h2 id=&#34;23-b树和b树的区别为什么mysql使用b树&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#23-b树和b树的区别为什么mysql使用b树&#34;&gt;#&lt;/a&gt; 23. B 树和 B + 树的区别，为什么 Mysql 使用 B + 树&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;B 树的特点&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -532,64 +762,6 @@ JDK Proxy 是 Java 标准库的一部分，无需额外的依赖&lt;br /&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzY5MTk0Mi9hcnRpY2xlL2RldGFpbHMvMTA3NTkxMTM3&#34;&gt;分布式锁 Redisson 的使用，看门狗机制_分布式锁使用了啥，看门狗机制，锁的默认超时时间是多少 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;如何使用redis做一个定时任务&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#如何使用redis做一个定时任务&#34;&gt;#&lt;/a&gt; 如何使用 redis 做一个定时任务？&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d1c2h1YW5naGFvMTIzL2FydGljbGUvZGV0YWlscy8xMTM4NTc4NjI=&#34;&gt;如何使用 redis 做一个定时任务？_redis 定时任务 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;mysql索引实现有哪些&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql索引实现有哪些&#34;&gt;#&lt;/a&gt; MySQL 索引实现有哪些&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzc2NzAxNS9hcnRpY2xlL2RldGFpbHMvMTE5MTA5Mzg1&#34;&gt;MySQL 索引的概念以及七种索引类型介绍_什么是数据库索引，mysql 常见的索引类型有哪些？-CSDN 博客&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;1-索引的概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-索引的概念&#34;&gt;#&lt;/a&gt; 1 索引的概念&lt;/h3&gt;
-&lt;p&gt;索引（在 MySQL 中也叫做 “键（key）”）是存储引擎用于快速找到记录的一种数据结构，这也是索引最基本的功能。&lt;/p&gt;
-&lt;p&gt;索引对于良好的性能非常关键。数据量越大时，索引对性能的影响也越重要，好的索引可以将查询性能提高几个数量级。在数据量较小且负载较低时，不恰当的索引对性能的影响可能还不明显，但是在数据量逐渐增大时，糟糕的索引会使 MySQL 的性能急剧的下降。&lt;/p&gt;
-&lt;p&gt;索引优化是查询性能优化最有效的手段。&lt;/p&gt;
-&lt;h3 id=&#34;2-索引的类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-索引的类型&#34;&gt;#&lt;/a&gt; 2 索引的类型&lt;/h3&gt;
-&lt;p&gt;按照功能逻辑区分，MySQL 目前主要有以下索引类型：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;主键索引&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;数据列不允许重复，不允许为 NULL，一个表只能有一个主键。&lt;/li&gt;
-&lt;li&gt;ALTER TABLE table_name ADD PRIMARY KEY (column);&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;普通索引&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;MySQL 中基本索引类型，没有什么限制，允许在定义索引的列中插入重复值和 NULL 值。一个表允许多个列创建普通索引。&lt;/li&gt;
-&lt;li&gt;ALTER TABLE table_name ADD INDEX index_name (column);&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;唯一索引&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;索引列中的值必须是唯一的，但是允许 NULL 值。建立唯一索引的目的大部分时候都是为了该属性列的数据的唯一性，而不是为了查询效率。一个表允许多个列创建唯一索引。&lt;/li&gt;
-&lt;li&gt;ALTER TABLE table_name ADD UNIQUE (column);&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;全文索引&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;主要是为了快速检索大文本数据中的关键字的信息。字段长度比较大时，如果创建普通索引，在进行 like 模糊查询时效率比较低，这时可以创建全文索引，基于倒排索引，类似于搜索引擎。MyISAM 存储引擎支持全文索引，InnoDB 存储引擎在 MySQL 5.6.4 版本中也开始支持全文索引。&lt;/li&gt;
-&lt;li&gt;ALTER TABLE table_name ADD FULLTEXT (column);&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;前缀索引&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;在文本类型如 BLOB、TEXT 或者很长的 VARCHAR 列上创建索引时，可以使用前缀索引，数据量相比普通索引更小，可以指定索引列的长度，但是数值类型不能指定。&lt;/li&gt;
-&lt;li&gt;ALTER TABLE table_name ADD KEY(column_name(prefix_length));&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;组合索引&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;指多个字段上创建的索引，只有在查询条件中使用了创建索引时的第一个字段，索引才会被使用。使用组合索引时遵循最左前缀原则。&lt;/li&gt;
-&lt;li&gt;主键索引、普通索引、唯一索引等都可以使用多个字段形成组合索引。例如，ALTER TABLE table_name ADD INDEX index_name (column1, column2, column3);&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;空间索引&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;MySQL 在 5.7 之后的版本支持了空间索引，而且支持 OpenGIS 几何数据模型。MySQL 在空间索引这方面遵循 OpenGIS 几何数据模型规则。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;MySQL 索引有哪些实现方式&lt;/p&gt;
-&lt;p&gt;什么是 B+Tree 索引，B+Tree 索引的构建过程，跟二叉树、红黑树的对比&lt;/p&gt;
-&lt;p&gt;为什么数据库存储用 B+tree 索引，局部性原理是什么，为什么推荐自增 id&lt;/p&gt;
-&lt;p&gt;MySQL 有哪些索引，聚集索引，二级索引，覆盖索引区别，回表是什么&lt;/p&gt;
-&lt;p&gt;怎么加索引，索引的使用场景有哪些，加索引一定好吗&lt;/p&gt;
-&lt;p&gt;索引失效的场景，引发什么后果&lt;/p&gt;
-&lt;p&gt;EXPLAIN 关键字查看 MySQL 是否使用索引&lt;/p&gt;
 &lt;h1 id=&#34;spring&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#spring&#34;&gt;#&lt;/a&gt; Spring&lt;/h1&gt;
 &lt;h2 id=&#34;21-applicationcontext和beanfactory有什么区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#21-applicationcontext和beanfactory有什么区别&#34;&gt;#&lt;/a&gt; 21. ApplicationContext 和 BeanFactory 有什么区别&lt;/h2&gt;
 &lt;p&gt;BeanFactory 是 Spring 中非常核心的组件，表示 Bean 工厂，可以生成 bean，维护 bean，&lt;/p&gt;
@@ -1965,9 +2137,9 @@ Receiving objects: 100% (15/15), 22.90 KiB | 4.58 MiB/s, done.
 &lt;p&gt;…&lt;/p&gt;
 &lt;p&gt;……&lt;/p&gt;
 </content>
+        <category term="git" />
         <category term="redis" />
         <category term="lunix" />
-        <category term="git" />
         <updated>2024-01-27T04:46:04.000Z</updated>
     </entry>
     <entry>

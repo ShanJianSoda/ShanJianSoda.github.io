@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Chen • All posts by \"git\" category",
+    "description": "",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/2024/08/08/git-questions/",
+            "url": "http://example.com/2024/08/08/git-questions/",
+            "title": "git_questions",
+            "date_published": "2024-08-08T03:31:56.000Z",
+            "content_html": "<h3 id=\"本地初始化仓库远程仓库\"><a class=\"anchor\" href=\"#本地初始化仓库远程仓库\">#</a> 本地初始化仓库 + 远程仓库</h3>\n<p>本地合并时遇到 refusing to merge unrelated histories 的错误</p>\n<p>如果 git merge 合并的时候出现 refusing to merge unrelated histories 的错误，原因是两个仓库不同而导致的，需要在后面加上 ** <code>--allow-unrelated-histories</code> ** 进行允许合并，即可解决问题</p>\n<p>如果还不能解决问题，就把本地的 remote 删除，重新 git remote add 添加远程仓库，再按上面的方法来，问题解决。</p>\n<pre><code>git init\n\nG:\\GoLandProjects\\go_learn&gt;git pull\nremote: Enumerating objects: 3, done.\nremote: Counting objects: 100% (3/3), done.\nremote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0\nUnpacking objects: 100% (3/3), 893 bytes | 59.00 KiB/s, done.\nFrom github.com:ShanJianSoda/golang_learn\n * [new branch]      main       -&gt; origin/main\nThere is no tracking information for the current branch.\nPlease specify which branch you want to merge with.\nSee git-pull(1) for details.\n\n    git pull &lt;remote&gt; &lt;branch&gt;\n\nIf you wish to set tracking information for this branch you can do so with:\n\n    git branch --set-upstream-to=origin/&lt;branch&gt; main\n\n\nG:\\GoLandProjects\\go_learn&gt;git branch --set-upstream-to=origin/main main\nbranch 'main' set up to track 'origin/main'.\n\nG:\\GoLandProjects\\go_learn&gt;git pull\nfatal: refusing to merge unrelated histories\n\nG:\\GoLandProjects\\go_learn&gt;git pull --allow-unrelated-histories\nMerge made by the 'ort' strategy.\n README.md | 2 ++\n 1 file changed, 2 insertions(+)\n create mode 100644 README.md\n\nG:\\GoLandProjects\\go_learn&gt;git push\nEnumerating objects: 6, done.\nCounting objects: 100% (6/6), done.\nDelta compression using up to 16 threads\nCompressing objects: 100% (4/4), done.\nWriting objects: 100% (5/5), 1.06 KiB | 1.06 MiB/s, done.\nTotal 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)\nTo github.com:ShanJianSoda/golang_learn.git\n   d130b38..e33a5c1  main -&gt; main\n\n</code></pre>\n<p>本地分支更名</p>\n<pre><code>git branch -m oldname newname\n</code></pre>\n",
+            "tags": [
+                "git"
+            ]
+        }
+    ]
+}
