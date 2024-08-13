@@ -7,16 +7,16 @@
         <language>en</language>
         <pubDate>Mon, 12 Aug 2024 19:40:08 +0800</pubDate>
         <lastBuildDate>Mon, 12 Aug 2024 19:40:08 +0800</lastBuildDate>
-        <category>GLM</category>
         <category>Java</category>
+        <category>GLM</category>
         <category>dp</category>
         <category>git</category>
         <category>位运算</category>
         <category>分类讨论</category>
-        <category>机器学习</category>
-        <category>vue3</category>
         <category>redis</category>
         <category>lunix</category>
+        <category>机器学习</category>
+        <category>vue3</category>
         <category>LLM</category>
         <category>AI</category>
         <category>Vue.js</category>
@@ -142,28 +142,28 @@ mysql&amp;gt; FLUSH PRIVILEGES;
 &lt;li&gt;瀑布流（？）&lt;/li&gt;
 &lt;li&gt;分页（？）加载&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240813105911399.png&#34; alt=&#34;image-20240813105911399&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240813105911399.png&#34; alt=&#34;image-20240813105911399&#34; /&gt;&lt;/p&gt;
 &lt;h4 id=&#34;文章详情页面&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文章详情页面&#34;&gt;#&lt;/a&gt; &lt;strong&gt;文章详情页面&lt;/strong&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;点 空白处 或者 关闭键 即可返回&lt;/li&gt;
 &lt;li&gt;委托内容折叠（展开）&lt;/li&gt;
 &lt;li&gt;委托人 + 浏览量、封面、评论&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240813105928322.png&#34; alt=&#34;image-20240813105928322&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240813105928322.png&#34; alt=&#34;image-20240813105928322&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;按钮动效&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240813110215773.png&#34; alt=&#34;image-20240813110215773&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240813110215773.png&#34; alt=&#34;image-20240813110215773&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;评论、委托到底&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240813110056561.png&#34; alt=&#34;image-20240813110056561&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240813110056561.png&#34; alt=&#34;image-20240813110056561&#34; /&gt;&lt;/p&gt;
 &lt;h4 id=&#34;登陆注册页面&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#登陆注册页面&#34;&gt;#&lt;/a&gt; &lt;strong&gt;登陆 / 注册页面&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;……&lt;/p&gt;
 &lt;h4 id=&#34;留言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#留言&#34;&gt;#&lt;/a&gt; &lt;strong&gt;留言&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240812195208533.png&#34; alt=&#34;image-20240812195208533&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240812195208533.png&#34; alt=&#34;image-20240812195208533&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库&#34;&gt;#&lt;/a&gt; 数据库&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240813112732092.png&#34; alt=&#34;image-20240813112732092&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240813112732092.png&#34; alt=&#34;image-20240813112732092&#34; /&gt;&lt;/p&gt;
 &lt;h4 id=&#34;表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表&#34;&gt;#&lt;/a&gt; 表&lt;/h4&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;create table user
 (
