@@ -4,16 +4,16 @@
     <title>Chen</title>
     <link href="http://example.com" />
     <updated>2024-08-12T11:40:08.000Z</updated>
-    <category term="Java" />
     <category term="GLM" />
+    <category term="Java" />
     <category term="dp" />
     <category term="git" />
     <category term="位运算" />
     <category term="分类讨论" />
-    <category term="redis" />
-    <category term="lunix" />
     <category term="机器学习" />
     <category term="vue3" />
+    <category term="redis" />
+    <category term="lunix" />
     <category term="LLM" />
     <category term="AI" />
     <category term="Vue.js" />
@@ -25,30 +25,18 @@
         <id>http://example.com/2024/08/12/My-INTER-KNOT/</id>
         <title>My INTER-KNOT</title>
         <link rel="alternate" href="http://example.com/2024/08/12/My-INTER-KNOT/"/>
-        <content type="html">&lt;p&gt;1&lt;/p&gt;
-&lt;p&gt;前言&lt;/p&gt;
+        <content type="html">&lt;h2 id=&#34;前言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h2&gt;
 &lt;p&gt;看到 b 站有 up 做了个绳网，基于 github 的&lt;/p&gt;
 &lt;p&gt;感觉自己也可以动手做一个&lt;/p&gt;
-&lt;h3 id=&#34;初步打算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#初步打算&#34;&gt;#&lt;/a&gt; 初步打算&lt;/h3&gt;
-&lt;p&gt;部署到阿里云的学生（baipiao）服务器上&lt;/p&gt;
-&lt;h3 id=&#34;页面&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#页面&#34;&gt;#&lt;/a&gt; 页面&lt;/h3&gt;
-&lt;p&gt;主页面&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240812195020723.png&#34; alt=&#34;image-20240812195020723&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;文章详情页面&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240812195055210.png&#34; alt=&#34;image-20240812195055210&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;登陆 / 注册页面&lt;/p&gt;
-&lt;p&gt;……&lt;/p&gt;
-&lt;p&gt;留言&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240812195208533.png&#34; alt=&#34;image-20240812195208533&#34; /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#过程&#34;&gt;#&lt;/a&gt; 过程&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;服务器&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#过程&#34;&gt;#&lt;/a&gt; 过程&lt;/h2&gt;
+&lt;h3 id=&#34;服务器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#服务器&#34;&gt;#&lt;/a&gt; &lt;strong&gt;服务器&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;购买 阿里云服务器&lt;/li&gt;
 &lt;li&gt;连接 xshell（免费版）通过阿里云下载的密钥 xxx.pem&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;安装 jdk&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;安装jdk&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装jdk&#34;&gt;#&lt;/a&gt; &lt;strong&gt;安装 jdk&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;yum -y install lrzsz&lt;/code&gt;  失败，一直 killed，遂用离线安装&lt;/p&gt;
-&lt;p&gt;（一直爆 killed 是因为内存不够，只有 0.5G，后来配置改到 1G 就暂时没问题了）&lt;/p&gt;
+&lt;p&gt;（一直爆 killed 是因为内存不够，只有 0.5G，后来配置改（降？）到 1G 就暂时没问题了）&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;// 下载安装包 
 $ wget https://ohse.de/uwe/releases/lrzsz-0.12.20.tar.gz //来自lrzsz官网
 $ tar -zxvf lrzsz-0.12.20.tar.gz 
@@ -84,7 +72,7 @@ source /etc/profile
 # 查看是否生效
 java -version
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;MySql&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;下载mysql&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#下载mysql&#34;&gt;#&lt;/a&gt; &lt;strong&gt;下载 MySql&lt;/strong&gt;&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;# 创建目录
 
 # 获取下载yum源
@@ -125,12 +113,142 @@ mysql&amp;gt; FLUSH PRIVILEGES;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;阿里云安全组编辑&lt;/p&gt;
 &lt;p&gt;加上自己 ip 或者 对全部源开放&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;部署 SpringBoot 项目&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;配置&lt;/p&gt;
-&lt;p&gt;打包（jar）&lt;/p&gt;
-&lt;p&gt;上传 &lt;code&gt;rz&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;参考&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考&lt;/h3&gt;
+&lt;h3 id=&#34;部署springboot项目试运行&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#部署springboot项目试运行&#34;&gt;#&lt;/a&gt; &lt;strong&gt;部署 SpringBoot 项目&lt;/strong&gt;试运行&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;配置  &lt;code&gt;&amp;lt;packaging&amp;gt;jar&amp;lt;packaging&amp;gt;&lt;/code&gt; , &lt;code&gt;server.port:8080&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打包（jar），maven package&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;上传 &lt;code&gt;rz&lt;/code&gt;  ，卡住就把 jar 包压缩&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;运行 &lt;code&gt;java -jar ***.jar&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;nohup java -jar ***.jar &amp;amp; //使用下面的方法让这个项目在服务器上自动不间断地跑.&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;设计&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设计&#34;&gt;#&lt;/a&gt; 设计&lt;/h2&gt;
+&lt;h3 id=&#34;前端页面&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前端页面&#34;&gt;#&lt;/a&gt; 前端页面&lt;/h3&gt;
+&lt;h4 id=&#34;主页面&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主页面&#34;&gt;#&lt;/a&gt; &lt;strong&gt;主页面&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;瀑布流（？）&lt;/li&gt;
+&lt;li&gt;分页（？）加载&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240813105911399.png&#34; alt=&#34;image-20240813105911399&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;文章详情页面&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文章详情页面&#34;&gt;#&lt;/a&gt; &lt;strong&gt;文章详情页面&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;点 空白处 或者 关闭键 即可返回&lt;/li&gt;
+&lt;li&gt;委托内容折叠（展开）&lt;/li&gt;
+&lt;li&gt;委托人 + 浏览量、封面、评论&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240813105928322.png&#34; alt=&#34;image-20240813105928322&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;按钮动效&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240813110215773.png&#34; alt=&#34;image-20240813110215773&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;评论、委托到底&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240813110056561.png&#34; alt=&#34;image-20240813110056561&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;登陆注册页面&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#登陆注册页面&#34;&gt;#&lt;/a&gt; &lt;strong&gt;登陆 / 注册页面&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;h4 id=&#34;留言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#留言&#34;&gt;#&lt;/a&gt; &lt;strong&gt;留言&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240812195208533.png&#34; alt=&#34;image-20240812195208533&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库&#34;&gt;#&lt;/a&gt; 数据库&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;/../My-INTER-KNOT/image-20240813112732092.png&#34; alt=&#34;image-20240813112732092&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表&#34;&gt;#&lt;/a&gt; 表&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;create table user
+(
+    user_id           int auto_increment,
+    user_name         varchar(255) default &#39;ShengJiang&#39;      not null,
+    user_email        varchar(255)                           not null,
+    user_pwd          varchar(255)                           not null,
+    registration_date datetime     default CURRENT_TIMESTAMP not null,
+    grade             int          default 1                 not null,
+    version           int          default 1                 not null,
+    is_deleted        int          default 0                 not null,
+    primary key (user_id, is_deleted),
+    constraint user_email
+        unique (user_email)
+);
+
+create table post
+(
+    post_id      int auto_increment
+        primary key,
+    title        varchar(255)                       not null,
+    content      text                               not null,
+    publish_date datetime default CURRENT_TIMESTAMP not null,
+    user_id      int                                not null,
+    cover_id     int                                null,
+    version      int      default 1                 not null,
+    is_deleted   int      default 0                 not null,
+    constraint fk_user_id
+        foreign key (user_id) references user (user_id)
+);
+
+create table comment
+(
+    comment_id   int auto_increment
+        primary key,
+    content      text                               not null,
+    comment_date datetime default CURRENT_TIMESTAMP not null,
+    user_id      int                                not null,
+    post_id      int                                not null,
+    version      int      default 1                 not null,
+    is_deleted   int      default 0                 not null,
+    constraint fk_post
+        foreign key (post_id) references post (post_id),
+    constraint fk_user
+        foreign key (user_id) references user (user_id)
+);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;reids&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#reids&#34;&gt;#&lt;/a&gt; Reids&lt;/h3&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;h3 id=&#34;后端&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#后端&#34;&gt;#&lt;/a&gt; 后端&lt;/h3&gt;
+&lt;p&gt;spring boot 3.3.2&lt;/p&gt;
+&lt;h4 id=&#34;框架搭建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#框架搭建&#34;&gt;#&lt;/a&gt; 框架搭建&lt;/h4&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;h4 id=&#34;依赖导入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#依赖导入&#34;&gt;#&lt;/a&gt; 依赖导入&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;to-do-需求分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#to-do-需求分析&#34;&gt;#&lt;/a&gt; TO DO 需求分析&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;登陆 / 注册&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;邮箱登陆&lt;/li&gt;
+&lt;li&gt;校验方式&lt;/li&gt;
+&lt;li&gt;密码加密&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;委托发布&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;markdown 格式 （存储方式）&lt;/li&gt;
+&lt;li&gt;加上 浏览量，点赞量 字段&lt;/li&gt;
+&lt;li&gt;委托能否存在 redis （内存是否够）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;评论&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_0&#34;&gt; 加上 点赞量 字段&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;s&gt;&lt;strong&gt;好友功能&lt;/strong&gt;&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;等级功能&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;审核&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;风纪委员&lt;/li&gt;
+&lt;li&gt;过滤器 / 拦截器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;ect&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_1&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_1&#34;&gt; user 加上 经验、头像 id 字段，委托加上 浏览量，点赞量 字段&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_2&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_2&#34;&gt; 加个 user 工具类，只传输不涉及安全的字段（比如不传说邮箱、密码）&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;参考&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0Vsb24xNS9hcnRpY2xlL2RldGFpbHMvMTI0NTE2OTI5&#34;&gt;保姆级教程 —— 将 springboot 项目部署到阿里云服务器（小白包会）_怎么把框架项目放到阿里云公网上 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xlaXNoYW5nZGFuZ1FJUS9hcnRpY2xlL2RldGFpbHMvMTMwMTI0MjQy&#34;&gt;保姆级级教程 —— 将 springboot+vue 前后端分离项目部署到阿里云服务器（包教包会）2023 年最新版_前后端分离如何部署阿里服务器 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2lteWFuZzIwMDcvYXJ0aWNsZS9kZXRhaWxzLzc2MzQ0NzA=&#34;&gt;linux tar 解压命令总结 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
 </content>
         <updated>2024-08-12T11:40:08.000Z</updated>
