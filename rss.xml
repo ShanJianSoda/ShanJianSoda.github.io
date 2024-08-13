@@ -7,8 +7,8 @@
         <language>en</language>
         <pubDate>Mon, 12 Aug 2024 19:40:08 +0800</pubDate>
         <lastBuildDate>Mon, 12 Aug 2024 19:40:08 +0800</lastBuildDate>
-        <category>Java</category>
         <category>GLM</category>
+        <category>Java</category>
         <category>dp</category>
         <category>git</category>
         <category>位运算</category>
@@ -58,9 +58,9 @@ $ ln -s /usr/local/lrzsz/bin/lsz /usr/bin/sz
 &lt;p&gt;解压&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;tar -zxvf jdk-8u331-linux-x64.tar.gz&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;配置环境变量&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[root@iZj6cac8jcykj0uvk65o5oZ usr]# cd ..
-[root@iZj6cac8jcykj0uvk65o5oZ /]# cd /etc/
-[root@iZj6cac8jcykj0uvk65o5oZ etc]# vim profile
+&lt;pre&gt;&lt;code&gt;[root@chen987 usr]# cd ..
+[root@chen987 /]# cd /etc/
+[root@chen987 etc]# vim profile
 
 # i 编辑 
 # ：wq 保存

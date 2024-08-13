@@ -4,8 +4,8 @@
     <title>Chen</title>
     <link href="http://example.com" />
     <updated>2024-08-12T11:40:08.000Z</updated>
-    <category term="Java" />
     <category term="GLM" />
+    <category term="Java" />
     <category term="dp" />
     <category term="git" />
     <category term="位运算" />
@@ -54,9 +54,9 @@ $ ln -s /usr/local/lrzsz/bin/lsz /usr/bin/sz
 &lt;p&gt;解压&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;tar -zxvf jdk-8u331-linux-x64.tar.gz&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;配置环境变量&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[root@iZj6cac8jcykj0uvk65o5oZ usr]# cd ..
-[root@iZj6cac8jcykj0uvk65o5oZ /]# cd /etc/
-[root@iZj6cac8jcykj0uvk65o5oZ etc]# vim profile
+&lt;pre&gt;&lt;code&gt;[root@chen987 usr]# cd ..
+[root@chen987 /]# cd /etc/
+[root@chen987 etc]# vim profile
 
 # i 编辑 
 # ：wq 保存
