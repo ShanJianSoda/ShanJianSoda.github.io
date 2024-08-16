@@ -4,8 +4,9 @@
     <title>Chen • Posts by &#34;java&#34; tag</title>
     <link href="http://example.com" />
     <updated>2024-07-14T01:56:54.000Z</updated>
-    <category term="GLM" />
     <category term="Java" />
+    <category term="Vue3" />
+    <category term="GLM" />
     <category term="dp" />
     <category term="git" />
     <category term="位运算" />
@@ -424,6 +425,14 @@ JDK Proxy 是 Java 标准库的一部分，无需额外的依赖&lt;br /&gt;
 &lt;h2 id=&#34;java锁有哪些sychronized是什么锁&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#java锁有哪些sychronized是什么锁&#34;&gt;#&lt;/a&gt; java 锁有哪些，Sychronized 是什么锁&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpbmdjaGVuc3VpeXVlL2FydGljbGUvZGV0YWlscy8xMDg3MTY0NjY=&#34;&gt;Java 中常见的各种锁（非常全）_java 滑块锁 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;image-20240802153419417.png&#34; alt=&#34;image-20240802153419417&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;线程创建方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线程创建方式&#34;&gt;#&lt;/a&gt; 线程创建方式&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;方式一：继承于 Thread 类&lt;/li&gt;
+&lt;li&gt;方式二：实现 Runnable 接口&lt;/li&gt;
+&lt;li&gt;方式三：实现 Callable 接口&lt;/li&gt;
+&lt;li&gt;方式四：使用线程池&lt;/li&gt;
+&lt;li&gt;方式五：使用匿名类&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h1 id=&#34;数据结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据结构&#34;&gt;#&lt;/a&gt; 数据结构&lt;/h1&gt;
 &lt;h2 id=&#34;跳表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#跳表&#34;&gt;#&lt;/a&gt; 跳表&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FwcGxlZWF0aW5nYm95L2FydGljbGUvZGV0YWlscy8xMTk5NDgzNDA=&#34;&gt;跳表的原理与实现 &lt;/span&gt;&lt;/p&gt;
