@@ -4,9 +4,9 @@
     <title>Chen • Posts by &#34;vue3&#34; category</title>
     <link href="http://example.com" />
     <updated>2024-08-16T14:55:05.000Z</updated>
-    <category term="Java" />
     <category term="Vue3" />
     <category term="GLM" />
+    <category term="Java" />
     <category term="dp" />
     <category term="git" />
     <category term="位运算" />
@@ -27,14 +27,14 @@
         <title>Learn Vue3</title>
         <link rel="alternate" href="http://example.com/2024/08/16/Learn-Vue3/"/>
         <content type="html">&lt;p&gt;摘自 https://cn.vuejs.org/guide/&lt;/p&gt;
-&lt;h2 id=&#34;模板语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#模板语法&#34;&gt;#&lt;/a&gt; 模板语法&lt;/h2&gt;
-&lt;h3 id=&#34;文本插值&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文本插值&#34;&gt;#&lt;/a&gt; 文本插值&lt;/h3&gt;
+&lt;h1 id=&#34;模板语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#模板语法&#34;&gt;#&lt;/a&gt; 模板语法&lt;/h1&gt;
+&lt;h2 id=&#34;文本插值&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文本插值&#34;&gt;#&lt;/a&gt; 文本插值&lt;/h2&gt;
 &lt;p&gt;最基本的数据绑定形式是文本插值，它使用的是 “Mustache” 语法 (即双大括号)：&lt;/p&gt;
 &lt;p&gt;template&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;span&amp;gt;Message: &amp;#123;&amp;#123; msg &amp;#125;&amp;#125;&amp;lt;/span&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;双大括号标签会被替换为相应组件实例中  &lt;code&gt;msg&lt;/code&gt;  属性的值。同时每次  &lt;code&gt;msg&lt;/code&gt;  属性更改时它也会同步更新。&lt;/p&gt;
-&lt;h3 id=&#34;attribute-绑定&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#attribute-绑定&#34;&gt;#&lt;/a&gt; Attribute 绑定&lt;/h3&gt;
+&lt;h2 id=&#34;attribute-绑定&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#attribute-绑定&#34;&gt;#&lt;/a&gt; Attribute 绑定&lt;/h2&gt;
 &lt;p&gt;双大括号不能在 HTML attributes 中使用。想要响应式地绑定一个 attribute，应该使用  &lt;code&gt;v-bind&lt;/code&gt;  指令：&lt;/p&gt;
 &lt;p&gt;template&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;div v-bind:id=&amp;quot;dynamicId&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
@@ -55,7 +55,7 @@
 &lt;p&gt;template&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;div v-bind=&amp;quot;objectOfAttrs&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;使用-javascript-表达式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用-javascript-表达式&#34;&gt;#&lt;/a&gt; 使用 JavaScript 表达式&lt;/h3&gt;
+&lt;h2 id=&#34;使用-javascript-表达式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用-javascript-表达式&#34;&gt;#&lt;/a&gt; 使用 JavaScript 表达式&lt;/h2&gt;
 &lt;p&gt;至此，我们仅在模板中绑定了一些简单的属性名。但是 Vue 实际上在所有的数据绑定中都支持完整的 JavaScript 表达式：&lt;/p&gt;
 &lt;p&gt;template&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;#123;&amp;#123; number + 1 &amp;#125;&amp;#125;
@@ -72,7 +72,7 @@
 &lt;li&gt;在文本插值中 (双大括号)&lt;/li&gt;
 &lt;li&gt;在任何 Vue 指令 (以  &lt;code&gt;v-&lt;/code&gt;  开头的特殊 attribute) attribute 的值中&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;调用函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#调用函数&#34;&gt;#&lt;/a&gt; 调用函数&lt;/h4&gt;
+&lt;h3 id=&#34;调用函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#调用函数&#34;&gt;#&lt;/a&gt; 调用函数&lt;/h3&gt;
 &lt;p&gt;可以在绑定的表达式中使用一个组件暴露的方法：&lt;/p&gt;
 &lt;p&gt;template&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;time :title=&amp;quot;toTitleDate(date)&amp;quot; :datetime=&amp;quot;date&amp;quot;&amp;gt;
@@ -81,13 +81,13 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;TIP&lt;/p&gt;
 &lt;p&gt;绑定在表达式中的方法在组件每次更新时都会被重新调用，因此&lt;strong&gt;不&lt;/strong&gt;应该产生任何副作用，比如改变数据或触发异步操作。&lt;/p&gt;
-&lt;h3 id=&#34;指令-directives&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#指令-directives&#34;&gt;#&lt;/a&gt; 指令 Directives&lt;/h3&gt;
+&lt;h2 id=&#34;指令-directives&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#指令-directives&#34;&gt;#&lt;/a&gt; 指令 Directives&lt;/h2&gt;
 &lt;p&gt;指令是带有  &lt;code&gt;v-&lt;/code&gt;  前缀的特殊 attribute。Vue 提供了许多内置指令&lt;/p&gt;
 &lt;p&gt;指令 attribute 的期望值为一个 JavaScript 表达式 (除了少数几个例外，即之后要讨论到的  &lt;code&gt;v-for&lt;/code&gt; 、 &lt;code&gt;v-on&lt;/code&gt;  和  &lt;code&gt;v-slot&lt;/code&gt; )。一个指令的任务是在其表达式的值变化时响应式地更新 DOM。以 &lt;a href=&#34;https://cn.vuejs.org/api/built-in-directives.html#v-if&#34;&gt; &lt;code&gt;v-if&lt;/code&gt; &lt;/a&gt; 为例：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;p v-if=&amp;quot;seen&amp;quot;&amp;gt;Now you see me&amp;lt;/p&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;这里， &lt;code&gt;v-if&lt;/code&gt;  指令会基于表达式  &lt;code&gt;seen&lt;/code&gt;  的值的真假来移除 / 插入该  &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;  元素。&lt;/p&gt;
-&lt;h4 id=&#34;参数-arguments&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参数-arguments&#34;&gt;#&lt;/a&gt; 参数 Arguments&lt;/h4&gt;
+&lt;h3 id=&#34;参数-arguments&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参数-arguments&#34;&gt;#&lt;/a&gt; 参数 Arguments&lt;/h3&gt;
 &lt;p&gt;某些指令会需要一个 “参数”，在指令名后通过一个冒号隔开做标识。例如用  &lt;code&gt;v-bind&lt;/code&gt;  指令来响应式地更新一个 HTML attribute：&lt;/p&gt;
 &lt;p&gt;template&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;a v-bind:href=&amp;quot;url&amp;quot;&amp;gt; ... &amp;lt;/a&amp;gt;
@@ -103,7 +103,7 @@
 &amp;lt;a @click=&amp;quot;doSomething&amp;quot;&amp;gt; ... &amp;lt;/a&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;这里的参数是要监听的事件名称： &lt;code&gt;click&lt;/code&gt; 。 &lt;code&gt;v-on&lt;/code&gt;  有一个相应的缩写，即  &lt;code&gt;@&lt;/code&gt;  字符。我们之后也会讨论关于事件处理的更多细节。&lt;/p&gt;
-&lt;h4 id=&#34;动态参数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#动态参数&#34;&gt;#&lt;/a&gt; 动态参数&lt;/h4&gt;
+&lt;h3 id=&#34;动态参数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#动态参数&#34;&gt;#&lt;/a&gt; 动态参数&lt;/h3&gt;
 &lt;p&gt;同样在指令参数上也可以使用一个 JavaScript 表达式，需要包含在一对方括号内：&lt;/p&gt;
 &lt;p&gt;template&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;!--
@@ -124,9 +124,9 @@
 &amp;lt;a @[eventName]=&amp;quot;doSomething&amp;quot;&amp;gt; ... &amp;lt;/a&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;在此示例中，当  &lt;code&gt;eventName&lt;/code&gt;  的值是  &lt;code&gt;&amp;quot;focus&amp;quot;&lt;/code&gt;  时， &lt;code&gt;v-on:[eventName]&lt;/code&gt;  就等价于  &lt;code&gt;v-on:focus&lt;/code&gt; 。&lt;/p&gt;
-&lt;h4 id=&#34;动态参数值的限制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#动态参数值的限制&#34;&gt;#&lt;/a&gt; 动态参数值的限制&lt;/h4&gt;
+&lt;h3 id=&#34;动态参数值的限制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#动态参数值的限制&#34;&gt;#&lt;/a&gt; 动态参数值的限制&lt;/h3&gt;
 &lt;p&gt;动态参数中表达式的值应当是一个字符串，或者是  &lt;code&gt;null&lt;/code&gt; 。特殊值  &lt;code&gt;null&lt;/code&gt;  意为显式移除该绑定。其他非字符串的值会触发警告。&lt;/p&gt;
-&lt;h4 id=&#34;动态参数语法的限制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#动态参数语法的限制&#34;&gt;#&lt;/a&gt; 动态参数语法的限制&lt;/h4&gt;
+&lt;h3 id=&#34;动态参数语法的限制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#动态参数语法的限制&#34;&gt;#&lt;/a&gt; 动态参数语法的限制&lt;/h3&gt;
 &lt;p&gt;动态参数表达式因为某些字符的缘故有一些语法限制，比如空格和引号，在 HTML attribute 名称中都是不合法的。例如下面的示例：&lt;/p&gt;
 &lt;p&gt;template&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;!-- 这会触发一个编译器警告 --&amp;gt;
@@ -140,9 +140,9 @@
 &lt;p&gt;上面的例子将会在 DOM 内嵌模板中被转换为  &lt;code&gt;:[someattr]&lt;/code&gt; 。如果你的组件拥有 “someAttr” 属性而非 “someattr”，这段代码将不会工作。单文件组件内的模板&lt;strong&gt;不&lt;/strong&gt;受此限制。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;完整的指令语法&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;directive.DtZKvoAo.png&#34; alt=&#34;指令语法图&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;响应式基础&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#响应式基础&#34;&gt;#&lt;/a&gt; 响应式基础&lt;/h2&gt;
-&lt;h3 id=&#34;声明响应式状态&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#声明响应式状态&#34;&gt;#&lt;/a&gt; 声明响应式状态&lt;/h3&gt;
-&lt;h4 id=&#34;ref&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ref&#34;&gt;#&lt;/a&gt;  &lt;code&gt;ref()&lt;/code&gt;&lt;/h4&gt;
+&lt;h1 id=&#34;响应式基础&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#响应式基础&#34;&gt;#&lt;/a&gt; 响应式基础&lt;/h1&gt;
+&lt;h2 id=&#34;声明响应式状态&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#声明响应式状态&#34;&gt;#&lt;/a&gt; 声明响应式状态&lt;/h2&gt;
+&lt;h3 id=&#34;ref&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ref&#34;&gt;#&lt;/a&gt;  &lt;code&gt;ref()&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;在组合式 API 中，推荐使用 &lt;a href=&#34;https://cn.vuejs.org/api/reactivity-core.html#ref&#34;&gt; &lt;code&gt;ref()&lt;/code&gt; &lt;/a&gt; 函数来声明响应式状态：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;import &amp;#123; ref &amp;#125; from &#39;vue&#39;
 
@@ -214,7 +214,7 @@ export default &amp;#123;
 &amp;lt;/button&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;这里是 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jb2RlcGVuLmlvL3Z1ZWpzLWV4YW1wbGVzL3Blbi9XTlliYXFv&#34;&gt;Codepen&lt;/span&gt; 上的例子，没有使用任何构建工具。&lt;/p&gt;
-&lt;h4 id=&#34;script-setup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#script-setup&#34;&gt;#&lt;/a&gt;  &lt;code&gt;&amp;lt;script setup&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;h3 id=&#34;script-setup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#script-setup&#34;&gt;#&lt;/a&gt;  &lt;code&gt;&amp;lt;script setup&amp;gt;&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;在  &lt;code&gt;setup()&lt;/code&gt;  函数中手动暴露大量的状态和方法非常繁琐。幸运的是，我们可以通过使用&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbi52dWVqcy5vcmcvZ3VpZGUvc2NhbGluZy11cC9zZmMuaHRtbA==&#34;&gt;单文件组件 (SFC)&lt;/span&gt; 来避免这种情况。我们可以使用  &lt;code&gt;&amp;lt;script setup&amp;gt;&lt;/code&gt;  来大幅度地简化代码：&lt;/p&gt;
 &lt;p&gt;vue&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;script setup&amp;gt;
@@ -237,7 +237,7 @@ function increment() &amp;#123;
 &lt;p&gt;TIP&lt;/p&gt;
 &lt;p&gt;在指南的后续章节中，我们基本上都会在组合式 API 示例中使用单文件组件 +  &lt;code&gt;&amp;lt;script setup&amp;gt;&lt;/code&gt;  的语法，因为大多数 Vue 开发者都会这样使用。&lt;/p&gt;
 &lt;p&gt;如果你没有使用单文件组件，你仍然可以在 &lt;a href=&#34;https://cn.vuejs.org/api/composition-api-setup.html&#34;&gt; &lt;code&gt;setup()&lt;/code&gt; &lt;/a&gt; 选项中使用组合式 API。&lt;/p&gt;
-&lt;h4 id=&#34;为什么要使用-ref&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#为什么要使用-ref&#34;&gt;#&lt;/a&gt; 为什么要使用 ref？&lt;/h4&gt;
+&lt;h3 id=&#34;为什么要使用-ref&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#为什么要使用-ref&#34;&gt;#&lt;/a&gt; 为什么要使用 ref？&lt;/h3&gt;
 &lt;p&gt;你可能会好奇：为什么我们需要使用带有  &lt;code&gt;.value&lt;/code&gt;  的 ref，而不是普通的变量？为了解释这一点，我们需要简单地讨论一下 Vue 的响应式系统是如何工作的。&lt;/p&gt;
 &lt;p&gt;当你在模板中使用了一个 ref，然后改变了这个 ref 的值时，Vue 会自动检测到这个变化，并且相应地更新 DOM。这是通过一个基于依赖追踪的响应式系统实现的。当一个组件首次渲染时，Vue 会&lt;strong&gt;追踪&lt;/strong&gt;在渲染过程中使用的每一个 ref。然后，当一个 ref 被修改时，它会&lt;strong&gt;触发&lt;/strong&gt;追踪它的组件的一次重新渲染。&lt;/p&gt;
 &lt;p&gt;在标准的 JavaScript 中，检测普通变量的访问或修改是行不通的。然而，我们可以通过 getter 和 setter 方法来拦截对象属性的 get 和 set 操作。&lt;/p&gt;
@@ -258,7 +258,7 @@ const myRef = &amp;#123;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;另一个 ref 的好处是，与普通变量不同，你可以将 ref 传递给函数，同时保留对最新值和响应式连接的访问。当将复杂的逻辑重构为可重用的代码时，这将非常有用。&lt;/p&gt;
 &lt;p&gt;该响应性系统在&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbi52dWVqcy5vcmcvZ3VpZGUvZXh0cmFzL3JlYWN0aXZpdHktaW4tZGVwdGguaHRtbA==&#34;&gt;深入响应式原理&lt;/span&gt;章节中有更详细的讨论。&lt;/p&gt;
-&lt;h4 id=&#34;深层响应性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#深层响应性&#34;&gt;#&lt;/a&gt; 深层响应性&lt;/h4&gt;
+&lt;h3 id=&#34;深层响应性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#深层响应性&#34;&gt;#&lt;/a&gt; 深层响应性&lt;/h3&gt;
 &lt;p&gt;Ref 可以持有任何类型的值，包括深层嵌套的对象、数组或者 JavaScript 内置的数据结构，比如  &lt;code&gt;Map&lt;/code&gt; 。&lt;/p&gt;
 &lt;p&gt;Ref 会使它的值具有深层响应性。这意味着即使改变嵌套对象或数组时，变化也会被检测到：&lt;/p&gt;
 &lt;p&gt;js&lt;/p&gt;
@@ -282,7 +282,7 @@ function mutateDeeply() &amp;#123;
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbi52dWVqcy5vcmcvZ3VpZGUvYmVzdC1wcmFjdGljZXMvcGVyZm9ybWFuY2UuaHRtbCNyZWR1Y2UtcmVhY3Rpdml0eS1vdmVyaGVhZC1mb3ItbGFyZ2UtaW1tdXRhYmxlLXN0cnVjdHVyZXM=&#34;&gt;减少大型不可变数据的响应性开销&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbi52dWVqcy5vcmcvZ3VpZGUvZXh0cmFzL3JlYWN0aXZpdHktaW4tZGVwdGguaHRtbCNpbnRlZ3JhdGlvbi13aXRoLWV4dGVybmFsLXN0YXRlLXN5c3RlbXM=&#34;&gt;与外部状态系统集成&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;dom-更新时机&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dom-更新时机&#34;&gt;#&lt;/a&gt; DOM 更新时机&lt;/h4&gt;
+&lt;h3 id=&#34;dom-更新时机&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dom-更新时机&#34;&gt;#&lt;/a&gt; DOM 更新时机&lt;/h3&gt;
 &lt;p&gt;当你修改了响应式状态时，DOM 会被自动更新。但是需要注意的是，DOM 更新不是同步的。Vue 会在 “next tick” 更新周期中缓冲所有状态的修改，以确保不管你进行了多少次状态修改，每个组件都只会被更新一次。&lt;/p&gt;
 &lt;p&gt;要等待 DOM 更新完成后再执行额外的代码，可以使用 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbi52dWVqcy5vcmcvYXBpL2dlbmVyYWwuaHRtbCNuZXh0dGljaw==&#34;&gt;nextTick()&lt;/span&gt; 全局 API：&lt;/p&gt;
 &lt;p&gt;js&lt;/p&gt;
@@ -294,10 +294,10 @@ async function increment() &amp;#123;
   // 现在 DOM 已经更新了
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;reactive&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#reactive&#34;&gt;#&lt;/a&gt; &lt;s&gt; &lt;code&gt;reactive()&lt;/code&gt; &lt;/s&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;reactive&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#reactive&#34;&gt;#&lt;/a&gt; &lt;s&gt; &lt;code&gt;reactive()&lt;/code&gt; &lt;/s&gt;&lt;/h2&gt;
 &lt;p&gt;...&lt;/p&gt;
-&lt;h3 id=&#34;额外的-ref-解包细节&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#额外的-ref-解包细节&#34;&gt;#&lt;/a&gt; 额外的 ref 解包细节&lt;/h3&gt;
-&lt;h4 id=&#34;作为-reactive-对象的属性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#作为-reactive-对象的属性&#34;&gt;#&lt;/a&gt; 作为 reactive 对象的属性&lt;/h4&gt;
+&lt;h2 id=&#34;额外的-ref-解包细节&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#额外的-ref-解包细节&#34;&gt;#&lt;/a&gt; 额外的 ref 解包细节&lt;/h2&gt;
+&lt;h3 id=&#34;作为-reactive-对象的属性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#作为-reactive-对象的属性&#34;&gt;#&lt;/a&gt; 作为 reactive 对象的属性&lt;/h3&gt;
 &lt;p&gt;一个 ref 会在作为响应式对象的属性被访问或修改时自动解包。换句话说，它的行为就像一个普通的属性：&lt;/p&gt;
 &lt;p&gt;js&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;const count = ref(0)
@@ -320,7 +320,7 @@ console.log(state.count) // 2
 console.log(count.value) // 1
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;只有当嵌套在一个深层响应式对象内时，才会发生 ref 解包。当其作为&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbi52dWVqcy5vcmcvYXBpL3JlYWN0aXZpdHktYWR2YW5jZWQuaHRtbCNzaGFsbG93cmVhY3RpdmU=&#34;&gt;浅层响应式对象&lt;/span&gt;的属性被访问时不会解包。&lt;/p&gt;
-&lt;h4 id=&#34;数组和集合的注意事项&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数组和集合的注意事项&#34;&gt;#&lt;/a&gt; 数组和集合的注意事项&lt;/h4&gt;
+&lt;h3 id=&#34;数组和集合的注意事项&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数组和集合的注意事项&#34;&gt;#&lt;/a&gt; 数组和集合的注意事项&lt;/h3&gt;
 &lt;p&gt;与 reactive 对象不同的是，当 ref 作为响应式数组或原生集合类型 (如  &lt;code&gt;Map&lt;/code&gt; ) 中的元素被访问时，它&lt;strong&gt;不会&lt;/strong&gt;被解包：&lt;/p&gt;
 &lt;p&gt;js&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;const books = reactive([ref(&#39;Vue 3 Guide&#39;)])
@@ -331,7 +331,7 @@ const map = reactive(new Map([[&#39;count&#39;, ref(0)]]))
 // 这里需要 .value
 console.log(map.get(&#39;count&#39;).value)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;在模板中解包的注意事项&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#在模板中解包的注意事项&#34;&gt;#&lt;/a&gt; 在模板中解包的注意事项&lt;/h4&gt;
+&lt;h3 id=&#34;在模板中解包的注意事项&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#在模板中解包的注意事项&#34;&gt;#&lt;/a&gt; 在模板中解包的注意事项&lt;/h3&gt;
 &lt;p&gt;在模板渲染上下文中，只有顶级的 ref 属性才会被解包。&lt;/p&gt;
 &lt;p&gt;在下面的例子中， &lt;code&gt;count&lt;/code&gt;  和  &lt;code&gt;object&lt;/code&gt;  是顶级属性，但  &lt;code&gt;object.id&lt;/code&gt;  不是：&lt;/p&gt;
 &lt;p&gt;js&lt;/p&gt;
@@ -453,6 +453,126 @@ const fullName = computed(&amp;#123;
 &lt;p&gt;计算属性的 getter 应只做计算而没有任何其他的副作用，这一点非常重要，请务必牢记。举例来说，&lt;strong&gt;不要改变其他状态、在 getter 中做异步请求或者更改 DOM&lt;/strong&gt;！一个计算属性的声明中描述的是如何根据其他值派生一个值。因此 getter 的职责应该仅为计算和返回该值。在之后的指引中我们会讨论如何使用&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbi52dWVqcy5vcmcvZ3VpZGUvZXNzZW50aWFscy93YXRjaGVycy5odG1s&#34;&gt;侦听器&lt;/span&gt;根据其他响应式状态的变更来创建副作用。&lt;/p&gt;
 &lt;h3 id=&#34;避免直接修改计算属性值&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#避免直接修改计算属性值&#34;&gt;#&lt;/a&gt; 避免直接修改计算属性值&lt;/h3&gt;
 &lt;p&gt;从计算属性返回的值是派生状态。可以把它看作是一个 “临时快照”，每当源状态发生变化时，就会创建一个新的快照。更改快照是没有意义的，因此计算属性的返回值应该被视为只读的，并且永远不应该被更改 —— 应该更新它所依赖的源状态以触发新的计算。&lt;/p&gt;
+&lt;h1 id=&#34;class-与-style-绑定&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#class-与-style-绑定&#34;&gt;#&lt;/a&gt; Class 与 Style 绑定&lt;/h1&gt;
+&lt;p&gt;数据绑定的一个常见需求场景是操纵元素的 CSS class 列表和内联样式。因为  &lt;code&gt;class&lt;/code&gt;  和  &lt;code&gt;style&lt;/code&gt;  都是 attribute，我们可以和其他 attribute 一样使用  &lt;code&gt;v-bind&lt;/code&gt;  将它们和动态的字符串绑定。但是，在处理比较复杂的绑定时，通过拼接生成字符串是麻烦且易出错的。因此，Vue 专门为  &lt;code&gt;class&lt;/code&gt;  和  &lt;code&gt;style&lt;/code&gt;  的  &lt;code&gt;v-bind&lt;/code&gt;  用法提供了特殊的功能增强。除了字符串外，表达式的值也可以是对象或数组。&lt;/p&gt;
+&lt;h2 id=&#34;绑定-html-class&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#绑定-html-class&#34;&gt;#&lt;/a&gt; 绑定 HTML class&lt;/h2&gt;
+&lt;h3 id=&#34;绑定一个返回对象&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#绑定一个返回对象&#34;&gt;#&lt;/a&gt; 绑定一个返回对象&lt;/h3&gt;
+&lt;p&gt;我们也可以绑定一个返回对象的&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbi52dWVqcy5vcmcvZ3VpZGUvZXNzZW50aWFscy9jb21wdXRlZC5odG1s&#34;&gt;计算属性&lt;/span&gt;。这是一个常见且很有用的技巧：&lt;/p&gt;
+&lt;p&gt;js&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const isActive = ref(true)
+const error = ref(null)
+
+const classObject = computed(() =&amp;gt; (&amp;#123;
+  active: isActive.value &amp;amp;&amp;amp; !error.value,
+  &#39;text-danger&#39;: error.value &amp;amp;&amp;amp; error.value.type === &#39;fatal&#39;
+&amp;#125;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div :class=&amp;quot;classObject&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;绑定数组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#绑定数组&#34;&gt;#&lt;/a&gt; 绑定数组&lt;/h3&gt;
+&lt;p&gt;然而，这可能在有多个依赖条件的 class 时会有些冗长。因此也可以在数组中嵌套对象：&lt;/p&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div :class=&amp;quot;[&amp;#123; [activeClass]: isActive &amp;#125;, errorClass]&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;绑定内联样式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#绑定内联样式&#34;&gt;#&lt;/a&gt; 绑定内联样式&lt;/h2&gt;
+&lt;h3 id=&#34;样式多值&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#样式多值&#34;&gt;#&lt;/a&gt; 样式多值&lt;/h3&gt;
+&lt;p&gt;你可以对一个样式属性提供多个 (不同前缀的) 值，举例来说：&lt;/p&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div :style=&amp;quot;&amp;#123; display: [&#39;-webkit-box&#39;, &#39;-ms-flexbox&#39;, &#39;flex&#39;] &amp;#125;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;数组仅会渲染浏览器支持的最后一个值。在这个示例中，在支持不需要&lt;strong&gt;特别前缀&lt;/strong&gt;的浏览器中都会渲染为  &lt;code&gt;display: flex&lt;/code&gt; 。&lt;/p&gt;
+&lt;h1 id=&#34;条件渲染&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#条件渲染&#34;&gt;#&lt;/a&gt; 条件渲染&lt;/h1&gt;
+&lt;h2 id=&#34;v-else-if&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#v-else-if&#34;&gt;#&lt;/a&gt;  &lt;code&gt;v-else-if&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;顾名思义， &lt;code&gt;v-else-if&lt;/code&gt;  提供的是相应于  &lt;code&gt;v-if&lt;/code&gt;  的 “else if 区块”。它可以连续多次重复使用：&lt;/p&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div v-if=&amp;quot;type === &#39;A&#39;&amp;quot;&amp;gt;
+  A
+&amp;lt;/div&amp;gt;
+&amp;lt;div v-else-if=&amp;quot;type === &#39;B&#39;&amp;quot;&amp;gt;
+  B
+&amp;lt;/div&amp;gt;
+&amp;lt;div v-else-if=&amp;quot;type === &#39;C&#39;&amp;quot;&amp;gt;
+  C
+&amp;lt;/div&amp;gt;
+&amp;lt;div v-else&amp;gt;
+  Not A/B/C
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;template-上的-v-if&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#template-上的-v-if&#34;&gt;#&lt;/a&gt;  &lt;code&gt;&amp;lt;template&amp;gt;&lt;/code&gt;  上的  &lt;code&gt;v-if&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;因为  &lt;code&gt;v-if&lt;/code&gt;  是一个指令，他必须依附于某个元素。但如果我们想要切换不止一个元素呢？在这种情况下我们可以在一个  &lt;code&gt;&amp;lt;template&amp;gt;&lt;/code&gt;  元素上使用  &lt;code&gt;v-if&lt;/code&gt; ，这只是一个不可见的包装器元素，最后渲染的结果并不会包含这个  &lt;code&gt;&amp;lt;template&amp;gt;&lt;/code&gt;  元素。&lt;/p&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;template v-if=&amp;quot;ok&amp;quot;&amp;gt;
+  &amp;lt;h1&amp;gt;Title&amp;lt;/h1&amp;gt;
+  &amp;lt;p&amp;gt;Paragraph 1&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Paragraph 2&amp;lt;/p&amp;gt;
+&amp;lt;/template&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;v-else&lt;/code&gt;  和  &lt;code&gt;v-else-if&lt;/code&gt;  也可以在  &lt;code&gt;&amp;lt;template&amp;gt;&lt;/code&gt;  上使用。&lt;/p&gt;
+&lt;h2 id=&#34;v-show&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#v-show&#34;&gt;#&lt;/a&gt;  &lt;code&gt;v-show&lt;/code&gt; []&lt;/h2&gt;
+&lt;p&gt;另一个可以用来按条件显示一个元素的指令是  &lt;code&gt;v-show&lt;/code&gt; 。其用法基本一样：&lt;/p&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;h1 v-show=&amp;quot;ok&amp;quot;&amp;gt;Hello!&amp;lt;/h1&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;不同之处在于  &lt;code&gt;v-show&lt;/code&gt;  会在 DOM 渲染中保留该元素； &lt;code&gt;v-show&lt;/code&gt;  仅切换了该元素上名为  &lt;code&gt;display&lt;/code&gt;  的 CSS 属性。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;v-show&lt;/code&gt;  不支持在  &lt;code&gt;&amp;lt;template&amp;gt;&lt;/code&gt;  元素上使用，也不能和  &lt;code&gt;v-else&lt;/code&gt;  搭配使用。&lt;/p&gt;
+&lt;h2 id=&#34;v-if-vs-v-show&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#v-if-vs-v-show&#34;&gt;#&lt;/a&gt;  &lt;code&gt;v-if&lt;/code&gt;  vs.  &lt;code&gt;v-show&lt;/code&gt; []&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;v-if&lt;/code&gt;  是 “真实的” 按条件渲染，因为它确保了在切换时，条件区块内的事件监听器和子组件都会被销毁与重建。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;v-if&lt;/code&gt;  也是&lt;strong&gt;惰性&lt;/strong&gt;的：如果在初次渲染时条件值为 false，则不会做任何事。条件区块只有当条件首次变为 true 时才被渲染。&lt;/p&gt;
+&lt;p&gt;相比之下， &lt;code&gt;v-show&lt;/code&gt;  简单许多，元素无论初始条件如何，始终会被渲染，只有 CSS  &lt;code&gt;display&lt;/code&gt;  属性会被切换。&lt;/p&gt;
+&lt;p&gt;总的来说， &lt;code&gt;v-if&lt;/code&gt;  有&lt;strong&gt;更高的切换开销&lt;/strong&gt;，而  &lt;code&gt;v-show&lt;/code&gt;  有&lt;strong&gt;更高的初始渲染开销&lt;/strong&gt;。因此，如果需要频繁切换，则使用  &lt;code&gt;v-show&lt;/code&gt;  较好；如果在运行时绑定条件很少改变，则  &lt;code&gt;v-if&lt;/code&gt;  会更合适。&lt;/p&gt;
+&lt;h2 id=&#34;v-if-和-v-for&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#v-if-和-v-for&#34;&gt;#&lt;/a&gt;  &lt;code&gt;v-if&lt;/code&gt;  和  &lt;code&gt;v-for&lt;/code&gt; []&lt;/h2&gt;
+&lt;p&gt;警告&lt;/p&gt;
+&lt;p&gt;同时使用  &lt;code&gt;v-if&lt;/code&gt;  和  &lt;code&gt;v-for&lt;/code&gt;  是&lt;strong&gt;不推荐的&lt;/strong&gt;，因为这样二者的优先级不明显。请查看&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbi52dWVqcy5vcmcvc3R5bGUtZ3VpZGUvcnVsZXMtZXNzZW50aWFsLmh0bWwjYXZvaWQtdi1pZi13aXRoLXYtZm9y&#34;&gt;风格指南&lt;/span&gt;获得更多信息。&lt;/p&gt;
+&lt;p&gt;当  &lt;code&gt;v-if&lt;/code&gt;  和  &lt;code&gt;v-for&lt;/code&gt;  同时存在于一个元素上的时候， &lt;code&gt;v-if&lt;/code&gt;  会首先被执行。请查看&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbi52dWVqcy5vcmcvZ3VpZGUvZXNzZW50aWFscy9saXN0Lmh0bWwjdi1mb3Itd2l0aC12LWlm&#34;&gt;列表渲染指南&lt;/span&gt;获取更多细节。&lt;/p&gt;
+&lt;h1 id=&#34;列表渲染&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列表渲染&#34;&gt;#&lt;/a&gt; 列表渲染&lt;/h1&gt;
+&lt;h2 id=&#34;v-for&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#v-for&#34;&gt;#&lt;/a&gt;  &lt;code&gt;v-for&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;在  &lt;code&gt;v-for&lt;/code&gt;  块中可以完整地访问父作用域内的属性和变量。 &lt;code&gt;v-for&lt;/code&gt;  也支持使用可选的第二个参数表示当前项的位置索引。&lt;/p&gt;
+&lt;p&gt;js&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const parentMessage = ref(&#39;Parent&#39;)
+const items = ref([&amp;#123; message: &#39;Foo&#39; &amp;#125;, &amp;#123; message: &#39;Bar&#39; &amp;#125;])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;li v-for=&amp;quot;(item, index) in items&amp;quot;&amp;gt;
+  &amp;#123;&amp;#123; parentMessage &amp;#125;&amp;#125; - &amp;#123;&amp;#123; index &amp;#125;&amp;#125; - &amp;#123;&amp;#123; item.message &amp;#125;&amp;#125;
+&amp;lt;/li&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;使用解构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用解构&#34;&gt;#&lt;/a&gt; 使用解构&lt;/h3&gt;
+&lt;p&gt;注意  &lt;code&gt;v-for&lt;/code&gt;  是如何对应  &lt;code&gt;forEach&lt;/code&gt;  回调的函数签名的。实际上，你也可以在定义  &lt;code&gt;v-for&lt;/code&gt;  的变量别名时&lt;strong&gt;使用解构&lt;/strong&gt;，和解构函数参数类似：&lt;/p&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;li v-for=&amp;quot;&amp;#123; message &amp;#125; in items&amp;quot;&amp;gt;
+	// message是item的属性名，可解构
+  &amp;#123;&amp;#123; message &amp;#125;&amp;#125;
+&amp;lt;/li&amp;gt;
+
+&amp;lt;!-- 有 index 索引时 --&amp;gt;
+&amp;lt;li v-for=&amp;quot;(&amp;#123; message &amp;#125;, index) in items&amp;quot;&amp;gt;
+  &amp;#123;&amp;#123; message &amp;#125;&amp;#125; &amp;#123;&amp;#123; index &amp;#125;&amp;#125;
+&amp;lt;/li&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;v-for-与对象&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#v-for-与对象&#34;&gt;#&lt;/a&gt;  &lt;code&gt;v-for&lt;/code&gt;  与对象&lt;/h2&gt;
+&lt;p&gt;你也可以使用  &lt;code&gt;v-for&lt;/code&gt;  来遍历一个对象的所有属性。遍历的顺序会基于对该对象调用  &lt;code&gt;Object.values()&lt;/code&gt;  的返回值来决定。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;li v-for=&amp;quot;(value, key, index) in myObject&amp;quot;&amp;gt;
+  &amp;#123;&amp;#123; index &amp;#125;&amp;#125;. &amp;#123;&amp;#123; key &amp;#125;&amp;#125;: &amp;#123;&amp;#123; value &amp;#125;&amp;#125;
+&amp;lt;/li&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;在-v-for-里使用范围值&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#在-v-for-里使用范围值&#34;&gt;#&lt;/a&gt; 在  &lt;code&gt;v-for&lt;/code&gt;  里使用范围值&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;v-for&lt;/code&gt;  可以直接接受一个整数值。在这种用例中，会将该模板基于  &lt;code&gt;1...n&lt;/code&gt;  的取值范围重复多次。&lt;/p&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;span v-for=&amp;quot;n in 10&amp;quot;&amp;gt;&amp;#123;&amp;#123; n &amp;#125;&amp;#125;&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;注意此处  &lt;code&gt;n&lt;/code&gt;  的初值是从  &lt;code&gt;1&lt;/code&gt;  开始而非  &lt;code&gt;0&lt;/code&gt; 。&lt;/p&gt;
+&lt;h2 id=&#34;通过-key-管理状态&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#通过-key-管理状态&#34;&gt;#&lt;/a&gt; 通过 key 管理状态&lt;/h2&gt;
+&lt;p&gt;Vue 默认按照 “就地更新” 的策略来更新通过  &lt;code&gt;v-for&lt;/code&gt;  渲染的元素列表。当数据项的顺序改变时，Vue 不会随之移动 DOM 元素的顺序，而是就地更新每个元素，确保它们在原本指定的索引位置上渲染。&lt;/p&gt;
+&lt;p&gt;默认模式是高效的，但&lt;strong&gt;只适用于列表渲染输出的结果不依赖子组件状态或者临时 DOM 状态 (例如表单输入值) 的情况&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;为了给 Vue 一个提示，以便它可以跟踪每个节点的标识，&lt;strong&gt;从而重用和重新排序现有的元素&lt;/strong&gt;，你需要为每个元素对应的块提供一个唯一的  &lt;code&gt;key&lt;/code&gt;  attribute：&lt;/p&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div v-for=&amp;quot;item in items&amp;quot; :key=&amp;quot;item.id&amp;quot;&amp;gt;
+  &amp;lt;!-- 内容 --&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;注意&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;key&lt;/code&gt;  在这里是一个通过  &lt;code&gt;v-bind&lt;/code&gt;  绑定的特殊 attribute。请不要和&lt;a href=&#34;https://cn.vuejs.org/guide/essentials/list.html#v-for-with-an-object&#34;&gt;在  &lt;code&gt;v-for&lt;/code&gt;  中使用对象&lt;/a&gt;里所提到的对象属性名相混淆。&lt;/p&gt;
 </content>
         <category term="Vue3" />
         <updated>2024-08-16T14:55:05.000Z</updated>
