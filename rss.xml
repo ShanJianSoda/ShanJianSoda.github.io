@@ -5,15 +5,15 @@
         <link>http://example.com</link>
         <description></description>
         <language>en</language>
-        <pubDate>Fri, 16 Aug 2024 22:55:05 +0800</pubDate>
-        <lastBuildDate>Fri, 16 Aug 2024 22:55:05 +0800</lastBuildDate>
+        <pubDate>Mon, 26 Aug 2024 08:48:36 +0800</pubDate>
+        <lastBuildDate>Mon, 26 Aug 2024 08:48:36 +0800</lastBuildDate>
         <category>Java</category>
         <category>Vue3</category>
         <category>GLM</category>
         <category>dp</category>
-        <category>git</category>
         <category>位运算</category>
         <category>分类讨论</category>
+        <category>git</category>
         <category>redis</category>
         <category>lunix</category>
         <category>机器学习</category>
@@ -22,9 +22,335 @@
         <category>AI</category>
         <category>Vue.js</category>
         <category>微信小程序</category>
+        <category>工作总结</category>
         <category>面试</category>
         <category>chatgpt</category>
         <category>设计模式</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/08/26/%E7%AC%AC%E4%B8%80%E5%91%A8%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93/</guid>
+            <title>第一周工作总结</title>
+            <link>http://example.com/2024/08/26/%E7%AC%AC%E4%B8%80%E5%91%A8%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93/</link>
+            <category>工作总结</category>
+            <pubDate>Mon, 26 Aug 2024 08:48:36 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;环境部署&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#环境部署&#34;&gt;#&lt;/a&gt; 环境部署&lt;/h2&gt;
+&lt;h2 id=&#34;gerrit-以及连接公司仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gerrit-以及连接公司仓库&#34;&gt;#&lt;/a&gt; gerrit 以及连接公司仓库&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ git status
+On branch master
+Your branch is up to date with &#39;origin/master&#39;.
+
+Changes to be committed:
+  (use &amp;quot;git restore --staged &amp;lt;file&amp;gt;...&amp;quot; to unstage)
+        new file:   chenhang/.gitignore
+        new file:   chenhang/.mvn/wrapper/maven-wrapper.properties
+        new file:   chenhang/mvnw
+        new file:   chenhang/mvnw.cmd
+        new file:   chenhang/pom.xml
+        new file:   chenhang/src/main/java/com/chenhang/ChenhangApplication.java
+        new file:   chenhang/src/main/java/com/chenhang/config/RedisConfig.java
+        new file:   chenhang/src/main/java/com/chenhang/controller/ArticleController.java
+        new file:   chenhang/src/main/java/com/chenhang/controller/UserController.java
+        new file:   chenhang/src/main/java/com/chenhang/mapper/ArticleMapper.java
+        new file:   chenhang/src/main/java/com/chenhang/mapper/UserMapper.java
+        new file:   chenhang/src/main/java/com/chenhang/model/Article.java
+        new file:   chenhang/src/main/java/com/chenhang/model/User.java
+        new file:   chenhang/src/main/java/com/chenhang/service/ArticleService.java
+        new file:   chenhang/src/main/java/com/chenhang/service/UserService.java
+        new file:   chenhang/src/main/java/com/chenhang/service/impl/ArticleServiceImpl.java
+        new file:   chenhang/src/main/java/com/chenhang/service/impl/UserServiceImpl.java
+        new file:   chenhang/src/main/java/com/chenhang/utils/Result.java
+        new file:   chenhang/src/main/java/com/chenhang/utils/ResultCodeEnum.java
+        new file:   chenhang/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports
+        new file:   chenhang/src/main/resources/application.yaml
+        new file:   chenhang/src/main/resources/db/migration/R1.0.1__Add_Posts.sql
+        new file:   chenhang/src/main/resources/mapper/ArticleMapper.xml
+        new file:   chenhang/src/main/resources/mapper/UserMapper.xml
+        new file:   chenhang/src/test/java/com/chenhang/ChenhangApplicationTests.java
+
+
+19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ git restore --staged chenhang/
+
+19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ git status
+On branch master
+Your branch is up to date with &#39;origin/master&#39;.
+
+Untracked files:
+  (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to include in what will be committed)
+        chenhang/
+
+nothing added to commit but untracked files present (use &amp;quot;git add&amp;quot; to track)
+
+19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ git add chenhang/
+warning: in the working copy of &#39;chenhang/.gitignore&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/.mvn/wrapper/maven-wrapper.properties&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/mvnw&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/mvnw.cmd&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/pom.xml&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/src/main/java/com/chenhang/ChenhangApplication.java&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/src/main/java/com/chenhang/model/Article.java&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/src/main/java/com/chenhang/model/User.java&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/src/main/resources/mapper/UserMapper.xml&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/src/test/java/com/chenhang/ChenhangApplicationTests.java&#39;, LF will be replaced by CRLF the next time Git touches it
+
+# 提交
+19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ git commit -m &amp;quot;add demo&amp;quot;
+[master d268307] add demo
+ 25 files changed, 1342 insertions(+)
+ create mode 100644 chenhang/.gitignore
+ create mode 100644 chenhang/.mvn/wrapper/maven-wrapper.properties
+ create mode 100644 chenhang/mvnw
+ create mode 100644 chenhang/mvnw.cmd
+ create mode 100644 chenhang/pom.xml
+ create mode 100644 chenhang/src/main/java/com/chenhang/ChenhangApplication.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/config/RedisConfig.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/controller/ArticleController.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/controller/UserController.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/mapper/ArticleMapper.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/mapper/UserMapper.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/model/Article.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/model/User.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/service/ArticleService.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/service/UserService.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/service/impl/ArticleServiceImpl.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/service/impl/UserServiceImpl.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/utils/Result.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/utils/ResultCodeEnum.java
+ create mode 100644 chenhang/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports
+ create mode 100644 chenhang/src/main/resources/application.yaml
+ create mode 100644 chenhang/src/main/resources/db/migration/R1.0.1__Add_Posts.sql
+ create mode 100644 chenhang/src/main/resources/mapper/ArticleMapper.xml
+ create mode 100644 chenhang/src/main/resources/mapper/UserMapper.xml
+ create mode 100644 chenhang/src/test/java/com/chenhang/ChenhangApplicationTests.java
+
+19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ gitdir=$(git rev-parse --git-dir); scp -p -P 29418 henhang@review.tpson.cn:hooks/commit-msg $&amp;#123;gitdir&amp;#125;/hooks/
+subsystem request failed on channel 0
+scp: Connection closed
+
+# -O open 打开此（好吧我也不知道）
+19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ gitdir=$(git rev-parse --git-dir); scp -O -P 29418 henhang@review.tpson.cn:hooks/commit-msg $&amp;#123;gitdir&amp;#125;/hooks/
+commit-msg                                                            100% 4693    44.7KB/s   00:00
+
+# 提交 -m 描述
+19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ git commit --amend
+[master 7ec50ca] add demo
+ Date: Fri Aug 23 16:10:50 2024 +0800
+ 25 files changed, 1342 insertions(+)
+ create mode 100644 chenhang/.gitignore
+ create mode 100644 chenhang/.mvn/wrapper/maven-wrapper.properties
+ create mode 100644 chenhang/mvnw
+ create mode 100644 chenhang/mvnw.cmd
+ create mode 100644 chenhang/pom.xml
+ create mode 100644 chenhang/src/main/java/com/chenhang/ChenhangApplication.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/config/RedisConfig.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/controller/ArticleController.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/controller/UserController.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/mapper/ArticleMapper.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/mapper/UserMapper.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/model/Article.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/model/User.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/service/ArticleService.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/service/UserService.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/service/impl/ArticleServiceImpl.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/service/impl/UserServiceImpl.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/utils/Result.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/utils/ResultCodeEnum.java
+ create mode 100644 chenhang/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports
+ create mode 100644 chenhang/src/main/resources/application.yaml
+ create mode 100644 chenhang/src/main/resources/db/migration/R1.0.1__Add_Posts.sql
+ create mode 100644 chenhang/src/main/resources/mapper/ArticleMapper.xml
+ create mode 100644 chenhang/src/main/resources/mapper/UserMapper.xml
+ create mode 100644 chenhang/src/test/java/com/chenhang/ChenhangApplicationTests.java
+
+# 推送
+19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ git push origin HEAD:refs/for/master
+Enumerating objects: 53, done.
+Counting objects: 100% (53/53), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (42/42), done.
+Writing objects: 100% (52/52), 17.40 KiB | 685.00 KiB/s, done.
+Total 52 (delta 8), reused 1 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (8/8)
+remote: Processing changes: new: 1, refs: 1, done
+remote:
+remote: New Changes:
+remote:   http://review.tpson.cn/85511 add demo
+remote:
+To ssh://review.tpson.cn:29418/backend_junior_study
+ * [new reference]   HEAD -&amp;gt; refs/for/master
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;任务&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#任务&#34;&gt;#&lt;/a&gt; 任务&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240826090123972.png&#34; alt=&#34;image-20240826090123972&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;spring-boot常用依赖&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#spring-boot常用依赖&#34;&gt;#&lt;/a&gt; spring boot 常用依赖&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbG91ZC50ZW5jZW50LmNvbS9kZXZlbG9wZXIvYXJ0aWNsZS8yNDMyNzA0&#34;&gt;SpringBoot 项目常用的 pom.xml 依赖 - 腾讯云开发者社区 - 腾讯云 (tencent.com)&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;mybatis-plus-生成代码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mybatis-plus-生成代码&#34;&gt;#&lt;/a&gt; Mybatis Plus 生成代码&lt;/h3&gt;
+&lt;h3 id=&#34;flyway&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#flyway&#34;&gt;#&lt;/a&gt; flyway&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2szMTYzNzgwODUvYXJ0aWNsZS9kZXRhaWxzLzEzNDg0ODk3MQ==&#34;&gt;Spring Boot 3.0 : 集成 flyway 数据库版本控制工具_springboot3 flyway-CSDN 博客&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;redis&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#redis&#34;&gt;#&lt;/a&gt; Redis&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzc0OTgwNS9hcnRpY2xlL2RldGFpbHMvMTMxMzk5NTE2&#34;&gt;Spring Boot 整合 Redis 全面教程：从配置到使用_springboot 配置 redis-CSDN 博客&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;接口增删改查&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#接口增删改查&#34;&gt;#&lt;/a&gt; 接口增删改查&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5NzE1MDAwL2FydGljbGUvZGV0YWlscy8xMjAwOTAwMzM=&#34;&gt;mybatis-plus 中 wrapper 的用法（详细）_mybatisplus wrapper-CSDN 博客&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/08/21/MyBatis-Plus-Learn/</guid>
+            <title>MyBatis-Plus Learn</title>
+            <link>http://example.com/2024/08/21/MyBatis-Plus-Learn/</link>
+            <pubDate>Wed, 21 Aug 2024 10:14:26 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;install&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#install&#34;&gt;#&lt;/a&gt; install&lt;/h2&gt;
+&lt;p&gt;Spring Boot3&lt;/p&gt;
+&lt;p&gt;maven&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;com.baomidou&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;mybatis-plus-boot-starter&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;3.5.7&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;config&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#config&#34;&gt;#&lt;/a&gt; config&lt;/h2&gt;
+&lt;p&gt;配置 MapperScan 注解&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@SpringBootApplication
+@MapperScan(&amp;quot;com.baomidou.mybatisplus.samples.quickstart.mapper&amp;quot;)
+public class Application &amp;#123;
+
+    public static void main(String[] args) &amp;#123;
+        SpringApplication.run(Application.class, args);
+    &amp;#125;
+
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;yaml 文件配置&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;server:
+  port: 8080   #  配置启动端口号
+ 
+mybatis:
+  config-location: classpath:mybatis.cfg.xml    #  mybatis主配置文件所在路径
+  type-aliases-package: com.demo.drools.entity  #  定义所有操作类的别名所在包
+  mapper-locations:                             #  所有的mapper映射文件
+    - classpath:mapper/*.xml
+ 
+ 
+spring: #springboot的配置
+  datasource: #定义数据源
+    #127.0.0.1为本机测试的ip，3306是mysql的端口号。serverTimezone是定义时区，照抄就好，mysql高版本需要定义这些东西
+    #useSSL也是某些高版本mysql需要问有没有用SSL连接
+    url: jdbc:mysql://127.0.0.1:3306/test?serverTimezone=GMT%2B8&amp;amp;useSSL=FALSE
+    username: root  #数据库用户名，root为管理员
+    password: 123456 #该数据库用户的密码
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+ 
+# mybatis-plus相关配置
+mybatis-plus:
+  # xml扫描，多个目录用逗号或者分号分隔（告诉 Mapper 所对应的 XML 文件位置）
+  mapper-locations: classpath:mapper/*.xml
+  # 以下配置均有默认值,可以不设置
+  global-config:
+    db-config:
+      #主键类型 AUTO:&amp;quot;数据库ID自增&amp;quot; INPUT:&amp;quot;用户输入ID&amp;quot;,ID_WORKER:&amp;quot;全局唯一ID (数字类型唯一ID)&amp;quot;, UUID:&amp;quot;全局唯一ID UUID&amp;quot;;
+      id-type: auto
+      #字段策略 IGNORED:&amp;quot;忽略判断&amp;quot;  NOT_NULL:&amp;quot;非 NULL 判断&amp;quot;)  NOT_EMPTY:&amp;quot;非空判断&amp;quot;
+      field-strategy: NOT_EMPTY
+      #数据库类型
+      db-type: MYSQL
+  configuration:
+    # 是否开启自动驼峰命名规则映射:从数据库列名到Java属性驼峰命名的类似映射
+    map-underscore-to-camel-case: true
+    # 如果查询结果中包含空值的列，则 MyBatis 在映射的时候，不会映射这个字段
+    call-setters-on-nulls: true
+    # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;指南&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#指南&#34;&gt;#&lt;/a&gt; 指南&lt;/h1&gt;
+&lt;h2 id=&#34;持久层接口&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#持久层接口&#34;&gt;#&lt;/a&gt; 持久层接口&lt;/h2&gt;
+&lt;h3 id=&#34;service-interface&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#service-interface&#34;&gt;#&lt;/a&gt; Service Interface&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRlZS5jb20vYmFvbWlkb3UvbXliYXRpcy1wbHVzL2Jsb2IvMy4wL215YmF0aXMtcGx1cy1leHRlbnNpb24vc3JjL21haW4vamF2YS9jb20vYmFvbWlkb3UvbXliYXRpc3BsdXMvZXh0ZW5zaW9uL3NlcnZpY2UvSVNlcnZpY2UuamF2YQ==&#34;&gt;IService&lt;/span&gt; 是 MyBatis-Plus 提供的一个通用 Service 层接口，它封装了常见的 CRUD 操作，包括插入、删除、查询和分页等。通过继承 IService 接口，可以快速实现对数据库的基本操作，同时保持代码的简洁性和可维护性。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240821102620702.png&#34; alt=&#34;image-20240821102620702&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;mapper-interface&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mapper-interface&#34;&gt;#&lt;/a&gt; Mapper Interface&lt;/h3&gt;
+&lt;p&gt;BaseMapper 是 Mybatis-Plus 提供的一个通用 Mapper 接口，它封装了一系列常用的数据库操作方法，包括增、删、改、查等。通过继承 BaseMapper，开发者可以快速地对数据库进行操作，而无需编写繁琐的 SQL 语句。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240821102639995.png&#34; alt=&#34;image-20240821102639995&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;mapper-层选装件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mapper-层选装件&#34;&gt;#&lt;/a&gt; Mapper 层选装件&lt;/h3&gt;
+&lt;p&gt;选装件是 Mybatis-Plus 提供的一些扩展方法，它们位于  &lt;code&gt;com.baomidou.mybatisplus.extension.injector.methods&lt;/code&gt;  包下。这些方法需要配合&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYW9taWRvdS5jb20vZ3VpZGVzL3NxbC1pbmplY3Rvcg==&#34;&gt; Sql 注入器&lt;/span&gt;使用，以扩展 Mapper 接口的功能。&lt;/p&gt;
+&lt;p&gt;使用这些选装件前，需要确保已经正确配置了 Sql 注入器。更多使用案例和详细信息，可以参考&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2Jhb21pZG91L215YmF0aXMtcGx1cy1zYW1wbGVzL3RyZWUvbWFzdGVyL215YmF0aXMtcGx1cy1zYW1wbGUtc3FsLWluamVjdG9y&#34;&gt;官方案例&lt;/span&gt;和&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2Jhb21pZG91L215YmF0aXMtcGx1cy90cmVlLzMuMC9teWJhdGlzLXBsdXMtZXh0ZW5zaW9uL3NyYy9tYWluL2phdmEvY29tL2Jhb21pZG91L215YmF0aXNwbHVzL2V4dGVuc2lvbi9pbmplY3Rvci9tZXRob2Rz&#34;&gt;源码注释&lt;/span&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;alwaysupdatesomecolumnbyid&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#alwaysupdatesomecolumnbyid&#34;&gt;#&lt;/a&gt; alwaysUpdateSomeColumnById&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;功能&lt;/strong&gt;：这个方法用于在更新操作时，无论实体对象的某些字段是否有变化，都会强制更新这些字段。这在某些业务场景下非常有用，比如更新时间戳字段，确保每次更新操作都会更新该字段。&lt;br /&gt;
+&lt;strong&gt;使用场景&lt;/strong&gt;：当你需要在每次更新记录时，都更新某些特定的字段（如更新时间、版本号等），即使这些字段在实体对象中没有变化&lt;/p&gt;
+&lt;h4 id=&#34;insertbatchsomecolumn&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#insertbatchsomecolumn&#34;&gt;#&lt;/a&gt; insertBatchSomeColumn&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;功能&lt;/strong&gt;：这个方法用于批量插入实体对象，但只插入实体对象中指定的某些字段。这在需要批量插入数据，但又不希望插入所有字段时非常有用。&lt;br /&gt;
+&lt;strong&gt;使用场景&lt;/strong&gt;：当你需要批量插入数据，并且希望只插入实体对象中的部分字段，以提高插入效率或保护敏感数据。&lt;/p&gt;
+&lt;h4 id=&#34;logicdeletebyidwithfill&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#logicdeletebyidwithfill&#34;&gt;#&lt;/a&gt; logicDeleteByIdWithFill&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;功能&lt;/strong&gt;：这个方法用于逻辑删除记录，并填充实体对象中的某些字段。逻辑删除意味着不是真正从数据库中删除记录，而是通过更新某个字段（如  &lt;code&gt;deleted&lt;/code&gt;  字段）来标记记录已被删除。&lt;br /&gt;
+&lt;strong&gt;使用场景&lt;/strong&gt;：当你需要实现逻辑删除功能，并且希望在删除操作时自动填充实体对象中的某些字段（如删除时间、删除人等）。&lt;/p&gt;
+&lt;h3 id=&#34;其他&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#其他&#34;&gt;#&lt;/a&gt; 其他&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240821104004707.png&#34; alt=&#34;image-20240821104004707&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;条件构造器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#条件构造器&#34;&gt;#&lt;/a&gt; 条件构造器&lt;/h2&gt;
+&lt;p&gt;MyBatis-Plus 提供了一套强大的条件构造器（Wrapper），用于构建复杂的数据库查询条件。Wrapper 类允许开发者以链式调用的方式构造查询条件，无需编写繁琐的 SQL 语句，从而提高开发效率并减少 SQL 注入的风险。&lt;/p&gt;
+&lt;h3 id=&#34;条件构造器关系介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#条件构造器关系介绍&#34;&gt;#&lt;/a&gt; 条件构造器关系介绍&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240821104619643.png&#34; alt=&#34;image-20240821104619643&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;功能详解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#功能详解&#34;&gt;#&lt;/a&gt; 功能详解&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;allEq
+eq
+ne
+gt // 大于
+ge // 大于等于
+ly // 小于
+le // 小于等于
+between
+notBetween
+like
+notLike
+likeLeft // 右模糊匹配条件
+likeRight
+notLikeLeft
+notLikeRight
+isNull
+in
+notIn
+inSql
+notInSql
+eqSQL
+...
+groupBy
+orderByAsc
+OrderByDesc
+orderBy
+having
+func
+or
+and
+nested // 创建一个独立的查询条件块，不带默认的 AND 或 OR 逻辑
+last // 允许你直接在查询的最后添加一个 SQL 片段，而不受 MyBatis-Plus 的查询优化规则影响。
+exists // EXISTS 的子查询 不返回具体的数据，只返回所查询数据的行数
+select
+set // 设置更新语句中的 SET 字段
+setSql
+setIncrBy // 允许你指定一个字段，并使其在数据库中的值增加指定的数值
+setDecrBy
+lambda
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img data-src=&#34;42961fa25b28a23db651401b508ffd50.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;使用提示&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用提示&#34;&gt;#&lt;/a&gt; 使用提示&lt;/h3&gt;
+&lt;p&gt;通过使用 MyBatis-Plus 的 Wrapper 条件构造器，开发者可以更加高效地构建复杂的数据库查询条件，同时保持代码的简洁性和安全性。以下是一些注意事项与推荐做法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在使用 Wrapper 时，尽量使用 &lt;strong&gt;Lambda 表达式&lt;/strong&gt;来避免硬编码字段名，这样可以提高代码的可读性和可维护性。&lt;/li&gt;
+&lt;li&gt;Wrapper 支持&lt;strong&gt;链式调用&lt;/strong&gt;，可以组合多个条件，如  &lt;code&gt;and&lt;/code&gt; 、 &lt;code&gt;or&lt;/code&gt;  等逻辑操作符。&lt;/li&gt;
+&lt;li&gt;在更新操作中使用 UpdateWrapper 或 LambdaUpdateWrapper 时，可以省略实体对象，直接在 Wrapper 中设置更新字段。&lt;/li&gt;
+&lt;li&gt;注意 Wrapper 的线程安全性，通常在每次使用时创建新的 Wrapper 实例。&lt;/li&gt;
+&lt;li&gt;在使用 MyBatis-Plus 的 Wrapper 时，应避免将前端动态参数直接拼接到 SQL 片段中，以防止 SQL 注入攻击。MyBatis-Plus 提供了安全的参数绑定方式，如使用  &lt;code&gt;eq&lt;/code&gt; 、 &lt;code&gt;apply&lt;/code&gt;  等方法，它们会自动处理参数绑定，避免 SQL 注入风险。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;参考&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYW9taWRvdS5jb20vcmVmZXJlbmNlL2Fubm90YXRpb24v&#34;&gt;注解配置 | MyBatis-Plus (baomidou.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMjgxNjQ5L2FydGljbGUvZGV0YWlscy8xMTA1MTgyODk=&#34;&gt;SpringBoot 整合 Mybatis-plus 及用法_springboot 引入 mybatis-plus-CSDN 博客&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/2024/08/16/Learn-Vue3/</guid>
             <title>Learn Vue3</title>
@@ -786,10 +1112,12 @@ CREATE TABLE image(
 &lt;h3 id=&#34;to-do-需求分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#to-do-需求分析&#34;&gt;#&lt;/a&gt; TO DO 需求分析&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;登陆 / 注册&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;邮箱登陆&lt;/li&gt;
+&lt;li&gt;邮箱登陆（第三方登陆）&lt;/li&gt;
 &lt;li&gt;校验方式&lt;/li&gt;
 &lt;li&gt;密码加密&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;第三方登陆（通过开源项目 JustAuth）&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;63305215.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;委托发布&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;markdown 格式 （存储方式）&lt;/li&gt;
@@ -811,9 +1139,9 @@ CREATE TABLE image(
 &lt;ul class=&#34;task-list&#34;&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_0&#34;&gt; user 加上 头像 id 字段，&lt;/label&gt;&lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_1&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_1&#34;&gt; 委托 加上 浏览量，点赞量，是否开启评论区 字段&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_2&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_2&#34;&gt; 修改后端 pojo 类&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_2&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_2&#34;&gt; 修改后端 pojo 类&lt;/label&gt;&lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_3&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_3&#34;&gt; &lt;s&gt;评论 加上 点赞量 字段&lt;/s&gt;&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_4&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_4&#34;&gt; 加个 user 工具类，只传输不涉及安全的字段（比如不传说邮箱、密码）&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_4&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_4&#34;&gt; 加个 user 工具类，只传输不涉及安全的字段（比如不传输邮箱、密码）&lt;/label&gt;&lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_5&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_5&#34;&gt; 反爬&lt;/label&gt;&lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_6&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_6&#34;&gt; 数据库定期备份&lt;/label&gt;&lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_7&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_7&#34;&gt; 将图片文件存储在服务器的文件系统中，对上传的文件名进行清理，避免脚本注入。&lt;/label&gt;&lt;/li&gt;

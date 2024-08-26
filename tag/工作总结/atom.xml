@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>Chen • Posts by &#34;工作总结&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2024-08-26T00:48:36.000Z</updated>
+    <category term="Java" />
+    <category term="Vue3" />
+    <category term="GLM" />
+    <category term="dp" />
+    <category term="位运算" />
+    <category term="分类讨论" />
+    <category term="git" />
+    <category term="redis" />
+    <category term="lunix" />
+    <category term="机器学习" />
+    <category term="vue3" />
+    <category term="LLM" />
+    <category term="AI" />
+    <category term="Vue.js" />
+    <category term="微信小程序" />
+    <category term="工作总结" />
+    <category term="面试" />
+    <category term="chatgpt" />
+    <category term="设计模式" />
+    <entry>
+        <id>http://example.com/2024/08/26/%E7%AC%AC%E4%B8%80%E5%91%A8%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93/</id>
+        <title>第一周工作总结</title>
+        <link rel="alternate" href="http://example.com/2024/08/26/%E7%AC%AC%E4%B8%80%E5%91%A8%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93/"/>
+        <content type="html">&lt;h2 id=&#34;环境部署&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#环境部署&#34;&gt;#&lt;/a&gt; 环境部署&lt;/h2&gt;
+&lt;h2 id=&#34;gerrit-以及连接公司仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gerrit-以及连接公司仓库&#34;&gt;#&lt;/a&gt; gerrit 以及连接公司仓库&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ git status
+On branch master
+Your branch is up to date with &#39;origin/master&#39;.
+
+Changes to be committed:
+  (use &amp;quot;git restore --staged &amp;lt;file&amp;gt;...&amp;quot; to unstage)
+        new file:   chenhang/.gitignore
+        new file:   chenhang/.mvn/wrapper/maven-wrapper.properties
+        new file:   chenhang/mvnw
+        new file:   chenhang/mvnw.cmd
+        new file:   chenhang/pom.xml
+        new file:   chenhang/src/main/java/com/chenhang/ChenhangApplication.java
+        new file:   chenhang/src/main/java/com/chenhang/config/RedisConfig.java
+        new file:   chenhang/src/main/java/com/chenhang/controller/ArticleController.java
+        new file:   chenhang/src/main/java/com/chenhang/controller/UserController.java
+        new file:   chenhang/src/main/java/com/chenhang/mapper/ArticleMapper.java
+        new file:   chenhang/src/main/java/com/chenhang/mapper/UserMapper.java
+        new file:   chenhang/src/main/java/com/chenhang/model/Article.java
+        new file:   chenhang/src/main/java/com/chenhang/model/User.java
+        new file:   chenhang/src/main/java/com/chenhang/service/ArticleService.java
+        new file:   chenhang/src/main/java/com/chenhang/service/UserService.java
+        new file:   chenhang/src/main/java/com/chenhang/service/impl/ArticleServiceImpl.java
+        new file:   chenhang/src/main/java/com/chenhang/service/impl/UserServiceImpl.java
+        new file:   chenhang/src/main/java/com/chenhang/utils/Result.java
+        new file:   chenhang/src/main/java/com/chenhang/utils/ResultCodeEnum.java
+        new file:   chenhang/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports
+        new file:   chenhang/src/main/resources/application.yaml
+        new file:   chenhang/src/main/resources/db/migration/R1.0.1__Add_Posts.sql
+        new file:   chenhang/src/main/resources/mapper/ArticleMapper.xml
+        new file:   chenhang/src/main/resources/mapper/UserMapper.xml
+        new file:   chenhang/src/test/java/com/chenhang/ChenhangApplicationTests.java
+
+
+19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ git restore --staged chenhang/
+
+19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ git status
+On branch master
+Your branch is up to date with &#39;origin/master&#39;.
+
+Untracked files:
+  (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to include in what will be committed)
+        chenhang/
+
+nothing added to commit but untracked files present (use &amp;quot;git add&amp;quot; to track)
+
+19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ git add chenhang/
+warning: in the working copy of &#39;chenhang/.gitignore&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/.mvn/wrapper/maven-wrapper.properties&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/mvnw&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/mvnw.cmd&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/pom.xml&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/src/main/java/com/chenhang/ChenhangApplication.java&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/src/main/java/com/chenhang/model/Article.java&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/src/main/java/com/chenhang/model/User.java&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/src/main/resources/mapper/UserMapper.xml&#39;, LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of &#39;chenhang/src/test/java/com/chenhang/ChenhangApplicationTests.java&#39;, LF will be replaced by CRLF the next time Git touches it
+
+# 提交
+19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ git commit -m &amp;quot;add demo&amp;quot;
+[master d268307] add demo
+ 25 files changed, 1342 insertions(+)
+ create mode 100644 chenhang/.gitignore
+ create mode 100644 chenhang/.mvn/wrapper/maven-wrapper.properties
+ create mode 100644 chenhang/mvnw
+ create mode 100644 chenhang/mvnw.cmd
+ create mode 100644 chenhang/pom.xml
+ create mode 100644 chenhang/src/main/java/com/chenhang/ChenhangApplication.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/config/RedisConfig.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/controller/ArticleController.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/controller/UserController.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/mapper/ArticleMapper.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/mapper/UserMapper.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/model/Article.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/model/User.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/service/ArticleService.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/service/UserService.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/service/impl/ArticleServiceImpl.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/service/impl/UserServiceImpl.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/utils/Result.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/utils/ResultCodeEnum.java
+ create mode 100644 chenhang/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports
+ create mode 100644 chenhang/src/main/resources/application.yaml
+ create mode 100644 chenhang/src/main/resources/db/migration/R1.0.1__Add_Posts.sql
+ create mode 100644 chenhang/src/main/resources/mapper/ArticleMapper.xml
+ create mode 100644 chenhang/src/main/resources/mapper/UserMapper.xml
+ create mode 100644 chenhang/src/test/java/com/chenhang/ChenhangApplicationTests.java
+
+19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ gitdir=$(git rev-parse --git-dir); scp -p -P 29418 henhang@review.tpson.cn:hooks/commit-msg $&amp;#123;gitdir&amp;#125;/hooks/
+subsystem request failed on channel 0
+scp: Connection closed
+
+# -O open 打开此（好吧我也不知道）
+19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ gitdir=$(git rev-parse --git-dir); scp -O -P 29418 henhang@review.tpson.cn:hooks/commit-msg $&amp;#123;gitdir&amp;#125;/hooks/
+commit-msg                                                            100% 4693    44.7KB/s   00:00
+
+# 提交 -m 描述
+19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ git commit --amend
+[master 7ec50ca] add demo
+ Date: Fri Aug 23 16:10:50 2024 +0800
+ 25 files changed, 1342 insertions(+)
+ create mode 100644 chenhang/.gitignore
+ create mode 100644 chenhang/.mvn/wrapper/maven-wrapper.properties
+ create mode 100644 chenhang/mvnw
+ create mode 100644 chenhang/mvnw.cmd
+ create mode 100644 chenhang/pom.xml
+ create mode 100644 chenhang/src/main/java/com/chenhang/ChenhangApplication.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/config/RedisConfig.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/controller/ArticleController.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/controller/UserController.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/mapper/ArticleMapper.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/mapper/UserMapper.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/model/Article.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/model/User.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/service/ArticleService.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/service/UserService.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/service/impl/ArticleServiceImpl.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/service/impl/UserServiceImpl.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/utils/Result.java
+ create mode 100644 chenhang/src/main/java/com/chenhang/utils/ResultCodeEnum.java
+ create mode 100644 chenhang/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports
+ create mode 100644 chenhang/src/main/resources/application.yaml
+ create mode 100644 chenhang/src/main/resources/db/migration/R1.0.1__Add_Posts.sql
+ create mode 100644 chenhang/src/main/resources/mapper/ArticleMapper.xml
+ create mode 100644 chenhang/src/main/resources/mapper/UserMapper.xml
+ create mode 100644 chenhang/src/test/java/com/chenhang/ChenhangApplicationTests.java
+
+# 推送
+19625@chenchen MINGW64 /g/TuoShenProjects/backend_junior_study (master)
+$ git push origin HEAD:refs/for/master
+Enumerating objects: 53, done.
+Counting objects: 100% (53/53), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (42/42), done.
+Writing objects: 100% (52/52), 17.40 KiB | 685.00 KiB/s, done.
+Total 52 (delta 8), reused 1 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (8/8)
+remote: Processing changes: new: 1, refs: 1, done
+remote:
+remote: New Changes:
+remote:   http://review.tpson.cn/85511 add demo
+remote:
+To ssh://review.tpson.cn:29418/backend_junior_study
+ * [new reference]   HEAD -&amp;gt; refs/for/master
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;任务&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#任务&#34;&gt;#&lt;/a&gt; 任务&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240826090123972.png&#34; alt=&#34;image-20240826090123972&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;spring-boot常用依赖&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#spring-boot常用依赖&#34;&gt;#&lt;/a&gt; spring boot 常用依赖&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbG91ZC50ZW5jZW50LmNvbS9kZXZlbG9wZXIvYXJ0aWNsZS8yNDMyNzA0&#34;&gt;SpringBoot 项目常用的 pom.xml 依赖 - 腾讯云开发者社区 - 腾讯云 (tencent.com)&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;mybatis-plus-生成代码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mybatis-plus-生成代码&#34;&gt;#&lt;/a&gt; Mybatis Plus 生成代码&lt;/h3&gt;
+&lt;h3 id=&#34;flyway&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#flyway&#34;&gt;#&lt;/a&gt; flyway&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2szMTYzNzgwODUvYXJ0aWNsZS9kZXRhaWxzLzEzNDg0ODk3MQ==&#34;&gt;Spring Boot 3.0 : 集成 flyway 数据库版本控制工具_springboot3 flyway-CSDN 博客&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;redis&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#redis&#34;&gt;#&lt;/a&gt; Redis&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzc0OTgwNS9hcnRpY2xlL2RldGFpbHMvMTMxMzk5NTE2&#34;&gt;Spring Boot 整合 Redis 全面教程：从配置到使用_springboot 配置 redis-CSDN 博客&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;接口增删改查&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#接口增删改查&#34;&gt;#&lt;/a&gt; 接口增删改查&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5NzE1MDAwL2FydGljbGUvZGV0YWlscy8xMjAwOTAwMzM=&#34;&gt;mybatis-plus 中 wrapper 的用法（详细）_mybatisplus wrapper-CSDN 博客&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="工作总结" />
+        <updated>2024-08-26T00:48:36.000Z</updated>
+    </entry>
+</feed>
