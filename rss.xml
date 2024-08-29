@@ -5,11 +5,12 @@
         <link>http://example.com</link>
         <description></description>
         <language>en</language>
-        <pubDate>Mon, 26 Aug 2024 08:48:36 +0800</pubDate>
-        <lastBuildDate>Mon, 26 Aug 2024 08:48:36 +0800</lastBuildDate>
+        <pubDate>Thu, 29 Aug 2024 08:40:45 +0800</pubDate>
+        <lastBuildDate>Thu, 29 Aug 2024 08:40:45 +0800</lastBuildDate>
         <category>Java</category>
         <category>Vue3</category>
         <category>GLM</category>
+        <category>AI_Boot</category>
         <category>dp</category>
         <category>git</category>
         <category>位运算</category>
@@ -18,14 +19,28 @@
         <category>lunix</category>
         <category>机器学习</category>
         <category>vue3</category>
-        <category>LLM</category>
-        <category>AI</category>
         <category>Vue.js</category>
         <category>微信小程序</category>
-        <category>面试</category>
+        <category>LLM</category>
+        <category>AI</category>
         <category>工作总结</category>
+        <category>面试</category>
         <category>chatgpt</category>
         <category>设计模式</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/08/29/Neko-Pardofelis/</guid>
+            <title>Neko Pardofelis</title>
+            <link>http://example.com/2024/08/29/Neko-Pardofelis/</link>
+            <category>AI_Boot</category>
+            <pubDate>Thu, 29 Aug 2024 08:40:45 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;前言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h2&gt;
+&lt;p&gt;继暖言猫猫之后，我看到了好多猫猫，发 * 猫猫，屑屑猫猫…… 诸如此类&lt;/p&gt;
+&lt;p&gt;那么，我也想要一个帕朵儿猫猫！！！&lt;/p&gt;
+&lt;h2 id=&#34;开源项目地址&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#开源项目地址&#34;&gt;#&lt;/a&gt; 开源项目地址&lt;/h2&gt;
+&lt;p&gt;貌似没有……？！&lt;/p&gt;
+&lt;h2 id=&#34;遗憾离场&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#遗憾离场&#34;&gt;#&lt;/a&gt; 遗憾离场&lt;/h2&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/2024/08/26/%E7%AC%AC%E4%B8%80%E5%91%A8%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93/</guid>
             <title>第一周工作总结</title>
@@ -917,7 +932,7 @@ const items = ref([&amp;#123; message: &#39;Foo&#39; &amp;#125;, &amp;#123; mess
 &lt;h2 id=&#34;过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#过程&#34;&gt;#&lt;/a&gt; 过程&lt;/h2&gt;
 &lt;h3 id=&#34;服务器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#服务器&#34;&gt;#&lt;/a&gt; &lt;strong&gt;服务器&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;购买 阿里云服务器&lt;/li&gt;
+&lt;li&gt;购买 阿里云服务器 阿里云的服务器被黑了，遗憾离场&lt;/li&gt;
 &lt;li&gt;连接 xshell（免费版）通过阿里云下载的密钥 xxx.pem&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;安装jdk&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装jdk&#34;&gt;#&lt;/a&gt; &lt;strong&gt;安装 jdk&lt;/strong&gt;&lt;/h3&gt;
@@ -1102,13 +1117,57 @@ CREATE TABLE image(
 ) 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;reids&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#reids&#34;&gt;#&lt;/a&gt; Reids&lt;/h3&gt;
-&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2h3MTU5MzU3Xy9hcnRpY2xlL2RldGFpbHMvMTA4MjU2ODA4&#34;&gt;如何在阿里云服务器上安装 Redis_在阿里云服务器安装 redis-CSDN 博客&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxMTEzMDE2OTIxOC9hcnRpY2xlL2RldGFpbHMvMTA2MzI5NDk0&#34;&gt;Linux 安装 Redis 步骤和 make 遇到的坑 解决方案_make redis-CSDN 博客&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMDI1Nzk4L2FydGljbGUvZGV0YWlscy8xMTY2MTY1MzY=&#34;&gt;*** FATAL CONFIG FILE ERROR *** Reading the configuration file, at line 341 ＞＞＞ ‘set-proc-title yes‘-CSDN 博客&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;后端&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#后端&#34;&gt;#&lt;/a&gt; 后端&lt;/h3&gt;
 &lt;p&gt;spring boot 3.3.2&lt;/p&gt;
 &lt;h4 id=&#34;框架搭建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#框架搭建&#34;&gt;#&lt;/a&gt; 框架搭建&lt;/h4&gt;
 &lt;p&gt;...&lt;/p&gt;
 &lt;h4 id=&#34;依赖导入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#依赖导入&#34;&gt;#&lt;/a&gt; 依赖导入&lt;/h4&gt;
-&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;spring security&lt;/s&gt;&lt;/p&gt;
+&lt;h4 id=&#34;接口&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#接口&#34;&gt;#&lt;/a&gt; 接口&lt;/h4&gt;
+&lt;h5 id=&#34;用户&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用户&#34;&gt;#&lt;/a&gt; 用户&lt;/h5&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_0&#34;&gt; login 返回 user 和 jwt&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_1&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_1&#34;&gt; register&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_2&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_2&#34;&gt; logout 前端清除 jwt&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;委托&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#委托&#34;&gt;#&lt;/a&gt; 委托&lt;/h5&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_3&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_3&#34;&gt; selectAllArticle&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_4&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_4&#34;&gt; selectOneArticle&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_5&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_5&#34;&gt; deleteArticle&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_6&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_6&#34;&gt; updateArticle&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;评论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#评论&#34;&gt;#&lt;/a&gt; 评论&lt;/h5&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_7&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_7&#34;&gt; addComments&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_8&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_8&#34;&gt; deleteComments&lt;/label&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;拦截器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#拦截器&#34;&gt;#&lt;/a&gt; 拦截器&lt;/h4&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_9&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_9&#34;&gt; 敏感词拦截器&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_10&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_10&#34;&gt; 黑名单拦截器&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;to-do-需求分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#to-do-需求分析&#34;&gt;#&lt;/a&gt; TO DO 需求分析&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;登陆 / 注册&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -1119,10 +1178,9 @@ CREATE TABLE image(
 &lt;p&gt;第三方登陆（通过开源项目 JustAuth）&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;63305215.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;委托发布&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;markdown 格式 （存储方式）&lt;/li&gt;
-&lt;li&gt;加上 浏览量，点赞量 字段&lt;/li&gt;
-&lt;li&gt;委托能否存在 redis （内存是否够）&lt;/li&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_11&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_11&#34;&gt; markdown 格式 （存储方式）&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_12&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_12&#34;&gt; 委托能否存在 redis （内存是否够）&lt;/label&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;评论&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;...&lt;/p&gt;
@@ -1137,15 +1195,15 @@ CREATE TABLE image(
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;ect&lt;/strong&gt;&lt;/p&gt;
 &lt;ul class=&#34;task-list&#34;&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_0&#34;&gt; user 加上 头像 id 字段，&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_1&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_1&#34;&gt; 委托 加上 浏览量，点赞量，是否开启评论区 字段&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_2&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_2&#34;&gt; 修改后端 pojo 类&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_3&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_3&#34;&gt; &lt;s&gt;评论 加上 点赞量 字段&lt;/s&gt;&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_4&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_4&#34;&gt; 加个 user 工具类，只传输不涉及安全的字段（比如不传输邮箱、密码）&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_5&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_5&#34;&gt; 反爬&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_6&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_6&#34;&gt; 数据库定期备份&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_7&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_7&#34;&gt; 将图片文件存储在服务器的文件系统中，对上传的文件名进行清理，避免脚本注入。&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_8&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_8&#34;&gt; 背景动效（固定斜纹 + 轮动图片）&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_13&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_13&#34;&gt; user 加上 头像 id 字段，&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_14&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_14&#34;&gt; 委托 加上 浏览量，点赞量，是否开启评论区 字段&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_15&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_15&#34;&gt; 修改后端 pojo 类&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_16&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_16&#34;&gt; &lt;s&gt;评论 加上 点赞量 字段&lt;/s&gt;&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_17&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_17&#34;&gt; 加个 user 工具类，只传输不涉及安全的字段（比如不传输邮箱、密码）&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_18&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_18&#34;&gt; 反爬&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_19&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_19&#34;&gt; 数据库定期备份&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_20&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_20&#34;&gt; 将图片文件存储在服务器的文件系统中，对上传的文件名进行清理，避免脚本注入。&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_21&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_21&#34;&gt; 背景动效（固定斜纹 + 轮动图片）&lt;/label&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;参考&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0Vsb24xNS9hcnRpY2xlL2RldGFpbHMvMTI0NTE2OTI5&#34;&gt;保姆级教程 —— 将 springboot 项目部署到阿里云服务器（小白包会）_怎么把框架项目放到阿里云公网上 - CSDN 博客&lt;/span&gt;&lt;/p&gt;

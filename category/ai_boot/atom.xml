@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>Chen • Posts by &#34;ai_boot&#34; category</title>
+    <link href="http://example.com" />
+    <updated>2024-08-29T00:40:45.000Z</updated>
+    <category term="Java" />
+    <category term="Vue3" />
+    <category term="GLM" />
+    <category term="AI_Boot" />
+    <category term="dp" />
+    <category term="git" />
+    <category term="位运算" />
+    <category term="分类讨论" />
+    <category term="redis" />
+    <category term="lunix" />
+    <category term="机器学习" />
+    <category term="vue3" />
+    <category term="Vue.js" />
+    <category term="微信小程序" />
+    <category term="LLM" />
+    <category term="AI" />
+    <category term="工作总结" />
+    <category term="面试" />
+    <category term="chatgpt" />
+    <category term="设计模式" />
+    <entry>
+        <id>http://example.com/2024/08/29/Neko-Pardofelis/</id>
+        <title>Neko Pardofelis</title>
+        <link rel="alternate" href="http://example.com/2024/08/29/Neko-Pardofelis/"/>
+        <content type="html">&lt;h2 id=&#34;前言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h2&gt;
+&lt;p&gt;继暖言猫猫之后，我看到了好多猫猫，发 * 猫猫，屑屑猫猫…… 诸如此类&lt;/p&gt;
+&lt;p&gt;那么，我也想要一个帕朵儿猫猫！！！&lt;/p&gt;
+&lt;h2 id=&#34;开源项目地址&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#开源项目地址&#34;&gt;#&lt;/a&gt; 开源项目地址&lt;/h2&gt;
+&lt;p&gt;貌似没有……？！&lt;/p&gt;
+&lt;h2 id=&#34;遗憾离场&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#遗憾离场&#34;&gt;#&lt;/a&gt; 遗憾离场&lt;/h2&gt;
+</content>
+        <category term="AI_Boot" />
+        <updated>2024-08-29T00:40:45.000Z</updated>
+    </entry>
+</feed>
