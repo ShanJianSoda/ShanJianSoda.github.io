@@ -14,12 +14,12 @@
     <category term="分类讨论" />
     <category term="redis" />
     <category term="lunix" />
-    <category term="机器学习" />
     <category term="vue3" />
-    <category term="Vue.js" />
-    <category term="微信小程序" />
+    <category term="机器学习" />
     <category term="LLM" />
     <category term="AI" />
+    <category term="Vue.js" />
+    <category term="微信小程序" />
     <category term="工作总结" />
     <category term="面试" />
     <category term="chatgpt" />
@@ -914,6 +914,25 @@ const items = ref([&amp;#123; message: &#39;Foo&#39; &amp;#125;, &amp;#123; mess
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;注意&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;key&lt;/code&gt;  在这里是一个通过  &lt;code&gt;v-bind&lt;/code&gt;  绑定的特殊 attribute。请不要和&lt;a href=&#34;https://cn.vuejs.org/guide/essentials/list.html#v-for-with-an-object&#34;&gt;在  &lt;code&gt;v-for&lt;/code&gt;  中使用对象&lt;/a&gt;里所提到的对象属性名相混淆。&lt;/p&gt;
+&lt;h1 id=&#34;续&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#续&#34;&gt;#&lt;/a&gt; 续&lt;/h1&gt;
+&lt;h2 id=&#34;reactive响应式对象&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#reactive响应式对象&#34;&gt;#&lt;/a&gt; reactive 响应式对象&lt;/h2&gt;
+&lt;p&gt;不能重新赋值一个对象，可以借用 Object.assign ()&lt;/p&gt;
+&lt;p&gt;ref () 则可以修改  &lt;code&gt;car.value  = &amp;#123;…&amp;#125;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240830134823308.png&#34; alt=&#34;image-20240830134823308&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;使用原则:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;若需要一个基本类型的响应式数据，必须使用 ref&lt;/li&gt;
+&lt;li&gt;若需要一个响应式对象，层级不深， ref、reactive 都可以&lt;/li&gt;
+&lt;li&gt;若需要一个响应式对象，且层级较深推荐使用 reactive&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;toRefs / toRef&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Obj obj = toRefs(obj)
+
+Param p = toRef(obj, param)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;计算属性-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计算属性-2&#34;&gt;#&lt;/a&gt; 计算属性&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240830140740409.png&#34; alt=&#34;image-20240830140740409&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;路由&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#路由&#34;&gt;#&lt;/a&gt; 路由&lt;/h2&gt;
 </content>
         <category term="Vue3" />
         <updated>2024-08-16T14:55:05.000Z</updated>
@@ -1122,6 +1141,7 @@ CREATE TABLE image(
 &lt;p&gt;...&lt;/p&gt;
 &lt;h4 id=&#34;依赖导入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#依赖导入&#34;&gt;#&lt;/a&gt; 依赖导入&lt;/h4&gt;
 &lt;p&gt;&lt;s&gt;spring security&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;校验用了 jwt&lt;/p&gt;
 &lt;h4 id=&#34;接口&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#接口&#34;&gt;#&lt;/a&gt; 接口&lt;/h4&gt;
 &lt;h5 id=&#34;用户&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用户&#34;&gt;#&lt;/a&gt; 用户&lt;/h5&gt;
 &lt;ul class=&#34;task-list&#34;&gt;
@@ -1129,16 +1149,17 @@ CREATE TABLE image(
 &lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_0&#34;&gt; login 返回 user 和 jwt&lt;/label&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_1&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_1&#34;&gt; register&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_1&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_1&#34;&gt; register&lt;/label&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_2&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_2&#34;&gt; logout 前端清除 jwt&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_2&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_2&#34;&gt; logout 前端清除 jwt&lt;/label&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5 id=&#34;委托&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#委托&#34;&gt;#&lt;/a&gt; 委托&lt;/h5&gt;
 &lt;ul class=&#34;task-list&#34;&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;
 &lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_3&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_3&#34;&gt; selectAllArticle&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240830182715727.png&#34; alt=&#34;image-20240830182715727&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;
 &lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_4&#34; checked=&#34;true&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_4&#34;&gt; selectOneArticle&lt;/label&gt;&lt;/p&gt;

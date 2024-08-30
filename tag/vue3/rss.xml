@@ -17,12 +17,12 @@
         <category>分类讨论</category>
         <category>redis</category>
         <category>lunix</category>
-        <category>机器学习</category>
         <category>vue3</category>
-        <category>Vue.js</category>
-        <category>微信小程序</category>
+        <category>机器学习</category>
         <category>LLM</category>
         <category>AI</category>
+        <category>Vue.js</category>
+        <category>微信小程序</category>
         <category>工作总结</category>
         <category>面试</category>
         <category>chatgpt</category>
@@ -580,6 +580,25 @@ const items = ref([&amp;#123; message: &#39;Foo&#39; &amp;#125;, &amp;#123; mess
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;注意&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;key&lt;/code&gt;  在这里是一个通过  &lt;code&gt;v-bind&lt;/code&gt;  绑定的特殊 attribute。请不要和&lt;a href=&#34;https://cn.vuejs.org/guide/essentials/list.html#v-for-with-an-object&#34;&gt;在  &lt;code&gt;v-for&lt;/code&gt;  中使用对象&lt;/a&gt;里所提到的对象属性名相混淆。&lt;/p&gt;
+&lt;h1 id=&#34;续&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#续&#34;&gt;#&lt;/a&gt; 续&lt;/h1&gt;
+&lt;h2 id=&#34;reactive响应式对象&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#reactive响应式对象&#34;&gt;#&lt;/a&gt; reactive 响应式对象&lt;/h2&gt;
+&lt;p&gt;不能重新赋值一个对象，可以借用 Object.assign ()&lt;/p&gt;
+&lt;p&gt;ref () 则可以修改  &lt;code&gt;car.value  = &amp;#123;…&amp;#125;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240830134823308.png&#34; alt=&#34;image-20240830134823308&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;使用原则:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;若需要一个基本类型的响应式数据，必须使用 ref&lt;/li&gt;
+&lt;li&gt;若需要一个响应式对象，层级不深， ref、reactive 都可以&lt;/li&gt;
+&lt;li&gt;若需要一个响应式对象，且层级较深推荐使用 reactive&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;toRefs / toRef&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Obj obj = toRefs(obj)
+
+Param p = toRef(obj, param)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;计算属性-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计算属性-2&#34;&gt;#&lt;/a&gt; 计算属性&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240830140740409.png&#34; alt=&#34;image-20240830140740409&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;路由&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#路由&#34;&gt;#&lt;/a&gt; 路由&lt;/h2&gt;
  ]]></description>
         </item>
         <item>
