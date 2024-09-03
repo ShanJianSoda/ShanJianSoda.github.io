@@ -17,8 +17,8 @@
         <category>分类讨论</category>
         <category>redis</category>
         <category>lunix</category>
-        <category>vue3</category>
         <category>机器学习</category>
+        <category>vue3</category>
         <category>LLM</category>
         <category>AI</category>
         <category>Vue.js</category>
@@ -1059,6 +1059,7 @@ mysql&amp;gt; FLUSH PRIVILEGES;
 &lt;li&gt;分页（？）加载&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img data-src=&#34;image-20240813105911399.png&#34; alt=&#34;image-20240813105911399&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240902152505215.png&#34; alt=&#34;image-20240902152505215&#34; /&gt;&lt;/p&gt;
 &lt;h4 id=&#34;文章详情页面&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文章详情页面&#34;&gt;#&lt;/a&gt; &lt;strong&gt;文章详情页面&lt;/strong&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;点 空白处 或者 关闭键 即可返回&lt;/li&gt;
@@ -1066,6 +1067,10 @@ mysql&amp;gt; FLUSH PRIVILEGES;
 &lt;li&gt;委托人 + 浏览量、封面、评论&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img data-src=&#34;image-20240813105928322.png&#34; alt=&#34;image-20240813105928322&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;route-使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#route-使用&#34;&gt;#&lt;/a&gt; Route 使用&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240903091525989.png&#34; alt=&#34;image-20240903091525989&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240903091625639.png&#34; alt=&#34;image-20240903091625639&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240903092251835.png&#34; alt=&#34;image-20240903092251835&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;按钮动效&lt;/li&gt;
 &lt;/ul&gt;
