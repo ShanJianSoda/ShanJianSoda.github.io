@@ -14,8 +14,8 @@
     <category term="分类讨论" />
     <category term="redis" />
     <category term="lunix" />
-    <category term="机器学习" />
     <category term="vue3" />
+    <category term="机器学习" />
     <category term="LLM" />
     <category term="AI" />
     <category term="Vue.js" />
@@ -84,12 +84,12 @@
 &lt;li&gt;jBPM4 引入 PVM，使其拥有更强大的扩展性，同时增加 BPMS 特性，这些特性包括了对 BPMN 的支持、面向业务人员的 Web 建模器和简单统计分析功能的加入。&lt;/li&gt;
 &lt;li&gt;jBPM5 基于原先的 Drools Flow，支持 BPMN，通过与 Drools 的合并支持 BAM，通过内容仓库增加对流程&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zby5jc2RuLm5ldC9zby9zZWFyY2g/cT0lRTUlOEYlQUYlRTglQTclODYlRTUlOEMlOTYmYW1wO3NwbT0xMDAxLjIxMDEuMzAwMS43MDIw&#34;&gt;可视化&lt;/span&gt;的支持。由于放弃了 jBPM4 的 PVM，引擎的可扩展性受到损害，并且不再支持 jPDL。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;activiti版本复杂&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#activiti版本复杂&#34;&gt;#&lt;/a&gt; Activiti（版本复杂）&lt;/h3&gt;
+&lt;h3 id=&#34;activiti&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#activiti&#34;&gt;#&lt;/a&gt; Activiti&lt;/h3&gt;
 &lt;p&gt;官方网站：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYWN0aXZpdGkub3JnLw==&#34;&gt;https://www.activiti.org/&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;activiti 由 Alfresco 软件开发，目前（2023）最高版本 activiti 7。版本比较复杂，有 activiti5、activiti6、activiti7 几个主流版本，选型时让人晕头转向，有必要先了解一下 activiti 这几个版本的发展历史。&lt;/p&gt;
 &lt;p&gt;activiti5 和 activiti6 的核心 leader 是 Tijs Rademakers， Activiti5 基于 jBPM4 的开源工作流系统，与 Alfresco 的集成增加了其流程可视化与管理能力，同时通过创新的 Activiti Cycle 协作组件支持流程相关人员之间的协调，最后，它加强了集成能力。&lt;/p&gt;
 &lt;p&gt;由于团队内部分歧，在 2017 年时 Tijs Rademakers 离开团队，创建了后来的 flowable, activiti6 以及 activiti5 代码已经交接给了 Salaboy 团队，&lt;strong&gt;activiti6**** 以及 activiti5 的代码官方已经暂停维护了&lt;/strong&gt;，Salaboy 团队目前在开发 activiti7 框架，activiti7 内核使用的还是 activiti6，并没有为引擎注入更多的新特性，只是在 activiti 之外的上层封装了一些应用。&lt;/p&gt;
-&lt;p&gt;Flowable（开源版本维护不及时，商业版的功能会更强大）&lt;/p&gt;
+&lt;h3 id=&#34;flowable&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#flowable&#34;&gt;#&lt;/a&gt; Flowable&lt;/h3&gt;
 &lt;p&gt;官方网站：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9mbG93YWJsZS5jb20vb3Blbi1zb3VyY2Uv&#34;&gt;https://flowable.com/open-source/&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;**flowable 基于 activiti6 衍生出来的版本，**flowable 目前最新版本是 v6.6.0，开发团队是从 activiti 中分裂出来的，修复了一众 activiti6 的 bug，并在其基础上研发了 DMN 支持，BPEL 支持等等，相对开源版，其商业版的功能会更强大。以 flowable6.4.1 版本为分水岭，大力发展其商业版产品，&lt;strong&gt;开源版本维护不及时，部分功能已经不再开源版发布&lt;/strong&gt;，比如表单生成器（表单引擎）、历史数据同步至其他数据源、ES 等。&lt;/p&gt;
 &lt;p&gt;Flowable 是一个使用 Java 编写的轻量级业务流程引擎，使用 Apache V2 license 协议开源。2016 年 10 月，Activiti 工作流引擎的主要开发者离开 Alfresco 公司并在 Activiti 分支基础上开启了 Flowable 开源项目。基于 Activiti v6 beta4 发布的第一个 Flowable release 版本为 6.0。Flowable 项目中包括 BPMN（Business Process Model and Notation）引擎、CMMN（Case Management Model and Notation）引擎、DMN（Decision Model and Notation）引擎、表单引擎（Form Engine）等模块。&lt;/p&gt;
@@ -305,6 +305,77 @@
 &lt;h3 id=&#34;flowable-modeler&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#flowable-modeler&#34;&gt;#&lt;/a&gt; flowable-modeler&lt;/h3&gt;
 &lt;p&gt;flowable 开源版本中带了 web 版流程设计器，展示风格和功能基本跟 Activiti-Modeler 一样，优点是集成简单，开发工作量小，缺点是界面不美观，用户体验差。&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;clip_image022.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;选型标准的几个标准activiti7-or-flowable-v7&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#选型标准的几个标准activiti7-or-flowable-v7&#34;&gt;#&lt;/a&gt; 选型标准的几个标准（Activiti7 or Flowable V7）&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;业务需求：根据自身业务需求，评估工作流引擎的性能、扩展性、数据库支持等方面的要求。&lt;/li&gt;
+&lt;li&gt;社区支持：了解工作流引擎的社区规模和活跃程度，以便在遇到问题时能够及时获得帮助和支持。&lt;/li&gt;
+&lt;li&gt;文档质量：评估工作流引擎的文档质量，以确保能够轻松地学习和使用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;对比&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Activiti 7&lt;/th&gt;
+&lt;th&gt;Flowable V7&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;github star&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;10.1K&lt;/td&gt;
+&lt;td&gt;7.8K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;JDK 版本要求&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;JDK 21&lt;/td&gt;
+&lt;td&gt;JDK 17 +&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;BPMN2 协议&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;支持&lt;/td&gt;
+&lt;td&gt;支持&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;设计器&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;idea 插件&lt;/td&gt;
+&lt;td&gt;提供免费使用的 &amp;lt;br /&amp;gt; Flowable Cloud Design 应用程序&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;扩展节点 (Mule\Http 等)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td&gt;动态过程注入&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;数据库&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td&gt;支持非关系型数据库&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;并行网关&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;本质是串行&lt;/td&gt;
+&lt;td&gt;并行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;依赖 spring security&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;接口&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;封装了一层 TaskRuntime・・・&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;侧重（2022）&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;侧重云&lt;/td&gt;
+&lt;td&gt;做一个功能丰富的流程引擎工具，扩展点&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.flowable.com/blog/engineering/top-10-advances-flowable-made-since-activiti&#34;&gt;（flowable&lt;strong&gt;2020&lt;/strong&gt; ）自 Activiti 以来 Flowable 取得的十大进步 --- Top 10 advances Flowable made since Activiti&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Activiti 目前是侧重云&lt;/strong&gt;，他目前的设计会向 Spring Cloud、Docker 这些去靠拢&lt;br /&gt;
+&lt;strong&gt; Flowable 核心思想还是在做一个功能丰富的流程引擎工具&lt;/strong&gt;，除了最最基础的工作流，他还提供了很多其他的扩展点，我们可以基于 Flowable 实现出许多我们想要的功能（当然这也是小伙伴们觉得 Flowable 使用复杂的原因之一）&lt;/p&gt;
+&lt;p&gt;（2022）&lt;/p&gt;
 &lt;h1 id=&#34;市面现有的低代码bmp平台&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#市面现有的低代码bmp平台&#34;&gt;#&lt;/a&gt; 市面现有的低代码 BMP 平台&lt;/h1&gt;
 &lt;h2 id=&#34;驰聘&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#驰聘&#34;&gt;#&lt;/a&gt; 驰聘&lt;/h2&gt;
 &lt;p&gt;...&lt;/p&gt;
