@@ -10,22 +10,22 @@
         <category>Java</category>
         <category>Vue3</category>
         <category>GLM</category>
-        <category>AI_Boot</category>
         <category>dp</category>
         <category>git</category>
         <category>位运算</category>
         <category>分类讨论</category>
+        <category>AI_Boot</category>
         <category>redis</category>
         <category>lunix</category>
-        <category>vue3</category>
         <category>机器学习</category>
+        <category>vue3</category>
         <category>LLM</category>
         <category>AI</category>
         <category>Vue.js</category>
         <category>微信小程序</category>
         <category>工作流</category>
-        <category>工作总结</category>
         <category>面试</category>
+        <category>工作总结</category>
         <category>chatgpt</category>
         <category>设计模式</category>
         <item>
@@ -310,9 +310,9 @@
 &lt;h3 id=&#34;flowable-modeler&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#flowable-modeler&#34;&gt;#&lt;/a&gt; flowable-modeler&lt;/h3&gt;
 &lt;p&gt;flowable 开源版本中带了 web 版流程设计器，展示风格和功能基本跟 Activiti-Modeler 一样，优点是集成简单，开发工作量小，缺点是界面不美观，用户体验差。&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;clip_image022.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;选型标准的几个标准activiti7-or-flowable-v7&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#选型标准的几个标准activiti7-or-flowable-v7&#34;&gt;#&lt;/a&gt; 选型标准的几个标准（Activiti7 or Flowable V7）&lt;/h1&gt;
+&lt;h1 id=&#34;选型标准的几个标准activiti7-or-flowable-v76&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#选型标准的几个标准activiti7-or-flowable-v76&#34;&gt;#&lt;/a&gt; 选型标准的几个标准（Activiti7 or Flowable V7/6）&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;业务需求：根据自身业务需求，评估工作流引擎的性能、扩展性、数据库支持等方面的要求。&lt;/li&gt;
+&lt;li&gt;业务需求：根据自身业务需求，评估工作流引擎的&lt;strong&gt;性能、扩展性、数据库支持等方面&lt;/strong&gt;的要求。&lt;/li&gt;
 &lt;li&gt;社区支持：了解工作流引擎的社区规模和活跃程度，以便在遇到问题时能够及时获得帮助和支持。&lt;/li&gt;
 &lt;li&gt;文档质量：评估工作流引擎的文档质量，以确保能够轻松地学习和使用。&lt;/li&gt;
 &lt;/ul&gt;
@@ -321,7 +321,7 @@
 &lt;tr&gt;
 &lt;th style=&#34;text-align:center&#34;&gt;对比&lt;/th&gt;
 &lt;th style=&#34;text-align:left&#34;&gt;Activiti 7&lt;/th&gt;
-&lt;th&gt;Flowable V7&lt;/th&gt;
+&lt;th&gt;Flowable V7/6&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
@@ -342,13 +342,13 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;设计器&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;idea 插件&lt;/td&gt;
-&lt;td&gt;提供免费使用的 &amp;lt;br /&amp;gt; Flowable Cloud Design 应用程序&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;自带 + idea 插件&lt;/td&gt;
+&lt;td&gt;自带 + idea 插件 + &amp;lt;br /&amp;gt;Flowable Cloud Design 应用程序 1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;扩展节点 (Mule\Http 等)&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
-&lt;td&gt;动态过程注入&lt;/td&gt;
+&lt;td&gt;动态过程注入，跳转任意节点，流程迁移&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;数据库&lt;/td&gt;
@@ -363,17 +363,27 @@
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;依赖 spring security&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;可用 spring security&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;接口&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;封装了一层 TaskRuntime・・・&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;加了一层 TaskRuntime  Process・・・&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;侧重（2022）&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;侧重云&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;侧重云 Activiti Cloud&lt;/td&gt;
 &lt;td&gt;做一个功能丰富的流程引擎工具，扩展点&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;效率（性能）&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;文档&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
