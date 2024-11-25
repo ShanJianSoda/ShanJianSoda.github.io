@@ -5,6 +5,17 @@
     "home_page_url": "http://example.com",
     "items": [
         {
+            "id": "http://example.com/2024/11/25/linux-docker/",
+            "url": "http://example.com/2024/11/25/linux-docker/",
+            "title": "linux docker",
+            "date_published": "2024-11-25T07:35:58.000Z",
+            "content_html": "<h1 id=\"重新开始建立绳网\"><a class=\"anchor\" href=\"#重新开始建立绳网\">#</a> 重新开始建立绳网……</h1>\n<p>因为之前阿里云服务器被黑了，后来重置服务器后就搁置了（哭）</p>\n<h1 id=\"安装docker\"><a class=\"anchor\" href=\"#安装docker\">#</a> 安装 Docker</h1>\n<h2 id=\"安装\"><a class=\"anchor\" href=\"#安装\">#</a> 安装</h2>\n<pre><code># 1.安装docker-ce以及必要的包\nyum install -y yum-utils device-mapper-persistent-data lvm2\n\n# 2.添加稳定版本源\nyum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo\n\n# 3.安装docker-ce\nyum install docker-ce\n\n# 4.启动\nsystemctl start docker\n</code></pre>\n<h2 id=\"docker-常用命令\"><a class=\"anchor\" href=\"#docker-常用命令\">#</a> docker 常用命令</h2>\n<pre><code>1. 查看容器: docker ps\n \n2. 查看镜像: docker images\n \n3. 删除容器: docker rm 容器name\n \n4. 删除镜像: docker rmi 镜像id\n \n5. 创建容器: docker run --name dockermysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=654321 mysql:5.7.23\n \n6. 启动容器: docker start 容器name #docker start dockermysql\n \n7. 重启容器: docker restart dockermysql\n \n8. 停止容器: docker stop dockermysql\n \n9. 容器交互: docker exec -it dockermysql bash #或 docker attach dockermysql\n \n10.退出交互: Ctrl+P,Ctrl+Q(Ctrl键一直保持按下)\n \n11.设置开机自启: systemctl enable docker\n \n12.容器设置自启,update命令: docker update --restart=always aeccnginx\n</code></pre>\n<h1 id=\"安装jdk-17\"><a class=\"anchor\" href=\"#安装jdk-17\">#</a> 安装 JDK 17</h1>\n<p>rz，sz 是<span class=\"exturl\" data-url=\"aHR0cHM6Ly9zby5jc2RuLm5ldC9zby9zZWFyY2g/ZnJvbT1wY19ibG9nX2hpZ2hsaWdodCZhbXA7cT1MaW51eA==\"> Linux</span>/Unix 同 Windows 进行 ZModem 文件传输的命令行工具。优点就是不用再开一个 sftp 工具登录上去上传下载文件。</p>\n<p>因为之前本地下了 jdk17 的 linux 包，所以直接文件传过去</p>\n<pre><code># 安装lrzsz\nyum install lrzsz\n\n# 传输\nrz -b\n\n# 解压\ntar -zxvf jdk版本\n\n# 移动\nmkdir /usr/java\nmv jdk /usr/java\n\n# 配置环境变量 i编辑 | wq保存退出\nexport JAVA_HOME=/usr/java/jdk版本\nexport JRE_HOME=$&#123;JAVA_HOME&#125;/jre\nexport CLASSPATH=.:$&#123;JAVA_HOME&#125;/lib:$&#123;JRE_HOME&#125;/lib:$CLASSPATH\nexport JAVA_PATH=$&#123;JAVA_HOME&#125;/bin:$&#123;JRE_HOME&#125;/bin\nexport PATH=$PATH:$&#123;JAVA_PATH&#125;\n\n</code></pre>\n<h1 id=\"安装mysql\"><a class=\"anchor\" href=\"#安装mysql\">#</a> 安装 MySQL</h1>\n<pre><code>docker pull mysql:8.0.39\n\ndocker run -d \\\n  --name mysql \\\n  -p 3306:3306 \\\n  -e TZ=Asia/Shanghai \\\n  -e MYSQL_ROOT_PASSWORD=password\\\n  mysql:8.0.39\n</code></pre>\n<h1 id=\"引用\"><a class=\"anchor\" href=\"#引用\">#</a> 引用</h1>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3JvbWFudGljUm9zZS9hcnRpY2xlL2RldGFpbHMvMTAxMzUxNjc5\">Linux 服务器部署安装 docker 以及各种服务配置_linuxdocker 安装部署 - CSDN 博客</span></p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0JUaGlua2VyL2FydGljbGUvZGV0YWlscy8xMjM0NzE1MTQ=\">Docker 安装 Mysql 容器 (完整详细版)_linux docker mysql 安装 - CSDN 博客</span></p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMTA5OTE3L2FydGljbGUvZGV0YWlscy8xMjA5NzYxMjU=\">【Linux】Linux 中 rz 和 sz 命令用法详解_rz linux-CSDN 博客</span></p>\n",
+            "tags": [
+                "docker",
+                "linux"
+            ]
+        },
+        {
             "id": "http://example.com/2024/09/18/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AD%A6%E4%B9%A0/",
             "url": "http://example.com/2024/09/18/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AD%A6%E4%B9%A0/",
             "title": "工作流学习",

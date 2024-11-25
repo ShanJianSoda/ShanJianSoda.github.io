@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>Chen • Posts by &#34;linux&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2024-11-25T07:35:58.000Z</updated>
+    <category term="Java" />
+    <category term="Vue3" />
+    <category term="GLM" />
+    <category term="AI_Boot" />
+    <category term="dp" />
+    <category term="git" />
+    <category term="位运算" />
+    <category term="分类讨论" />
+    <category term="docker" />
+    <category term="linux" />
+    <category term="redis" />
+    <category term="lunix" />
+    <category term="机器学习" />
+    <category term="vue3" />
+    <category term="LLM" />
+    <category term="AI" />
+    <category term="Vue.js" />
+    <category term="微信小程序" />
+    <category term="工作流" />
+    <category term="工作总结" />
+    <category term="面试" />
+    <category term="chatgpt" />
+    <category term="设计模式" />
+    <entry>
+        <id>http://example.com/2024/11/25/linux-docker/</id>
+        <title>linux docker</title>
+        <link rel="alternate" href="http://example.com/2024/11/25/linux-docker/"/>
+        <content type="html">&lt;h1 id=&#34;重新开始建立绳网&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重新开始建立绳网&#34;&gt;#&lt;/a&gt; 重新开始建立绳网……&lt;/h1&gt;
+&lt;p&gt;因为之前阿里云服务器被黑了，后来重置服务器后就搁置了（哭）&lt;/p&gt;
+&lt;h1 id=&#34;安装docker&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装docker&#34;&gt;#&lt;/a&gt; 安装 Docker&lt;/h1&gt;
+&lt;h2 id=&#34;安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装&#34;&gt;#&lt;/a&gt; 安装&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;# 1.安装docker-ce以及必要的包
+yum install -y yum-utils device-mapper-persistent-data lvm2
+
+# 2.添加稳定版本源
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+# 3.安装docker-ce
+yum install docker-ce
+
+# 4.启动
+systemctl start docker
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;docker-常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-常用命令&#34;&gt;#&lt;/a&gt; docker 常用命令&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;1. 查看容器: docker ps
+ 
+2. 查看镜像: docker images
+ 
+3. 删除容器: docker rm 容器name
+ 
+4. 删除镜像: docker rmi 镜像id
+ 
+5. 创建容器: docker run --name dockermysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=654321 mysql:5.7.23
+ 
+6. 启动容器: docker start 容器name #docker start dockermysql
+ 
+7. 重启容器: docker restart dockermysql
+ 
+8. 停止容器: docker stop dockermysql
+ 
+9. 容器交互: docker exec -it dockermysql bash #或 docker attach dockermysql
+ 
+10.退出交互: Ctrl+P,Ctrl+Q(Ctrl键一直保持按下)
+ 
+11.设置开机自启: systemctl enable docker
+ 
+12.容器设置自启,update命令: docker update --restart=always aeccnginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;安装jdk-17&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装jdk-17&#34;&gt;#&lt;/a&gt; 安装 JDK 17&lt;/h1&gt;
+&lt;p&gt;rz，sz 是&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zby5jc2RuLm5ldC9zby9zZWFyY2g/ZnJvbT1wY19ibG9nX2hpZ2hsaWdodCZhbXA7cT1MaW51eA==&#34;&gt; Linux&lt;/span&gt;/Unix 同 Windows 进行 ZModem 文件传输的命令行工具。优点就是不用再开一个 sftp 工具登录上去上传下载文件。&lt;/p&gt;
+&lt;p&gt;因为之前本地下了 jdk17 的 linux 包，所以直接文件传过去&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# 安装lrzsz
+yum install lrzsz
+
+# 传输
+rz -b
+
+# 解压
+tar -zxvf jdk版本
+
+# 移动
+mkdir /usr/java
+mv jdk /usr/java
+
+# 配置环境变量 i编辑 | wq保存退出
+export JAVA_HOME=/usr/java/jdk版本
+export JRE_HOME=$&amp;#123;JAVA_HOME&amp;#125;/jre
+export CLASSPATH=.:$&amp;#123;JAVA_HOME&amp;#125;/lib:$&amp;#123;JRE_HOME&amp;#125;/lib:$CLASSPATH
+export JAVA_PATH=$&amp;#123;JAVA_HOME&amp;#125;/bin:$&amp;#123;JRE_HOME&amp;#125;/bin
+export PATH=$PATH:$&amp;#123;JAVA_PATH&amp;#125;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;安装mysql&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装mysql&#34;&gt;#&lt;/a&gt; 安装 MySQL&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;docker pull mysql:8.0.39
+
+docker run -d \
+  --name mysql \
+  -p 3306:3306 \
+  -e TZ=Asia/Shanghai \
+  -e MYSQL_ROOT_PASSWORD=password\
+  mysql:8.0.39
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3JvbWFudGljUm9zZS9hcnRpY2xlL2RldGFpbHMvMTAxMzUxNjc5&#34;&gt;Linux 服务器部署安装 docker 以及各种服务配置_linuxdocker 安装部署 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0JUaGlua2VyL2FydGljbGUvZGV0YWlscy8xMjM0NzE1MTQ=&#34;&gt;Docker 安装 Mysql 容器 (完整详细版)_linux docker mysql 安装 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMTA5OTE3L2FydGljbGUvZGV0YWlscy8xMjA5NzYxMjU=&#34;&gt;【Linux】Linux 中 rz 和 sz 命令用法详解_rz linux-CSDN 博客&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="docker" />
+        <category term="linux" />
+        <updated>2024-11-25T07:35:58.000Z</updated>
+    </entry>
+</feed>
