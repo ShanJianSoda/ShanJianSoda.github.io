@@ -20,9 +20,9 @@
     <category term="vue3" />
     <category term="LLM" />
     <category term="AI" />
+    <category term="工作流" />
     <category term="Vue.js" />
     <category term="微信小程序" />
-    <category term="工作流" />
     <category term="工作总结" />
     <category term="面试" />
     <category term="chatgpt" />
@@ -106,10 +106,43 @@ docker run -d \
   -e MYSQL_ROOT_PASSWORD=password\
   mysql:8.0.39
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;安装git没用docker&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装git没用docker&#34;&gt;#&lt;/a&gt; 安装 git (没用 docker)&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;# wget下载 版本可在官网查看
+wget https://github.com/git/git/archive/v2.24.1.tar.gz
+
+# 解压安装包
+tar -zxvf v2.24.1.tar.gz
+
+# 安装编译源码所需依赖
+yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel gcc perl-ExtUtils-MakeMaker
+
+# 卸载旧版本Git
+yum remove git
+
+# 编译
+cd git-2.24.1/
+make prefix=/usr/local/src/git all
+
+# 安装Git
+make prefix=/usr/local/src/git install
+
+# 配置环境变量
+vim /etc/profile
+
+# 在底部的path变量结尾加上相关配置信息即可
+PATH=$PATH:/usr/local/src/git/bin
+
+# 随后保存并更新环境配置
+source /etc/profile
+
+# 验证
+git --version
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用&lt;/h1&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3JvbWFudGljUm9zZS9hcnRpY2xlL2RldGFpbHMvMTAxMzUxNjc5&#34;&gt;Linux 服务器部署安装 docker 以及各种服务配置_linuxdocker 安装部署 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0JUaGlua2VyL2FydGljbGUvZGV0YWlscy8xMjM0NzE1MTQ=&#34;&gt;Docker 安装 Mysql 容器 (完整详细版)_linux docker mysql 安装 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMTA5OTE3L2FydGljbGUvZGV0YWlscy8xMjA5NzYxMjU=&#34;&gt;【Linux】Linux 中 rz 和 sz 命令用法详解_rz linux-CSDN 博客&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80ODUwMDMwNy9hcnRpY2xlL2RldGFpbHMvMTMxNjI0MDA0&#34;&gt;全网最全，在 Linux 下安装 Git 与初始化 Git 环境（详细）_linux 下载 git-CSDN 博客&lt;/span&gt;&lt;/p&gt;
 </content>
         <category term="docker" />
         <category term="linux" />
@@ -1412,8 +1445,15 @@ Param p = toRef(obj, param)
 &lt;h2 id=&#34;过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#过程&#34;&gt;#&lt;/a&gt; 过程&lt;/h2&gt;
 &lt;h3 id=&#34;服务器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#服务器&#34;&gt;#&lt;/a&gt; &lt;strong&gt;服务器&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;购买 阿里云服务器 阿里云的服务器被黑了，遗憾离场&lt;/li&gt;
-&lt;li&gt;连接 xshell（免费版）通过阿里云下载的密钥 xxx.pem&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;购买 阿里云服务器 &lt;strong&gt;阿里云的服务器被黑了，遗憾离场&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重置了，再续孽缘！（2024/11/26）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;连接 xshell（免费版）通过阿里云下载的密钥 xxx.pem&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;安装jdk&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装jdk&#34;&gt;#&lt;/a&gt; &lt;strong&gt;安装 jdk&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;yum -y install lrzsz&lt;/code&gt;  失败，一直 killed，遂用离线安装&lt;/p&gt;
@@ -1611,7 +1651,7 @@ CREATE TABLE image(
 &lt;p&gt;...&lt;/p&gt;
 &lt;h4 id=&#34;依赖导入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#依赖导入&#34;&gt;#&lt;/a&gt; 依赖导入&lt;/h4&gt;
 &lt;p&gt;&lt;s&gt;spring security&lt;/s&gt;&lt;/p&gt;
-&lt;p&gt;校验用了 jwt&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;校验用了 jwt&lt;/s&gt;&lt;/p&gt;
 &lt;h4 id=&#34;接口&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#接口&#34;&gt;#&lt;/a&gt; 接口&lt;/h4&gt;
 &lt;h5 id=&#34;用户&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用户&#34;&gt;#&lt;/a&gt; 用户&lt;/h5&gt;
 &lt;ul class=&#34;task-list&#34;&gt;
