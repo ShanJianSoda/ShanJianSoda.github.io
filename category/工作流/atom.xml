@@ -3,10 +3,10 @@
     <id>http://example.com</id>
     <title>Chen • Posts by &#34;工作流&#34; category</title>
     <link href="http://example.com" />
-    <updated>2024-09-18T06:19:07.000Z</updated>
-    <category term="Java" />
+    <updated>2024-10-31T06:57:02.000Z</updated>
     <category term="Vue3" />
     <category term="GLM" />
+    <category term="Java" />
     <category term="AI_Boot" />
     <category term="dp" />
     <category term="git" />
@@ -20,13 +20,109 @@
     <category term="vue3" />
     <category term="LLM" />
     <category term="AI" />
-    <category term="工作流" />
     <category term="Vue.js" />
     <category term="微信小程序" />
+    <category term="工作流" />
     <category term="工作总结" />
     <category term="面试" />
     <category term="chatgpt" />
     <category term="设计模式" />
+    <entry>
+        <id>http://example.com/2024/10/31/%E5%B7%A5%E4%BD%9C%E6%B5%812/</id>
+        <title>工作流2</title>
+        <link rel="alternate" href="http://example.com/2024/10/31/%E5%B7%A5%E4%BD%9C%E6%B5%812/"/>
+        <content type="html">&lt;h1 id=&#34;1-整理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-整理&#34;&gt;#&lt;/a&gt; 1 整理&lt;/h1&gt;
+&lt;p&gt;在摸索的过程中，用的 Excalidraw，画图记录（懒得重新整理就干脆照搬了）&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20241031145834570.png&#34; alt=&#34;image-20241031145834570&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20241031145853203.png&#34; alt=&#34;image-20241031145853203&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20241031145905678.png&#34; alt=&#34;image-20241031145905678&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20241031145917213.png&#34; alt=&#34;image-20241031145917213&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20241031145931415.png&#34; alt=&#34;image-20241031145931415&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20241031145944005.png&#34; alt=&#34;image-20241031145944005&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20241031145954143.png&#34; alt=&#34;image-20241031145954143&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20241031150006240.png&#34; alt=&#34;image-20241031150006240&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20241031150017666.png&#34; alt=&#34;image-20241031150017666&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20241031150030744.png&#34; alt=&#34;image-20241031150030744&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20241031150046331.png&#34; alt=&#34;image-20241031150046331&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;2-demo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-demo&#34;&gt;#&lt;/a&gt; 2 demo&lt;/h1&gt;
+&lt;p&gt;以及打断点调试代码，工作流部分的代码看的大差不差了，懂了七八十。&lt;/p&gt;
+&lt;h2 id=&#34;21&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#21&#34;&gt;#&lt;/a&gt; 2.1&lt;/h2&gt;
+&lt;p&gt;后面尝试理解业务写个 demo 出来，但是不太会，涉及到业务表设计（这个涉及到租户什么的，新东西，嗯），照葫芦画瓢整了个前端页面（路由，可恶的路由），以及文件的上传（不懂啊，这个似乎走的是 remote 什么的，而且我上传文件报错了，可能是需要的服务 minio 没运行）&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20241031151938924.png&#34; alt=&#34;image-20241031151938924&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20241031152012895.png&#34; alt=&#34;image-20241031152012895&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;3-解耦&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-解耦&#34;&gt;#&lt;/a&gt; 3 解耦&lt;/h1&gt;
+&lt;h2 id=&#34;31&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#31&#34;&gt;#&lt;/a&gt; 3.1&lt;/h2&gt;
+&lt;p&gt;需要把 workflow 从项目中解耦，用到自己的项目中去&lt;/p&gt;
+&lt;p&gt;于是自己摸索，最后找到最方便的就是在 pom 文件中一个一个去替换，把源代码复制到对应路径，并有选择的复制 &lt;code&gt;org.springframework.boot.autoconfigure.AutoConfiguration配置文件&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;(踩了大坑，花了好久时间排除)&lt;/p&gt;
+&lt;p&gt;一开始替换某个模块时，我看到有 AutoConfiguration 配置就一起复制了过去，结果报错，我找不出来。&lt;/p&gt;
+&lt;p&gt;首先排除代码的问题，因为本来就能跑，所以就是依赖环境之类的&lt;/p&gt;
+&lt;p&gt;（因为我是草台班子所以不是很清楚 AutoConfiguration 配置文件干什么用），尝试删除 AutoConfiguration 后，能跑了，所以后面所有的模块移除我都没有复制对应的 AutoConfiguration 文件，也都能跑。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;二编：
+dict那个AutoConfiguration报错原来是idea复制的时候路径错了导致报错
+后面需要把全部的AutoConfiguration复制，不然即使运行了使用接口是依旧会报错
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;直到 mybatis-plus 模块和 dubbo 模块&lt;/p&gt;
+&lt;p&gt;找昏头了&lt;/p&gt;
+&lt;p&gt;花了一天时间，因为我没系统学过这俩，所以也不知道哪里出了问题，gpt 也不懂，很可惜（亟需贾维斯）。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;当所有的不可能都排除之后，剩下的就是正确答案(什么奇怪发言)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;于是我把 AutoConfiguration 的复制了过来，跑通了。&lt;/p&gt;
+&lt;p&gt;跑通了！&lt;/p&gt;
+&lt;p&gt;于是继续拷打 gpt，为什么有的需要配置有的不需要呢&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20241031151226409.png&#34; alt=&#34;image-20241031151226409&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;32-gpt&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#32-gpt&#34;&gt;#&lt;/a&gt; 3.2 gpt&lt;/h2&gt;
+&lt;p&gt;在 Spring Boot 项目中使用  &lt;code&gt;AutoConfiguration&lt;/code&gt;  是为了帮助 Spring 自动装配某些 Bean 或配置，而无需手动进行显式配置。对于 Dubbo 配置，在手动将  &lt;code&gt;ruoyi-dubbo&lt;/code&gt;  依赖迁移到  &lt;code&gt;ruoyi-workflow&lt;/code&gt;  后， &lt;code&gt;DubboConfiguration&lt;/code&gt;  没有被自动加载，可能是由于缺少  &lt;code&gt;AutoConfiguration&lt;/code&gt;  配置引起的。这是因为  &lt;code&gt;AutoConfiguration&lt;/code&gt;  在 Spring Boot 中是实现自动装配的核心机制，它会根据特定条件来加载 Bean。&lt;/p&gt;
+&lt;h3 id=&#34;1-为什么需要配置-autoconfiguration&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-为什么需要配置-autoconfiguration&#34;&gt;#&lt;/a&gt; 1. 为什么需要配置  &lt;code&gt;AutoConfiguration&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;在 Spring Boot 中，自动配置通常通过  &lt;code&gt;@EnableAutoConfiguration&lt;/code&gt;  或者  &lt;code&gt;@SpringBootApplication&lt;/code&gt;  来触发，这两个注解会自动扫描并加载  &lt;code&gt;META-INF/spring.factories&lt;/code&gt;  文件中的配置。 &lt;code&gt;spring.factories&lt;/code&gt;  文件会列出所有需要自动装配的类或配置。如果没有在  &lt;code&gt;spring.factories&lt;/code&gt;  中配置  &lt;code&gt;DubboConfiguration&lt;/code&gt; ，Spring Boot 就不会自动加载它。&lt;/p&gt;
+&lt;p&gt;在手动将  &lt;code&gt;ruoyi-dubbo&lt;/code&gt;  相关配置移入  &lt;code&gt;ruoyi-workflow&lt;/code&gt;  后，可能遗失了  &lt;code&gt;AutoConfiguration&lt;/code&gt;  的配置，导致  &lt;code&gt;DubboConfiguration&lt;/code&gt;  未被 Spring Boot 的自动装配机制加载。因此，需要在  &lt;code&gt;AutoConfiguration&lt;/code&gt;  中显式指定  &lt;code&gt;DubboConfiguration&lt;/code&gt; ，让 Spring Boot 知道需要自动加载该配置类。&lt;/p&gt;
+&lt;h3 id=&#34;2-什么时候需要配置-autoconfiguration&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-什么时候需要配置-autoconfiguration&#34;&gt;#&lt;/a&gt; 2. 什么时候需要配置  &lt;code&gt;AutoConfiguration&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;通常在以下几种情况下需要配置  &lt;code&gt;AutoConfiguration&lt;/code&gt; ：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;模块独立性&lt;/strong&gt;：当有多个模块时（如  &lt;code&gt;ruoyi-dubbo&lt;/code&gt;  和  &lt;code&gt;ruoyi-workflow&lt;/code&gt; ），为了确保每个模块的配置能够被自动识别和加载，需要使用  &lt;code&gt;AutoConfiguration&lt;/code&gt; 。尤其当你拆分或合并模块后，手动配置  &lt;code&gt;AutoConfiguration&lt;/code&gt;  能确保原本分散的配置正常加载。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;避免繁琐配置&lt;/strong&gt;： &lt;code&gt;AutoConfiguration&lt;/code&gt;  可以帮助避免手动配置 Bean 及其依赖，简化配置流程。例如，在  &lt;code&gt;Dubbo&lt;/code&gt;  集成场景中， &lt;code&gt;AutoConfiguration&lt;/code&gt;  能够自动加载与  &lt;code&gt;Dubbo&lt;/code&gt;  相关的所有 Bean 和配置信息。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;按需加载&lt;/strong&gt;：有时需要根据条件加载不同的配置或 Bean，比如使用  &lt;code&gt;@ConditionalOnMissingBean&lt;/code&gt;  或  &lt;code&gt;@ConditionalOnClass&lt;/code&gt;  来控制配置的加载情况，以满足不同环境的需求。这在模块化项目中非常常见。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-为什么找不到-dubboconfiguration&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-为什么找不到-dubboconfiguration&#34;&gt;#&lt;/a&gt; 3. 为什么找不到  &lt;code&gt;DubboConfiguration&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;在  &lt;code&gt;ruoyi-dubbo&lt;/code&gt;  迁移到  &lt;code&gt;ruoyi-workflow&lt;/code&gt;  后，找不到  &lt;code&gt;DubboConfiguration&lt;/code&gt;  的原因可能是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;未在  &lt;code&gt;spring.factories&lt;/code&gt;  中指定&lt;/strong&gt;：如果  &lt;code&gt;spring.factories&lt;/code&gt;  文件没有将  &lt;code&gt;DubboConfiguration&lt;/code&gt;  类注册到自动配置中，Spring Boot 无法加载它。这可能是因为在迁移时未将  &lt;code&gt;spring.factories&lt;/code&gt;  文件及其配置一同迁移，或者在  &lt;code&gt;ruoyi-workflow&lt;/code&gt;  项目中没有配置该文件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;扫描路径或加载条件问题&lt;/strong&gt;： &lt;code&gt;DubboConfiguration&lt;/code&gt;  可能包含特定的加载条件（如  &lt;code&gt;@ConditionalOnClass&lt;/code&gt;  或  &lt;code&gt;@ConditionalOnProperty&lt;/code&gt; ）。如果项目环境不满足这些条件，Spring Boot 就不会加载它。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;模块间依赖问题&lt;/strong&gt;： &lt;code&gt;DubboConfiguration&lt;/code&gt;  可能依赖  &lt;code&gt;ruoyi-dubbo&lt;/code&gt;  中的其他配置类或资源。在迁移过程中，未将这些依赖一并迁移，导致  &lt;code&gt;DubboConfiguration&lt;/code&gt;  在  &lt;code&gt;ruoyi-workflow&lt;/code&gt;  中加载失败。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;解决方案&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解决方案&#34;&gt;#&lt;/a&gt; 解决方案&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;配置  &lt;code&gt;spring.factories&lt;/code&gt;  文件&lt;/strong&gt;：在  &lt;code&gt;ruoyi-workflow&lt;/code&gt;  模块中创建或更新  &lt;code&gt;META-INF/spring.factories&lt;/code&gt;  文件，确保其中包含以下内容：&lt;/p&gt;
+&lt;figure class=&#34;highlight properties&#34;&gt;&lt;figcaption data-lang=&#34;.properties&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key attr-name&#34;&gt;org.springframework.boot.autoconfigure.EnableAutoConfiguration&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token value attr-value&#34;&gt;\&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;org.dromara.common.dubbo.config.DubboConfiguration&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;检查  &lt;code&gt;DubboConfiguration&lt;/code&gt;  加载条件&lt;/strong&gt;：确保环境中满足所有  &lt;code&gt;DubboConfiguration&lt;/code&gt;  的加载条件。如果有必要，可以修改  &lt;code&gt;DubboConfiguration&lt;/code&gt;  类，去除不必要的条件注解来简化加载过程。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;模块依赖问题&lt;/strong&gt;：确认所有  &lt;code&gt;DubboConfiguration&lt;/code&gt;  所需的依赖已在  &lt;code&gt;ruoyi-workflow&lt;/code&gt;  中正确导入。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;32-放到自己的项目&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#32-放到自己的项目&#34;&gt;#&lt;/a&gt; 3.2 放到自己的项目&lt;/h2&gt;
+&lt;p&gt;只需要如下（大致，其他操作比如短信文件先不用管）&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20241101141644953.png&#34; alt=&#34;image-20241101141644953&#34; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;拉下 workflow 的项目，并&lt;strong&gt;初始化&lt;/strong&gt;，以及导入 core 等需要的项目&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20241101141927731.png&#34; alt=&#34;image-20241101141927731&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个个写，并用 postman 测试&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="工作流" />
+        <updated>2024-10-31T06:57:02.000Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/2024/09/18/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AD%A6%E4%B9%A0/</id>
         <title>工作流学习</title>
