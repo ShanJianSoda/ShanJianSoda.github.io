@@ -7,18 +7,21 @@
         <language>en</language>
         <pubDate>Sun, 24 Dec 2023 14:37:13 +0800</pubDate>
         <lastBuildDate>Sun, 24 Dec 2023 14:37:13 +0800</lastBuildDate>
-        <category>Vue3</category>
+        <category>workflow</category>
+        <category>项目整理</category>
+        <category>设计模式</category>
         <category>GLM</category>
+        <category>Vue3</category>
         <category>Java</category>
         <category>AI_Boot</category>
-        <category>dp</category>
         <category>git</category>
+        <category>dp</category>
         <category>位运算</category>
         <category>分类讨论</category>
-        <category>docker</category>
-        <category>linux</category>
         <category>redis</category>
         <category>lunix</category>
+        <category>docker</category>
+        <category>linux</category>
         <category>机器学习</category>
         <category>vue3</category>
         <category>LLM</category>
@@ -29,7 +32,6 @@
         <category>工作总结</category>
         <category>面试</category>
         <category>chatgpt</category>
-        <category>设计模式</category>
         <item>
             <guid isPermalink="true">http://example.com/2023/12/24/%E5%AE%9E%E8%AE%AD%E5%91%A8%E5%81%9A%E4%BA%86%E5%95%A5/</guid>
             <title>实训周做了啥</title>

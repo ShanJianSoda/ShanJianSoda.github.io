@@ -4,18 +4,21 @@
     <title>Chen • Posts by &#34;面试&#34; tag</title>
     <link href="http://example.com" />
     <updated>2024-06-23T08:42:22.000Z</updated>
-    <category term="Vue3" />
+    <category term="workflow" />
+    <category term="项目整理" />
+    <category term="设计模式" />
     <category term="GLM" />
+    <category term="Vue3" />
     <category term="Java" />
     <category term="AI_Boot" />
-    <category term="dp" />
     <category term="git" />
+    <category term="dp" />
     <category term="位运算" />
     <category term="分类讨论" />
-    <category term="docker" />
-    <category term="linux" />
     <category term="redis" />
     <category term="lunix" />
+    <category term="docker" />
+    <category term="linux" />
     <category term="机器学习" />
     <category term="vue3" />
     <category term="LLM" />
@@ -26,7 +29,6 @@
     <category term="工作总结" />
     <category term="面试" />
     <category term="chatgpt" />
-    <category term="设计模式" />
     <entry>
         <id>http://example.com/2024/06/23/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/</id>
         <title>第二次面试准备</title>
